@@ -1,0 +1,162 @@
+---
+title: "Template 1 — Ficha da Organização (PDF preenchível)"
+subtitle: "Seleção, viabilidade e alinhamento inicial"
+lang: pt
+date: "2026-03-03"
+format:
+  pdf:
+    pdf-engine: xelatex
+    toc: true
+    number-sections: true
+    fontsize: 11pt
+    geometry: "margin=2.2cm"
+    include-in-header:
+      text: |
+        \usepackage{tabularx}
+        \usepackage{array}
+        \usepackage{booktabs}
+        \usepackage{enumitem}
+        \renewcommand{\arraystretch}{1.25}
+        \hypersetup{colorlinks=false}
+---
+
+> **Como preencher:** gere o PDF e preencha os campos diretamente no leitor de PDF do navegador. Para manter o preenchimento, normalmente é preciso **baixar e salvar** o PDF após editar.
+
+## Identificação
+
+```{=latex}
+\begin{tabularx}{\linewidth}{>{\bfseries}p{4.6cm}X}
+Aluno(a)/Grupo: & \TextField[name=aluno,width=\linewidth]{}\\[1.2ex]
+Curso/Disciplina/Projeto: & \TextField[name=curso_projeto,width=\linewidth]{}\\[1.2ex]
+Organização: & \TextField[name=organizacao,width=\linewidth]{}\\[1.2ex]
+Setor: & \ChoiceMenu[combo,name=setor,width=7cm]{ }{Público=Público,Privado=Privado,ONG=ONG,Outro=Outro}\quad
+Outro: \TextField[name=setor_outro,width=4.5cm]{}\\[1.2ex]
+Cidade/UF: & \TextField[name=cidade_uf,width=\linewidth]{}\\[1.2ex]
+Ponto focal (contato): & \TextField[name=ponto_focal,width=\linewidth]{}\\[1.2ex]
+Data do primeiro contato: & \TextField[name=data_primeiro_contato,width=4cm]{}\\
+\end{tabularx}
+```
+
+## Contexto e missão (resumo)
+
+Descreva em 5–10 linhas o que a organização faz, quem atende e quais processos são centrais.
+
+```{=latex}
+\vspace{0.2cm}
+\TextField[multiline=true,name=contexto_missao,width=\linewidth,height=4.2cm]{}
+```
+
+## Problema/necessidade percebida (hipótese inicial)
+
+Em 3–5 linhas: qual “dor” você acha que existe e por que ela pode ser tratada com dados?
+
+```{=latex}
+\vspace{0.2cm}
+\TextField[multiline=true,name=problema_hipotese,width=\linewidth,height=3.0cm]{}
+```
+
+## Viabilidade (checklist)
+
+Marque e explique brevemente.
+
+```{=latex}
+\begin{tabularx}{\linewidth}{@{}p{0.8cm}X p{6.5cm}@{}}
+\CheckBox[name=chk_entrevistas]{} &
+\textbf{Acesso a pelo menos 3 entrevistas} (operação + gestão + apoio/TI se existir) &
+\TextField[name=obs_entrevistas,width=\linewidth]{}\\[1.2ex]
+
+\CheckBox[name=chk_dados]{} &
+\textbf{Existem dados disponíveis} (planilhas/sistema/formulários/relatórios) &
+\TextField[name=obs_dados,width=\linewidth]{}\\[1.2ex]
+
+\CheckBox[name=chk_escopo]{} &
+\textbf{Escopo compatível com o tempo do projeto} &
+\TextField[name=obs_escopo,width=\linewidth]{}\\[1.2ex]
+
+\CheckBox[name=chk_lgpd]{} &
+\textbf{Risco de LGPD/sensibilidade é gerenciável} (sem dados pessoais desnecessários) &
+\TextField[name=obs_lgpd,width=\linewidth]{}\\[1.2ex]
+
+\CheckBox[name=chk_mvp]{} &
+\textbf{Organização aceita receber um MVP} (mesmo simples) &
+\TextField[name=obs_mvp,width=\linewidth]{}\\
+\end{tabularx}
+```
+
+::: note
+MVP (Mínimo Produto Viável) é a versão mais simples e enxuta de um produto ou serviço, contendo apenas funcionalidades essenciais para atender aos usuários e testar a aceitação.
+:::
+
+### Restrições e limites de acesso
+
+```{=latex}
+\begin{tabularx}{\linewidth}{>{\bfseries}p{5.2cm}X}
+O que NÃO pode ser acessado: & \TextField[multiline=true,name=restr_nao_acessar,width=\linewidth,height=1.4cm]{}\\[1.2ex]
+Formato provável dos dados: &
+\ChoiceMenu[combo,name=formato_dados,width=6cm]{ }{XLSX=XLSX,CSV=CSV,Sistema=Sistema,Relatórios=Relatórios,Outro=Outro}\quad
+Outro: \TextField[name=formato_outro,width=4.6cm]{}\\[1.2ex]
+Frequência de atualização: &
+\ChoiceMenu[combo,name=frequencia,width=6cm]{ }{Diária=Diária,Semanal=Semanal,Mensal=Mensal,Eventual=Eventual,Outro=Outro}\quad
+Outro: \TextField[name=frequencia_outro,width=4.6cm]{}\\[1.2ex]
+Regras de confidencialidade: & \TextField[multiline=true,name=confidencialidade,width=\linewidth,height=1.6cm]{}\\
+\end{tabularx}
+```
+
+## Stakeholders (quem usa/decide/alimenta)
+
+Preencha as linhas necessárias.
+
+```{=latex}
+\renewcommand{\arraystretch}{1.35}
+\begin{tabular}{|p{3.0cm}|p{3.1cm}|p{4.2cm}|p{3.0cm}|p{3.2cm}|}
+\hline
+\textbf{Pessoa/Área} & \textbf{Papel no processo} & \textbf{Usa dados para quê?} & \textbf{Decide o quê?} & \textbf{Disponibilidade p/ entrevista?} \\
+\hline
+\TextField[name=stake_pessoa1,width=2.85cm]{} &
+\TextField[name=stake_papel1,width=2.95cm]{} &
+\TextField[multiline=true,name=stake_usa1,width=4.0cm,height=0.9cm]{} &
+\TextField[name=stake_decide1,width=2.85cm]{} &
+\TextField[name=stake_disp1,width=3.05cm]{} \\
+\hline
+\TextField[name=stake_pessoa2,width=2.85cm]{} &
+\TextField[name=stake_papel2,width=2.95cm]{} &
+\TextField[multiline=true,name=stake_usa2,width=4.0cm,height=0.9cm]{} &
+\TextField[name=stake_decide2,width=2.85cm]{} &
+\TextField[name=stake_disp2,width=3.05cm]{} \\
+\hline
+\TextField[name=stake_pessoa3,width=2.85cm]{} &
+\TextField[name=stake_papel3,width=2.95cm]{} &
+\TextField[multiline=true,name=stake_usa3,width=4.0cm,height=0.9cm]{} &
+\TextField[name=stake_decide3,width=2.85cm]{} &
+\TextField[name=stake_disp3,width=3.05cm]{} \\
+\hline
+\TextField[name=stake_pessoa4,width=2.85cm]{} &
+\TextField[name=stake_papel4,width=2.95cm]{} &
+\TextField[multiline=true,name=stake_usa4,width=4.0cm,height=0.9cm]{} &
+\TextField[name=stake_decide4,width=2.85cm]{} &
+\TextField[name=stake_disp4,width=3.05cm]{} \\
+\hline
+\TextField[name=stake_pessoa5,width=2.85cm]{} &
+\TextField[name=stake_papel5,width=2.95cm]{} &
+\TextField[multiline=true,name=stake_usa5,width=4.0cm,height=0.9cm]{} &
+\TextField[name=stake_decide5,width=2.85cm]{} &
+\TextField[name=stake_disp5,width=3.05cm]{} \\
+\hline
+\end{tabular}
+```
+
+## Termo de alinhamento (resumo)
+
+Escreva um mini-acordo (que poderá ser colado no e-mail/WhatsApp do ponto focal).
+
+```{=latex}
+\begin{tabularx}{\linewidth}{>{\bfseries}p{4.3cm}X}
+Objetivo do projeto: & \TextField[multiline=true,name=termo_objetivo,width=\linewidth,height=1.6cm]{}\\[1.2ex]
+Entregável esperado: &
+\ChoiceMenu[combo,name=termo_entregavel,width=6cm]{ }{Dashboard=Dashboard,Relatório=Relatório,App=App,Alerta=Alerta,Outro=Outro}\quad
+Outro: \TextField[name=termo_entregavel_outro,width=4.6cm]{}\\[1.2ex]
+Prazo previsto: & \TextField[name=termo_prazo,width=6cm]{}\\[1.2ex]
+Dados e entrevistas (o que será solicitado): & \TextField[multiline=true,name=termo_dados_entrevistas,width=\linewidth,height=1.8cm]{}\\[1.2ex]
+Confidencialidade (como será garantida): & \TextField[multiline=true,name=termo_confid,width=\linewidth,height=1.8cm]{}\\
+\end{tabularx}
+```

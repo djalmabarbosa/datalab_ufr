@@ -1,0 +1,73 @@
+---
+title: "Template 2 — Estudo de Caso e Maturidade Analítica"
+subtitle: "Como a organização coleta, gerencia e usa dados (com evidências)"
+---
+lang: pt
+date: "2026-03-03"
+format:
+  html:
+    toc: true
+    number-sections: true
+    theme: cosmo
+  # Se você não tiver LaTeX instalado, comente o bloco "pdf" abaixo e renderize em HTML.
+  pdf:
+    toc: true
+    number-sections: true
+    fontsize: 11pt
+---
+---
+
+## 1) Descrição do caso (3–6 páginas)
+
+### 1.1 Contexto organizacional
+- História resumida, serviços/produtos, público atendido, estrutura.
+
+### 1.2 Processos-chave (visão operacional)
+Liste 2–4 processos críticos (ex.: atendimento, vendas, logística, triagem, projetos).
+
+### 1.3 Decisões recorrentes e decisões críticas
+- Decisões diárias (operação)
+- Decisões gerenciais (alocação de recursos, metas, compras etc.)
+
+## 2) Scorecard de maturidade analítica (0–4)
+
+**Escala sugerida**
+- **0 — Inexistente:** não há prática estruturada
+- **1 — Inicial:** pontual, ad hoc, depende de pessoas
+- **2 — Básico:** rotinas mínimas, porém fragmentadas
+- **3 — Intermediário:** processos e ferramentas consolidados
+- **4 — Avançado:** governança, automação, uso contínuo na decisão
+
+> Preencha **nota** e cite **evidências** (ex.: “existe relatório semanal em planilha X”, “há validação por dupla checagem”, “há BI com acesso por área”, etc.).
+
+| Dimensão | Nota (0–4) | Evidências (o que você observou) | Principais riscos/limitações |
+|---|---:|---|---|
+| Estratégia & cultura (decisão orientada a dados) |  |  |  |
+| Pessoas & competências (quem analisa, com quais skills) |  |  |  |
+| Dados (qualidade, padronização, completude) |  |  |  |
+| Tecnologia (sistemas, integrações, BI, automação) |  |  |  |
+| Processos (coleta, validação, atualização, versionamento) |  |  |  |
+| Governança & segurança (acesso, LGPD, responsabilidades) |  |  |  |
+| Uso analítico (relatórios, dashboards, alertas, previsões) |  |  |  |
+
+## 3) Síntese (1 página)
+
+### 3.1 Pontos fortes
+- [ ]  
+- [ ]  
+
+### 3.2 Gargalos principais (top 3)
+1. [ ]
+2. [ ]
+3. [ ]
+
+### 3.3 Oportunidades rápidas (quick wins)
+Liste ações simples e viáveis, mesmo sem grandes sistemas.
+
+- [ ]  
+- [ ]  
+
+### 3.4 Hipóteses de produtos de dados (ideias iniciais)
+- Ideia 1: [ ]
+- Ideia 2: [ ]
+- Ideia 3: [ ]

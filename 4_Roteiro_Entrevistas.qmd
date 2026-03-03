@@ -1,0 +1,100 @@
+---
+title: "Template 4 — Roteiro e Registro de Entrevistas"
+subtitle: "Identificação de problemas e necessidades relacionadas a dados"
+---
+lang: pt
+date: "2026-03-03"
+format:
+  html:
+    toc: true
+    number-sections: true
+    theme: cosmo
+  # Se você não tiver LaTeX instalado, comente o bloco "pdf" abaixo e renderize em HTML.
+  pdf:
+    toc: true
+    number-sections: true
+    fontsize: 11pt
+---
+---
+
+## 1) Ética e consentimento (resumo)
+
+- **Objetivo da entrevista:** entender processos, necessidades de informação e decisões.
+- **Duração prevista:** 20–40 min.
+- **Registro:** [anotações / gravação com consentimento]
+- **Confidencialidade:** não registrar dados pessoais desnecessários; anonimizar falas.
+
+> Registre aqui como o consentimento foi obtido: [preencher]
+
+## 2) Roteiro semi-estruturado (perguntas)
+
+### A) Contexto do entrevistado
+1. Qual seu papel e responsabilidades?
+2. Quais tarefas você executa com mais frequência?
+
+### B) Processos e decisões
+3. Quais decisões você toma no dia a dia? Quais são críticas?
+4. Quando uma decisão dá errado, o que costuma acontecer?
+
+### C) Dados atuais
+5. Quais dados você usa hoje? Onde eles estão?
+6. Quais relatórios/painéis existem? O que funciona e o que não funciona?
+7. Onde há retrabalho (copiar/colar, conciliar versões, procurar informações)?
+
+### D) Necessidades e dores
+8. O que você gostaria de enxergar “em 1 minuto” para trabalhar melhor?
+9. Quais indicadores você considera essenciais? Por quê?
+10. Quais problemas de dados são mais frequentes (atraso, erro, incompletude)?
+
+### E) Viabilidade e adoção
+11. Quem precisaria usar a solução para ela dar certo?
+12. Com que frequência você consultaria um painel/relatório?
+13. O que faria você confiar (ou desconfiar) do produto de dados?
+
+### F) Encerramento
+14. Se você pudesse mudar uma coisa com dados na organização, o que seria?
+15. Quem mais deveríamos entrevistar?
+
+## 3) Registro das entrevistas
+
+### Entrevista 1
+- **Data:** [ ]
+- **Entrevistado(a):** [cargo/área]
+- **Modo:** [presencial/online]
+- **Resumo (5–10 linhas):**
+  - [ ]
+- **Citações/anotações (anonimizadas):**
+  - [ ]
+- **Problemas citados:**
+  - [ ]
+- **Necessidades/indicadores citados:**
+  - [ ]
+- **Sugestões do entrevistado:**
+  - [ ]
+
+### Entrevista 2
+- **Data:** [ ]
+- **Entrevistado(a):** [cargo/área]
+- **Modo:** [ ]
+- **Resumo:**  
+  - [ ]
+- **Problemas citados:**  
+  - [ ]
+- **Necessidades/indicadores citados:**  
+  - [ ]
+
+> Copie o bloco acima para quantas entrevistas forem necessárias.
+
+## 4) Síntese: matriz de problemas
+
+| Problema | Evidência (quem disse / exemplo) | Impacto (1–5) | Frequência (1–5) | Viabilidade de dados (1–5) | Observações |
+|---|---|---:|---:|---:|---|
+| [ ] | [ ] |  |  |  |  |
+| [ ] | [ ] |  |  |  |  |
+
+## 5) Backlog inicial de necessidades (em linguagem simples)
+
+Escreva como histórias curtas (ex.: “Como [usuário], quero [informação] para [decidir/agir]”).
+
+- Como **[ ]**, quero **[ ]** para **[ ]**.
+- Como **[ ]**, quero **[ ]** para **[ ]**.

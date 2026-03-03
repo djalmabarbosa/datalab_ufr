@@ -1,0 +1,110 @@
+---
+title: "Template 6 — Relatório Final e Entrega do Produto de Dados"
+subtitle: "Produto, validação com usuários e documentação mínima"
+---
+lang: pt
+date: "2026-03-03"
+format:
+  html:
+    toc: true
+    number-sections: true
+    theme: cosmo
+  # Se você não tiver LaTeX instalado, comente o bloco "pdf" abaixo e renderize em HTML.
+  pdf:
+    toc: true
+    number-sections: true
+    fontsize: 11pt
+---
+---
+
+## 1) Resumo executivo (até 1 página)
+
+- **Organização:** [ ]
+- **Problema:** [ ]
+- **Produto entregue:** [ ]
+- **Principais resultados/benefícios esperados:** [ ]
+- **Limitações:** [ ]
+- **Próximos passos:** [ ]
+
+## 2) Recap do diagnóstico (curto)
+
+### 2.1 Maturidade analítica (síntese)
+- Nota média / pontos fortes / gargalos.
+
+### 2.2 Fluxo de dados (síntese)
+- Onde o dado nasce, gargalos e riscos.
+
+## 3) Problema escolhido e justificativa
+
+- **Problema final:** [ ]
+- **Usuário e decisão:** [ ]
+- **Por que este problema (priorização):** [ ]
+
+## 4) O produto de dados
+
+### 4.1 Descrição do MVP
+- O que ele faz, o que mostra, para quem.
+
+### 4.2 Telas/saídas (cole imagens ou descreva)
+- Tela 1: [ ]
+- Tela 2: [ ]
+
+### 4.3 Indicadores (resumo)
+Liste os KPIs e o objetivo de cada um.
+
+## 5) Dados e preparação
+
+### 5.1 Fontes
+- [ ]
+
+### 5.2 Pipeline (o que foi feito)
+- limpeza, padronização, regras, agregações, versionamento.
+
+### 5.3 Limitações de dados
+- incompletude, atraso, vieses, inconsistências.
+
+## 6) Validação com usuários
+
+### 6.1 Como foi a validação
+- quem participou, data, duração, método (demo, teste guiado, feedback).
+
+### 6.2 Resultados (o que funcionou / o que não funcionou)
+- Funcionou:
+  - [ ]
+- Não funcionou / melhorias:
+  - [ ]
+
+### 6.3 Ajustes após feedback
+- [ ]
+
+## 7) Manual rápido (para a organização)
+
+### Como acessar
+- [link/arquivo/local]
+
+### Como usar (passo a passo)
+1. [ ]
+2. [ ]
+
+### Como interpretar os indicadores
+- [ ]
+
+### Frequência de atualização
+- [ ]
+
+## 8) Considerações éticas e LGPD (se aplicável)
+
+- Dados pessoais sensíveis foram evitados? [sim/não — explique]
+- Medidas de proteção (anonimização, acesso restrito, armazenamento): [ ]
+
+## 9) Próximos passos recomendados
+
+- Curto prazo (1–2 semanas): [ ]
+- Médio prazo (1–2 meses): [ ]
+- Longo prazo (3+ meses): [ ]
+
+## 10) Anexos
+
+- Link do produto / repositório / arquivos
+- Dicionário de dados (se existir)
+- Scripts (se houver)

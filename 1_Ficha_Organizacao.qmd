@@ -1,0 +1,67 @@
+---
+title: "Template 1 — Ficha da Organização"
+subtitle: "Seleção, viabilidade e alinhamento inicial"
+---
+
+lang: pt date: "2026-03-03" format: html: toc: true number-sections: true theme: cosmo \# Se você não tiver LaTeX instalado, comente o bloco "pdf" abaixo e renderize em HTML. pdf: toc: true number-sections: true fontsize: 11pt --- ---
+
+## Identificação
+
+-   **Aluno(a)/Grupo:** \[preencher\]
+-   **Curso/Disciplina/Projeto:** \[preencher\]
+-   **Organização:** \[nome\]
+-   **Setor:** \[público / privado / ONG / outro\]
+-   **Cidade/UF:** \[preencher\]
+-   **Ponto focal (contato):** \[nome / cargo / e-mail / telefone\]
+-   **Data do primeiro contato:** \[dd/mm/aaaa\]
+
+## Contexto e missão (resumo)
+
+Descreva em 5–10 linhas o que a organização faz, quem atende e quais processos são centrais.
+
+## Problema/necessidade percebida (hipótese inicial)
+
+> Em 3–5 linhas: qual “dor” você acha que existe e por que ela pode ser tratada com dados?
+
+## Viabilidade (checklist)
+
+Marque e explique brevemente.
+
+-   [ ] **Acesso a pelo menos 3 entrevistas** (operação + gestão + apoio/ti se existir)
+-   [ ] **Existem dados disponíveis** (planilhas/sistema/formulários/relatórios)
+-   [ ] **Escopo compatível com o tempo do projeto**
+-   [ ] **Risco de LGPD/sensibilidade é gerenciável** (sem dados pessoais desnecessários)
+-   [ ] **Organização aceita receber um MVP** (mesmo simples)
+
+::: note
+MVP (Mínimo Produto Viável) é a versão mais simples e enxuta de um produto ou serviço, contendo apenas funcionalidades essenciais para atender aos clientes e testar a aceitação no mercado
+:::
+
+### Restrições e limites de acesso
+
+-   **O que NÃO pode ser acessado:** \[preencher\]
+-   **Formato provável dos dados:** \[xlsx/csv/sistema/relatórios\]
+-   **Frequência de atualização:** \[diária/semanal/mensal/eventual\]
+-   **Regras de confidencialidade:** \[preencher\]
+
+## Stakeholders (quem usa/decide/alimenta)
+
++-------------+-------------------+---------------------+---------------+----------------------------------+
+| Pessoa/Área | Papel no processo | Usa dados para quê? | Decide o quê? | Disponibilidade para entrevista? |
++=============+===================+=====================+===============+==================================+
+| 1.          |                   |                     |               |                                  |
++-------------+-------------------+---------------------+---------------+----------------------------------+
+| 2.          |                   |                     |               |                                  |
++-------------+-------------------+---------------------+---------------+----------------------------------+
+| 3.          |                   |                     |               |                                  |
++-------------+-------------------+---------------------+---------------+----------------------------------+
+
+## Termo de alinhamento (resumo)
+
+Escreva um mini-acordo (que poderá ser colado no e-mail/WhatsApp do ponto focal), contendo:
+
+-   **Objetivo do projeto**
+-   **Entregável esperado** \[dashboard/relatório/app/alerta/outro\]
+-   **Prazo previsto**
+-   **Dados e entrevistas** \[o que será solicitado\]
+-   **Confidencialidade** \[como será garantida\]

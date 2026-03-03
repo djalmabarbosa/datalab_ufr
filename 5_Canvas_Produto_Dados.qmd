@@ -1,0 +1,94 @@
+---
+title: "Template 5 — Canvas do Produto de Dados (MVP)"
+subtitle: "Definição do problema, escopo e critérios de sucesso"
+---
+lang: pt
+date: "2026-03-03"
+format:
+  html:
+    toc: true
+    number-sections: true
+    theme: cosmo
+  # Se você não tiver LaTeX instalado, comente o bloco "pdf" abaixo e renderize em HTML.
+  pdf:
+    toc: true
+    number-sections: true
+    fontsize: 11pt
+---
+---
+
+## 1) Declaração do problema (1 parágrafo)
+
+**Problema principal:**  
+[Descreva o problema em uma frase clara, sem solução embutida.]
+
+**Por que isso importa agora?**  
+[impacto em custo, tempo, qualidade, risco, atendimento etc.]
+
+## 2) Usuário-alvo e decisão
+
+- **Usuário principal:** [cargo/área]
+- **Usuários secundários:** [ ]
+- **Decisão/ação que o produto deve apoiar:**  
+  - [ex.: priorizar atendimentos, redistribuir equipe, controlar estoque, monitorar metas]
+
+## 3) Produto proposto
+
+- **Tipo:** [dashboard / relatório automatizado / painel operacional / app / alertas / outro]
+- **Saída principal:** [o que a pessoa verá/receberá]
+- **Frequência:** [tempo real / diário / semanal / mensal]
+- **Plataforma:** [Power BI / Looker Studio / Shiny / Excel / PDF / outro]
+
+## 4) Dados necessários
+
+| Fonte | Campos principais | Formato | Frequência | Responsável | Limitações/qualidade |
+|---|---|---|---|---|---|
+| [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+
+## 5) Indicadores (KPI) e definições
+
+| Indicador | Definição | Fórmula | Fonte | Frequência | Observações |
+|---|---|---|---|---|---|
+| [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+
+## 6) Priorização (matriz impacto × esforço × viabilidade)
+
+> Preencha 3–8 opções e escolha 1 MVP.
+
+| Opção | Descrição | Impacto (1–5) | Esforço (1–5) | Viabilidade de dados (1–5) | Score (sug.: Impacto + Viab − Esforço) |
+|---|---|---:|---:|---:|---:|
+| A | [ ] |  |  |  |  |
+| B | [ ] |  |  |  |  |
+| C | [ ] |  |  |  |  |
+
+**MVP escolhido:** [A/B/C]  
+**Justificativa:** [1 parágrafo]
+
+## 7) Critérios de sucesso (mensuráveis)
+
+Defina critérios “se acontecer, deu certo”.
+
+- **Adoção:** [ex.: usuário consulta 2×/semana]
+- **Clareza:** [ex.: consegue responder X em 1 min]
+- **Eficiência:** [ex.: reduz retrabalho em Y%]
+- **Confiabilidade:** [ex.: indicadores batem com fonte oficial]
+- **Satisfação:** [ex.: feedback ≥ 4/5]
+
+## 8) Escopo (o que entra e o que NÃO entra)
+
+### Entra (MVP)
+- [ ]
+- [ ]
+
+### Não entra (por enquanto)
+- [ ]
+- [ ]
+
+## 9) Riscos e mitigação
+
+| Risco | Prob. (baixa/média/alta) | Impacto (baixa/média/alta) | Mitigação |
+|---|---|---|---|
+| [ ] | [ ] | [ ] | [ ] |
+| [ ] | [ ] | [ ] | [ ] |
