@@ -1,0 +1,182 @@
+---
+title: "Instrumento de Avaliação de Maturidade Analítica de Dados"
+subtitle: "Adaptado do TDWI Analytics Maturity Model (versão para projetos aplicados)"
+lang: pt
+date: "2026-03-03"
+format:
+  html:
+    toc: true
+    number-sections: true
+    theme: cosmo
+  pdf:
+    toc: true
+    number-sections: true
+    fontsize: 11pt
+---
+
+## 1. Como usar este instrumento
+
+Este template serve para **diagnosticar a maturidade analítica** de uma organização e **gerar um plano de evolução** que sustente a criação de um **produto de dados (MVP)**.
+
+**Passo a passo sugerido**
+1. Faça um **estudo de caso curto** (contexto, processos e decisões).
+2. Preencha os itens abaixo com base em:
+   - entrevistas (3 a 6 pessoas),
+   - observação de processos,
+   - documentos/planilhas/sistemas/relatórios existentes.
+3. Atribua uma **nota (0–4)** a cada item **e registre evidências**.
+4. Calcule médias por dimensão e o **nível global**.
+5. Produza **3 prioridades** e um **plano de ação** (quick wins + médio prazo).
+
+> Importante: evite registrar dados pessoais desnecessários. Prefira evidências agregadas/anonimizadas.
+
+## 2. Escala de pontuação (0–4)
+
+- **0 — Inexistente:** não há prática estruturada; tudo é improvisado ou não ocorre.
+- **1 — Inicial:** existe algo pontual (ad hoc), depende de poucas pessoas e não é repetível.
+- **2 — Básico:** existe rotina mínima; ainda fragmentado e com lacunas de qualidade/integração.
+- **3 — Intermediário:** processos e responsabilidades consolidados; uso regular para decisão.
+- **4 — Avançado:** governança e automação consistentes; melhoria contínua e analytics integrado ao negócio.
+
+**Regra de ouro:** sem evidência = nota não pode ser alta.  
+Exemplos de evidências: print de dashboard/relatório, dicionário de dados, política de acesso, fluxo documentado, script de ETL, ata de reunião com indicadores, relato convergente de múltiplos entrevistados.
+
+## 3. Dimensões e itens de avaliação
+
+> Dica: se a organização for pequena, mantenha o foco em **clareza + evidências** (mesmo que o “4” seja raro).
+
+### 3.1 Estratégia e valor (por que e para quê usar dados)
+
+| Item (marque a nota de 0–4) | Nota | Evidência observável (o que prova) | Comentários |
+|---|---:|---|---|
+| A organização tem **objetivos claros** para uso de dados (eficiência, qualidade, metas, risco, atendimento etc.) |  |  |  |
+| Há **prioridades de perguntas/indicadores** que guiam o que é coletado e analisado |  |  |  |
+| Dados são usados em **rituais de gestão** (reuniões, acompanhamento de metas, tomada de decisão) |  |  |  |
+| Existe noção de **ROI/benefício** (mesmo qualitativo) para projetos de dados |  |  |  |
+| Há clareza sobre **quem decide** e como os dados entram na decisão |  |  |  |
+| O uso de dados é **sustentável** (não depende só de “heroísmo” de uma pessoa) |  |  |  |
+
+### 3.2 Pessoas e organização (papéis, competências e colaboração)
+
+| Item | Nota | Evidência | Comentários |
+|---|---:|---|---|
+| Existem papéis mínimos (ex.: responsável por coleta, validação, análise, uso) |  |  |  |
+| A organização possui **competências** para lidar com dados (mesmo que básicas) |  |  |  |
+| Há **colaboração** entre áreas (negócio/operacional/administrativo/tecnologia) |  |  |  |
+| Existe **tempo alocado** (ainda que pequeno) para rotinas de dados |  |  |  |
+| Conhecimento não fica só “na cabeça”: existe **documentação mínima** |  |  |  |
+| Treinamento/aprendizagem ocorre (formal ou informal) |  |  |  |
+
+### 3.3 Dados e gestão de dados (qualidade, padronização e integração)
+
+| Item | Nota | Evidência | Comentários |
+|---|---:|---|---|
+| Há padronização de **cadastros/chaves** (ex.: cliente, unidade, produto, serviço) |  |  |  |
+| A qualidade (completude/consistência) é monitorada ou ao menos discutida |  |  |  |
+| Existem rotinas de **validação** (regras, checagens, dupla conferência) |  |  |  |
+| Há controle de **versões** (planilhas, bases, datas de atualização) |  |  |  |
+| Existe um **dicionário de dados** (mesmo simples) e definições de indicadores |  |  |  |
+| Dados de diferentes fontes são integrados (ou há um plano claro para integrar) |  |  |  |
+
+### 3.4 Plataforma e arquitetura (onde os dados vivem e como fluem)
+
+| Item | Nota | Evidência | Comentários |
+|---|---:|---|---|
+| Fontes de dados estão claramente identificadas (sistemas, planilhas, formulários) |  |  |  |
+| O fluxo do dado é conhecido e documentado (coleta → armazenamento → consumo) |  |  |  |
+| Há local “fonte de verdade” (ou uma prática para reduzir conflitos de versões) |  |  |  |
+| Existem rotinas de backup/segurança (mesmo básicas) |  |  |  |
+| A atualização é previsível (frequência, responsáveis, horários) |  |  |  |
+| Há algum grau de automação (importação, consolidação, relatórios) |  |  |  |
+
+### 3.5 Análises e produtos de dados (do relatório ao produto operacional)
+
+| Item | Nota | Evidência | Comentários |
+|---|---:|---|---|
+| A organização produz relatórios/indicadores com alguma regularidade |  |  |  |
+| Os produtos existentes são **usáveis** (clareza, consistência, confiança) |  |  |  |
+| Há segmentação por público (operacional vs gestão) |  |  |  |
+| Existe capacidade de ir além de “contagem”: diagnósticos, comparações, tendências |  |  |  |
+| Insights resultam em ações (há exemplos concretos) |  |  |  |
+| O produto é “operacionalizável” (atualiza, tem dono, entra no processo) |  |  |  |
+
+### 3.6 Governança, segurança e conformidade (incluindo LGPD)
+
+| Item | Nota | Evidência | Comentários |
+|---|---:|---|---|
+| Existem regras de acesso (quem pode ver o quê) |  |  |  |
+| Há cuidado com dados pessoais (minimização, anonimização quando possível) |  |  |  |
+| Responsabilidades são claras (quem é “dono” de cada dado/indicador) |  |  |  |
+| Existe controle de compartilhamento (e-mail, drives, pendrives, impressões etc.) |  |  |  |
+| Há registro mínimo de incidentes/erros e como foram tratados |  |  |  |
+| A organização tem postura de ética/transparência no uso de dados |  |  |  |
+
+## 4. Cálculo do nível de maturidade
+
+### 4.1 Calcule as médias
+- **Média por dimensão:** média das notas (itens) dentro da dimensão.
+- **Média global:** média das 6 dimensões.
+
+> Recomenda-se também olhar a **menor dimensão**: ela costuma ser o gargalo (“o elo mais fraco”) para sustentar um produto de dados.
+
+### 4.2 Interpretação (níveis globais)
+
+| Média global | Nível sugerido | Descrição (resumo) |
+|---:|---|---|
+| 0.0 – 0.9 | **Nascente** | quase nada estruturado; dependerá de organização básica e quick wins |
+| 1.0 – 1.9 | **Inicial** | práticas pontuais; produto precisa ser simples, com forte apoio humano |
+| 2.0 – 2.9 | **Estabelecida** | rotinas mínimas existem; dá para entregar MVP com consistência |
+| 3.0 – 3.5 | **Madura** | boas práticas consolidadas; espaço para automação e expansão |
+| 3.6 – 4.0 | **Avançada** | governança e analytics integrados; foco em escala e melhoria contínua |
+
+## 5. Síntese do diagnóstico (1 página)
+
+### 5.1 Pontos fortes (top 3)
+1. [preencher]
+2. [preencher]
+3. [preencher]
+
+### 5.2 Gargalos (top 3)
+1. [preencher]
+2. [preencher]
+3. [preencher]
+
+### 5.3 Oportunidades rápidas (quick wins)
+Liste ações que cabem em **1–2 semanas** e habilitam o MVP.
+
+- [ ] [preencher]
+- [ ] [preencher]
+- [ ] [preencher]
+
+## 6. Plano de evolução (orientado ao produto de dados)
+
+> Sugestão: alinhe ações com o MVP. Ex.: se o MVP é um dashboard semanal, ações de padronização e atualização são prioritárias.
+
+| Horizonte | Ação | Responsável sugerido | Esforço (baixo/médio/alto) | Dependências | Evidência de conclusão |
+|---|---|---|---|---|---|
+| 0–30 dias (quick wins) |  |  |  |  |  |
+| 0–30 dias (quick wins) |  |  |  |  |  |
+| 31–90 dias |  |  |  |  |  |
+| 31–90 dias |  |  |  |  |  |
+| 6–12 meses |  |  |  |  |  |
+
+## 7. Anexo opcional: planilha de cálculo
+
+Se você quiser calcular médias e gerar um gráfico, você pode copiar as notas para uma tabela e usar R (opcional).
+
+```{r}
+# Opcional: exemplo de estrutura (preencha com suas notas)
+dimensoes <- data.frame(
+  dimensao = c("Estratégia", "Pessoas", "Dados", "Plataforma", "Análises", "Governança"),
+  media = c(NA, NA, NA, NA, NA, NA)
+)
+
+# média global
+media_global <- mean(dimensoes$media, na.rm = TRUE)
+media_global
+```
+
+## Referência (inspiradora)
+
+Este instrumento é uma **adaptação didática** inspirada em modelos de maturidade analítica amplamente usados no mercado e na literatura (ex.: TDWI Analytics Maturity Model).  
+A redação, itens e rubrica foram reestruturados para uso em **projetos aplicados** com evidências e plano de ação.
