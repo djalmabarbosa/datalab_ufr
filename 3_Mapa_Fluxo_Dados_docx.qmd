@@ -1,0 +1,59 @@
+---
+title: "Template 3 — Mapa e Fluxo de Dados na Organização"
+subtitle: "De onde o dado vem, por onde passa e como é usado"
+lang: pt
+date: "2026-03-03"
+format:
+  docx:
+    toc: true
+    number-sections: true
+---
+
+## 1) Objetivo do mapeamento
+
+Explique em 3–5 linhas por que este mapeamento é necessário e o que ele pretende esclarecer.
+
+## 2) Ciclo do dado (visão geral)
+
+Descreva o ciclo usando este modelo (edite conforme necessário):
+
+1. **Fontes:** [sistemas, formulários, planilhas, pessoas]
+2. **Coleta/Registro:** [quem registra, como, quando]
+3. **Armazenamento:** [onde fica, em que formato]
+4. **Transformação:** [limpeza, consolidação, cálculos, quem faz]
+5. **Consumo:** [relatórios, reuniões, decisões, usuários]
+6. **Arquivamento/Histórico:** [backup, versões, retenção]
+
+## 3) Fluxograma do dado (cole aqui ou descreva)
+
+> Sugestão: crie um fluxograma em ferramenta externa (draw.io, PowerPoint, etc.) e cole uma imagem no relatório.  
+> Se não for possível, descreva o fluxo em tópicos numerados e setas (→).
+
+### 3.1 Fluxo (texto estruturado)
+- [Fonte A] → [Planilha X] → [Consolidação Y] → [Relatório Z] → [Decisão]
+- [Fonte B] → [...]
+
+## 4) Inventário de dados (tabela)
+
+| Dataset/Sistema/Planilha | Descrição | Responsável (dono) | Quem alimenta | Frequência | Campos principais | Qualidade (baixa/média/alta) | Acesso (restrito/aberto) |
+|---|---|---|---|---|---|---|---|
+| [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+
+## 5) Pontos de falha e riscos
+
+Liste evidências de problemas no fluxo.
+
+- **Duplicidade:** [onde ocorre? por quê?]
+- **Atraso:** [onde ocorre? impacto?]
+- **Erros de digitação/validação:** [onde?]
+- **Falta de definição de indicador:** [quais?]
+- **Acesso indevido / LGPD:** [risco?]
+
+## 6) Recomendações de melhoria no fluxo (pré-produto)
+
+Proponha melhorias no fluxo que viabilizem o produto de dados.
+
+- Curto prazo (1–2 semanas): [ ]
+- Médio prazo (1–2 meses): [ ]
+- Longo prazo (3+ meses): [ ]

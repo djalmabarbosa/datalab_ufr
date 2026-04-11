@@ -1,0 +1,200 @@
+---
+title: "Projeto de Extensão: Cocriação Participativa de Dashboards para Organizações do Município"
+author: "Djalma Barbosa"
+date: "2026-04-10"
+lang: pt-BR
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: false
+    theme: cosmo
+    df-print: paged
+editor: visual
+bibliography: referencias_dashboards_extensao.bib
+reference-section-title: "Referências Bibliográficas"
+link-citations: true
+---
+
+# Discriminação do projeto
+
+## Resumo
+
+O presente projeto de extensão tem como objetivo criar oportunidades de interação dialógica entre a universidade e as organizações do município por meio da cocriação de dashboards desenvolvidos em R, articulando extensão, ensino e pesquisa. A proposta parte do reconhecimento de que muitas organizações públicas, comunitárias e do terceiro setor produzem dados, mas ainda encontram dificuldades para transformá-los em informação útil para monitoramento, planejamento, transparência e tomada de decisão. Nesse contexto, o projeto pretende desenvolver dashboards participativos, adequados às demandas locais, com envolvimento direto dos usuários e da comunidade no levantamento de necessidades, definição de indicadores, escolha de visualizações, validação dos protótipos e avaliação do uso.
+
+A literatura recente tem destacado que o desenvolvimento de dashboards em saúde e em contextos organizacionais permanece frequentemente fragmentado e *ad hoc*, o que reforça a necessidade de abordagens mais estruturadas, iterativas e centradas nos usuários [@Rabiei2024; @Vornhagen2026]. Do mesmo modo, revisões sobre engajamento comunitário na elaboração de visualizações apontam que a participação dos públicos envolvidos deve ocorrer ao longo de todo o processo, com atenção às diferenças culturais, linguísticas e aos níveis de letramento digital e em dados, favorecendo que a comunidade não seja apenas objeto, mas também intérprete e narradora dos dados [@Chau2024].
+
+Assim, o projeto propõe como eixo central a elaboração de dashboards para organizações do município com protagonismo estudantil e participação comunitária, incorporando a pesquisa ao processo de desenvolvimento, preferencialmente por meio da pesquisa-ação e, quando pertinente, com elementos de *Action Design Research* [@Ghanaatjoo2024; @Vornhagen2025]. Espera-se que a proposta gere impacto social ao fortalecer capacidades locais para uso de dados e impacto formativo ao proporcionar aos estudantes experiências concretas de ciência de dados aplicada, design participativo, comunicação pública de informações e letramento digital.
+
+## Justificativa
+
+A produção de dados nas organizações do município vem crescendo de forma contínua, seja em serviços públicos, escolas, unidades de saúde, organizações sociais, conselhos, associações ou outras instituições locais. Apesar disso, a transformação desses dados em informações úteis e acionáveis ainda constitui um desafio recorrente. Em muitos casos, os dados estão dispersos, pouco padronizados, restritos a planilhas de uso interno ou apresentados de forma pouco acessível para gestores, trabalhadores e comunidade.
+
+Nesse cenário, dashboards podem funcionar como instrumentos de síntese, monitoramento, comunicação e apoio à decisão. Entretanto, a literatura mostra que um dashboard efetivo não depende apenas de programação ou de estética visual. Sua utilidade está associada à clareza do objetivo, ao conhecimento do público-alvo, à seleção de indicadores relevantes, à qualidade dos dados, à usabilidade da interface, à integração com rotinas organizacionais e à sustentabilidade de uso ao longo do tempo [@Rabiei2024; @Vornhagen2026]. Em revisão sobre dashboards de saúde pública, Rabiei et al. identificaram cinco grandes grupos de princípios de design: objetivos e usuários-alvo, conteúdo, interface, tipos de análise e apresentação, e infraestrutura [@Rabiei2024]. Já Vornhagen et al. sintetizaram práticas recorrentes em quatro pilares: *approach*, *content*, *behavior* e *adoption*, enfatizando que a adoção e a sustentabilidade são tão importantes quanto a construção técnica do dashboard [@Vornhagen2026].
+
+Além disso, a revisão de Chau et al. mostra que há espaço para maior e mais significativa participação comunitária na criação de visualizações relacionadas à saúde e ao bem-estar, especialmente em contextos nos quais barreiras de linguagem, cultura, representação e letramento podem comprometer o uso social dos dados [@Chau2024]. Esse achado é particularmente relevante para um projeto de extensão, pois a extensão universitária pressupõe interação dialógica, construção compartilhada e compromisso com a transformação social.
+
+A presente proposta justifica-se, portanto, por quatro razões centrais. Em primeiro lugar, responde a uma demanda social concreta: apoiar organizações do município na organização, interpretação e comunicação de seus dados. Em segundo lugar, fortalece a formação dos estudantes ao inserir a ciência de dados em situações reais de intervenção, com problemas concretos, interlocução com usuários e necessidade de devolutiva social. Em terceiro lugar, contribui para o letramento digital e em dados de públicos internos e externos à universidade, ampliando a capacidade local de compreender, questionar e utilizar informações visuais. Em quarto lugar, favorece a integração entre extensão e pesquisa, uma vez que o processo de desenvolvimento dos dashboards poderá gerar conhecimento sobre metodologias participativas, uso social dos dados e condições de adoção dessas ferramentas em contextos locais [@Baan2023; @Ghanaatjoo2024; @Vornhagen2025].
+
+Do ponto de vista institucional, o projeto também se alinha ao compromisso da universidade com a formação cidadã, a inovação social e a cooperação com o território. Ao desenvolver dashboards com e não apenas para as organizações parceiras, o projeto desloca o foco da simples entrega de produtos tecnológicos para a construção de capacidades locais, o que amplia a chance de continuidade e apropriação dos resultados.
+
+## Fundamentação Teórica
+
+Dashboards são artefatos de visualização e comunicação de dados que articulam indicadores, recursos gráficos e mecanismos de interação para apoiar compreensão, monitoramento e tomada de decisão. Em contextos de saúde e gestão pública, podem organizar grandes volumes de dados, facilitar a leitura de tendências e apoiar respostas mais oportunas a problemas coletivos [@Concannon2019; @Rabiei2024]. No entanto, o simples acúmulo de gráficos em uma interface não garante valor informacional. A literatura recente mostra que dashboards efetivos exigem alinhamento entre problema, usuários, contexto de uso, infraestrutura de dados e governança da informação [@Rabiei2024; @Vornhagen2026].
+
+No campo do design de dashboards, diferentes estudos vêm destacando a importância de metodologias participativas e iterativas. Baan et al., ao envolver profissionais de saúde no desenvolvimento de dashboards de qualidade e segurança, mostraram que a inclusão dos usuários em múltiplas etapas fortalece a aderência do artefato às necessidades reais do trabalho e aumenta a percepção de utilidade e apropriação [@Baan2023]. De modo semelhante, Weggelaar-Jansen et al. indicam que dashboards organizacionais mais robustos emergem quando sua construção está conectada aos fluxos institucionais, à cultura organizacional e aos processos de revisão e governança [@WeggelaarJansen2018].
+
+A pesquisa de Ghanaatjoo et al. apresenta a pesquisa-ação como caminho metodológico promissor para criação e avaliação de dashboards de gestão, ao combinar intervenção prática, participação dos sujeitos e produção de conhecimento [@Ghanaatjoo2024]. Já Vornhagen et al., no estudo CARA, exploram a *Action Design Research* como estratégia para desenvolver um dashboard interativo ao mesmo tempo em que se produzem princípios transferíveis de design [@Vornhagen2025]. Essas abordagens são particularmente adequadas para projetos extensionistas, pois favorecem ciclos de diagnóstico, planejamento, intervenção, reflexão e redesenho em contexto real.
+
+Outra dimensão importante da literatura refere-se ao engajamento comunitário e ao letramento em dados. Chau et al. destacam que as visualizações podem reforçar desigualdades quando são produzidas sem considerar barreiras de linguagem, cultura, acesso e representação. Por isso, os autores defendem o engajamento dos usuários em todas as etapas do desenvolvimento, a valorização da diversidade sociocultural e o fortalecimento da comunidade como produtora de significado e narrativa orientada por dados [@Chau2024]. Essa perspectiva se aproxima do conceito de *creative data literacy*, segundo o qual aprender com dados não se resume a interpretar gráficos prontos, mas envolve participar da seleção, interpretação e comunicação do que importa para a comunidade [@Chau2024].
+
+A revisão de Rabiei et al. contribui ainda com princípios de design úteis para a presente proposta. Os autores enfatizam: definição clara do objetivo e dos usuários; seleção de indicadores acionáveis; gerenciamento do volume e fluxo de informação; uso de visualizações adequadas à natureza dos dados; interatividade e navegação intuitiva; análise temporal e comparativa; e atenção à infraestrutura, à qualidade e à segurança dos dados [@Rabiei2024]. Em complemento, Vornhagen et al. sintetizam esses aspectos em quatro pilares interdependentes: **abordagem**, relacionada à participação e ao processo de desenvolvimento; **conteúdo**, ligado à relevância dos indicadores e à qualidade da informação; **comportamento**, relativo à usabilidade, interatividade e acessibilidade; e **adoção**, referente à integração do dashboard às rotinas, à capacitação e à sustentabilidade [@Vornhagen2026].
+
+Por fim, cabe destacar que o projeto também se insere no campo mais amplo da ciência de dados aplicada a problemas sociais. A ciência de dados, quando orientada por necessidades reais e mediada por princípios éticos, pode contribuir para tornar informações complexas mais inteligíveis, apoiar decisões e promover accountability. Nesse sentido, a elaboração participativa de dashboards pode ser compreendida como um produto de dados com função extensionista, formativa e investigativa, especialmente quando vinculada à reflexão crítica sobre dados, indicadores e seus usos sociais.
+
+## Objetivo Geral
+
+Criar oportunidades de interação dialógica entre a universidade e as organizações do município por meio da cocriação participativa de dashboards em R, articulando extensão, letramento digital e pesquisa aplicada sobre processos de desenvolvimento, uso e apropriação social de visualizações de dados.
+
+## Objetivos Específicos
+
+1.  Identificar, junto às organizações parceiras, problemas informacionais, necessidades de monitoramento e demandas por visualização de dados.
+
+2.  Promover oficinas e ações formativas de letramento digital, letramento em dados e interpretação de visualizações para estudantes e comunidade.
+
+3.  Definir, de forma participativa, indicadores prioritários, perguntas orientadoras e requisitos funcionais dos dashboards.
+
+4.  Desenvolver protótipos e versões operacionais de dashboards em R, utilizando recursos adequados ao contexto de uso.
+
+5.  Validar os dashboards com usuários e organizações parceiras, incorporando ciclos de feedback e refinamento.
+
+6.  Investigar, por meio de pesquisa-ação e/ou outras abordagens compatíveis, como o processo participativo influencia a utilidade, usabilidade, adoção e sustentabilidade dos dashboards.
+
+7.  Sistematizar os resultados do projeto em produtos extensionistas, materiais didáticos, relatórios técnicos e produções acadêmicas.
+
+## Metodologia da Execução do Projeto
+
+A proposta metodológica do projeto consiste em capacitar os estudantes em tópicos relacionados à ciência de dados, visualização, design participativo e uso social da informação, por meio da elaboração de projetos práticos em parceria com organizações do município. O eixo da extensão será a interação direta com essas organizações para compreender problemas concretos, cocriar soluções e fortalecer capacidades locais de uso dos dados.
+
+A execução do projeto será realizada prioritariamente com a linguagem **R**, por se tratar de software livre, amplamente utilizado na análise e visualização de dados, e por possibilitar o desenvolvimento de diferentes produtos, como relatórios automatizados, dashboards estáticos, aplicações interativas e protótipos reprodutíveis. Poderão ser utilizados, conforme a necessidade de cada caso, pacotes e ferramentas como `ggplot2`, `plotly`, `DT`, `Quarto`, `flexdashboard` e `shiny`.
+
+Do ponto de vista investigativo, a proposta adotará, preferencialmente, a **pesquisa-ação** como estratégia central, por seu potencial de integrar diagnóstico, intervenção, avaliação e reflexão conjunta com os participantes [@Ghanaatjoo2024]. Dependendo do tipo de organização, do estágio do projeto e do objeto desenvolvido, poderão ser incorporados elementos de **Action Design Research**, sobretudo quando houver interesse explícito em gerar princípios de design e aprendizagem transferível a partir da criação do artefato [@Vornhagen2025]. Em todos os casos, a extensão será o núcleo estruturante, e a pesquisa será incorporada ao processo de desenvolvimento dos dashboards, não como atividade paralela, mas como componente indissociável da prática extensionista.
+
+A metodologia será organizada em ciclos, com etapas integradas:
+
+### 1. Mobilização e pactuação com as organizações parceiras
+
+Inicialmente, serão identificadas organizações do município interessadas em participar do projeto. Poderão ser contempladas organizações públicas, comunitárias, educacionais, assistenciais, culturais, de saúde, ambientais ou do terceiro setor. Nessa etapa, serão realizadas reuniões de aproximação e pactuação, com esclarecimento dos objetivos do projeto, levantamento preliminar de demandas e definição do escopo de trabalho com cada parceiro.
+
+### 2. Diagnóstico participativo
+
+Com as organizações selecionadas, será realizado um diagnóstico participativo para compreender:
+
+-   quais problemas ou decisões os dashboards devem apoiar;
+-   quem são os usuários principais e secundários;
+-   quais bases de dados estão disponíveis;
+-   quais limitações existem em termos de qualidade, atualização e integração dos dados;
+-   quais níveis de letramento digital e em dados estão presentes entre os participantes;
+-   quais barreiras culturais, linguísticas ou organizacionais podem afetar o uso da visualização.
+
+Essa etapa poderá incluir entrevistas, rodas de conversa, observação, análise de documentos e oficinas exploratórias. A literatura destaca que conhecer o público e suas necessidades é um dos primeiros princípios para o desenvolvimento de dashboards efetivos [@Rabiei2024; @Vornhagen2026].
+
+### 3. Formação e letramento digital
+
+Ao longo da execução do projeto, haverá um cronograma de estudos e oficinas para os estudantes extensionistas e, em formato adaptado, também para a comunidade parceira. Os conteúdos poderão incluir:
+
+-   fundamentos de visualização de dados;
+-   noções de estatística descritiva aplicada;
+-   organização e limpeza de bases de dados;
+-   leitura crítica de gráficos e indicadores;
+-   princípios de usabilidade e acessibilidade;
+-   comunicação pública de dados;
+-   introdução ao uso do R para análise e visualização;
+-   discussão sobre ética, privacidade e uso responsável dos dados.
+
+Essa dimensão formativa é central porque estudos recentes têm mostrado que a utilidade social dos dashboards depende também da capacidade dos usuários de interpretar e discutir os dados apresentados [@Chau2024; @Vornhagen2026].
+
+### 4. Definição colaborativa de indicadores e requisitos
+
+Com base no diagnóstico e nas oficinas, serão definidas, de forma compartilhada, as perguntas centrais que o dashboard deverá responder, os indicadores prioritários, as formas de desagregação, a frequência de atualização e os critérios de apresentação visual. Nessa etapa, será dada atenção à recomendação de selecionar poucos indicadores, desde que relevantes, acionáveis e alinhados ao objetivo do dashboard [@Rabiei2024; @Vornhagen2026].
+
+### 5. Prototipagem e desenvolvimento em R
+
+Os dashboards serão desenvolvidos de forma incremental. Em vez de buscar, desde o início, uma versão final fechada, a equipe trabalhará com protótipos sucessivos, discutidos com os parceiros. Esse processo iterativo está em consonância com a literatura sobre coconstrução e design participativo [@Baan2023; @Elshehaly2021; @Vornhagen2026].
+
+Sempre que possível, os protótipos deverão observar princípios como:
+
+-   clareza do propósito e do público-alvo;
+-   uso de métricas relevantes e acionáveis;
+-   transparência sobre fontes e qualidade dos dados;
+-   combinação equilibrada entre síntese e detalhamento;
+-   escolha adequada do tipo de gráfico;
+-   redução de ruído visual;
+-   interatividade útil, sem sobrecarregar o usuário;
+-   acessibilidade e legibilidade.
+
+Esses princípios dialogam com as sínteses recentes de Rabiei et al. e Vornhagen et al. [@Rabiei2024; @Vornhagen2026].
+
+### 6. Validação participativa e refinamento
+
+Os protótipos serão apresentados aos usuários e às organizações parceiras em ciclos de devolutiva. Nessas ocasiões, serão discutidos compreensão, relevância, linguagem, navegabilidade, facilidade de uso, utilidade para a tomada de decisão e possíveis ajustes. A literatura de engajamento comunitário recomenda que os usuários sejam incluídos não apenas na reação a um produto pronto, mas ao longo de todo o processo de desenvolvimento [@Chau2024].
+
+### 7. Implementação piloto
+
+Após os ciclos de refinamento, serão disponibilizadas versões piloto dos dashboards para uso real pelas organizações. Quando possível, haverá acompanhamento do uso em reuniões, rotinas de monitoramento ou outras situações concretas, buscando observar como o artefato é incorporado ao cotidiano institucional.
+
+### 8. Sistematização, avaliação e pesquisa
+
+Os dados produzidos ao longo do projeto — registros de reuniões, feedbacks, instrumentos de avaliação, observações de uso, relatórios reflexivos dos estudantes e materiais produzidos — poderão subsidiar análises sobre:
+
+-   potencialidades e limites da pesquisa-ação no desenvolvimento de dashboards;
+-   condições que favorecem a adoção e sustentabilidade dos dashboards;
+-   relações entre letramento digital, participação e compreensão das visualizações;
+-   diferenças entre organizações em termos de apropriação do produto desenvolvido.
+
+A literatura recente sugere que, além do design técnico, fatores como treinamento, integração ao fluxo de trabalho, governança e sustentabilidade precisam ser considerados para que os dashboards permaneçam em uso [@Vornhagen2026].
+
+## Acompanhamento e Avaliação do Projeto Durante a Execução
+
+O acompanhamento do projeto será realizado pelo professor coordenador e pela equipe executora, em diálogo permanente com os estudantes e as organizações parceiras. Pretende-se estimular um ambiente democrático, colaborativo e reflexivo, no qual estudantes e comunidade possam opinar sobre o andamento das atividades, propor ajustes e contribuir para o redesenho contínuo do projeto.
+
+Os estudantes serão acompanhados semanalmente, por meio de frequência, participação, cumprimento das atividades planejadas e envolvimento nas etapas de estudo, desenvolvimento e interação com a comunidade. Além disso, serão realizados momentos periódicos de autoavaliação e avaliação coletiva, com discussão sobre dificuldades encontradas, aprendizagens construídas e propostas de aprimoramento.
+
+A avaliação do projeto considerará tanto a dimensão formativa quanto a dimensão social da extensão. Entre os aspectos a serem observados, destacam-se:
+
+-   participação dos estudantes nas atividades de formação e campo;
+-   número e perfil das organizações atendidas;
+-   número de oficinas e ações formativas realizadas;
+-   qualidade do processo participativo de desenvolvimento;
+-   pertinência dos indicadores e das visualizações produzidas;
+-   percepção de utilidade e usabilidade dos dashboards pelas organizações;
+-   potencial de adoção, continuidade e atualização dos produtos entregues;
+-   evidências de fortalecimento do letramento digital e em dados entre os participantes.
+
+Sempre que possível, as organizações parceiras também participarão da avaliação do projeto, oferecendo devolutivas sobre o processo, os protótipos e os produtos finais. Essa avaliação externa contribuirá para ajustar a proposta e fortalecer sua aderência às demandas locais.
+
+## Resultados Esperados e Disseminação dos Resultados
+
+Como resultados esperados, pretende-se alcançar:
+
+1.  o desenvolvimento de dashboards participativos para organizações do município, adequados a problemas concretos de monitoramento, gestão e comunicação de dados;
+
+2.  a formação de estudantes em ciência de dados aplicada, visualização, design participativo, letramento digital e comunicação pública da informação;
+
+3.  a ampliação da capacidade de organizações parceiras para compreender, interpretar e utilizar dados em seus processos de trabalho;
+
+4.  a produção de materiais didáticos, tutoriais, relatórios técnicos e protocolos de desenvolvimento participativo de dashboards;
+
+5.  o fortalecimento da integração entre extensão, ensino e pesquisa, com geração de experiências e conhecimento sobre desenvolvimento de visualizações em contexto local;
+
+6.  a sistematização de achados que possam subsidiar futuras ações extensionistas, projetos de pesquisa e iniciativas institucionais voltadas ao uso social dos dados.
+
+Quanto à disseminação dos resultados, pretende-se divulgar os produtos e aprendizados do projeto por meio de:
+
+-   apresentações públicas para as organizações e comunidades participantes;
+-   oficinas, minicursos e eventos de extensão;
+-   relatórios técnicos e materiais de apoio;
+-   resumos, artigos e relatos de experiência em eventos e periódicos acadêmicos;
+-   disponibilização, quando viável e eticamente adequada, de modelos reprodutíveis de dashboards e fluxos de trabalho em R.
+
+Espera-se, por fim, que o projeto contribua para consolidar uma cultura extensionista de coprodução de soluções orientadas por dados, em que a universidade atue como parceira na construção de capacidades locais, e não apenas como fornecedora de tecnologia.

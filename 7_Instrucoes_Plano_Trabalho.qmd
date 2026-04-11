@@ -1,0 +1,282 @@
+---
+title: "Instruções para Elaboração do Plano de Trabalho do Estudante"
+subtitle: "Chamada Interna nº 2/PROEX/UFR/2026"
+author: ""
+date: "2026-03-10"
+lang: pt
+format:
+  html:
+    toc: true
+    toc-depth: 2
+    number-sections: true
+    theme: cosmo
+    css: |
+      .callout-tip { background-color: #D6EAF8; border-left: 4px solid #2E5E86; }
+      .callout-warning { background-color: #FDEBD0; border-left: 4px solid #7D3C00; }
+  pdf:
+    toc: true
+    toc-depth: 2
+    number-sections: true
+    fontsize: 11pt
+    geometry:
+      - top=25mm
+      - bottom=25mm
+      - left=25mm
+      - right=25mm
+    header-includes: |
+      \usepackage{booktabs}
+      \usepackage{longtable}
+      \usepackage{colortbl}
+      \usepackage{xcolor}
+      \definecolor{azul}{HTML}{2E5E86}
+      \definecolor{azulclaro}{HTML}{EBF5FB}
+      \definecolor{cinza}{HTML}{F8F9FA}
+  docx:
+    toc: true
+    number-sections: true
+---
+
+::: {.text-center}
+Programa Institucional de Extensão: **UFR e Sociedade**
+
+_Ação de Extensão: [Nome da Ação — ex.: Ciência de Dados para a Sociedade]_
+
+Vigência: Abril/2026 a Março/2027
+:::
+
+---
+
+Este documento orienta a elaboração do **Plano de Trabalho do Estudante** (Anexo II do Edital PROEX nº 2/2026). O plano deve ter entre **3 e 6 páginas** e será avaliado como parte do processo de seleção para bolsas de iniciação à extensão.
+
+As instruções a seguir estão alinhadas com a metodologia dos templates (Fichas 1 a 6) que guiam o desenvolvimento de produtos de dados na ação de extensão. Use-as como referência para descrever com clareza o que você fará durante os 12 meses de bolsa.
+
+{{< pagebreak >}}
+
+# Visão geral do Plano de Trabalho
+
+O Plano de Trabalho é o documento que descreve, de forma objetiva e fundamentada, as atividades que você desenvolverá como bolsista de extensão durante 12 meses (abril/2026 a março/2027). Ele deve demonstrar que:
+
+- **Você compreende a ação de extensão** à qual está vinculado(a) e seu papel nela.
+- **As atividades são viáveis** dentro da carga horária (12 a 20h semanais) e do prazo.
+- **Há interação com a sociedade:** o trabalho envolve organizações reais, pessoas reais e problemas concretos.
+- **Os resultados são mensuráveis:** é possível avaliar se o plano foi cumprido.
+
+::: {.callout-warning}
+## Atenção
+O plano deve ser de sua autoria, elaborado sob orientação do(a) coordenador(a). Planos copiados ou genéricos serão eliminados (item 6.3.d do edital).
+:::
+
+# Estrutura do Plano (campos obrigatórios)
+
+Preencha todos os campos a seguir, conforme o modelo do Anexo II do edital. As seções abaixo correspondem exatamente aos campos exigidos.
+
+## Cabeçalho de Identificação
+
+Preencha os dados administrativos que identificam o vínculo entre você, a ação de extensão e o programa institucional:
+
+| Campo | Instrução |
+|---|---|
+| **Título da Ação de Extensão** | Nome exato da ação como registrado no SUAP. |
+| **Nº de Registro no SUAP** | Número do registro da ação no sistema SUAP. |
+| **Programa Institucional de Extensão** | Informe o programa: UFR e Sociedade, Sempre Viva ou Rede Gestão Cidadã. |
+| **Título do Plano de Trabalho** | Título específico do seu plano — deve ser diferente do título da ação. Ex.: "Desenvolvimento de painel de indicadores de saúde para a Secretaria Municipal de Saúde de Rondonópolis". |
+| **Nome do Estudante** | Seu nome completo. |
+| **Curso** | Seu curso de graduação. |
+| **Modalidade da Bolsa** | Marque: ( ) Ampla Concorrência ou ( ) Ações Afirmativas. |
+
+: Campos do cabeçalho de identificação {.striped}
+
+::: {.callout-tip}
+## Dica
+O título do plano de trabalho deve ser específico e indicar o que você vai fazer, para quem e com quais dados. Evite títulos genéricos como "Atividades de extensão em ciência de dados".
+:::
+
+## Justificativa
+
+A justificativa responde: **por que este plano é relevante?** Ela deve conectar três elementos:
+
+- **O contexto da organização parceira:** quem é, o que faz, quais desafios enfrenta com dados.
+- **A necessidade identificada:** qual problema ou oportunidade será abordada pelo seu trabalho.
+- **A contribuição do plano:** como suas atividades vão gerar valor para a organização e para a sua formação.
+
+Extensão recomendada: **½ a 1 página.**
+
+**Conexão com os templates da ação:**
+
+- Use a Ficha 1 (Ficha da Organização) como base para descrever o contexto e a viabilidade.
+- Se já houver um diagnóstico preliminar (Template 2 — Maturidade Analítica), cite os principais gargalos identificados.
+- Se a organização ainda não foi definida, descreva o perfil esperado e os critérios de seleção.
+
+::: {.callout-tip}
+## Dica
+Evite justificativas que falem apenas da importância genérica da ciência de dados. Foque no problema concreto: "A Secretaria de Assistência Social atende 3.200 famílias/mês e não possui indicadores consolidados de acompanhamento, gerando retrabalho na geração de relatórios para o SUAS".
+:::
+
+## Objetivo Geral e Específicos
+
+**Objetivo Geral:** uma frase que sintetiza o resultado final esperado do seu trabalho. Deve ser claro, alcançável e alinhado à ação de extensão.
+
+Exemplo: "Desenvolver um painel interativo de indicadores operacionais para apoiar a gestão de atendimentos na Secretaria Municipal de Saúde de Rondonópolis, utilizando dados administrativos do e-SUS.".
+
+**Objetivos Específicos:** desdobramentos do objetivo geral. Devem ser concretos e verificáveis. Recomendamos de 3 a 5 objetivos. Cada objetivo específico deve corresponder a um bloco de atividades no cronograma.
+
+Exemplos de objetivos específicos:
+
+- Mapear o fluxo de dados e as fontes de informação da organização parceira (Template 3).
+- Realizar entrevistas com gestores e operadores para identificar necessidades de informação (Template 4).
+- Definir indicadores-chave e o escopo do produto de dados (Template 5 — Canvas).
+- Desenvolver e validar um MVP de produto de dados com os usuários finais (Template 6).
+- Documentar o processo e elaborar material de apoio para a organização.
+
+::: {.callout-warning}
+## Atenção
+Objetivos devem começar com verbos no infinitivo (mapear, desenvolver, analisar, propor). Evite verbos vagos como "estudar" ou "compreender" — prefira verbos que indiquem entregas concretas.
+:::
+
+{{< pagebreak >}}
+
+## Metodologia (como você vai fazer)
+
+Descreva o caminho que você percorrerá para atingir os objetivos. A metodologia da ação de extensão segue um ciclo de seis etapas, cada uma associada a um template. Organize sua descrição seguindo esta lógica:
+
+| Etapa | Template | O que fazer | Período |
+|---|---|---|:---:|
+| **Etapa 1 — Seleção e Alinhamento** | Template 1: Ficha da Organização | Escolher (ou confirmar) a organização parceira, mapear stakeholders, verificar viabilidade e alinhar expectativas. | Abr |
+| **Etapa 2 — Diagnóstico** | Template 2: Maturidade Analítica / Template 3: Mapa de Fluxo de Dados | Avaliar como a organização coleta, armazena e usa dados. Mapear o ciclo do dado, identificar gargalos e oportunidades. | Mai |
+| **Etapa 3 — Entrevistas e Levantamento de Necessidades** | Template 4: Roteiro de Entrevistas | Conduzir entrevistas semiestruturadas com gestores, operadores e responsáveis por TI/dados. Construir a matriz de problemas e o backlog de necessidades. | Jun |
+| **Etapa 4 — Definição do Produto (Canvas)** | Template 5: Canvas do Produto de Dados | Priorizar o problema, definir o MVP, indicadores, escopo (o que entra e o que não entra), critérios de sucesso e riscos. | Jul |
+| **Etapa 5 — Desenvolvimento e Validação** | Template 6: Relatório Final (seções 4–6) | Construir o produto de dados (dashboard, relatório automatizado, etc.), preparar os dados, validar com usuários e iterar. | Ago–Jan |
+| **Etapa 6 — Entrega e Documentação** | Template 6: Relatório Final (seções 7–10) | Entregar o produto, elaborar manual rápido, documentar lições aprendidas e próximos passos. | Fev–Mar |
+
+: Etapas da metodologia e templates associados {.striped}
+
+**Além das etapas acima, inclua na metodologia:**
+
+- Ferramentas que pretende utilizar (R, Python, Excel, Power BI, Looker Studio, etc.).
+- Como será a interação com a organização (visitas presenciais, reuniões online, frequência).
+- Atividades complementares: participação em reuniões de equipe, oficinas, eventos, produção de materiais didáticos.
+
+::: {.callout-tip}
+## Dica
+Não é necessário ter a organização já definida no momento da inscrição. Nesse caso, descreva o perfil de organização buscada (setor, porte, tipo de problema), os critérios de seleção e como será feito o primeiro contato.
+:::
+
+## Cronograma de Atividades
+
+O cronograma deve cobrir os 12 meses de vigência da bolsa (Abril/2026 a Março/2027). Cada linha representa uma atividade; marque com "X" os meses em que ela será executada.
+
+**Modelo de referência** (adapte conforme seu plano):
+
+| Atividades | A | M | J | J | A | S | O | N | D | J | F | M |
+|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| 1. Seleção e alinhamento com a organização (T1) | X | | | | | | | | | | | |
+| 2. Diagnóstico de maturidade analítica (T2) | | X | | | | | | | | | | |
+| 3. Mapeamento do fluxo de dados (T3) | | X | | | | | | | | | | |
+| 4. Entrevistas e levantamento de necessidades (T4) | | | X | | | | | | | | | |
+| 5. Definição do Canvas do produto de dados (T5) | | | | X | | | | | | | | |
+| 6. Desenvolvimento do MVP | | | | | X | X | X | X | X | X | | |
+| 7. Validação com usuários e ajustes | | | | | | | X | X | X | X | | |
+| 8. Entrega, documentação e relatório final (T6) | | | | | | | | | | | X | X |
+| 9. Produção científica (resumo/artigo) | | | | | | | | X | X | X | X | X |
+| 10. Participação em eventos de extensão | | | | | | X | X | X | X | X | X | |
+
+: Cronograma de atividades — modelo de referência {.striped}
+
+**Observações importantes sobre o cronograma:**
+
+- As referências "(T1)", "(T2)" etc. indicam qual template orienta aquela etapa.
+- Atividades podem se sobrepor — o diagnóstico e o mapeamento de dados normalmente ocorrem em paralelo.
+- Inclua a atividade de produção científica: o edital exige apresentação de resultados em eventos (item 10.3 e 14.3).
+- O relatório final do bolsista (Anexo IV) deve ser inserido no SUAP até 30/03/2027.
+
+## Referências
+
+Inclua as referências bibliográficas que fundamentam seu plano. Podem incluir:
+
+- Referências sobre ciência de dados, análise de dados, produtos de dados.
+- Documentos da organização parceira (planos, relatórios públicos, legislação).
+- Referências sobre extensão universitária e metodologias participativas.
+- Publicações anteriores da ação de extensão (Cerrado Data Science, Saúde Data Science, etc.).
+
+::: {.callout-tip}
+## Dica
+Formate as referências seguindo as normas da ABNT (NBR 6023). Não é necessário um grande número — 5 a 10 referências bem escolhidas são suficientes.
+:::
+
+{{< pagebreak >}}
+
+# Checklist antes de enviar
+
+Antes de gerar o PDF e anexar ao processo SEI, verifique:
+
+| ✓ | Item |
+|:---:|---|
+| ☐ | O plano tem entre 3 e 6 páginas. |
+| ☐ | Todos os campos do cabeçalho estão preenchidos corretamente. |
+| ☐ | O título do plano é específico (diferente do título da ação). |
+| ☐ | A justificativa conecta o problema da organização com as atividades propostas. |
+| ☐ | Os objetivos são claros, concretos e começam com verbos no infinitivo. |
+| ☐ | A metodologia descreve as etapas, ferramentas e formas de interação. |
+| ☐ | O cronograma cobre os 12 meses e inclui produção científica e eventos. |
+| ☐ | As referências estão formatadas (ABNT). |
+| ☐ | O plano foi revisado pelo(a) coordenador(a). |
+| ☐ | O arquivo está em formato PDF. |
+
+: Checklist de verificação pré-envio
+
+# Prazos e procedimentos de inscrição
+
+Conforme o cronograma do edital:
+
+| Etapa | Data | Como/Onde |
+|---|---|---|
+| **Inscrições** | 05 a 16/03/2026 | Via processo SEI |
+| **Lista preliminar de inscritos** | 23/03/2026 | Publicada no site da PROEX |
+| **Recursos à lista de inscritos** | 24–25/03/2026 (até 13h) | Via SEI |
+| **Resultado preliminar** | 06/04/2026 | Publicado no SEI/UFR |
+| **Recursos ao resultado** | 07–08/04/2026 (até 13h) | Via SEI |
+| **Resultado final** | 09/04/2026 | Publicado no SEI/UFR |
+| **Envio do Termo de Compromisso** | Até 10/04/2026 | Via SEI |
+| **Relatório final do bolsista** | Até 30/03/2027 | SUAP/UFR |
+
+: Cronograma do edital {.striped}
+
+**Documentação necessária no processo SEI:**
+
+- PDF da ação de extensão em execução no SUAP.
+- Plano de Trabalho do Estudante em PDF (este documento, após preenchido).
+- Currículo Lattes do coordenador e do estudante (PDF, atualizado nos últimos 6 meses).
+- Tabela de Pontuação do Currículo (Anexo III), preenchida separadamente por coordenador e estudante.
+- Histórico Escolar atualizado (solicitar na DRCA/PROEG).
+- Se Ações Afirmativas: declaração da DAE/PRAE ou histórico comprovando ingresso por AA.
+
+{{< pagebreak >}}
+
+# Exemplo comentado (trecho)
+
+A seguir, um exemplo parcial para ilustrar o nível de detalhamento esperado.
+
+::: {.callout-note appearance="minimal"}
+
+**Título do Plano de Trabalho:** Desenvolvimento de painel de monitoramento do Programa Bolsa Família para a Secretaria de Assistência Social de Rondonópolis
+
+**Justificativa (trecho):**
+
+*A Secretaria Municipal de Assistência Social de Rondonópolis atende mensalmente cerca de 3.200 famílias beneficiárias do Programa Bolsa Família. Atualmente, o acompanhamento dessas famílias é feito por meio de planilhas manuais, sem integração com os dados do CadÚnico e do Sistema de Condicionalidades (Sicon). Isso gera retrabalho na consolidação mensal de relatórios e dificulta a identificação de famílias em situação de descumprimento de condicionalidades. O presente plano propõe o desenvolvimento de um painel interativo que integre essas fontes de dados, permitindo à equipe de gestão visualizar indicadores-chave em tempo hábil para a tomada de decisão.*
+
+**Objetivo Geral (trecho):**
+
+*Desenvolver e validar um painel de indicadores operacionais do Programa Bolsa Família, integrando dados do CadÚnico e do Sicon, para apoiar a gestão de condicionalidades pela Secretaria de Assistência Social de Rondonópolis.*
+
+:::
+
+::: {.callout-warning}
+## Atenção
+Este é apenas um exemplo ilustrativo. Seu plano deve refletir o contexto real da organização e da ação de extensão à qual você está vinculado(a).
+:::
+
+# Em caso de dúvidas
+
+- Sobre o plano de trabalho e a ação de extensão: procure o(a) coordenador(a) da ação.
+- Sobre o edital e o processo SEI: [dpe.proex@ufr.edu.br](mailto:dpe.proex@ufr.edu.br) (Diretoria de Políticas de Extensão).
+- Sobre os templates (Fichas 1–6): consulte os arquivos `.qmd` disponibilizados junto à ação de extensão.
