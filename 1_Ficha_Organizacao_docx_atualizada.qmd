@@ -1,0 +1,69 @@
+---
+title: "Template 1 — Ficha da Organização"
+subtitle: "Seleção, viabilidade e alinhamento inicial"
+lang: pt
+date: "2026-03-06"
+format:
+  docx:
+    toc: false
+    number-sections: false
+---
+
+## Introdução
+
+A **Ficha da Organização** é um documento curto (idealmente 1–2 páginas) que registra, de forma padronizada, **quem é a organização escolhida**, **quem são os principais atores** (ponto focal e stakeholders) e **quais condições mínimas existem** para realizar um projeto de dados (entrevistas, acesso a informações, limites e confidencialidade).
+
+Ela serve para **evitar retrabalho e desalinhamentos**: ao final desta ficha, você deve conseguir responder com clareza *“o projeto é viável?”* e *“o que exatamente está combinado?”*. A ficha também funciona como base para as próximas etapas (maturidade analítica, mapa do fluxo de dados, entrevistas, definição do problema e construção do produto).
+
+## Identificação
+
+- **Aluno(a)/Grupo:** [preencher]
+- **Curso/Disciplina/Projeto:** [preencher]
+- **Organização:** [nome]
+- **Setor:** [público / privado / ONG / outro]
+- **Cidade/UF:** [preencher]
+- **Ponto focal (contato):** [nome / cargo / e-mail / telefone]
+- **Data do primeiro contato:** [dd/mm/aaaa]
+
+## Contexto e missão (resumo)
+
+Descreva em 5–10 linhas o que a organização faz, quem atende e quais processos são centrais.
+
+## Problema/necessidade percebida que pode ser abordado pela construção do dashboard (hipótese inicial)
+
+A organização usa ou gostaria de usar indicadores para a tomada de decisão?
+
+## Viabilidade (checklist)
+
+Marque e explique brevemente.
+
+- [ ] **Acesso a pelo menos 3 entrevistas** (operação + gestão + apoio/ti se existir)
+- [ ] **Existem dados disponíveis** (planilhas/sistema/formulários/relatórios)
+- [ ] **Existem dados abertos que a organização tem interesse em usar para tomar decisões**
+- [ ] **Risco de LGPD/sensibilidade é gerenciável** (sem dados pessoais desnecessários)
+- [ ] **Organização aceita receber a ação do projeto** (carta de anuência)
+
+### Restrições e limites de acesso
+
+- **O que NÃO pode ser acessado:** [preencher]
+- **Formato provável dos dados:** [xlsx/csv/sistema/relatórios]
+- **Frequência de atualização:** [diária/semanal/mensal/eventual]
+- **Regras de confidencialidade:** [preencher]
+
+## Stakeholders (quem usa/decide/alimenta)
+
+| Pessoa/Área | Papel no processo | Usa dados para quê? | Decide o quê? | Disponibilidade para entrevista? |
+|---|---|---|---|---|
+| [ ] | [ ] | [ ] | [ ] | [ ] |
+| [ ] | [ ] | [ ] | [ ] | [ ] |
+| [ ] | [ ] | [ ] | [ ] | [ ] |
+
+## Termo de alinhamento (resumo)
+
+Escreva um mini-acordo (pode ser colado no e-mail/WhatsApp do ponto focal). A ideia aqui é dar uma devolutiva para a empresa, para que ela saiba o que será realizado.
+
+- **Objetivo do projeto:** [preencher]
+- **Entregável esperado:** [dashboard]
+- **Prazo previsto:** [preencher]
+- **Dados e entrevistas:** [o que será solicitado]
+- **Confidencialidade:** [como será garantida]
