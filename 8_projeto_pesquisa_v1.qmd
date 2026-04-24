@@ -1,0 +1,84 @@
+---
+title: "Desenvolvimento e Avaliação de Dashboards para Apoio à Gestão em Saúde Mental: uma abordagem de Action Design Research em um CAPSij"
+author: "Djalma Barbosa"
+format: html
+lang: pt-BR
+---
+
+# Resumo
+
+Este projeto de pesquisa tem como objetivo desenvolver, implementar e avaliar dashboards interativos para apoio à gestão em um Centro de Atenção Psicossocial Infantojuvenil (CAPSij), utilizando a abordagem de Action Design Research (ADR). A proposta deriva de um projeto de extensão previamente desenvolvido, ampliando seu escopo para investigação científica sistemática. A pesquisa articula Business Intelligence, saúde pública e design participativo, estruturando ciclos iterativos de construção, intervenção e avaliação do artefato tecnológico em contexto real. Espera-se produzir contribuições científicas, tecnológicas e sociais, fortalecendo a gestão baseada em evidências no Sistema Único de Saúde (SUS).
+
+# Introdução
+
+A crescente produção de dados nos serviços de saúde não tem sido acompanhada por sua utilização efetiva na gestão. No contexto dos CAPSij, essa lacuna se manifesta na dificuldade de transformar dados em informações úteis para tomada de decisão.
+
+Dashboards interativos surgem como ferramentas promissoras, mas sua efetividade depende da adequação ao contexto organizacional e da participação dos usuários no processo de desenvolvimento.
+
+Este projeto deriva de uma experiência extensionista prévia, na qual foi possível observar o potencial da cocriação de dashboards, bem como a necessidade de sistematização científica desse processo.
+
+# Justificativa
+
+A proposta apresenta relevância:
+
+- **Social:** fortalecimento da gestão em saúde mental
+- **Científica:** avanço no campo de dashboards em saúde
+- **Tecnológica:** desenvolvimento de solução replicável
+
+Além disso, contribui para inovação, desenvolvimento regional e integração universidade-serviço.
+
+# Fundamentação Teórica
+
+A literatura sobre dashboards indica que sua efetividade depende de fatores técnicos e organizacionais.
+
+A abordagem de Action Design Research (ADR) integra desenvolvimento tecnológico e intervenção prática, sendo adequada para contextos aplicados como serviços de saúde.
+
+# Objetivo Geral
+
+Desenvolver e avaliar dashboards para apoio à gestão em um CAPSij utilizando ADR.
+
+# Objetivos Específicos
+
+- Identificar necessidades informacionais
+- Desenvolver dashboards iterativamente
+- Implementar no contexto real
+- Avaliar uso e impacto
+- Produzir conhecimento científico
+
+# Metodologia
+
+A pesquisa seguirá a abordagem ADR:
+
+## Etapa 1: Problema
+Levantamento de necessidades via entrevistas e análise documental.
+
+## Etapa 2: Construção
+Desenvolvimento iterativo com validação contínua.
+
+## Etapa 3: Reflexão
+Análise dos ciclos.
+
+## Etapa 4: Formalização
+Produção científica.
+
+Tipo: pesquisa aplicada, qualitativa e quantitativa.
+
+# Acompanhamento
+
+Monitoramento contínuo com indicadores de uso e reuniões periódicas.
+
+# Cronograma
+
+Meta 1 (0-12 meses): diagnóstico e prototipagem  
+Meta 2 (12-24 meses): implementação e avaliação  
+
+# Resultados Esperados
+
+- Dashboard funcional
+- Melhoria na gestão
+- Produção científica
+- Formação de estudantes
+
+# Referências
+
+(A inserir)
