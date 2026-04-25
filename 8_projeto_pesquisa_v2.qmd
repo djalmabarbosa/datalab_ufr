@@ -30,9 +30,9 @@ Dashboards interativos têm sido apontados como instrumentos promissores para pr
 
 Diante desse cenário, este projeto formula as seguintes perguntas de pesquisa:
 
-1. Quais são as necessidades informacionais dos gestores e equipes de um CAPSij e como um dashboard pode respondê-las de forma pertinente e utilizável?
-2. Como o processo iterativo e participativo de desenvolvimento, característico da ADR, condiciona a utilidade, usabilidade e adoção do dashboard em contexto real?
-3. Quais princípios de design emergem da experiência de desenvolvimento de dashboards para gestão em saúde mental no SUS e podem ser transferidos para outros contextos similares?
+1.  Quais são as necessidades informacionais dos gestores e equipes de um CAPSij e como um dashboard pode respondê-las de forma pertinente e utilizável?
+2.  Como o processo iterativo e participativo de desenvolvimento, característico da ADR, condiciona a utilidade, usabilidade e adoção do dashboard em contexto real?
+3.  Quais princípios de design emergem da experiência de desenvolvimento de dashboards para gestão em saúde mental no SUS e podem ser transferidos para outros contextos similares?
 
 A hipótese central do projeto é que dashboards desenvolvidos por meio de ciclos iterativos e participativos, com envolvimento direto dos usuários finais e atenção às condições organizacionais de cada etapa, apresentam maior pertinência, usabilidade e continuidade de uso do que aqueles produzidos de forma técnica e centralizada.
 
@@ -66,13 +66,13 @@ A *Action Design Research* (ADR), proposta por Sein et al. [-@Sein2011], é uma 
 
 A ADR organiza-se em quatro etapas interdependentes [@Sein2011]:
 
-1. **Formulação do Problema** (*Problem Formulation*): articulação entre o problema prático da organização e o problema científico, definindo as questões de pesquisa e o contexto de intervenção;
+1.  **Formulação do Problema** (*Problem Formulation*): articulação entre o problema prático da organização e o problema científico, definindo as questões de pesquisa e o contexto de intervenção;
 
-2. **Construção, Intervenção e Avaliação** (*Building, Intervention and Evaluation* — BIE): ciclos iterativos de desenvolvimento do artefato em contexto real, com avaliação contínua e refinamento baseado no uso e no feedback dos usuários;
+2.  **Construção, Intervenção e Avaliação** (*Building, Intervention and Evaluation* — BIE): ciclos iterativos de desenvolvimento do artefato em contexto real, com avaliação contínua e refinamento baseado no uso e no feedback dos usuários;
 
-3. **Reflexão e Aprendizagem** (*Reflection and Learning*): análise sistemática dos ciclos de BIE para identificar o que funcionou, o que falhou e por quê, gerando insights que retroalimentam o desenvolvimento e a teoria;
+3.  **Reflexão e Aprendizagem** (*Reflection and Learning*): análise sistemática dos ciclos de BIE para identificar o que funcionou, o que falhou e por quê, gerando insights que retroalimentam o desenvolvimento e a teoria;
 
-4. **Formalização da Aprendizagem** (*Formalization of Learning*): produção de princípios de design e contribuições teóricas transferíveis, conectando os resultados do projeto ao acervo mais amplo do campo científico.
+4.  **Formalização da Aprendizagem** (*Formalization of Learning*): produção de princípios de design e contribuições teóricas transferíveis, conectando os resultados do projeto ao acervo mais amplo do campo científico.
 
 Vornhagen et al. [-@Vornhagen2025] aplicaram a ADR para desenvolver o CARA Dashboard, um sistema de monitoramento de pacientes em contexto hospitalar, demonstrando que a abordagem é não apenas viável em ambientes de saúde, mas especialmente produtiva para gerar princípios de design que articulam aspectos técnicos e organizacionais. Esse estudo constitui uma referência metodológica central para o presente projeto.
 
@@ -116,15 +116,7 @@ Desenvolver, implementar e avaliar dashboards interativos para apoio à gestão 
 
 **Objetivo 1.5:** Implementar uma versão piloto do dashboard no contexto real do serviço, acompanhando os primeiros ciclos de uso e coletando dados sobre dificuldades, ajustes necessários e percepção de utilidade.
 
-**Atividades previstas:**
-- Pactuação formal com o CAPSij e aprovação pelo Comitê de Ética em Pesquisa
-- Entrevistas semiestruturadas com gestores e profissionais (n estimado: 8–12)
-- Análise documental dos sistemas de informação e relatórios internos
-- Oficinas de cocriação de indicadores (2 a 3 encontros)
-- Ciclos de prototipagem em R (mínimo 3 iterações antes da versão piloto)
-- Sessões de validação com usuários (think-aloud, análise de usabilidade)
-- Implementação e acompanhamento inicial do dashboard piloto
-- Elaboração do relatório parcial de pesquisa
+**Atividades previstas:** - Pactuação formal com o CAPSij e aprovação pelo Comitê de Ética em Pesquisa - Entrevistas semiestruturadas com gestores e profissionais (n estimado: 8–12) - Análise documental dos sistemas de informação e relatórios internos - Oficinas de cocriação de indicadores (2 a 3 encontros) - Ciclos de prototipagem em R (mínimo 3 iterações antes da versão piloto) - Sessões de validação com usuários (think-aloud, análise de usabilidade) - Implementação e acompanhamento inicial do dashboard piloto - Elaboração do relatório parcial de pesquisa
 
 ## Meta 2 — Avaliação, Reflexão e Formalização do Conhecimento (meses 13–24)
 
@@ -138,15 +130,7 @@ Desenvolver, implementar e avaliar dashboards interativos para apoio à gestão 
 
 **Objetivo 2.5:** Disseminar os resultados da pesquisa em produções científicas e técnicas, incluindo artigo em periódico qualificado, apresentação em evento da área e disponibilização do modelo de dashboard como repositório reprodutível.
 
-**Atividades previstas:**
-- Coleta sistemática de dados de uso do dashboard (logs, registros de acesso, diário de campo)
-- Entrevistas de avaliação com usuários ao final do período piloto
-- Análise temática dos dados qualitativos (software Atlas.ti ou similar)
-- Workshops de reflexão com a equipe do CAPSij (análise coletiva dos resultados)
-- Redação dos princípios de design consolidados
-- Elaboração de artigo científico para periódico Qualis A2 ou superior
-- Elaboração do relatório final de pesquisa
-- Disponibilização do repositório de código e dashboard no GitHub
+**Atividades previstas:** - Coleta sistemática de dados de uso do dashboard (logs, registros de acesso, diário de campo) - Entrevistas de avaliação com usuários ao final do período piloto - Análise temática dos dados qualitativos (software Atlas.ti ou similar) - Workshops de reflexão com a equipe do CAPSij (análise coletiva dos resultados) - Redação dos princípios de design consolidados - Elaboração de artigo científico para periódico Qualis A2 ou superior - Elaboração do relatório final de pesquisa - Disponibilização do repositório de código e dashboard no GitHub
 
 # Metodologia
 
@@ -162,9 +146,9 @@ A escolha da ADR como abordagem central justifica-se pela natureza do problema i
 
 A formulação do problema articula o problema prático — gestão informacional deficiente no CAPSij — com o problema científico — lacuna de conhecimento sobre princípios de design e condições de adoção de dashboards em saúde mental no SUS. Nesta etapa serão realizadas:
 
-- **Entrevistas semiestruturadas** com gestores e profissionais do CAPSij para mapeamento de necessidades informacionais, perguntas prioritárias de gestão, processos de trabalho e cultura organizacional em relação ao uso de dados;
-- **Análise documental** dos sistemas de informação (e-SUS, SISAB, RAAS), relatórios de gestão, atas de reuniões e instrumentos internos de controle;
-- **Avaliação de maturidade analítica** do serviço, adaptando instrumentos disponíveis na literatura para o contexto dos CAPS.
+-   **Entrevistas semiestruturadas** com gestores e profissionais do CAPSij para mapeamento de necessidades informacionais, perguntas prioritárias de gestão, processos de trabalho e cultura organizacional em relação ao uso de dados;
+-   **Análise documental** dos sistemas de informação (e-SUS, SISAB, RAAS), relatórios de gestão, atas de reuniões e instrumentos internos de controle;
+-   **Avaliação de maturidade analítica** do serviço, adaptando instrumentos disponíveis na literatura para o contexto dos CAPS.
 
 O produto desta etapa é um documento de diagnóstico participativo que orienta os ciclos de desenvolvimento subsequentes.
 
@@ -174,11 +158,7 @@ Esta etapa é o núcleo metodológico da ADR e se organiza em ciclos iterativos 
 
 Os dashboards serão desenvolvidos na linguagem **R**, com recursos como `shiny`, `flexdashboard`, `ggplot2`, `plotly` e `DT`, garantindo reprodutibilidade, baixo custo de manutenção e possibilidade de replicação em outros serviços. O processo de desenvolvimento seguirá princípios de design participativo: os usuários serão envolvidos não apenas na validação de protótipos, mas na definição de indicadores, na escolha de visualizações e na priorização de funcionalidades.
 
-A avaliação dos protótipos utilizará combinação de métodos:
-- **Avaliação heurística** aplicada pelo pesquisador com base nas heurísticas de Nielsen e nos princípios de design de dashboards [@Rabiei2024];
-- **Testes de usabilidade** com usuários (*think-aloud protocol*), identificando dificuldades de navegação, compreensão e interpretação;
-- **Entrevistas de feedback** após cada ciclo, coletando percepções sobre utilidade, relevância dos indicadores e barreiras de uso;
-- **Observação participante** durante reuniões de equipe e momentos de uso do dashboard, registrada em diário de campo.
+A avaliação dos protótipos utilizará combinação de métodos: - **Avaliação heurística** aplicada pelo pesquisador com base nas heurísticas de Nielsen e nos princípios de design de dashboards [@Rabiei2024]; - **Testes de usabilidade** com usuários (*think-aloud protocol*), identificando dificuldades de navegação, compreensão e interpretação; - **Entrevistas de feedback** após cada ciclo, coletando percepções sobre utilidade, relevância dos indicadores e barreiras de uso; - **Observação participante** durante reuniões de equipe e momentos de uso do dashboard, registrada em diário de campo.
 
 ### Etapa 3 — Reflexão e Aprendizagem (meses 18–22)
 
@@ -202,17 +182,9 @@ O projeto será submetido ao Comitê de Ética em Pesquisa (CEP) da UFR antes do
 
 O acompanhamento do projeto será realizado de forma contínua, com procedimentos estruturados para cada etapa do ciclo ADR.
 
-**Indicadores de processo** serão monitorados mensalmente:
-- Número de encontros realizados com a equipe do CAPSij e taxa de participação
-- Versões do dashboard desenvolvidas e ciclos de feedback concluídos
-- Horas dedicadas ao projeto por cada membro da equipe (registradas em diário de atividades)
-- Produção acadêmica em andamento (rascunhos, submissões, apresentações)
+**Indicadores de processo** serão monitorados mensalmente: - Número de encontros realizados com a equipe do CAPSij e taxa de participação - Versões do dashboard desenvolvidas e ciclos de feedback concluídos - Horas dedicadas ao projeto por cada membro da equipe (registradas em diário de atividades) - Produção acadêmica em andamento (rascunhos, submissões, apresentações)
 
-**Indicadores de resultado** serão avaliados ao final de cada meta:
-- Qualidade do diagnóstico participativo (avaliada por instrumento específico com a equipe do CAPSij)
-- Percepção de utilidade e usabilidade do dashboard (escala padronizada, ex.: System Usability Scale — SUS)
-- Frequência e padrão de uso do dashboard durante o período piloto
-- Qualidade das contribuições científicas produzidas (adequação a periódicos-alvo)
+**Indicadores de resultado** serão avaliados ao final de cada meta: - Qualidade do diagnóstico participativo (avaliada por instrumento específico com a equipe do CAPSij) - Percepção de utilidade e usabilidade do dashboard (escala padronizada, ex.: System Usability Scale — SUS) - Frequência e padrão de uso do dashboard durante o período piloto - Qualidade das contribuições científicas produzidas (adequação a periódicos-alvo)
 
 As reuniões de equipe serão quinzenais nos primeiros seis meses e mensais nos meses subsequentes. O orientador e o estudante bolsista (ou voluntário) produzirão relatórios reflexivos trimestrais, documentando aprendizagens, dificuldades e ajustes no planejamento. O relatório parcial será submetido à PROPGP ao final do mês 12, conforme previsto na Instrução Normativa PROPGP/UFR Nº 13/2025.
 

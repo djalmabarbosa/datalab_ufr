@@ -1,0 +1,262 @@
+---
+title: "Desenvolvimento Participativo de Dashboards para Apoio à Gestão em Saúde Mental: uma pesquisa de Action Design Research em um CAPSij"
+author: "Djalma Barbosa"
+date: "2026-04-24"
+lang: pt-BR
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    theme: cosmo
+    df-print: paged
+editor: visual
+bibliography: referencias_dashboards_extensao_atualizadas_v4.bib
+reference-section-title: "Referências Bibliográficas"
+link-citations: true
+---
+
+# Resumo
+
+Este projeto de pesquisa propõe desenvolver, implementar e avaliar dashboards interativos para apoio à gestão do Centro de Atenção Psicossocial Infantojuvenil (CAPSij) do município de Rondonópolis-MT. O problema investigado decorre da dificuldade de transformar dados assistenciais e administrativos em informação acionável para planejamento, monitoramento e tomada de decisão em serviços de saúde mental. A fundamentação teórica articula três eixos: *Action Design Research* (ADR), dashboards em saúde e gestão baseada em evidências no SUS, com ênfase em design participativo, adoção tecnológica e letramento em dados. O objetivo geral é produzir um artefato tecnológico funcional e, simultaneamente, conhecimento científico sobre o processo de desenvolvimento participativo e os princípios de design transferíveis para contextos similares. Metodologicamente, o estudo adota natureza aplicada, abordagem qualitativa com apoio de dados quantitativos e organização em dois ciclos de doze meses, envolvendo diagnóstico participativo, mapeamento e qualificação dos dados, prototipagem iterativa em R, implementação piloto e avaliação sistemática de utilidade, usabilidade e adoção. O acompanhamento do projeto ocorrerá por metas anuais, reuniões periódicas, indicadores de processo e resultado, relatórios parcial e final e avaliação conjunta com a equipe parceira. Espera-se entregar um dashboard reprodutível, uma produção técnica documentada, publicações científicas, formação de estudantes da graduação da UFR e contribuição concreta para o fortalecimento da gestão em saúde mental no território. O projeto alinha-se aos objetivos do edital, ao desenvolvimento regional e aos ODS 3 e 17.
+
+# Introdução
+
+Os Centros de Atenção Psicossocial (CAPS) são serviços estratégicos da Rede de Atenção Psicossocial (RAPS) do Sistema Único de Saúde (SUS), criados para oferecer cuidado territorializado e comunitário a pessoas com transtornos mentais graves e, no caso específico dos CAPSij, a crianças e adolescentes com sofrimento psíquico e necessidades em saúde mental [@Brasil2001; @Brasil2002; @Brasil2011]. Esses serviços registram rotineiramente informações sobre atendimentos, procedimentos, usuários e fluxos de cuidado em sistemas como o e-SUS Atenção Especializada, o Registro das Ações Ambulatoriais de Saúde (RAAS) e, em nível municipal, o G-MUS, gerando bases de dados com potencial informativo considerável para a gestão local.
+
+Apesar do volume de dados disponíveis aos gestores de saúde, a transformação em informação útil para planejamento, monitoramento e tomada de decisão permanece um desafio recorrente [@DasguptaKapadia2022; @Dixon2022; @Antunes2021]. Gestores e equipes técnicas frequentemente relatam dificuldades para acessar, interpretar e utilizar os dados produzidos no cotidiano dos serviços [@Ghanaatjoo2024; @Vornhagen2026; @Lima2015]. Além disso, os relatórios padronizados gerados pelo governo federal nem sempre respondem às perguntas locais mais relevantes para o município, reflexo de uma tensão estrutural entre os sistemas de informação voltados ao controle federal e as necessidades gerenciais dos serviços de base [@Paim2011; @OliveiraJunior2023]. Na ponta, os gestores acabam tendo que analisar planilhas de controle interno pouco ágeis e dificilmente atualizáveis. Assim, a ausência de ferramentas analíticas adequadas ao contexto limita a capacidade dos serviços de identificar tendências, monitorar indicadores e subsidiara decisões com base em evidências [@Concannon2019; @ThorpeGourevitch2022; @Chaves2023].
+
+Dashboards interativos têm sido apontados como instrumentos promissores para preencher essa lacuna, especialmente quando desenvolvidos de forma participativa e alinhada às necessidades reais dos usuários [@Rabiei2024; @Vornhagen2026]. No entanto, a literatura indica que dashboards desenvolvidos sem envolvimento dos usuários, sem atenção à qualidade dos dados e sem integração às rotinas organizacionais tendem a ser subutilizados ou abandonados [@Vornhagen2026; @Baan2023]. Esse problema é especialmente relevante em contextos de saúde coletiva no Brasil, onde recursos são limitados, a rotatividade é elevada, os fluxos informacionais são complexos e a cultura organizacional em relação ao uso de dados ainda está em construção.
+
+Diante desse cenário, este projeto formula as seguintes perguntas de pesquisa:
+
+1.  Quais são as necessidades informacionais dos gestores e equipes de um CAPSij e como um dashboard pode respondê-las de forma pertinente e utilizável?
+2.  Como o processo iterativo e participativo de desenvolvimento condiciona a utilidade, usabilidade e adoção do dashboard em contexto real?
+3.  Quais princípios de design emergem da experiência de desenvolvimento de dashboards para gestão em saúde mental no SUS e podem ser transferidos para outros contextos similares?
+
+A hipótese central do projeto é que dashboards desenvolvidos por meio de ciclos iterativos e participativos, com envolvimento direto dos usuários finais e atenção às condições organizacionais de cada etapa, apresentam maior pertinência, usabilidade e continuidade de uso do que aqueles produzidos de forma técnica e centralizada.
+
+# Justificativa
+
+## Relevância social e regional
+
+A saúde mental infantojuvenil representa um dos campos mais desafiadores da saúde coletiva brasileira. Dados nacionais indicam que entre 10% e 20% de crianças e adolescentes apresentam algum transtorno mental clinicamente diagnosticável, com impactos sobre o desenvolvimento, a escolarização e a vida social [@WHO2021]. Os CAPSij constituem a principal porta de entrada da RAPS para esse público, sendo responsáveis não apenas pelo atendimento clínico, mas pelo planejamento das ações territoriais, articulação intersetorial e monitoramento dos resultados. A disponibilidade de ferramentas analíticas adequadas a esses serviços é, portanto, uma questão de equidade e de qualidade do cuidado.
+
+No âmbito regional, o município de Rondonópolis conta com um CAPSij que enfrenta os mesmos desafios descritos na literatura nacional: dados fragmentados, relatórios com baixo poder explicativo para a gestão local e limitada cultura analítica entre os profissionais. A parceria proposta entre a UFR e esse serviço representa uma oportunidade concreta de contribuir para o fortalecimento da gestão baseada em evidências no território, com impacto acadêmico e social direto sobre a qualificação dos serviços públicos, a formação discente e a aproximação entre universidade e rede municipal de saúde.
+
+## Relevância científica e originalidade
+
+Do ponto de vista científico, a pesquisa é inédita em seu escopo local e contribui para lacunas identificadas na literatura. Revisões recentes sobre dashboards em saúde indicam que há escassez de estudos que articulem, em um mesmo delineamento, o processo de desenvolvimento participativo, a avaliação de uso em contexto real e a produção de princípios de design transferíveis [@Rabiei2024; @Vornhagen2025]. Estudos sobre saúde mental no SUS raramente exploram ferramentas de Business Intelligence (BI) ou visualização de dados como objeto de investigação.
+
+A adoção de uma abordagem metodológica consolidada, que será explicada adiante, responde a uma demanda crescente por pesquisas que combinem rigor científico e relevância prática, superando a dicotomia entre pesquisa básica e pesquisa aplicada [@Sein2011]. Ao integrar desenvolvimento tecnológico, intervenção organizacional e produção de conhecimento científico em um único delineamento, a ADR é especialmente adequada para projetos situados na interface entre tecnologia, saúde e gestão pública. Nesse sentido, o projeto apresenta potencial de geração de produção técnica e tecnológica, com possibilidade de futura proteção intelectual do artefato ou de seus desdobramentos metodológicos, caso surjam resultados passíveis de registro.
+
+## Viabilidade e continuidade
+
+O projeto é viável porque deriva de experiência extensionista prévia do proponente com desenvolvimento participativo de dashboards para organizações do município, acumulando expertise metodológica e relações institucionais relevantes. A parceria com o CAPSij já foi objeto de conversas preliminares e há interesse manifesto da gestão do serviço. A infraestrutura tecnológica necessária (linguagem R, pacotes de código aberto) é de baixo custo e já integra as competências do grupo de pesquisa, o que torna exequível a realização mesmo sem financiamento externo direto, mediante uso de recursos institucionais e próprios previstos no edital. O projeto constitui, portanto, uma continuidade sistematizada e científica de ações extensionistas anteriores, ampliando seu escopo investigativo e convertendo experiência acumulada em pesquisa aplicada, produção técnica e formação de novos pesquisadores.
+
+## Alinhamento institucional e com os ODS
+
+O projeto se alinha aos objetivos do edital ao integrar pesquisa científica com demandas da sociedade, promover desenvolvimento regional, fortalecer grupo de pesquisa certificado na UFR e ampliar a formação de pesquisadores. Dialoga com as diretrizes institucionais de compromisso social, inovação e desenvolvimento sustentável ao atuar junto a um serviço público estratégico que atende crianças, adolescentes e famílias em situação de vulnerabilidade. Contribui para os ODS 3 (Saúde e Bem-Estar) ao apoiar a melhoria da gestão em saúde mental, e para o ODS 17 (Parcerias para os Objetivos) ao articular universidade, serviço público e comunidade em torno de uma agenda comum. Também fortalece a inserção da pesquisa da UFR em redes interinstitucionais e produz conhecimento aplicado aderente à realidade brasileira e às necessidades do território.
+
+# Fundamentação Teórica
+
+## Action Design Research (ADR)
+
+A *Action Design Research* (ADR), proposta por Sein et al. [-@Sein2011], é uma abordagem metodológica voltada à investigação de problemas organizacionais cuja solução exige, ao mesmo tempo, intervenção prática e construção de artefatos tecnológicos. Seu pressuposto central é que, em contextos complexos, o conhecimento científico mais relevante não emerge apenas da observação externa da realidade, mas do processo reflexivo de projetar, implementar, testar e reformular artefatos em uso real. Em outras palavras, a ADR parte da ideia de que o artefato não é apenas um produto final da pesquisa, mas o principal mediador entre problema empírico, aprendizagem organizacional e contribuição teórica.
+
+Essa característica torna a ADR especialmente pertinente para o presente projeto. O problema investigado no CAPSij não pode ser resolvido apenas por diagnóstico descritivo nem apenas por desenvolvimento técnico isolado, porque envolve simultaneamente necessidades informacionais, limitações de qualidade dos dados, rotinas de trabalho, cultura institucional e capacidade analítica dos usuários. Assim, o dashboard a ser construído não será tratado como solução previamente definida, mas como artefato sociotécnico em evolução, continuamente ajustado em interação com os atores do serviço e com as condições concretas de uso.
+
+A ADR distingue-se da pesquisa-ação clássica por assumir explicitamente a produção de um artefato como núcleo da investigação, e diferencia-se do *design science research* (DSR) mais tradicional por desenvolver esse artefato em estreita articulação com o contexto organizacional, com participação intensiva dos usuários e com ciclos sucessivos de intervenção em ambiente real. Sein et al. [-@Sein2011] destacam que a abordagem se apoia em quatro princípios centrais: a prática inspirando a teoria, a teoria orientando o design, a reciprocidade entre intervenção e aprendizagem, e a formalização final de conhecimentos transferíveis. Para pesquisas em saúde coletiva, isso é particularmente valioso, pois permite captar não apenas se um sistema funciona, mas sob quais condições ele passa a fazer sentido, a ser utilizado e a produzir efeitos nas rotinas institucionais.
+
+A ADR organiza-se em quatro etapas interdependentes [@Sein2011]:
+
+1.  **Formulação do Problema** (*Problem Formulation*): articulação entre o problema prático da organização e o problema científico, definindo as questões de pesquisa e o contexto de intervenção;
+
+2.  **Construção, Intervenção e Avaliação** (*Building, Intervention and Evaluation* — BIE): ciclos iterativos de desenvolvimento do artefato em contexto real, com avaliação contínua e refinamento baseado no uso e no feedback dos usuários;
+
+3.  **Reflexão e Aprendizagem** (*Reflection and Learning*): análise sistemática dos ciclos de BIE para identificar o que funcionou, o que falhou e por quê, gerando insights que retroalimentam o desenvolvimento e a teoria;
+
+4.  **Formalização da Aprendizagem** (*Formalization of Learning*): produção de princípios de design e contribuições teóricas transferíveis, conectando os resultados do projeto ao acervo mais amplo do campo científico.
+
+No presente estudo, essas quatro etapas serão compreendidas como dimensões analiticamente distinguíveis, mas empiricamente sobrepostas. O diagnóstico inicial no CAPSij servirá para formular o problema em termos práticos e científicos; os ciclos de prototipagem e uso do dashboard corresponderão ao movimento de construção, intervenção e avaliação; os workshops, diários de campo, entrevistas e análises sucessivas sustentarão a reflexão e aprendizagem; e, por fim, a síntese dos achados permitirá formalizar princípios de design para dashboards em saúde mental no SUS. Dessa forma, a contribuição da pesquisa não se limitará à entrega de uma ferramenta funcional, mas incluirá explicações sobre como necessidades informacionais são traduzidas em requisitos de design, como barreiras de adoção emergem no processo e quais estratégias favorecem a sustentação do uso do artefato.
+
+Outro aspecto central da ADR é a noção de que o artefato resulta da interação entre a intenção do pesquisador e as contingências do contexto. Isso significa que decisões sobre indicadores, interface, frequência de atualização, granularidade dos dados e formas de visualização não serão tomadas exclusivamente a partir da literatura ou de preferências técnicas, mas também das restrições e possibilidades concretas do CAPSij. Em consequência, o rigor metodológico da pesquisa dependerá não de estabilidade artificial do objeto, mas da rastreabilidade das decisões de design, da explicitação dos ciclos de refinamento e da articulação sistemática entre evidências empíricas, fundamentação teórica e escolhas projetuais.
+
+Vornhagen et al. [-@Vornhagen2025] aplicaram a ADR para desenvolver o CARA Dashboard, um sistema de monitoramento de pacientes em contexto hospitalar, demonstrando que a abordagem é não apenas viável em ambientes de saúde, mas especialmente produtiva para gerar princípios de design que articulam aspectos técnicos e organizacionais. Esse estudo constitui uma referência metodológica central para o presente projeto.
+
+## Dashboards em saúde: princípios de design e condições de adoção
+
+Dashboards são artefatos de visualização e comunicação de dados que integram indicadores, gráficos e mecanismos de interação para apoiar compreensão, monitoramento e tomada de decisão [@Rabiei2024]. Em contextos de saúde coletiva, podem organizar grandes volumes de dados de forma sintética, facilitar a leitura de tendências e apoiar respostas mais ágeis a problemas coletivos [@Concannon2019].
+
+A revisão sistemática de Rabiei et al. [-@Rabiei2024] identificou cinco grupos de princípios de design para dashboards de saúde coletiva: (i) definição de objetivos e usuários-alvo; (ii) seleção e qualidade do conteúdo; (iii) design da interface; (iv) tipos de análise e apresentação; e (v) infraestrutura técnica e governança de dados. Os autores enfatizam que dashboards efetivos requerem alinhamento entre todos esses grupos, não sendo suficiente a excelência em apenas um deles.
+
+Vornhagen et al. [-@Vornhagen2026] sintetizaram as práticas mais recorrentes em dashboards organizacionais em quatro pilares: **abordagem** (processos participativos, ciclos iterativos), **conteúdo** (indicadores relevantes, qualidade e atualidade dos dados), **comportamento** (usabilidade, interatividade, acessibilidade) e **adoção** (integração às rotinas, capacitação, governança e sustentabilidade). Os autores destacam que o pilar da adoção é frequentemente negligenciado na literatura técnica, mas é determinante para que o dashboard permaneça em uso ao longo do tempo.
+
+Baan et al. [-@Baan2023] demonstraram, em estudo com profissionais de saúde, que o envolvimento ativo dos usuários em múltiplas etapas do desenvolvimento — não apenas em fases de validação — fortalece a aderência do artefato às necessidades reais do trabalho e aumenta significativamente a percepção de utilidade e a disposição para a adoção.
+
+## Gestão baseada em evidências em saúde mental e o contexto dos CAPS
+
+Os CAPS são a principal estratégia de atenção especializada em saúde mental no SUS, operando segundo os princípios da Reforma Psiquiátrica Brasileira: territorialidade, interdisciplinaridade, cuidado em liberdade e participação social [@Brasil2011]. A gestão desses serviços envolve o monitoramento de indicadores de cobertura, acesso, produção de cuidado e articulação em rede, demandando ferramentas que permitam a leitura ágil e contextualizada de dados produzidos no cotidiano.
+
+No entanto, estudos sobre gestão da informação em serviços de saúde mental no Brasil mostram que os sistemas nacionais de informação (e-SUS, SISAB, RAAS) produzem dados principalmente voltados ao controle federal, com limitado retorno informacional para os serviços locais [@Lima2019]. A construção de ferramentas analíticas locais, adaptadas aos problemas e perguntas de cada serviço, representa um caminho promissor para fortalecer a gestão baseada em evidências na atenção psicossocial.
+
+## Design participativo e letramento em dados
+
+A literatura recente converge para a ideia de que o design participativo de visualizações em saúde produz melhores resultados quando os usuários deixam de ser apenas informantes ocasionais e passam a atuar como interlocutores do processo de concepção, teste e refinamento do artefato [@Chau2024; @Arcia2024]. Em vez de validar soluções prontas, a participação qualificada permite explicitar necessidades informacionais, negociar prioridades, discutir tarefas analíticas concretas e avaliar a inteligibilidade das representações visuais em contexto de uso [@Arcia2016; @Nguyen2024]. Para serviços públicos de saúde, essa abordagem é particularmente relevante, pois gestores e profissionais operam com repertórios heterogêneos de leitura de dados, diferentes responsabilidades institucionais e distintos graus de familiaridade com tecnologias analíticas.
+
+Em paralelo, a noção de letramento em dados vem sendo ampliada para além da capacidade de ler gráficos ou interpretar indicadores isolados. Gray, Gerlitz e Bounegru [-@Gray2018] mostram que compreender dados implica também reconhecer as infraestruturas sociotécnicas que os produzem, classificam, padronizam e tornam legíveis. Essa chave interpretativa é especialmente produtiva para o campo da saúde mental, no qual dashboards dependem de sistemas de informação, rotinas de registro, critérios administrativos e mediações institucionais que influenciam diretamente o que pode ou não ser visualizado. Assim, o uso qualificado de um dashboard não decorre apenas de sua boa interface, mas da capacidade dos participantes de problematizar a origem, a consistência, os limites e os efeitos dos próprios dados mobilizados.
+
+No campo da saúde, Neuhauser [-@Neuhauser2017] sustenta que a articulação entre design participativo e letramento em saúde fortalece intervenções mais aderentes às capacidades, motivações e condições concretas dos públicos envolvidos. Em sentido convergente, Chau et al. [-@Chau2024] associam a ideia de *creative data literacy* à participação ativa na seleção, interpretação e comunicação do que importa para uma coletividade. Com base nesse referencial, o presente projeto assume que o desenvolvimento do dashboard deve funcionar também como processo formativo. Por isso, prevê ações de capacitação progressiva da equipe técnica do CAPSij em linguagem **R**, organização e leitura de bases, princípios de visualização e criação de dashboards. O objetivo dessas capacitações não é profissionalizar tecnicamente os participantes como desenvolvedores, mas ampliar sua autonomia para compreender a lógica do artefato, dialogar criticamente com suas escolhas de design e sustentar, de modo mais reflexivo, o uso da ferramenta no cotidiano do serviço.
+
+# Objetivo Geral
+
+Desenvolver, implementar e avaliar dashboards interativos para apoio à gestão em um CAPSij do município de Rondonópolis-MT, por meio da *Action Design Research*, produzindo conhecimento científico sobre o processo participativo de design, as condições de adoção e os princípios transferíveis para contextos similares de saúde mental no SUS.
+
+# Objetivos Específicos e Cronograma de Metas
+
+## Meta 1 — Diagnóstico, Prototipagem e Implementação Piloto (meses 1–12)
+
+**Objetivo 1.1:** Realizar diagnóstico participativo das necessidades informacionais dos gestores e equipes do CAPSij, identificando problemas, perguntas prioritárias, fontes de dados disponíveis e condições organizacionais de uso.
+
+**Objetivo 1.2:** Mapear a qualidade, a disponibilidade e a estrutura dos dados existentes nos sistemas de informação do serviço (e-SUS, SISAB, planilhas internas), identificando limitações e possibilidades para o desenvolvimento do dashboard.
+
+**Objetivo 1.3:** Realizar oficinas de letramento em dados com a equipe do CAPSij, promovendo discussão sobre indicadores, visualizações e uso social da informação no cotidiano do serviço.
+
+**Objetivo 1.4:** Oferecer capacitações introdutórias à equipe técnica do CAPSij sobre linguagem R, organização de bases de dados e criação de dashboards, com foco em apropriação crítica da ferramenta e sustentabilidade do uso.
+
+**Objetivo 1.5:** Desenvolver protótipos iterativos do dashboard em R, com ciclos de apresentação, feedback e refinamento junto aos usuários, em conformidade com os princípios de design identificados na literatura.
+
+**Objetivo 1.6:** Implementar uma versão piloto do dashboard no contexto real do serviço, acompanhando os primeiros ciclos de uso e coletando dados sobre dificuldades, ajustes necessários e percepção de utilidade.
+
+**Atividades previstas:** - Pactuação formal com o CAPSij e aprovação pelo Comitê de Ética em Pesquisa - Entrevistas semiestruturadas com gestores e profissionais (n estimado: 8–12) - Análise documental dos sistemas de informação e relatórios internos - Oficinas de cocriação de indicadores (2 a 3 encontros) - Oficinas de capacitação da equipe técnica do CAPSij em R, organização de dados e criação de dashboards (mínimo 2 encontros introdutórios) - Ciclos de prototipagem em R (mínimo 3 iterações antes da versão piloto) - Sessões de validação com usuários (think-aloud, análise de usabilidade) - Implementação e acompanhamento inicial do dashboard piloto - Elaboração do relatório parcial de pesquisa
+
+## Meta 2 — Avaliação, Reflexão e Formalização do Conhecimento (meses 13–24)
+
+**Objetivo 2.1:** Avaliar sistematicamente o uso do dashboard no CAPSij ao longo dos meses 13–20, coletando dados qualitativos e quantitativos sobre utilidade percebida, usabilidade, frequência de uso e integração às rotinas de gestão.
+
+**Objetivo 2.2:** Realizar ajustes e refinamentos no dashboard com base nos dados de avaliação, consolidando uma versão estável orientada pela aprendizagem acumulada nos ciclos anteriores.
+
+**Objetivo 2.3:** Analisar os dados qualitativos produzidos ao longo do projeto (entrevistas, observações, registros de sessões, relatórios reflexivos) para identificar os fatores que favoreceram ou dificultaram a adoção do dashboard.
+
+**Objetivo 2.4:** Formalizar os princípios de design emergentes dos ciclos ADR, avaliando sua consistência com a literatura existente e sua potencial transferibilidade para outros serviços de saúde mental do SUS.
+
+**Objetivo 2.5:** Disseminar os resultados da pesquisa em produções científicas e técnicas, incluindo artigo em periódico qualificado, apresentação em evento da área e disponibilização do modelo de dashboard como repositório reprodutível.
+
+**Atividades previstas:** - Coleta sistemática de dados de uso do dashboard (logs, registros de acesso, diário de campo) - Entrevistas de avaliação com usuários ao final do período piloto - Análise temática dos dados qualitativos (software Atlas.ti ou similar) - Workshops de reflexão com a equipe do CAPSij (análise coletiva dos resultados) - Redação dos princípios de design consolidados - Elaboração de artigo científico para periódico Qualis A2 ou superior - Elaboração do relatório final de pesquisa - Disponibilização do repositório de código e dashboard no GitHub
+
+# Metodologia
+
+## Natureza e tipo de pesquisa
+
+Esta pesquisa é de natureza aplicada, com abordagem predominantemente qualitativa e uso complementar de dados quantitativos. O delineamento metodológico adota a *Action Design Research* (ADR) conforme proposta de Sein et al. [-@Sein2011], articulando desenvolvimento tecnológico, intervenção organizacional e produção de conhecimento científico em um processo iterativo.
+
+A escolha da ADR justifica-se pela natureza do problema investigado, que exige simultaneamente: (a) criação de um artefato tecnológico funcional e pertinente ao contexto; (b) intervenção no processo informacional de uma organização real; e (c) geração de conhecimento transferível sobre design de dashboards em saúde mental. Do ponto de vista operacional, o estudo combinará etapas preliminares de aproximação institucional e viabilidade, produção de dados qualitativos por entrevistas, observação participante, oficinas de cocriação e registros reflexivos, produção de dados quantitativos descritivos sobre uso e usabilidade do dashboard e análise integrada dos achados à luz da ADR. A unidade empírica principal será o CAPSij de Rondonópolis-MT, considerado como caso instrumental para compreensão de processos de design participativo e adoção de ferramentas analíticas em serviços públicos de saúde mental.
+
+O delineamento é coerente com o estudo de Vornhagen et al. [-@Vornhagen2025], que empregou ADR para desenvolver o dashboard CARA em atenção primária com abordagem qualitativa interpretativista, entrevistas com usuários e especialistas e ciclos iterativos de construção, intervenção e avaliação. A presente pesquisa preserva esses elementos estruturantes, mas adapta o desenho ao contexto do CAPSij em quatro pontos principais: desloca o foco da comparação entre práticas para a gestão informacional de um único serviço territorial de saúde mental; amplia a participação para incluir gestores e profissionais envolvidos em registro, monitoramento e uso cotidiano dos dados; incorpora oficinas de letramento em dados e capacitações introdutórias em **R** e criação de dashboards como parte da intervenção; e prevê implementação piloto acompanhada no contexto real do serviço, com observação do uso, coleta de logs e análise da incorporação do artefato às rotinas locais.
+
+## Etapas e procedimentos metodológicos
+
+### Etapa 1 — Formulação do Problema (meses 1–2)
+
+A formulação do problema articula o problema prático — gestão informacional deficiente no CAPSij — com o problema científico — lacuna de conhecimento sobre princípios de design e condições de adoção de dashboards em saúde mental no SUS. Tal como em Vornhagen et al. [-@Vornhagen2025], esta etapa assume caráter interpretativo e busca compreender como os atores do campo percebem seus dados, suas necessidades analíticas e as limitações das soluções disponíveis. Antes da submissão formal ao CEP e do início da coleta de dados propriamente dita, já foram realizadas conversas informais com alguns gestores do serviço para avaliar a existência de demanda, a pertinência institucional do projeto e sua viabilidade prática. Essas interações tiveram caráter exclusivamente preliminar, sem registro formal e sem identificação dos interlocutores como participantes de pesquisa, em consonância com a noção de etapas preliminares prevista na Resolução CNS nº 510/2016.
+
+Após a aprovação institucional e ética, esta etapa envolverá os seguintes procedimentos:
+
+-   **Entrevistas semiestruturadas** com gestores e profissionais do CAPSij para mapeamento de necessidades informacionais, perguntas prioritárias de gestão, processos de trabalho e cultura organizacional em relação ao uso de dados;
+-   **Análise documental** dos sistemas de informação (e-SUS, SISAB, RAAS), relatórios de gestão, atas de reuniões e instrumentos internos de controle;
+-   **Avaliação de maturidade analítica** do serviço, adaptando instrumentos disponíveis na literatura para o contexto dos CAPS;
+-   **Definição dos requisitos funcionais e não funcionais** do artefato, incluindo acessibilidade, segurança da informação, rotinas de atualização e indicadores prioritários.
+
+O convite formal aos participantes será realizado em duas etapas. Primeiro, haverá apresentação presencial do projeto à coordenação e à gestão do CAPSij, para pactuação institucional do cronograma, dos espaços de trabalho e das condições de participação. Em seguida, os gestores e profissionais elegíveis serão convidados individualmente, preferencialmente em conversa presencial no próprio serviço, em momento previamente combinado e sem constrangimento, com explicação clara sobre objetivos, procedimentos, tempo estimado de participação, riscos, benefícios, garantia de recusa e possibilidade de desistência a qualquer momento, sem qualquer prejuízo profissional. Quando necessário para organização logística, o convite poderá ser complementado por mensagem institucional, e-mail ou aplicativo de mensagens, sempre preservando o caráter voluntário da participação. Diferentemente de Vornhagen et al. [-@Vornhagen2025], que combinaram entrevistas com GPs, especialistas e workshop em evento profissional, aqui a interlocução será concentrada no próprio espaço institucional do CAPSij, privilegiando observação situada, discussão de rotinas concretas e cocriação com a equipe local.
+
+As entrevistas semiestruturadas terão duração estimada de 30 a 60 minutos, serão realizadas em local reservado no serviço ou em outro ambiente acordado com o participante e, mediante autorização, serão gravadas em áudio para posterior transcrição. O roteiro contemplará perguntas sobre necessidades informacionais, dificuldades de uso de dados, indicadores considerados prioritários, rotinas decisórias e expectativas em relação ao dashboard. A análise documental buscará identificar fontes de dados disponíveis, qualidade dos registros, periodicidade de atualização e limitações técnicas ou organizacionais do sistema informacional existente. O produto desta etapa será um documento de diagnóstico participativo contendo síntese analítica da demanda, mapa de fontes de dados, requisitos do artefato e prioridades para os ciclos subsequentes.
+
+### Etapa 2 — Construção, Intervenção e Avaliação — BIE (meses 3–20)
+
+Esta etapa é o núcleo metodológico da ADR e se organiza em ciclos iterativos de desenvolvimento. Cada ciclo compreende: (i) construção ou refinamento de uma versão do artefato; (ii) intervenção — apresentação e uso no contexto real; e (iii) avaliação — coleta de dados sobre experiência de uso, pertinência e usabilidade. Em coerência com Vornhagen et al. [-@Vornhagen2025], a lógica não será linear nem de validação única ao final, mas de refinamento sucessivo orientado pelas respostas dos usuários e pelas contingências do contexto.
+
+Os dashboards serão desenvolvidos na linguagem **R**, com recursos como `shiny`, `flexdashboard`, `ggplot2`, `plotly` e `DT`, garantindo reprodutibilidade, baixo custo de manutenção e possibilidade de replicação em outros serviços. O processo de desenvolvimento seguirá princípios de design participativo: os usuários serão envolvidos não apenas na validação de protótipos, mas na definição de indicadores, na escolha de visualizações e na priorização de funcionalidades. Em cada iteração será produzido um registro estruturado contendo versão do protótipo, problema atacado, decisões de design, feedback obtido, modificações realizadas e implicações teóricas preliminares.
+
+Paralelamente ao desenvolvimento técnico, serão realizadas ações formativas com a equipe técnica do CAPSij, em formato introdutório e aplicado, abordando noções básicas de linguagem **R**, leitura e preparação de bases, atualização de indicadores e princípios de criação de dashboards. Essas capacitações terão caráter pedagógico e contextualizado, orientadas pelas necessidades do serviço e pelo nível de familiaridade prévia dos participantes com programação e análise de dados.
+
+Os ciclos de BIE serão operacionalizados do seguinte modo: cada versão preliminar do dashboard será apresentada à equipe em oficinas ou sessões de demonstração; os participantes serão convidados a executar tarefas analíticas típicas da rotina de gestão, como localizar indicadores, comparar períodos, identificar padrões de atendimento e interpretar gráficos; as dificuldades, comentários e sugestões serão registradas; e a versão seguinte incorporará os ajustes considerados prioritários. Sempre que possível, as oficinas ocorrerão em pequenos grupos para favorecer diálogo, cocriação e identificação de conflitos ou convergências entre demandas informacionais. Parte desses encontros poderá assumir formato de oficina formativa, articulando uso do dashboard, letramento em dados e introdução prática ao ecossistema de desenvolvimento em R. Em comparação com o estudo CARA, no qual o primeiro dashboard exemplar foi concebido para demonstrar a infraestrutura analítica e a comparação entre práticas, aqui o desenvolvimento priorizará um protótipo orientado às necessidades gerenciais do CAPSij e à possibilidade de uso continuado pela equipe local.
+
+A avaliação dos protótipos utilizará combinação de métodos:
+
+-   **Avaliação heurística** aplicada pelo pesquisador com base nas heurísticas de Nielsen e nos princípios de design de dashboards [@Rabiei2024];
+-   **Testes de usabilidade** com usuários (*think-aloud protocol*), identificando dificuldades de navegação, compreensão e interpretação;
+-   **Entrevistas de feedback** após cada ciclo, coletando percepções sobre utilidade, relevância dos indicadores e barreiras de uso;
+-   **Observação participante** durante reuniões de equipe e momentos de uso do dashboard, registrada em diário de campo;
+-   **Mensuração padronizada de usabilidade**, com aplicação da *System Usability Scale* (SUS) ao final da versão piloto;
+-   **Análise de logs e rotinas de uso**, registrando acessos, módulos consultados, periodicidade de uso e situações de apoio à tomada de decisão.
+
+Nos testes de usabilidade, os participantes serão convidados a verbalizar o que compreendem ao interagir com o sistema, permitindo identificar ambiguidades de navegação, problemas de linguagem visual, dificuldades de interpretação e necessidades de capacitação. Na observação participante, o pesquisador acompanhará reuniões e momentos de uso do dashboard sem assumir papel decisório na gestão do serviço, registrando em diário de campo a forma como o artefato é apropriado, negociado ou eventualmente rejeitado nas práticas institucionais. Os logs de uso serão analisados apenas em nível funcional e agregado, evitando rastreamento individual desnecessário.
+
+### Etapa 3 — Reflexão e Aprendizagem (meses 18–22)
+
+A reflexão sistemática sobre os ciclos de BIE será realizada pelo pesquisador em diálogo com os participantes, buscando identificar padrões, contradições e aprendizagens que emergem da prática. Serão realizados workshops de reflexão com a equipe do CAPSij, análise temática dos dados qualitativos acumulados e revisão sistemática dos registros do diário de campo. Tal como em Vornhagen et al. [-@Vornhagen2025], essa etapa não será separada rigidamente da construção do artefato, mas funcionará como dispositivo contínuo de aprendizagem sobre requisitos, barreiras de adoção, utilidade percebida e qualidade das decisões de design.
+
+A análise qualitativa seguirá o método de análise temática reflexiva de Braun e Clarke [-@Braun2006], com apoio do ambiente **R** para organização do corpus, gestão das transcrições, construção de tabelas de codificação, recuperação de excertos e sistematização dos temas. Serão percorridas as etapas de familiarização com o corpus, codificação inicial, construção de temas, revisão dos temas, definição e nomeação dos temas e redação analítica. O uso do R terá função de suporte analítico e de rastreabilidade do processo, não de automação da interpretação, uma vez que a atribuição de sentido, a consolidação dos códigos e a definição dos temas dependerão da leitura reflexiva do pesquisador em diálogo com o referencial teórico e com o contexto empírico. Os dados quantitativos de uso do dashboard (logs de acesso, frequência de consulta por módulo, tempo de sessão e escores de usabilidade) serão analisados de forma descritiva e complementarão a análise qualitativa. A triangulação entre entrevistas, observação, documentos de projeto, logs e instrumentos padronizados buscará aumentar a consistência interpretativa dos achados.
+
+### Etapa 4 — Formalização da Aprendizagem (meses 22–24)
+
+Na etapa final, os achados serão sistematizados na forma de princípios de design para dashboards em saúde mental no SUS. Esses princípios serão formulados como proposições testáveis e conectados à literatura existente, seguindo a estrutura proposta por Gregor e Hevner [-@Gregor2013] para a apresentação de contribuições em *design science*. Em consonância com Vornhagen et al. [-@Vornhagen2025], o objetivo não será apenas descrever um caso local, mas explicitar aprendizagens transferíveis sobre conteúdo, interface, participação, capacitação e condições organizacionais de uso. O produto final desta etapa inclui o artigo científico, o relatório técnico e o repositório público do dashboard.
+
+## Participantes e contexto
+
+O projeto será conduzido no CAPSij do município de Rondonópolis-MT. Os participantes incluirão gestores, coordenadores e profissionais de saúde do serviço (estimativa de 8 a 15 participantes nas diferentes etapas), selecionados por amostragem intencional em função do envolvimento com rotinas de gestão, registro de dados e uso potencial do dashboard. Serão priorizados sujeitos com conhecimento prático sobre produção de informações, monitoramento, organização do cuidado e tomada de decisão no serviço. O projeto envolverá obrigatoriamente ao menos um estudante de graduação da UFR como integrante da equipe de pesquisa, em consonância com os requisitos do edital.
+
+Os critérios de inclusão serão: atuar no CAPSij durante o período da pesquisa; participar, ainda que parcialmente, de rotinas de gestão, registro, monitoramento ou uso de informações do serviço; e aceitar voluntariamente participar após o processo de esclarecimento e consentimento. Serão excluídos profissionais em licença prolongada, afastamento ou que, por qualquer motivo, não se sintam confortáveis em participar. A participação será voluntária e formalizada por meio de Termo de Consentimento Livre e Esclarecido (TCLE), salvo se o CEP aprovar outra forma de registro do consentimento mais adequada ao contexto.
+
+## Considerações éticas
+
+O projeto será submetido ao Comitê de Ética em Pesquisa (CEP) da UFR antes do início da coleta de dados, respeitando as diretrizes da Resolução CNS nº 510/2016 e o prazo de até noventa dias a partir do início da execução previsto no edital. Em conformidade com essa resolução, será reconhecida a diferença entre etapas preliminares de viabilidade e coleta formal de dados de pesquisa; o processo de convite e consentimento será conduzido de maneira clara, acessível, dialógica e sem constrangimento; e os participantes terão assegurados os direitos de recusa, retirada, privacidade, confidencialidade e acesso às informações essenciais sobre o estudo.
+
+Considerando que parte dos participantes poderá estar inserida em relações institucionais de autoridade ou dependência, serão adotadas cautelas específicas para proteger a autonomia, como convite individualizado, realização das entrevistas em ambiente reservado, agendamento em horário conveniente e reforço explícito de que a decisão de participar ou não participar não produzirá qualquer efeito funcional ou avaliativo. O registro do consentimento será preferencialmente escrito, em linguagem acessível, com entrega de uma via ao participante; contudo, o meio de registro poderá ser ajustado ao contexto e submetido à apreciação do CEP, nos termos da Resolução CNS nº 510/2016.
+
+Os riscos esperados são mínimos ou baixos, concentrando-se sobretudo em possível desconforto ao relatar dificuldades do serviço, exposição de opiniões profissionais ou percepção de constrangimento institucional. Para mitigá-los, serão utilizados pseudônimos ou códigos, supressão de identificadores diretos e indiretos, apresentação de resultados em forma agregada, cuidado redobrado na descrição de falas e situações sensíveis e armazenamento seguro dos materiais em arquivo físico ou digital sob guarda do pesquisador responsável. Dados de usuários do CAPSij eventualmente empregados no dashboard serão tratados preferencialmente de forma agregada, anonimizada e com acesso restrito, sem finalidade de avaliação individual de trabalhadores ou pacientes.
+
+Caso surja qualquer possibilidade de dano material ou imaterial aos participantes, o procedimento será revisto e, se necessário, interrompido, com comunicação ao CEP e adoção das providências cabíveis. Ao final da pesquisa, os participantes e a instituição parceira terão acesso a devolutivas dos resultados, em linguagem compatível com seu contexto de atuação.
+
+# Acompanhamento e Avaliação do Projeto Durante a Execução
+
+O acompanhamento do projeto será realizado de forma contínua, com procedimentos estruturados para cada etapa do ciclo ADR e alinhados às duas metas de 12 meses previstas no edital.
+
+**Indicadores de processo** serão monitorados mensalmente:
+
+-   Número de encontros realizados com a equipe do CAPSij e taxa de participação;
+-   Versões do dashboard desenvolvidas e ciclos de feedback concluídos;
+-   Horas dedicadas ao projeto por cada membro da equipe, registradas em diário de atividades;
+-   Situação do cronograma por meta, com verificação do cumprimento das atividades planejadas;
+-   Produção acadêmica em andamento (rascunhos, submissões, apresentações).
+
+**Indicadores de resultado** serão avaliados ao final de cada meta:
+
+-   Qualidade do diagnóstico participativo, avaliada por instrumento específico com a equipe do CAPSij;
+-   Percepção de utilidade e usabilidade do dashboard, incluindo escala padronizada como a *System Usability Scale* (SUS);
+-   Frequência e padrão de uso do dashboard durante o período piloto;
+-   Evidências de incorporação do dashboard a reuniões e rotinas de gestão;
+-   Qualidade das contribuições científicas e técnicas produzidas, observando aderência aos produtos previstos.
+
+As reuniões de equipe serão quinzenais nos primeiros seis meses e mensais nos meses subsequentes. O coordenador e o estudante bolsista (ou voluntário) produzirão relatórios reflexivos trimestrais, documentando aprendizagens, dificuldades e ajustes no planejamento. Ao final do mês 12 será elaborado o relatório parcial e, ao final do mês 24, o relatório final, conforme previsto na Instrução Normativa PROPGP/UFR Nº 13/2025.
+
+O acompanhamento contará também com a participação da gestão do CAPSij, que será convidada a avaliar periodicamente a pertinência do processo e dos produtos desenvolvidos. Caso se identifiquem atrasos, baixa adesão da equipe, problemas de qualidade dos dados ou limitações técnicas do protótipo, serão acionadas medidas corretivas como replanejamento das atividades da meta, revisão do escopo funcional, reforço das oficinas de letramento em dados e priorização de indicadores mais robustos. Essa avaliação compartilhada é fundamental para garantir que o projeto permaneça ancorado nas necessidades reais do serviço e compatível com os resultados esperados.
+
+# Resultados Esperados
+
+**Resultado 1 — Artefato tecnológico:** Dashboard interativo funcional, desenvolvido em R, para apoio à gestão do CAPSij, com módulos de monitoramento de produção, acompanhamento de usuários, indicadores de acesso e cobertura, e visualização de tendências temporais. O dashboard será documentado em repositório público no GitHub, com código reprodutível, manual de uso e orientações para adaptação em serviços similares.
+
+**Resultado 2 — Conhecimento científico:** Artigo científico submetido a periódico qualificado (Qualis A2 ou superior) reportando os princípios de design emergentes dos ciclos ADR, os fatores associados à adoção do dashboard e as lições aprendidas no processo de desenvolvimento participativo em saúde mental.
+
+**Resultado 3 — Produção técnica:** Relatório técnico descrevendo o processo de desenvolvimento, os instrumentos utilizados (roteiro de entrevistas, protocolo de avaliação de usabilidade, instrumento de diagnóstico de maturidade analítica), os princípios de design e as recomendações de implantação, disponibilizado em formato aberto para uso por outros serviços da RAPS.
+
+**Resultado 4 — Formação de pesquisadores:** Participação de ao menos um estudante de graduação como pesquisador em iniciação científica, com experiência em pesquisa qualitativa, desenvolvimento de dashboards em R e publicação de resultados.
+
+**Resultado 5 — Fortalecimento institucional:** Melhoria documentada na capacidade analítica do CAPSij, evidenciada pelo uso regular do dashboard em reuniões de equipe e planejamento, pela ampliação do letramento em dados dos profissionais envolvidos, pela capacitação introdutória da equipe técnica em R e criação de dashboards e pelo fortalecimento da cooperação entre UFR e rede municipal de saúde.
+
+**Resultado 6 — Apresentação em evento científico:** Ao menos uma comunicação oral ou pôster em evento científico nacional da área de saúde coletiva, informação em saúde ou sistemas de informação.
+
+# Referências Bibliográficas
+
+::: {#refs}
+:::

@@ -1,0 +1,150 @@
+---
+title: "Modelo de Termo de Consentimento Livre e Esclarecido (TCLE)"
+author: "Djalma Barbosa"
+date: "2026-04-24"
+lang: pt-BR
+format:
+  html:
+    toc: false
+    number-sections: false
+editor: visual
+---
+
+# TERMO DE CONSENTIMENTO LIVRE E ESCLARECIDO (TCLE)
+
+**Título da pesquisa:** Desenvolvimento Participativo de Dashboards para Apoio à Gestão em Saúde Mental: uma pesquisa de *Action Design Research* em um CAPSij
+
+**Pesquisador responsável:** Djalma Barbosa\
+**Instituição proponente:** Universidade Federal de Rondonópolis (UFR)\
+**Curso/Unidade:** \[preencher\]\
+**Telefone do pesquisador responsável:** \[preencher\]\
+**E-mail do pesquisador responsável:** \[preencher\]
+
+**Pesquisador(a)(es) colaborador(a)(es):** \[preencher, se houver\]\
+**Telefone(s):** \[preencher\]\
+**E-mail(s):** \[preencher\]
+
+Você está sendo convidado(a) a participar desta pesquisa por atuar em atividades de gestão, organização do serviço, registro, monitoramento ou uso de informações no CAPSij de Rondonópolis-MT.
+
+Antes de decidir, é importante que você leia este documento com atenção. Caso tenha qualquer dúvida, você poderá perguntar ao pesquisador antes, durante e depois da sua decisão. Sua participação é voluntária.
+
+# 1. Apresentação da pesquisa
+
+Esta pesquisa tem como objetivo desenvolver, implementar e avaliar dashboards interativos para apoio à gestão em saúde mental em um Centro de Atenção Psicossocial Infantojuvenil (CAPSij), buscando compreender, em conjunto com gestores e profissionais, quais informações são mais relevantes para o acompanhamento do serviço e como ferramentas visuais podem apoiar a tomada de decisão.
+
+O estudo está vinculado à Universidade Federal de Rondonópolis e será desenvolvido como pesquisa aplicada, com abordagem participativa, articulando diagnóstico de necessidades informacionais, desenvolvimento de protótipos, testes de uso e avaliação do dashboard em contexto real.
+
+# 2. Por que você foi convidado(a)
+
+Você foi convidado(a) porque sua atuação profissional pode contribuir para a compreensão das necessidades informacionais do serviço, das rotinas de gestão e do uso de dados no cotidiano institucional.
+
+# 3. O que será solicitado a você
+
+Se você aceitar participar, poderá ser convidado(a) a realizar uma ou mais das seguintes atividades:
+
+-   participar de entrevista individual semiestruturada sobre necessidades informacionais, uso de dados, dificuldades e expectativas em relação ao dashboard;
+-   participar de oficinas, reuniões ou sessões de demonstração para discutir indicadores, testar protótipos e sugerir melhorias;
+-   participar de testes de usabilidade, nos quais poderá ser convidado(a) a navegar no dashboard e comentar sua experiência de uso;
+-   autorizar a observação de situações de uso do dashboard em reuniões ou momentos de trabalho relacionados à gestão do serviço.
+
+As entrevistas terão duração aproximada de 30 a 60 minutos. As oficinas, reuniões ou testes poderão variar conforme a etapa da pesquisa, com duração previamente informada.
+
+# 4. Gravação de áudio
+
+Com sua autorização, as entrevistas e algumas interações de pesquisa poderão ser gravadas em áudio, exclusivamente para facilitar a transcrição e a análise dos dados. As gravações serão utilizadas apenas para fins científicos e ficarão armazenadas de forma segura, com acesso restrito ao pesquisador responsável e à equipe autorizada.
+
+Você pode participar da pesquisa e, ainda assim, não autorizar a gravação. Nesse caso, o pesquisador poderá registrar as informações por meio de anotações.
+
+**Autorizo a gravação de áudio:**\
+( ) Sim\
+( ) Não
+
+# 5. Riscos e desconfortos possíveis
+
+Os riscos desta pesquisa são considerados mínimos ou baixos. Ainda assim, sua participação pode gerar algum desconforto ao falar sobre dificuldades do serviço, limitações no uso de dados, rotinas de trabalho ou opiniões profissionais.
+
+Para reduzir esses riscos, serão adotadas as seguintes medidas:
+
+-   sua participação ocorrerá em local e horário combinados, buscando preservar sua privacidade;
+-   sua decisão de participar ou não participar não acarretará qualquer prejuízo profissional, institucional ou pessoal;
+-   seu nome não será divulgado nos relatórios, publicações ou apresentações, salvo manifestação expressa em sentido contrário;
+-   os resultados serão apresentados, preferencialmente, de forma agregada, com uso de códigos ou pseudônimos;
+-   o pesquisador interromperá a entrevista ou atividade, se você desejar, sempre que houver incômodo ou desconforto.
+
+Se, durante a pesquisa, surgir qualquer situação que possa lhe causar dano ou constrangimento relevante, o procedimento será revisto e poderão ser adotadas providências de proteção, inclusive interrupção da sua participação.
+
+# 6. Benefícios esperados
+
+Você pode não receber benefício direto e imediato pela participação. No entanto, espera-se que a pesquisa contribua para:
+
+-   aprimorar o uso de informações na gestão do CAPSij;
+-   desenvolver uma ferramenta potencialmente útil ao acompanhamento de indicadores e à tomada de decisão;
+-   fortalecer o diálogo entre universidade e serviço público;
+-   produzir conhecimento científico e técnico sobre gestão baseada em evidências em saúde mental.
+
+# 7. Sigilo, privacidade e uso das informações
+
+As informações fornecidas por você serão tratadas com confidencialidade. Seu nome e quaisquer dados que permitam sua identificação serão protegidos. Os registros da pesquisa serão armazenados em arquivo físico e/ou digital seguro, sob responsabilidade do pesquisador responsável, pelo prazo mínimo exigido pelas normas éticas aplicáveis.
+
+Os dados poderão ser utilizados em dissertações, teses, artigos, relatórios, apresentações científicas e materiais acadêmicos, sempre com preservação da identidade dos participantes, salvo autorização expressa em contrário.
+
+Caso o dashboard utilize dados do serviço, esses dados serão tratados preferencialmente de forma agregada e anonimizada, sem finalidade de avaliação individual de trabalhadores ou usuários.
+
+# 8. Participação voluntária e direito de desistência
+
+Sua participação é livre e voluntária. Você pode recusar o convite ou desistir de participar em qualquer momento, sem precisar justificar sua decisão e sem qualquer prejuízo para você.
+
+A desistência não acarretará qualquer sanção, constrangimento ou repercussão na sua relação com o serviço, com a instituição ou com os pesquisadores.
+
+# 9. Custos, ressarcimento e indenização
+
+Sua participação nesta pesquisa não implicará custos para você. Não há pagamento pela participação.
+
+Caso haja alguma despesa diretamente decorrente da participação na pesquisa, como deslocamento ou alimentação especificamente necessários para comparecimento a atividade agendada fora da rotina habitual, você terá direito a ressarcimento, nos termos da regulamentação ética aplicável, mediante comprovação e conforme orientação do pesquisador responsável.
+
+Em caso de dano decorrente da pesquisa, você terá direito à assistência e poderá buscar indenização, nos termos da legislação brasileira.
+
+# 10. Acesso aos resultados
+
+Se desejar, você poderá ter acesso às informações gerais sobre os resultados da pesquisa. Ao final do estudo, será feita devolutiva à instituição participante e aos interessados, em linguagem compatível com o contexto profissional dos participantes.
+
+# 11. Esclarecimentos e contatos
+
+Se você tiver dúvidas sobre a pesquisa, poderá entrar em contato com:
+
+**Pesquisador responsável:** Djalma Barbosa\
+**Telefone:** \[preencher\]\
+**E-mail:** \[preencher\]
+
+Para dúvidas sobre seus direitos como participante de pesquisa, ou para registrar reclamações, você poderá contatar o Comitê de Ética em Pesquisa:
+
+**Comitê de Ética em Pesquisa (CEP/UFR):** \[preencher nome oficial\]\
+**Endereço:** \[preencher\]\
+**Telefone:** \[preencher\]\
+**E-mail:** \[preencher\]
+
+# 12. Declaração de consentimento
+
+Declaro que fui informado(a), de forma clara e acessível, sobre os objetivos, procedimentos, possíveis riscos e benefícios desta pesquisa. Tive oportunidade de fazer perguntas, recebi esclarecimentos satisfatórios e sei que posso desistir de participar a qualquer momento, sem qualquer prejuízo.
+
+Ao assinar este termo, concordo voluntariamente em participar da pesquisa.
+
+**Nome do(a) participante:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+**Assinatura do(a) participante:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+**Local:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+**Data:** \_\_\_\_ / \_\_\_\_ / \_\_\_\_\_\_
+
+**Nome do pesquisador responsável:** Djalma Barbosa
+
+**Assinatura do pesquisador responsável:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+**Local:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+**Data:** \_\_\_\_ / \_\_\_\_ / \_\_\_\_\_\_
+
+------------------------------------------------------------------------
+
+**Observação ao pesquisador:** completar os campos institucionais e os contatos antes da submissão ao CEP e ajustar o texto final conforme as exigências específicas do Comitê de Ética da UFR e da Plataforma Brasil.
