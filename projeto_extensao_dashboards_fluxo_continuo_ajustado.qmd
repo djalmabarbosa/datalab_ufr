@@ -1,0 +1,188 @@
+---
+title: "Projeto de Extensão: Cocriação Participativa de Dashboards para a Rede de Saúde Pública de Rondonópolis"
+author: "Djalma Barbosa"
+date: "2026-04-11"
+lang: pt-BR
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: false
+    theme: cosmo
+    df-print: paged
+editor: visual
+bibliography: referencias_dashboards_extensao_atualizadas_v4.bib
+reference-section-title: "Referências Bibliográficas"
+link-citations: true
+---
+
+# Discriminação do projeto
+
+## Resumo
+
+O presente projeto de extensão propõe a cocriação participativa de dashboards para a rede de saúde pública de Rondonópolis, articulando extensão, ensino e pesquisa por meio do desenvolvimento de produtos de dados orientados a demandas sociais concretas. Parte-se do reconhecimento de que a Secretaria Municipal de Saúde e seus serviços produzem dados rotineiramente, mas ainda encontram dificuldades para transformá-los em informação útil para monitoramento, planejamento, transparência e tomada de decisão. Nesse contexto, o projeto pretende desenvolver dashboards adequados às demandas locais, com envolvimento direto dos usuários na formulação do problema, no mapeamento do fluxo de dados, na definição de indicadores, na prototipagem, na validação e nos ajustes do produto.
+
+A literatura recente tem mostrado que o desenvolvimento de dashboards em saúde e em contextos organizacionais ainda ocorre, muitas vezes, de forma fragmentada e *ad hoc*, com pouca explicitação metodológica e insuficiente envolvimento dos usuários [@Rabiei2024; @Vornhagen2026]. Em resposta a esse cenário, a proposta adotará a **Pesquisa de Design-Ação** (*Action Design Research* - ADR) como eixo metodológico principal, por se tratar de uma abordagem voltada à construção e ao refinamento de artefatos em contexto real, conciliando solução prática e produção de conhecimento [@Sein2011; @Mullarkey2019; @Vornhagen2025].
+
+No projeto, os estudantes de graduação atuarão junto à Secretaria Municipal de Saúde de Rondonópolis, com possibilidade de desenvolvimento de projetos no Departamento de Vigilância Epidemiológica, em Unidades Básicas de Saúde (UBS) e no CAPSij, além de interfaces pontuais com escolas da rede pública quando o problema informacional exigir articulação intersetorial. Espera-se gerar impacto social ao fortalecer capacidades locais de uso de dados e impacto formativo ao proporcionar aos estudantes experiências concretas de ciência de dados aplicada, design participativo, comunicação pública de informações e sistematização de experiências extensionistas.
+
+## Justificativa
+
+A produção de dados nas organizações vem crescendo de forma contínua. Este processo, que caracteriza a era do Big Data [@khoury2014], já se faz presente de modo intenso nos serviços da rede pública de saúde, em suas interfaces com a educação e em outros equipamentos públicos do território. Apesar disso, a transformação desses dados em informação útil ainda constitui um desafio recorrente. Em muitos casos, os dados estão dispersos, pouco padronizados, restritos a planilhas de uso interno ou apresentados de forma pouco acessível para gestores, trabalhadores e comunidade.
+
+Nesse cenário, dashboards podem funcionar como instrumentos de síntese, monitoramento, comunicação e apoio à decisão. Entretanto, a literatura mostra que um dashboard efetivo não depende apenas de programação ou de estética visual. Sua utilidade está associada à clareza do objetivo, ao conhecimento do público-alvo, à seleção de indicadores relevantes, à qualidade dos dados, à usabilidade da interface, à integração com rotinas organizacionais e à sustentabilidade de uso ao longo do tempo [@Rabiei2022; @Rabiei2024; @Vornhagen2026].
+
+Esta proposta foi construída observando a **Política Nacional de Extensão Universitária**, que estabelece cinco diretrizes centrais para as ações extensionistas: **interação dialógica**, **interdisciplinaridade e interprofissionalidade**, **indissociabilidade ensino-pesquisa-extensão**, **impacto na formação do estudante** e **impacto e transformação social** [@Forproex2012; @Brasil2018Extensao].
+
+Do ponto de vista do **impacto social**, o projeto pretende apoiar a rede de saúde dos territórios, buscando interpretação e comunicação de seus dados, fortalecendo sua capacidade de monitoramento, planejamento, transparência e resposta a problemas concretos. Do ponto de vista da **formação do estudante**, insere o discente em situações reais de diagnóstico, negociação, desenvolvimento de artefatos, validação com usuários e devolutiva pública, favorecendo formação crítica, técnica e cidadã. A **interação dialógica** se materializa na pactuação com a organização, na escuta das demandas, na definição compartilhada de indicadores e na validação iterativa do dashboard, evitando uma lógica de transferência unilateral de tecnologia. A **indissociabilidade ensino-pesquisa-extensão** aparece porque o projeto combina revisão de literatura, intervenção prática em contexto real e sistematização reflexiva dos resultados em relatórios e artigo. Os dashboards serão construídos utilizando uma metodologia de pesquisa estabelecida na literatura.
+
+A presente proposta de projeto de extensão se justifica em diversos aspectos. Primeiro, ela responde a uma demanda social concreta explícita, o apoio à secretaria de saúde do município na organização, interpretação e comunicação de seus dados. Esta demanda já foi observada em campo, pela equipe, em contato com a vigilância epidemiológica do município e com gestores da rede de atenção à saúde mental. Em segundo lugar, fortalece a formação dos estudantes ao inserir a analítica de dados, concretizada na elaboração de dashboards [@wilbanks2014m]. Por fim, favorece a integração entre ensino, pesquisa e extensão, pois o processo de desenvolvimento dos dashboards mobiliza saberes já discutidos nos cursos de graduação, como conteúdos referentes às disciplinas de estatística. Além disso, poderá gerar conhecimento sobre metodologias participativas, desenvolvimento de artefatos e condições de adoção dessas ferramentas em contextos locais [@WeggelaarJansen2018; @Khanbhai2022; @Vornhagen2025].
+
+Do ponto de vista institucional, o projeto também se alinha ao compromisso da universidade com a formação cidadã, a inovação social e a cooperação com o território. Ao desenvolver dashboards com e não apenas para as organizações parceiras, desloca-se o foco da simples entrega de um produto tecnológico para a construção de capacidades locais, o que amplia a chance de continuidade e apropriação dos resultados.
+
+Em relação aos Objetivos de Desenvolvimento Sustentáve da Organização das Nações Unidas, o projeto articula ODS 3 (Saúde e Bem-Estar), ODS 4 (Educação de Qualidade), ODS 10 (Redução das Desigualdades) e ODS 16 (Paz, Justiça e Instituições Eficazes).
+
+## Caracterização e enquadramento da proposta
+
+**Modalidade:** Projeto de Extensão.
+
+**Área temática principal:** Saúde.
+
+**Área temática secundária:** Educação.
+
+**Objetivos de Desenvolvimento Sustentável (ODS):** ODS 3 (Saúde e Bem-Estar), ODS 4 (Educação de Qualidade), ODS 10 (Redução das Desigualdades) e ODS 16 (Paz, Justiça e Instituições Eficazes).
+
+**Programa institucional de extensão:** a proposta deverá ser vinculada, no SUAP, ao programa institucional vigente mais aderente às ações de saúde, educação e inovação social em articulação com a rede pública municipal.
+
+**Financiamento:** a proposta não envolve recurso financeiro externo nem prestação de serviço remunerada.
+
+## Local de realização e público-alvo
+
+A ação será desenvolvida em parceria com a **Secretaria Municipal de Saúde de Rondonópolis**, tendo como cenários prioritários de implementação o **Departamento de Vigilância Epidemiológica**, **Unidades Básicas de Saúde (UBS)** e o **Centro de Atenção Psicossocial Infantojuvenil (CAPSij)**. Conforme a natureza do problema informacional trabalhado em cada ciclo de desenvolvimento, poderão ocorrer interfaces com **escolas da rede pública**, especialmente em ações de caráter intersetorial relacionadas ao território, à vigilância e à saúde mental.
+
+O **público externo principal** será composto por **gestores e trabalhadores da saúde** vinculados à Secretaria Municipal de Saúde e aos serviços participantes. O **público externo secundário** será composto por profissionais de escolas públicas que participem de ações articuladas com a saúde. Como **público interno**, a proposta contará obrigatoriamente com estudantes de graduação da UFR, protagonistas das atividades de diagnóstico, revisão de literatura, mapeamento do fluxo de dados, prototipagem, validação e sistematização dos resultados.
+
+Como estimativa preliminar para fins de planejamento, considera-se o atendimento direto de aproximadamente **60 beneficiários externos** ao longo da execução, entre gestores, trabalhadores da saúde e profissionais da educação envolvidos nas ações, além de **6 a 10 estudantes de graduação** como equipe discente. Trata-se de uma estimativa inicial, a ser ajustada no SUAP conforme a adesão das unidades participantes e o detalhamento anual das atividades.
+
+## Fundamentação Teórica
+
+Dashboards são artefatos de visualização e comunicação de dados que articulam indicadores, recursos gráficos e mecanismos de interação para apoiar compreensão, monitoramento e tomada de decisão. Em contextos de saúde e gestão pública, podem organizar grandes volumes de dados, facilitar a leitura de tendências e apoiar respostas mais oportunas a problemas coletivos [@Concannon2019; @Rabiei2024]. No entanto, o simples acúmulo de gráficos em uma interface não garante valor informacional. A literatura recente mostra que dashboards efetivos exigem alinhamento entre problema, usuários, contexto de uso, infraestrutura de dados e governança da informação [@Rabiei2022; @Rabiei2024; @Vornhagen2026].
+
+Em revisão sobre dashboards de saúde pública, Rabiei et al. identificaram cinco grandes grupos de princípios de design: objetivos e usuários-alvo, conteúdo, interface, tipos de análise e apresentação, e infraestrutura [@Rabiei2024]. Já Vornhagen et al. sintetizaram práticas recorrentes em quatro pilares: *approach*, *content*, *behavior* e *adoption*, enfatizando que a adoção e a sustentabilidade são tão importantes quanto a construção técnica do dashboard [@Vornhagen2026].
+
+Além disso, revisões sobre engajamento comunitário em visualizações em saúde indicam que ainda há pouco envolvimento substantivo dos públicos interessados ao longo do processo de desenvolvimento. Chau et al. argumentam que, para que as visualizações tenham utilidade social, é preciso considerar barreiras de linguagem, cultura, representação e letramento em dados, favorecendo que a comunidade não seja apenas objeto, mas também intérprete e narradora dos dados [@Chau2024]. Esse achado é especialmente relevante em um projeto de extensão, no qual a relação com a organização parceira deve ser dialógica e formativa.
+
+Esses debates podem ser organizados em três contribuições complementares para a proposta aqui apresentada. A primeira, enfatizada por Thorpe e Gourevitch, é que dashboards têm valor quando tornam dados locais comparáveis e acionáveis para diferentes atores, podendo fortalecer agendas de saúde e equidade [@ThorpeGourevitch2022]. A segunda, proposta por Dasgupta e Kapadia, é que dashboards devem ser pensados também como dispositivos de comunicação pública, exigindo atenção às perguntas formuladas, à segmentação de audiência, à possibilidade de incluir elementos narrativos e à escolha das unidades territoriais de visualização [@DasguptaKapadia2022]. A terceira, desenvolvida por Dixon et al., é que dashboards só se sustentam quando apoiados por processos de definição de métricas, harmonização de bases, compartilhamento de dados, infraestrutura tecnológica e capacidade analítica institucional [@Dixon2022].
+
+No campo do design de dashboards, diferentes estudos empíricos vêm destacando a importância de metodologias participativas e iterativas. Weggelaar-Jansen et al., ao investigar o desenvolvimento de dashboards hospitalares de qualidade e segurança, mostraram que os maiores desafios não são apenas técnicos, mas também organizacionais, envolvendo disponibilidade de dados, definição de indicadores, desenho do layout, integração às rotinas e flexibilidade do produto [@WeggelaarJansen2018]. van de Baan et al. indicam que o envolvimento de usuários ao longo do processo fortalece a aderência do dashboard às necessidades reais do trabalho e melhora a percepção de utilidade e apropriação [@Baan2023]. Estudos de co-design, como os de Janssen et al. e Khanbhai et al., reforçam que oficinas, prototipagem iterativa e avaliação heurística ajudam a qualificar tanto a interface quanto a relevância do conteúdo [@Janssen2020; @Khanbhai2022].
+
+Os debates recentes sobre dashboards públicos ajudam a qualificar o escopo desta proposta. Thorpe e Gourevitch defendem que dashboards podem ampliar o acesso a dados contextualizados, favorecer comparações entre territórios e grupos populacionais e apoiar ações voltadas à saúde e à equidade, desde que sua utilidade seja efetivamente acompanhada ao longo do tempo [@ThorpeGourevitch2022]. Já Dasgupta e Kapadia alertam que dashboards não são dispositivos neutros: ao selecionar indicadores, escalas territoriais e formas de apresentação, também moldam prioridades, interpretações e decisões públicas, razão pela qual perguntas, públicos e usos precisam ser cuidadosamente considerados [@DasguptaKapadia2022]. Dixon et al., por sua vez, argumentam que dashboards sustentáveis dependem de uma infraestrutura mais ampla de dados, interoperabilidade, compartilhamento, sistemas adequados e força de trabalho capacitada, não podendo ser tratados como simples produtos visuais isolados [@Dixon2022].
+
+No plano metodológico, este projeto adota a **Pesquisa de Design-Ação** (*Action Design Research* - ADR) como eixo central. O ADR foi proposto por Sein et al. como uma abordagem que integra a tradição da *Action Research* com a *Design Science Research*, buscando resolver problemas organizacionais reais por meio da construção e avaliação de artefatos, ao mesmo tempo em que produz conhecimento transferível de design [@Sein2011]. Em termos mais amplos, essa perspectiva dialoga com a ênfase da *Action Research* na intervenção em contexto [@Baskerville1999] e com a centralidade do artefato na *Design Science Research* [@Hevner2004; @Peffers2007]. Em refinamento posterior, Mullarkey e Hevner detalham o processo do ADR e reforçam seu valor para estudos em que o artefato precisa ser continuamente ajustado a partir da interação com o contexto de uso [@Mullarkey2019].
+
+A escolha pelo ADR decorre do objetivo específico deste projeto: **desenvolver, testar e refinar um artefato informacional**. Em outras palavras, a proposta não se limita a compreender e transformar a prática institucional, mas visa construir um dashboard utilizável, relevante e sustentável para uma organização parceira. Isso torna o ADR particularmente adequado, pois ele combina: formulação do problema com os atores envolvidos; construção e avaliação iterativa do artefato; reflexão sobre o processo; e formalização de aprendizagens que possam orientar novas experiências [@Sein2011; @Vornhagen2025].
+
+O estudo CARA, de Vornhagen et al., é especialmente relevante como referência aplicada para esta proposta. Ao desenvolver um dashboard interativo para médicos da atenção primária irlandesa, os autores utilizaram ADR com entrevistas, prototipagem, teste iterativo e oficina com usuários, mostrando que a utilidade do dashboard depende de dois elementos centrais: requisitos reais dos usuários e participação contínua desses usuários nas decisões de conteúdo e de design [@Vornhagen2025]. Esse achado é coerente com outras sínteses empíricas recentes, que apontam o envolvimento do usuário, a escolha de indicadores acionáveis, a usabilidade e a integração ao fluxo de trabalho como fatores decisivos para a adoção do dashboard [@Rabiei2022; @Rabiei2024; @Vornhagen2026].
+
+Outra dimensão importante da literatura refere-se ao engajamento comunitário e ao letramento em dados. Chau et al. destacam que visualizações podem reforçar desigualdades quando são produzidas sem considerar linguagem, cultura, acesso e representação. Por isso, defendem o engajamento dos usuários em todas as etapas do desenvolvimento e o fortalecimento da comunidade como produtora de significado orientado por dados [@Chau2024]. Essa perspectiva é especialmente pertinente para projetos extensionistas, nos quais a qualidade do produto final depende também da capacidade dos usuários de compreender, questionar e utilizar a informação apresentada.
+
+## Objetivo Geral
+
+Desenvolver dashboards participativos para a rede de saúde pública de Rondonópolis, fortalecendo a capacidade local de uso de dados para monitoramento, planejamento e tomada de decisão.
+
+## Objetivos Específicos
+
+1.  inserir estudantes de graduação da UFR em experiências extensionistas de diagnóstico, pactuação, desenvolvimento e avaliação de dashboards em contextos reais da rede pública de saúde;
+2.  realizar revisão de literatura sobre dashboards, princípios de design, co-design, usabilidade e adoção;
+3.  realizar revisão de literatura sobre fundamentos metodológicos do ADR e abordagens correlatas;
+4.  mapear, com a Secretaria Municipal de Saúde e os serviços participantes, o fluxo de dados, os problemas informacionais e os requisitos do dashboard;
+5.  definir colaborativamente o escopo do produto de dados, os indicadores prioritários e os requisitos funcionais e não funcionais;
+6.  desenvolver um produto mínimo viável (MVP), com base em ciclos iterativos de prototipagem;
+7.  validar o MVP com gestores, trabalhadores e demais usuários dos serviços participantes e realizar ajustes sucessivos;
+8.  sistematizar a experiência em formato de relatório técnico e artigo.
+
+## Metodologia da Execução do Projeto
+
+A metodologia do projeto terá como eixo a **Pesquisa de Design-Ação (ADR)**, entendida como uma abordagem intervencionista voltada ao desenvolvimento e refinamento de artefatos em contexto real, combinando solução prática e produção de conhecimento [@Sein2011; @Mullarkey2019]. Em termos operacionais, o projeto será organizado a partir de quatro movimentos articulados, adaptados da literatura: **formulação do problema**, **construção, intervenção e avaliação**, **reflexão e aprendizagem** e **formalização da aprendizagem** [@Sein2011; @Vornhagen2025].
+
+No âmbito da extensão, a pactuação inicial do trabalho será realizada com a **Secretaria Municipal de Saúde de Rondonópolis** e com os serviços envolvidos em cada frente de atuação, com apoio do professor orientador. Essa pactuação deverá envolver pelo menos a definição do problema a ser enfrentado, dos interlocutores responsáveis na unidade, das possibilidades de acesso aos dados, das condições éticas e operacionais do trabalho e do compromisso mínimo com participação nas etapas de validação. Para apoiar essa fase, será utilizado um **Template 1**, destinado ao registro da unidade participante, da justificativa da parceria, do problema priorizado, dos objetivos iniciais e dos participantes-chave.
+
+Uma vez pactuada a parceria, o projeto seguirá para a formulação do problema, com foco na compreensão do contexto organizacional, dos usuários, das decisões que o dashboard deverá apoiar e do estado atual dos dados. Nessa etapa, serão utilizados revisão de literatura, entrevistas, observação, análise de documentos e conversas exploratórias. Em seguida, será realizado o **mapeamento do fluxo de dados**, com uso de um **Template 2**, no qual serão registrados fontes de dados, responsáveis, periodicidade, formatos, transformações necessárias, limitações e riscos de qualidade.
+
+Assim, metodologicamente, o projeto não tratará o dashboard apenas como entrega final, mas como parte de um processo de construção de utilidade pública e organizacional. Inspirado nesses autores, o desenvolvimento deverá considerar: (a) quem são os públicos prioritários do dashboard e que decisões precisam apoiar; (b) quais métricas realmente fazem sentido para o contexto local; (c) que informações complementares, explicações ou elementos narrativos podem aumentar a inteligibilidade do produto; e (d) quais condições mínimas de fluxo de dados, atualização, interoperabilidade e manutenção existem na organização parceira para sustentar seu uso após a etapa inicial [@ThorpeGourevitch2022; @DasguptaKapadia2022; @Dixon2022].
+
+Na fase de construção, intervenção e avaliação, os estudantes desenvolverão protótipos sucessivos do dashboard utilizando a ferramenta mais adequada ao caso, podendo ser empregados **Power BI, R ou Python**, conforme a natureza dos dados, a infraestrutura disponível no serviço participante e os objetivos do projeto. Quando pertinente, poderão ser combinados recursos como bibliotecas de visualização, relatórios reprodutíveis, aplicações interativas e painéis de monitoramento. O desenvolvimento deverá começar por um **produto mínimo viável (MVP)**, isto é, uma versão inicial capaz de responder a um conjunto reduzido de perguntas consideradas prioritárias pela organização. Ao longo do processo, os protótipos serão apresentados aos usuários para validação, coleta de feedback e ajustes.
+
+A fase de reflexão e aprendizagem ocorrerá paralelamente às demais etapas. Os estudantes deverão registrar, em diário de campo ou relatório reflexivo, as principais decisões de design, dificuldades encontradas, reações dos usuários, limitações dos dados e ajustes realizados no artefato. Esse material servirá tanto ao aprimoramento do dashboard quanto à elaboração do artigo final. Por fim, a formalização da aprendizagem consistirá na sistematização do caso, das decisões metodológicas e das lições aprendidas, com vistas à produção de relatório técnico e artigo acadêmico.
+
+### Etapas operacionais do projeto
+
+#### 1. Pactuação e alinhamento com a organização parceira
+
+A execução começará com a pactuação com a **Secretaria Municipal de Saúde de Rondonópolis** e com a definição da unidade ou frente prioritária de trabalho, tais como Vigilância Epidemiológica, UBS ou CAPSij. Nessa etapa, ocorrerão reuniões iniciais para apresentação da proposta, escuta da demanda, definição do problema prioritário, identificação dos interlocutores responsáveis e preenchimento do **Template 1** de pactuação. Quando pertinente, essa etapa poderá envolver articulação com escolas da rede pública, especialmente em demandas intersetoriais.
+
+#### 2. Revisão de literatura sobre dashboards
+
+Será realizada revisão orientada da literatura sobre dashboards, seus princípios de design, requisitos funcionais e não funcionais, usabilidade, adoção e participação de usuários. Essa etapa ajudará o estudante a fundamentar suas decisões de design e a dialogar com achados de revisões e estudos empíricos recentes [@Rabiei2022; @Rabiei2024; @Vornhagen2026].
+
+#### 3. Revisão de literatura sobre ADR
+
+Nesta etapa, o foco recairá sobre a fundamentação metodológica do ADR e de abordagens correlatas, como *Action Research*, *Design Science Research*, co-design e *User-Centered Design*. O objetivo será permitir que o estudante compreenda a especificidade do ADR como metodologia voltada à construção iterativa de artefatos em contexto real [@Sein2011; @Mullarkey2019; @Hevner2004; @Baskerville1999].
+
+#### 4. Mapeamento do fluxo de dados
+
+Com base no problema pactuado, será realizado o mapeamento do fluxo de dados da organização parceira. O **Template 2** servirá para registrar fontes, formatos, responsáveis, periodicidade, qualidade, lacunas, integrações possíveis e limitações de acesso. Esta etapa é essencial para verificar a viabilidade do dashboard e orientar a definição do MVP.
+
+#### 5. Pesquisa de Design-Ação (Action Design Research)
+
+A fase central do projeto corresponde ao desenvolvimento iterativo do dashboard, em ciclos de construção, intervenção e avaliação. Nessa etapa, o estudante deverá definir indicadores prioritários, elaborar o MVP, apresentar versões preliminares à organização, recolher feedback, revisar visualizações, simplificar navegação e registrar as aprendizagens produzidas. A lógica de trabalho será incremental e centrada no uso real do artefato, e não na busca de um produto fechado desde o início [@Vornhagen2025].
+
+#### 6. Validação e ajustes
+
+Depois de construído o MVP, o dashboard será validado com os usuários da organização parceira. A validação poderá incluir devolutivas presenciais ou remotas, observação do uso, entrevistas curtas, registro de dificuldades, comentários sobre relevância dos indicadores e sugestões de melhorias. Os resultados dessa etapa orientarão os ajustes finais do produto.
+
+#### 7. Elaboração da devolutiva final, do relatório técnico e do artigo
+
+Ao longo de todo o processo, o estudante deverá registrar as etapas do projeto, os achados da literatura, o mapeamento do fluxo de dados, as decisões de design, os feedbacks recebidos e os ajustes realizados. Esse material servirá de base para a redação do relatório técnico, do artigo e dos registros exigidos no SUAP, bem como para a apresentação dos resultados na Mostra de Extensão da UFR e em outros eventos pertinentes.
+
+### Cronograma de execução
+
+Considerando a natureza de fluxo contínuo do edital, o cronograma será organizado em **meses relativos à aprovação da proposta**, preservando uma execução planejada para aproximadamente **21 meses**, compatível com a intenção de desenvolvimento entre abril de 2026 e dezembro de 2027 e com o limite de até 24 meses previsto no edital.
+
+| Meta | Atividades principais | Período previsto | Responsáveis | Produto/indicador de acompanhamento |
+|---------------|---------------|---------------|---------------|---------------|
+| 1\. Pactuação institucional e preparação da equipe | Reuniões com a Secretaria Municipal de Saúde, definição da unidade participante, cadastramento da equipe, assinatura de termos e planejamento detalhado | Meses 1 a 2 | Coordenação, estudantes e interlocutores da SMS | Unidade definida, plano de trabalho elaborado e equipe cadastrada |
+| 2\. Revisão de literatura e formação da equipe discente | Estudo orientado sobre dashboards, ADR, co-design e uso de dados em saúde | Meses 1 a 4 | Coordenação e estudantes | Fichamentos, seminários internos e referências sistematizadas |
+| 3\. Diagnóstico do problema e mapeamento do fluxo de dados | Levantamento de necessidades, mapeamento de fontes, indicadores, rotinas de alimentação e limitações dos dados | Meses 3 a 6 | Estudantes, coordenação e equipe parceira | Template 1 e Template 2 preenchidos; diagnóstico validado |
+| 4\. Desenvolvimento do MVP e ciclos de refinamento | Definição de indicadores, prototipagem, construção do dashboard, testes e ajustes iterativos | Meses 6 a 14 | Estudantes com supervisão da coordenação e participação da equipe parceira | MVP funcional e registros de versões e feedbacks |
+| 5\. Validação com usuários e ajustes finais | Oficinas de devolutiva, observação de uso, coleta de feedback e refinamento do produto | Meses 15 a 17 | Estudantes, coordenação e usuários dos serviços | Relatório de validação, ajustes concluídos e versão final do dashboard |
+| 6\. Sistematização, disseminação e encerramento | Elaboração de relatório técnico, artigo, apresentação em evento de extensão e fechamento dos registros no SUAP | Meses 18 a 21 | Coordenação e estudantes | Relatório final, produto disseminado e submissão/apresentação em evento |
+
+## Acompanhamento e Avaliação do Projeto Durante a Execução
+
+O acompanhamento do projeto será realizado pelo professor coordenador em diálogo permanente com os estudantes e com a equipe da Secretaria Municipal de Saúde e dos serviços participantes. Pretende-se estimular um ambiente colaborativo e reflexivo, no qual estudantes e comunidade profissional possam opinar sobre o andamento das atividades, propor ajustes e contribuir para o redesenho contínuo do artefato (dashboard).
+
+Os estudantes serão acompanhados periodicamente quanto à frequência, participação, cumprimento das atividades planejadas e envolvimento nas etapas de revisão de literatura, pactuação institucional, mapeamento do fluxo de dados, desenvolvimento do MVP e validação com usuários. Também serão realizados momentos de autoavaliação e avaliação coletiva, com discussão sobre dificuldades encontradas, aprendizagens construídas e propostas de aprimoramento.
+
+A avaliação do projeto considerará tanto a dimensão formativa quanto a dimensão social da extensão. Entre os aspectos a serem observados, destacam-se: a qualidade da pactuação com a organização parceira; a consistência do mapeamento do fluxo de dados; a pertinência dos indicadores e visualizações escolhidos; o grau de participação dos usuários ao longo do processo; a utilidade e a usabilidade do dashboard; o potencial de adoção e continuidade do produto; e a capacidade do estudante de sistematizar a experiência em formato acadêmico e técnico. Serão utilizados, entre outros, os seguintes indicadores de acompanhamento: número de reuniões realizadas com a equipe parceira; número de estudantes de graduação envolvidos; número de versões/protótipos desenvolvidos; registro de devolutivas dos usuários; produção de relatório técnico; e apresentação ou submissão de trabalho em evento de extensão ou produção científica.
+
+A validação deverá observar não apenas se o dashboard funciona tecnicamente, mas também se ele está conseguindo comunicar informação relevante aos públicos envolvidos e se apresenta potencial de uso continuado. Nesse sentido, pode-se acompanhar elementos como frequência de acesso, retomada de uso, adequação dos indicadores às necessidades dos usuários, clareza das visualizações, capacidade de orientar decisões e condições organizacionais mínimas para atualização e manutenção do produto [@ThorpeGourevitch2022; @DasguptaKapadia2022; @Dixon2022].
+
+Sempre que possível, as organizações parceiras também participarão da avaliação do projeto, oferecendo devolutivas sobre o processo, o MVP e o produto final. Essa avaliação externa contribuirá para ajustar a proposta e fortalecer sua aderência às demandas locais. Ao final, serão organizados os comprovantes de difusão e produção exigidos pelo edital para fins de monitoramento, relatório final e certificação.
+
+## Resultados Esperados e Disseminação dos Resultados
+
+Como resultados esperados, pretende-se alcançar:
+
+1.  o desenvolvimento de dashboards participativos para a rede de saúde pública de Rondonópolis, adequados a problemas concretos de monitoramento, gestão e comunicação de dados;
+2.  a formação de estudantes em ciência de dados aplicada, visualização, design participativo, ADR e comunicação pública da informação;
+3.  a ampliação da capacidade da Secretaria Municipal de Saúde, dos serviços participantes e das escolas públicas envolvidas em ações intersetoriais para compreender, interpretar e utilizar dados em seus processos de trabalho;
+4.  a produção de materiais de apoio, incluindo Template 1 para pactuação, Template 2 para mapeamento do fluxo de dados, relatórios técnicos e orientações para desenvolvimento do MVP;
+5.  o fortalecimento da integração entre extensão, ensino e pesquisa, com geração de experiências e conhecimento sobre desenvolvimento de visualizações em contexto local;
+6.  a sistematização de achados que possam subsidiar futuras ações extensionistas, projetos de pesquisa e novas versões do produto de dados.
+7.  a incorporação, sempre que pertinente, de estratégias de comunicação que favoreçam o entendimento do dashboard por diferentes públicos, incluindo explicações, contextualização dos indicadores e atenção à escala territorial mais útil ao problema abordado [@DasguptaKapadia2022];
+8.  a produção de aprendizados sobre condições de sustentabilidade de dashboards em organizações locais, considerando utilidade percebida, infraestrutura de dados, rotinas de atualização e possibilidades de continuidade após a intervenção inicial [@ThorpeGourevitch2022; @Dixon2022].
+
+Quanto à disseminação dos resultados, pretende-se divulgar os produtos e aprendizados do projeto por meio de apresentações públicas para a Secretaria Municipal de Saúde e serviços participantes, oficinas e eventos de extensão, especialmente a Mostra de Extensão da UFR, relatórios técnicos, resumos e artigos acadêmicos, além da disponibilização, quando viável e eticamente adequada, de modelos reprodutíveis de dashboards, relatórios técnicos e fluxos de trabalho passíveis de adaptação por outras organizações públicas.
+
+Espera-se, por fim, que o projeto contribua para consolidar uma cultura extensionista de coprodução de soluções orientadas por dados, em que a universidade atue como parceira na construção de capacidades locais, e não apenas como fornecedora de tecnologia.
