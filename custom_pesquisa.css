@@ -1,0 +1,466 @@
+/* ============================================================
+   custom_pesquisa.css — Layout moderno para projeto de pesquisa
+   Tema: saúde mental · ADR · dashboards · UFR
+   ============================================================ */
+
+/* ── Fontes e variáveis ────────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap');
+
+:root {
+  --clr-primary:    #1a6b8a;
+  --clr-primary-dk: #0f4a63;
+  --clr-primary-lt: #e8f4f8;
+  --clr-accent:     #2eaad4;
+  --clr-green:      #2d7a57;
+  --clr-green-lt:   #e8f5ee;
+  --clr-amber:      #c07d00;
+  --clr-amber-lt:   #fef8e7;
+  --clr-neutral-50: #f8fafc;
+  --clr-neutral-100:#f1f5f9;
+  --clr-neutral-200:#e2e8f0;
+  --clr-neutral-500:#64748b;
+  --clr-neutral-700:#334155;
+  --clr-neutral-900:#0f172a;
+  --clr-text:       #1e293b;
+  --clr-muted:      #475569;
+
+  --ff-sans:  'Inter', system-ui, -apple-system, sans-serif;
+  --ff-serif: 'Merriweather', Georgia, 'Times New Roman', serif;
+
+  --fs-base:   1.02rem;
+  --lh-base:   1.85;
+  --lh-tight:  1.35;
+
+  --radius:    6px;
+  --shadow-sm: 0 1px 3px rgba(0,0,0,.08), 0 1px 2px rgba(0,0,0,.06);
+  --shadow-md: 0 4px 12px rgba(0,0,0,.1);
+}
+
+/* ── Reset e base ──────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  font-family: var(--ff-sans);
+  font-size: var(--fs-base);
+  color: var(--clr-text);
+  background: #ffffff;
+  line-height: var(--lh-base);
+}
+
+#quarto-content { background: #ffffff; }
+
+/* ── Bloco de título ───────────────────────────────────────── */
+.quarto-title-block {
+  background: linear-gradient(to bottom right, var(--clr-neutral-50) 0%, #ffffff 60%);
+  padding: 3rem 2.5rem 2.25rem 3rem;
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--clr-neutral-200);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Barra vertical colorida à esquerda */
+.quarto-title-block::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 7px;
+  height: 100%;
+  background: linear-gradient(180deg,
+    var(--clr-primary-dk) 0%,
+    var(--clr-accent)     50%,
+    var(--clr-green)      100%);
+}
+
+/* Círculo decorativo translúcido no canto superior direito */
+.quarto-title-block::after {
+  content: '';
+  position: absolute;
+  right: -80px;
+  top: -80px;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--clr-primary-lt) 0%, transparent 68%);
+  pointer-events: none;
+}
+
+/* Título principal */
+.quarto-title h1.title {
+  font-family: var(--ff-serif);
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--clr-primary-dk);
+  margin: 0 0 .5rem;
+  letter-spacing: -.015em;
+}
+
+/* Linha decorativa abaixo do título */
+.quarto-title h1.title::after {
+  content: '';
+  display: block;
+  margin-top: .85rem;
+  height: 3px;
+  width: 5rem;
+  background: linear-gradient(90deg, var(--clr-accent), var(--clr-green));
+  border-radius: 2px;
+}
+
+.quarto-title-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 1.1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--clr-neutral-200);
+}
+
+.quarto-title-meta-heading {
+  font-size: .68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  color: var(--clr-muted);
+  margin-bottom: .2rem;
+}
+
+.quarto-title-meta-contents p,
+.quarto-title-meta-contents a {
+  color: var(--clr-neutral-700);
+  font-size: .9rem;
+  margin: 0;
+  font-weight: 500;
+}
+
+/* ── Faixa decorativa no topo ──────────────────────────────── */
+body::before {
+  content: '';
+  display: block;
+  height: 4px;
+  background: linear-gradient(90deg, var(--clr-primary-dk), var(--clr-accent), var(--clr-green));
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+/* ── Parágrafos — justificados ─────────────────────────────── */
+p {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  margin-bottom: 1.1rem;
+}
+
+/* ── TOC lateral DIREITA — seletores corretos do Quarto ─────── */
+/* Quarto usa #quarto-margin-sidebar para o TOC flutuante */
+#quarto-margin-sidebar {
+  padding: 0 0.5rem;
+}
+
+#quarto-margin-sidebar .toc-title,
+#quarto-margin-sidebar nav > h2 {
+  font-size: .72rem !important;
+  font-weight: 700 !important;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: var(--clr-primary) !important;
+  margin-bottom: .75rem;
+  padding-bottom: .4rem;
+  border-bottom: 2px solid var(--clr-accent);
+}
+
+/* Links do TOC */
+#quarto-margin-sidebar .nav-link {
+  font-size: .8rem;
+  color: var(--clr-muted) !important;
+  padding: .2rem .5rem;
+  border-radius: var(--radius);
+  line-height: 1.45;
+  white-space: normal;
+  word-break: break-word;
+  text-align: left !important;  /* impede herança do justify global */
+  display: block;
+  transition: background .15s, color .15s;
+}
+
+#quarto-margin-sidebar .nav-link:hover,
+#quarto-margin-sidebar .nav-link.active {
+  background: var(--clr-primary-lt);
+  color: var(--clr-primary-dk) !important;
+  font-weight: 500;
+}
+
+/* Subitens do TOC */
+#quarto-margin-sidebar .nav ul {
+  border-left: 2px solid var(--clr-neutral-200);
+  margin-left: .5rem;
+  padding-left: .4rem;
+}
+
+/* Número de seção no TOC */
+#quarto-margin-sidebar .header-section-number {
+  color: var(--clr-accent);
+  font-weight: 700;
+  margin-right: .3em;
+}
+
+/* ── Cabeçalhos de seção ───────────────────────────────────── */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--ff-sans);
+  color: var(--clr-neutral-900);
+  line-height: var(--lh-tight);
+  margin-top: 2.25rem;
+  margin-bottom: .75rem;
+  font-weight: 600;
+}
+
+/* H1 — seções principais do corpo (não o título do documento) */
+section > h1,
+div > h1 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--clr-primary-dk);
+  padding-bottom: .5rem;
+  border-bottom: 3px solid var(--clr-accent);
+  margin-top: 2.75rem;
+}
+
+/* H2 */
+h2 {
+  font-size: 1.12rem;
+  font-weight: 600;
+  color: var(--clr-primary);
+  padding-left: .8rem;
+  border-left: 4px solid var(--clr-accent);
+}
+
+/* H3 */
+h3 {
+  font-size: .99rem;
+  font-weight: 600;
+  color: var(--clr-primary-dk);
+  padding-left: .7rem;
+  border-left: 3px solid var(--clr-neutral-200);
+}
+
+/* H4 */
+h4 {
+  font-size: .92rem;
+  font-weight: 600;
+  color: var(--clr-muted);
+  text-transform: uppercase;
+  letter-spacing: .04em;
+}
+
+/* Número automático de seção no corpo */
+.header-section-number {
+  color: var(--clr-accent);
+  margin-right: .4em;
+  font-weight: 700;
+}
+
+/* ── Seção Resumo ──────────────────────────────────────────── */
+section#resumo > p,
+section[id^="resumo"] > p {
+  background: var(--clr-primary-lt);
+  border-left: 5px solid var(--clr-primary);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  padding: 1.1rem 1.3rem;
+  font-size: .97rem;
+  line-height: 1.9;
+  color: var(--clr-neutral-700);
+}
+
+/* ── Perguntas de pesquisa ─────────────────────────────────── */
+section#introdução ol,
+section[id*="introdu"] ol {
+  background: var(--clr-amber-lt);
+  border: 1px solid #f0d070;
+  border-radius: var(--radius);
+  padding: 1rem 1.3rem 1rem 2.3rem;
+  margin: 1.25rem 0;
+}
+
+section#introdução ol li,
+section[id*="introdu"] ol li {
+  margin-bottom: .65rem;
+  color: var(--clr-neutral-700);
+  line-height: 1.7;
+}
+
+/* ── Listas gerais ─────────────────────────────────────────── */
+ul, ol {
+  padding-left: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+li {
+  margin-bottom: .35rem;
+  line-height: 1.75;
+  text-align: justify;
+}
+
+/* ── Seção de ética ────────────────────────────────────────── */
+section[id*="tica"] p,
+section[id*="etica"] p {
+  border-left: 3px solid var(--clr-green);
+  padding-left: .9rem;
+  margin-left: .1rem;
+}
+
+/* ── Resultados esperados — badges nos strong iniciais ─────── */
+section[id*="resultados"] p > strong:first-child {
+  display: inline-block;
+  background: var(--clr-primary-lt);
+  color: var(--clr-primary-dk);
+  border-radius: var(--radius);
+  padding: .1rem .5rem;
+  font-size: .86rem;
+  font-weight: 700;
+  margin-right: .4rem;
+}
+
+/* ── Referências bibliográficas ────────────────────────────── */
+div#refs {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 2px solid var(--clr-neutral-200);
+  font-size: .87rem;
+  line-height: 1.75;
+  color: var(--clr-muted);
+}
+
+/* Cada entrada: só borda lateral — sem border-radius para não clipar texto */
+div#refs > div {
+  padding: .5rem 0 .5rem 1rem;
+  margin-bottom: .9rem;
+  border-left: 3px solid var(--clr-neutral-200);
+  overflow: visible;          /* garante que texto não seja cortado */
+  transition: border-color .2s;
+}
+
+div#refs > div:hover {
+  border-left-color: var(--clr-accent);
+}
+
+/* ── Links ─────────────────────────────────────────────────── */
+a {
+  color: var(--clr-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--clr-accent);
+  text-decoration: underline;
+}
+
+/* Citações inline */
+a.citation { color: var(--clr-muted); }
+
+/* ── Código inline ─────────────────────────────────────────── */
+code {
+  background: var(--clr-neutral-100);
+  color: var(--clr-primary-dk);
+  border: 1px solid var(--clr-neutral-200);
+  border-radius: 3px;
+  padding: .1em .35em;
+  font-size: .87em;
+  font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+}
+
+/* ── Blocos de código ──────────────────────────────────────── */
+pre {
+  background: var(--clr-neutral-900);
+  border-radius: var(--radius);
+  padding: 1.1rem 1.4rem;
+  overflow-x: auto;
+  box-shadow: var(--shadow-sm);
+}
+
+pre code {
+  background: transparent;
+  border: none;
+  color: #e2e8f0;
+  padding: 0;
+  font-size: .9em;
+}
+
+/* ── Itálico — termos técnicos ─────────────────────────────── */
+em { color: var(--clr-primary-dk); }
+
+/* ── Tabelas ───────────────────────────────────────────────── */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: .9rem;
+  margin: 1.25rem 0;
+  box-shadow: var(--shadow-sm);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+thead {
+  background: var(--clr-primary);
+  color: #ffffff;
+}
+
+thead th {
+  padding: .6rem 1rem;
+  text-align: left;
+  font-weight: 600;
+  font-size: .81rem;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+
+tbody tr:nth-child(even) { background: var(--clr-neutral-50); }
+
+tbody td {
+  padding: .5rem 1rem;
+  border-bottom: 1px solid var(--clr-neutral-200);
+  vertical-align: top;
+  text-align: justify;
+}
+
+/* ── Divisores ─────────────────────────────────────────────── */
+hr {
+  border: none;
+  border-top: 2px solid var(--clr-neutral-200);
+  margin: 2rem 0;
+}
+
+/* ── Responsividade ────────────────────────────────────────── */
+@media (max-width: 991px) {
+  .quarto-title { font-size: 1.25rem; }
+  section > h1 { font-size: 1.2rem; }
+  h2 { font-size: 1.02rem; }
+}
+
+@media (max-width: 575px) {
+  .quarto-title-block { padding: 1.75rem 1.1rem; }
+  body { font-size: .95rem; }
+}
+
+/* ── Impressão ─────────────────────────────────────────────── */
+@media print {
+  body::before { display: none; }
+  #quarto-margin-sidebar { display: none; }
+
+  .quarto-title-block {
+    background: none;
+    border-bottom: 2px solid var(--clr-neutral-200);
+    padding: 1rem 0 1rem 1rem;
+    box-shadow: none;
+  }
+
+  .quarto-title-block::after { display: none; }
+
+  h1, h2, h3 { page-break-after: avoid; }
+  p { orphans: 3; widows: 3; }
+  a { color: var(--clr-text); text-decoration: none; }
+}
