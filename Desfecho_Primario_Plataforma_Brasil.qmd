@@ -1,0 +1,11 @@
+---
+title: "Desfecho primário"
+lang: pt-BR
+format: html
+---
+
+# Desfecho primário
+
+O desfecho primário da pesquisa será a avaliação da utilidade, usabilidade e adoção inicial do *dashboard* desenvolvido participativamente para apoio à gestão do CAPSij de Rondonópolis-MT. Esse desfecho será analisado a partir da percepção dos gestores e profissionais participantes sobre a capacidade do artefato de responder às necessidades informacionais do serviço, apoiar o monitoramento de indicadores, favorecer a interpretação dos dados disponíveis e subsidiar processos de planejamento e tomada de decisão.
+
+A avaliação considerará dados qualitativos provenientes de entrevistas, oficinas, testes de usabilidade, observação participante e registros de campo, bem como dados quantitativos descritivos, como escores de usabilidade, frequência de uso e registros agregados de interação com o *dashboard*, quando disponíveis. O desfecho será considerado alcançado se o processo permitir consolidar uma versão funcional do *dashboard*, validada com os usuários, e produzir evidências sobre sua pertinência, limitações e condições de uso no contexto real do serviço.

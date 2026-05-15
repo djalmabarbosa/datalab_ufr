@@ -1,0 +1,15 @@
+---
+title: "Riscos"
+lang: pt-BR
+format: html
+---
+
+# Riscos
+
+A pesquisa apresenta riscos mínimos aos participantes, principalmente de natureza psicossocial e relacionados à confidencialidade das informações. Durante entrevistas, oficinas, testes de usabilidade ou discussões sobre processos de trabalho, os participantes poderão sentir desconforto ao relatar dificuldades no uso de dados, limitações dos sistemas de informação, problemas organizacionais ou aspectos da rotina do serviço. Também pode haver constrangimento caso percebam suas respostas como avaliação de desempenho individual ou institucional.
+
+Para minimizar esses riscos, será esclarecido que a participação é voluntária, que não haverá avaliação individual dos profissionais e que os dados serão analisados de forma agregada e com finalidade exclusivamente científica. Os participantes poderão recusar qualquer pergunta, interromper sua participação ou desistir da pesquisa a qualquer momento, sem qualquer prejuízo profissional ou institucional.
+
+Há ainda risco de quebra de sigilo ou identificação indireta dos participantes, especialmente por se tratar de equipe pequena e de um serviço específico. Para reduzir esse risco, os registros serão codificados, nomes e informações identificadoras serão suprimidos das transcrições e publicações, e os dados serão armazenados em ambiente seguro, com acesso restrito ao pesquisador responsável e à equipe autorizada. Resultados serão apresentados de forma agregada, evitando a exposição de falas ou situações que permitam identificação direta ou indireta dos participantes.
+
+Caso sejam acessados documentos, relatórios ou bases administrativas do serviço, haverá cuidado para evitar divulgação de informações sensíveis de usuários, profissionais ou da instituição. A pesquisa não prevê intervenção clínica nem coleta direta de dados com crianças, adolescentes ou familiares atendidos pelo CAPSij. O uso de dados assistenciais, quando necessário, será restrito ao que for aprovado pelo Comitê de Ética em Pesquisa, priorizando dados anonimizados, agregados ou sem identificação individual.

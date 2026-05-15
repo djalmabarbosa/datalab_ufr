@@ -1,0 +1,21 @@
+---
+title: "Metodologia proposta"
+lang: pt-BR
+format: html
+---
+
+# Metodologia proposta
+
+A pesquisa será de natureza aplicada, com abordagem predominantemente qualitativa e uso complementar de dados quantitativos descritivos. O delineamento metodológico adotará a *Action Design Research* (ADR), por se tratar de uma investigação que combina desenvolvimento de artefato tecnológico, intervenção em contexto organizacional real e produção de conhecimento científico transferível. A unidade empírica será o Centro de Atenção Psicossocial Infantojuvenil (CAPSij) de Rondonópolis-MT.
+
+A pesquisa será organizada em quatro etapas articuladas. Na primeira etapa, será realizada a formulação do problema, por meio de aproximação institucional com o serviço, entrevistas semiestruturadas com gestores e profissionais, análise documental de sistemas, relatórios e instrumentos internos, além do mapeamento das necessidades informacionais e dos indicadores prioritários para a gestão. Também será avaliada a maturidade informacional do serviço e sua capacidade analítica, com instrumentos estruturados adaptados ao contexto da pesquisa.
+
+Na segunda etapa, ocorrerá a construção, intervenção e avaliação do artefato. Serão desenvolvidos protótipos iterativos de *dashboard* em linguagem R, utilizando pacotes de código aberto, como `shiny`, `flexdashboard`, `ggplot2`, `plotly` e `DT`. O desenvolvimento será participativo, com envolvimento da equipe do CAPSij na definição de indicadores, validação das visualizações, avaliação da usabilidade e priorização de funcionalidades. Cada versão do artefato será apresentada em oficinas ou sessões de demonstração, nas quais os participantes poderão realizar tarefas típicas de gestão, comentar dificuldades e sugerir ajustes.
+
+A avaliação dos protótipos incluirá testes de usabilidade, entrevistas de feedback, observação participante, registros em diário de campo, análise de documentos de projeto, avaliação heurística e, na fase piloto, aplicação da *System Usability Scale* (SUS). Também poderão ser analisados registros agregados de uso do *dashboard*, como frequência de acesso, módulos consultados e situações em que o artefato apoiou processos de tomada de decisão, sem rastreamento individual desnecessário.
+
+Na terceira etapa, serão realizadas atividades de reflexão e aprendizagem, com análise temática reflexiva dos dados qualitativos produzidos ao longo da pesquisa, incluindo entrevistas, observações, oficinas, registros de campo e comentários dos participantes. Os dados quantitativos serão analisados de forma descritiva e utilizados de maneira complementar à interpretação qualitativa. A triangulação entre diferentes fontes buscará aumentar a consistência dos achados.
+
+Na quarta etapa, será realizada a formalização da aprendizagem, com síntese dos fatores que favoreceram ou dificultaram a adoção do *dashboard*, consolidação dos princípios de design emergentes e análise de sua possível transferência para outros serviços de saúde mental do SUS. Como produtos, espera-se gerar um *dashboard* funcional e reprodutível, relatórios técnicos, publicações científicas e contribuições metodológicas para o desenvolvimento participativo de ferramentas de apoio à gestão em saúde.
+
+Nenhuma coleta formal de dados será iniciada antes da aprovação pelo Comitê de Ética em Pesquisa. Todos os participantes serão convidados de forma voluntária, receberão informações claras sobre objetivos, procedimentos, riscos, benefícios e possibilidade de desistência, e somente participarão mediante concordância formal nos termos aprovados pelo CEP.

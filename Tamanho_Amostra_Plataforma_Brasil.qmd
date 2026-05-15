@@ -1,0 +1,11 @@
+---
+title: "Tamanho da amostra"
+lang: pt-BR
+format: html
+---
+
+# Tamanho da amostra
+
+A amostra será intencional, composta por gestores e profissionais do CAPSij de Rondonópolis-MT diretamente envolvidos com registro, organização, análise ou uso de informações assistenciais e administrativas do serviço. Estima-se a participação de aproximadamente **4 a 8 profissionais**, número considerado adequado ao caráter qualitativo, aplicado e participativo da pesquisa, que se concentra em um único serviço e prioriza a profundidade da análise do processo de desenvolvimento e uso do *dashboard*.
+
+O tamanho final da amostra poderá variar conforme a disponibilidade da equipe, os critérios de elegibilidade, o interesse voluntário em participar e a composição funcional do serviço no momento da coleta. A inclusão de participantes buscará contemplar diferentes perspectivas sobre a gestão da informação no CAPSij, incluindo coordenação, profissionais envolvidos nos registros e profissionais que utilizam dados para planejamento, monitoramento ou tomada de decisão.
