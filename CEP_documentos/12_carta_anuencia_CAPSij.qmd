@@ -1,0 +1,48 @@
+---
+title: "Carta de Anuência da Instituição Coparticipante"
+subtitle: "Modelo para Secretaria Municipal de Saúde / CAPSij de Rondonópolis-MT"
+author: "Djalma Barbosa"
+date: "2026-04-30"
+lang: pt-BR
+format:
+  docx:
+    toc: false
+    number-sections: false
+---
+
+> **Orientação:** este documento deve ser transferido para papel timbrado da instituição coparticipante, com assinatura e carimbo do responsável institucional.
+
+Rondonópolis-MT, ____ de __________________ de 2026.
+
+Ao Comitê de Ética em Pesquisa com Seres Humanos da Universidade Federal de Rondonópolis (CEP/UFR)
+
+Eu, **[nome do(a) responsável institucional]**, ocupante do cargo de **[cargo]**, representando **[Secretaria Municipal de Saúde de Rondonópolis-MT / CAPSij de Rondonópolis-MT]**, declaro estar ciente e de acordo com a realização da pesquisa intitulada **"Desenvolvimento Participativo de Dashboards para Apoio à Gestão em Saúde Mental: uma pesquisa de Action Design Research em um CAPSij"**, sob responsabilidade de **Djalma Barbosa**, vinculado à Universidade Federal de Rondonópolis (UFR).
+
+Declaro que a instituição autoriza, após aprovação do protocolo pelo CEP/UFR e respeitadas as rotinas assistenciais e administrativas do serviço, a realização das seguintes atividades:
+
+- apresentação institucional do projeto à coordenação, gestão e equipe técnica;
+- convite voluntário a gestores, coordenadores e profissionais adultos que atuem em rotinas de gestão, registro, monitoramento ou uso de informações;
+- realização de entrevistas semiestruturadas em local reservado;
+- realização de oficinas de cocriação, letramento em dados, capacitação introdutória e validação de protótipos;
+- realização de testes de usabilidade do dashboard;
+- observação participante de reuniões ou situações de uso do dashboard, sem intervenção decisória do pesquisador na gestão do serviço;
+- análise documental de relatórios, fluxos de dados, sistemas e documentos administrativos relacionados à gestão informacional, desde que autorizada pela instituição e conduzida nos limites aprovados pelo CEP;
+- acesso restrito a dados assistenciais ou administrativos necessários ao desenvolvimento do dashboard, preferencialmente de forma agregada ou anonimizada.
+
+A instituição declara ciência de que crianças, adolescentes, familiares e usuários atendidos pelo CAPSij não serão participantes diretos desta pesquisa, não serão entrevistados e não serão convidados a assinar TCLE ou TALE nesta versão do protocolo.
+
+A instituição também declara que a pesquisa não deverá interferir no cuidado prestado aos usuários, não terá finalidade de fiscalização ou avaliação individual de trabalhadores, usuários ou famílias, e deverá preservar o sigilo das informações institucionais, profissionais e assistenciais acessadas durante sua execução.
+
+Informamos que há condições institucionais para a realização das atividades previstas, incluindo disponibilidade de espaço para reuniões ou entrevistas, possibilidade de pactuação de horários com a equipe, interlocução com a coordenação do serviço e apoio administrativo necessário ao desenvolvimento da pesquisa, desde que respeitadas as condições de funcionamento do CAPSij.
+
+Esta anuência não substitui a avaliação ética do CEP/UFR. A pesquisa somente poderá iniciar coleta formal de dados após parecer consubstanciado favorável.
+
+Atenciosamente,
+
+**[Nome do(a) responsável institucional]**  
+Cargo: [preencher]  
+Instituição: [preencher]  
+Telefone: [preencher]  
+E-mail: [preencher]
+
+Assinatura e carimbo: _______________________________________________

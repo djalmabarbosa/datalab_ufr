@@ -1,0 +1,82 @@
+---
+title: "Modelo de Registro de Observação e Diário de Campo"
+subtitle: "Acompanhamento de oficinas, reuniões e situações de uso do dashboard"
+author: "Djalma Barbosa"
+date: "2026-04-30"
+lang: pt-BR
+format:
+  docx:
+    toc: true
+    number-sections: true
+---
+
+# Objetivo
+
+Este modelo orienta o registro sistemático de observações realizadas durante reuniões, oficinas, testes de usabilidade e situações de uso do dashboard no CAPSij. O diário de campo será utilizado para compreender como o artefato é discutido, apropriado, ajustado ou eventualmente rejeitado nas rotinas institucionais.
+
+O registro não terá finalidade de avaliação individual de trabalhadores, usuários ou famílias. Nomes pessoais e identificadores diretos não deverão ser registrados.
+
+# Cuidados de registro
+
+- Usar códigos ou descrições funcionais no lugar de nomes.
+- Evitar detalhes desnecessários que permitam identificação indireta.
+- Separar descrição observada de interpretação do pesquisador.
+- Registrar riscos éticos percebidos e medidas adotadas.
+- Não incluir dados clínicos individuais de usuários.
+- Registrar apenas informações pertinentes aos objetivos aprovados pelo CEP.
+
+# Identificação da observação
+
+| Campo | Registro |
+|---|---|
+| Código do registro |  |
+| Data |  |
+| Horário de início e término |  |
+| Local/contexto |  |
+| Tipo de atividade observada |  |
+| Participantes presentes, sem nomes pessoais |  |
+| Versão do dashboard/protótipo, se aplicável |  |
+
+# Descrição da atividade
+
+| Campo | Registro |
+|---|---|
+| Objetivo da atividade |  |
+| Como a atividade foi organizada |  |
+| Situações de uso ou discussão de dados |  |
+| Indicadores, telas ou informações discutidas |  |
+| Dúvidas ou dificuldades observadas |  |
+| Sugestões ou demandas emergentes |  |
+| Divergências, consensos ou decisões coletivas |  |
+
+# Registro analítico
+
+| Campo | Registro |
+|---|---|
+| Barreiras de adoção observadas |  |
+| Facilitadores de adoção observados |  |
+| Aspectos de letramento em dados identificados |  |
+| Problemas de qualidade, fluxo ou governança de dados |  |
+| Decisões de design relacionadas |  |
+| Ajustes necessários no dashboard |  |
+| Relações com literatura ou princípios de design |  |
+
+# Registro ético
+
+| Campo | Registro |
+|---|---|
+| Houve desconforto, constrangimento ou tensão institucional? |  |
+| Houve risco de identificação de participante, trabalhador, usuário ou família? |  |
+| Algum dado sensível foi mencionado? Como foi protegido? |  |
+| Medidas adotadas pelo pesquisador |  |
+| Necessidade de comunicar ou ajustar procedimento |  |
+
+# Reflexão do pesquisador
+
+Registrar, de forma separada da descrição factual, impressões analíticas preliminares, hipóteses interpretativas, dúvidas e pontos a retomar nas próximas atividades.
+
+______________________________________________________________________
+
+______________________________________________________________________
+
+______________________________________________________________________

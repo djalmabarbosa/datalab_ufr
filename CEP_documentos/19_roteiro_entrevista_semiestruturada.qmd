@@ -1,0 +1,92 @@
+---
+title: "Roteiro de Entrevista Semiestruturada"
+subtitle: "Necessidades informacionais, uso de dados e expectativas sobre dashboards no CAPSij"
+author: "Djalma Barbosa"
+date: "2026-04-30"
+lang: pt-BR
+format:
+  docx:
+    toc: true
+    number-sections: true
+---
+
+# Identificação da entrevista
+
+**Pesquisa:** Desenvolvimento Participativo de Dashboards para Apoio à Gestão em Saúde Mental: uma pesquisa de *Action Design Research* em um CAPSij
+
+**Participantes previstos:** gestores, coordenadores e profissionais adultos do CAPSij envolvidos em rotinas de gestão, registro, monitoramento ou uso de informações.
+
+**Duração estimada:** 30 a 60 minutos.
+
+**Local:** sala reservada no CAPSij ou outro local acordado com o participante.
+
+**Registro:** gravação de áudio somente mediante autorização específica; caso o participante não autorize, serão feitas anotações.
+
+# Procedimentos iniciais
+
+1. Reapresentar o objetivo geral da pesquisa.
+2. Confirmar leitura, esclarecimento e assinatura do TCLE.
+3. Reforçar que a participação é voluntária e que o participante pode deixar de responder qualquer pergunta.
+4. Reforçar que a recusa ou desistência não trará prejuízo profissional ou institucional.
+5. Solicitar autorização para gravação de áudio, se aplicável.
+
+# Bloco 1 - Contexto profissional
+
+1. Qual é sua função atual no CAPSij?
+2. Há quanto tempo você atua no serviço ou em atividades relacionadas à saúde mental?
+3. Quais atividades de gestão, registro, monitoramento ou uso de informações fazem parte da sua rotina?
+4. Em que momentos do trabalho você precisa consultar dados, relatórios, sistemas ou planilhas?
+
+# Bloco 2 - Decisões e necessidades informacionais
+
+5. Quais decisões ou acompanhamentos do serviço dependem de dados ou informações?
+6. Quais perguntas de gestão você considera mais importantes para o CAPSij hoje?
+7. Que informações você gostaria de conseguir visualizar rapidamente para planejar ou monitorar o serviço?
+8. Quais indicadores você considera prioritários para acompanhar o CAPSij? Por quê?
+9. Existem informações que ajudariam a discutir fluxos de cuidado, agenda, demanda reprimida, perfil dos atendimentos ou articulação com a rede?
+
+# Bloco 3 - Fontes de dados e dificuldades atuais
+
+10. Quais sistemas, planilhas, relatórios ou documentos são usados atualmente?
+11. O que funciona bem no modo atual de acessar e analisar informações?
+12. Quais são as principais dificuldades: atraso, incompletude, erro, retrabalho, falta de padronização, acesso, interpretação ou confiabilidade?
+13. Existem dados importantes que hoje não são registrados ou são difíceis de recuperar?
+14. Quando aparecem divergências entre dados, relatórios ou percepções da equipe, como isso costuma ser resolvido?
+
+# Bloco 4 - Expectativas sobre o dashboard
+
+15. Como um dashboard poderia apoiar a rotina de gestão do CAPSij?
+16. Que tipos de gráficos, filtros, comparações ou alertas seriam mais úteis?
+17. Que linguagem, termos ou categorias deveriam ser usados para que a equipe compreenda o painel?
+18. O que faria você confiar nas informações apresentadas pelo dashboard?
+19. O que poderia dificultar a adoção do dashboard pela equipe?
+
+# Bloco 5 - Governança, sigilo e sustentabilidade
+
+20. Quem deveria atualizar, consultar ou validar os dados do dashboard?
+21. Que cuidados de sigilo e privacidade você considera essenciais?
+22. Que tipos de dados não deveriam aparecer no dashboard?
+23. Que capacitações seriam necessárias para uso continuado da ferramenta?
+24. Como o dashboard poderia ser incorporado às reuniões, planejamentos ou rotinas do serviço?
+
+# Encerramento
+
+25. Há algo importante sobre uso de dados no CAPSij que não foi perguntado?
+26. Você gostaria de acrescentar alguma sugestão para o desenvolvimento do dashboard?
+27. Você indicaria outro profissional do serviço que deveria ser ouvido, respeitando a voluntariedade?
+
+# Registro sintético da entrevista
+
+| Campo | Registro |
+|---|---|
+| Código da entrevista |  |
+| Data e horário |  |
+| Local |  |
+| Cargo/função do participante, sem nome |  |
+| Autorizou gravação? | ( ) Sim  ( ) Não |
+| Principais necessidades informacionais citadas |  |
+| Principais dificuldades citadas |  |
+| Indicadores sugeridos |  |
+| Expectativas sobre o dashboard |  |
+| Riscos éticos ou desconfortos observados |  |
+| Observações do pesquisador |  |

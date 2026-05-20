@@ -1,0 +1,47 @@
+---
+title: "Termo de Compromisso, Confidencialidade e Proteção de Dados"
+author: "Djalma Barbosa"
+date: "2026-04-30"
+lang: pt-BR
+format:
+  docx:
+    toc: false
+    number-sections: true
+---
+
+# Identificação
+
+**Pesquisa:** Desenvolvimento Participativo de Dashboards para Apoio à Gestão em Saúde Mental: uma pesquisa de *Action Design Research* em um CAPSij
+
+**Pesquisador responsável:** Djalma Barbosa
+
+**Instituição proponente:** Universidade Federal de Rondonópolis (UFR)
+
+# Compromissos da equipe de pesquisa
+
+Eu, abaixo assinado(a), declaro estar ciente de que participarei da equipe de pesquisa do estudo identificado acima e assumo os seguintes compromissos:
+
+1. Cumprir as diretrizes éticas aplicáveis a pesquisas com seres humanos, especialmente a Resolução CNS n. 510/2016, a Resolução CNS n. 466/2012, a Lei n. 14.874/2024 e o Decreto n. 12.651/2025.
+2. Iniciar atividades formais de coleta de dados somente após aprovação do protocolo pelo CEP/UFR.
+3. Respeitar a autonomia dos participantes, garantindo convite livre, esclarecido e sem constrangimento.
+4. Preservar sigilo e confidencialidade sobre falas, documentos, registros, dados administrativos, dados assistenciais e quaisquer informações acessadas durante a pesquisa.
+5. Não divulgar nomes, CPF, CNS, endereços, telefones, prontuários, datas de nascimento completas ou outros identificadores diretos de usuários, familiares, trabalhadores ou participantes.
+6. Evitar a divulgação de informações que permitam identificação indireta por combinação de variáveis, especialmente em grupos pequenos, situações raras ou descrições sensíveis.
+7. Utilizar os dados exclusivamente para os objetivos aprovados pelo CEP, vedado qualquer uso para fiscalização, avaliação individual de desempenho, decisão administrativa punitiva ou finalidade alheia ao protocolo.
+8. Manter arquivos físicos e digitais em local seguro, com acesso restrito à equipe autorizada.
+9. Comunicar ao pesquisador responsável qualquer incidente, acesso indevido, perda de arquivo, dúvida ética, desconforto relatado por participante ou necessidade de alteração no protocolo.
+10. Participar da devolutiva institucional e da elaboração dos relatórios ao CEP, quando solicitado pelo pesquisador responsável.
+
+# Proteção de dados pessoais e sensíveis
+
+Quando houver acesso a dados administrativos ou assistenciais do CAPSij, a equipe se compromete a observar os princípios de finalidade, adequação, necessidade, minimização, segurança, prevenção e responsabilização. Sempre que possível, serão utilizados dados agregados, anonimizados ou pseudonimizados. Dados identificáveis somente serão acessados quando indispensáveis aos objetivos aprovados e pelo menor número possível de integrantes da equipe.
+
+Os produtos públicos da pesquisa, incluindo artigos, relatórios, apresentações, repositório de código e versões demonstrativas do dashboard, não conterão dados identificáveis de participantes, trabalhadores, usuários ou famílias.
+
+# Assinaturas
+
+| Nome | Função na pesquisa | CPF ou matrícula | Assinatura | Data |
+|---|---|---|---|---|
+| Djalma Barbosa | Pesquisador responsável | [preencher] |  |  |
+| [preencher] | [preencher] | [preencher] |  |  |
+| [preencher] | [preencher] | [preencher] |  |  |

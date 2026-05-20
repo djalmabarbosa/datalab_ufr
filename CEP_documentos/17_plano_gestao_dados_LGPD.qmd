@@ -1,0 +1,65 @@
+---
+title: "Plano de Gestão de Dados e Proteção de Dados Pessoais"
+author: "Djalma Barbosa"
+date: "2026-04-30"
+lang: pt-BR
+format:
+  docx:
+    toc: true
+    number-sections: true
+---
+
+# Finalidade
+
+Este plano descreve como serão tratados os dados produzidos ou acessados na pesquisa **"Desenvolvimento Participativo de Dashboards para Apoio à Gestão em Saúde Mental: uma pesquisa de Action Design Research em um CAPSij"**. O objetivo é reduzir riscos de identificação, exposição indevida e uso incompatível dos dados, preservando os direitos dos participantes e a confidencialidade das informações institucionais e assistenciais.
+
+# Tipos de dados previstos
+
+| Tipo de dado | Origem | Identificação esperada | Uso previsto |
+|---|---|---|---|
+| Entrevistas com profissionais | Participantes adultos do CAPSij | Áudio e transcrição podem conter identificadores | Análise temática de necessidades informacionais e barreiras de uso |
+| Registros de oficinas | Oficinas de cocriação e capacitação | Preferencialmente sem nomes; pode haver falas contextualizadas | Definição de indicadores, requisitos e prioridades |
+| Testes de usabilidade | Interação com protótipos | Registros de tarefas, comentários e SUS | Avaliação de usabilidade e refinamento do dashboard |
+| Diário de campo | Observação participante | Descrições de contexto podem gerar identificação indireta | Análise do processo de adoção e uso em rotina |
+| Documentos institucionais | CAPSij/Secretaria Municipal de Saúde | Pode conter informações administrativas e assistenciais | Mapeamento de fluxos, fontes e qualidade dos dados |
+| Bases administrativas ou assistenciais | Sistemas, planilhas ou relatórios do serviço | Preferencialmente agregadas; eventualmente identificáveis antes de tratamento | Construção e validação do dashboard, sem divulgação identificável |
+| Logs de uso do dashboard | Versão piloto | Preferencialmente funcionais e agregados | Frequência de uso por módulo, dificuldades e incorporação à rotina |
+
+# Princípios de tratamento
+
+O tratamento dos dados observará os princípios de finalidade, adequação, necessidade, minimização, segurança, prevenção, responsabilização e confidencialidade. Serão coletados ou acessados apenas os dados necessários aos objetivos aprovados pelo CEP/UFR.
+
+# Minimização e anonimização
+
+1. Entrevistas e diários de campo usarão códigos ou pseudônimos no lugar de nomes.
+2. Identificadores diretos, como nome, CPF, CNS, telefone, endereço, prontuário e data de nascimento completa, não serão divulgados.
+3. Dados de usuários, familiares e trabalhadores serão apresentados de forma agregada sempre que possível.
+4. Células com números muito pequenos, combinações raras ou risco de reidentificação serão suprimidas, agrupadas ou apresentadas em nível mais amplo.
+5. Excerto de fala ou descrição contextual só será publicado quando não permitir identificação direta ou indireta do participante.
+6. Versões públicas do dashboard, repositório de código, artigos e relatórios não conterão base identificável.
+
+# Controle de acesso
+
+O acesso a arquivos identificáveis será restrito ao pesquisador responsável e a integrantes da equipe formalmente autorizados e signatários do termo de compromisso e confidencialidade. Arquivos digitais serão mantidos em computador ou armazenamento seguro, com senha. Arquivos físicos, quando houver, ficarão sob guarda do pesquisador responsável em local com acesso controlado.
+
+# Gravações e transcrições
+
+As gravações de áudio somente ocorrerão mediante autorização específica do participante. O participante poderá aceitar participar e recusar a gravação. Nesse caso, serão utilizadas anotações. As transcrições serão revisadas para retirada de nomes e detalhes identificadores que não sejam necessários à análise.
+
+# Dados do dashboard
+
+O dashboard terá finalidade de apoio à gestão agregada e pesquisa sobre o processo de desenvolvimento do artefato. Não será usado para avaliação individual de desempenho, controle punitivo de trabalhadores, classificação individual de usuários ou tomada de decisão clínica individual.
+
+Caso seja necessário acessar base com identificadores para preparação, limpeza ou vinculação de registros, essa etapa será feita em ambiente restrito, com exclusão ou separação dos identificadores assim que deixarem de ser indispensáveis. A versão analítica utilizada para visualização deverá ser agregada, anonimizada ou pseudonimizada.
+
+# Armazenamento e retenção
+
+Os materiais de pesquisa serão armazenados pelo prazo de cinco anos após o término da pesquisa, sob responsabilidade do pesquisador responsável, salvo se norma institucional ou orientação do CEP determinar prazo diverso. Encerrado o prazo, arquivos digitais contendo dados identificáveis serão excluídos de forma segura e documentos físicos serão fragmentados ou descartados de modo a impedir identificação.
+
+# Compartilhamento e publicação
+
+Os resultados poderão ser usados em relatórios técnicos, artigos, eventos, materiais acadêmicos e repositório de código, sempre sem divulgação de dados identificáveis. O compartilhamento de base bruta identificável não está previsto. Quando houver disponibilização de material aberto, será limitado a códigos, estruturas de dados fictícias, bases simuladas ou dados suficientemente agregados e sem risco razoável de reidentificação.
+
+# Incidentes e comunicação
+
+Qualquer perda, acesso indevido, exposição acidental, suspeita de identificação indevida ou uso não autorizado deverá ser comunicado imediatamente ao pesquisador responsável. O pesquisador avaliará a necessidade de comunicar a instituição, o CEP/UFR e outras instâncias cabíveis, bem como adotará medidas de contenção, mitigação e revisão dos procedimentos.

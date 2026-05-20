@@ -1,0 +1,49 @@
+---
+title: "Carta de Encaminhamento ao CEP/UFR"
+author: "Djalma Barbosa"
+date: "2026-04-30"
+lang: pt-BR
+format:
+  docx:
+    toc: false
+    number-sections: false
+---
+
+Ao Comitê de Ética em Pesquisa com Seres Humanos da Universidade Federal de Rondonópolis (CEP/UFR)
+
+Rondonópolis-MT, ____ de __________________ de 2026.
+
+Assunto: Submissão de protocolo de pesquisa para apreciação ética
+
+Prezadas(os) integrantes do CEP/UFR,
+
+Encaminho para apreciação ética o protocolo de pesquisa intitulado **"Desenvolvimento Participativo de Dashboards para Apoio à Gestão em Saúde Mental: uma pesquisa de Action Design Research em um CAPSij"**, sob minha responsabilidade, vinculado à Universidade Federal de Rondonópolis (UFR).
+
+A pesquisa tem como objetivo desenvolver, implementar e avaliar, de modo participativo, dashboards interativos para apoio à gestão em saúde mental no CAPSij de Rondonópolis-MT. O estudo será conduzido com gestores, coordenadores e profissionais adultos do serviço, por meio de entrevistas semiestruturadas, oficinas de cocriação, testes de usabilidade, observação participante em situações de uso do dashboard, aplicação de instrumento de maturidade informacional e capacidade analítica baseado no IS4H-MM/OPAS com módulo analítico curto, e uso da *System Usability Scale* ao final da versão piloto.
+
+O protocolo foi elaborado considerando as diretrizes éticas aplicáveis a pesquisas com seres humanos, especialmente a Resolução CNS n. 510/2016, por se tratar de pesquisa qualitativa, participativa e centrada em processos sociais, organizacionais e informacionais, bem como os princípios gerais da Resolução CNS n. 466/2012, a Lei n. 14.874/2024, o Decreto n. 12.651/2025 e a legislação de proteção de dados pessoais. Nenhuma etapa formal de coleta de dados será iniciada antes da aprovação do CEP.
+
+Para compor o protocolo, seguem anexados os seguintes documentos:
+
+1. Projeto de pesquisa detalhado.
+2. Folha de Rosto gerada pela Plataforma Brasil, devidamente assinada.
+3. Termo de Consentimento Livre e Esclarecido (TCLE).
+4. Carta de anuência da instituição coparticipante.
+5. Declaração de infraestrutura.
+6. Termo de compromisso, confidencialidade e proteção de dados da equipe.
+7. Cronograma e orçamento.
+8. Instrumentos de coleta de dados.
+9. Plano de gestão de dados e proteção de dados pessoais.
+10. Justificativa de dispensa de TALE.
+
+Declaro que assumo a responsabilidade pela condução ética e científica da pesquisa, pela guarda dos documentos e dados produzidos, pela comunicação de eventuais emendas, notificações, interrupções, eventos adversos ou alterações relevantes ao CEP, bem como pelo envio de relatórios parciais e final nos termos solicitados pelo Sistema CEP/Conep e pelo CEP/UFR.
+
+Atenciosamente,
+
+**Djalma Barbosa**  
+Pesquisador responsável  
+Universidade Federal de Rondonópolis (UFR)  
+Telefone: [preencher]  
+E-mail: [preencher]
+
+Assinatura: _______________________________________________

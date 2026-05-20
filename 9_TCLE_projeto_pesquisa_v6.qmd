@@ -69,7 +69,7 @@ Para reduzir esses riscos, serão adotadas as seguintes medidas:
 
 -   sua participação ocorrerá em local e horário combinados, buscando preservar sua privacidade;
 -   sua decisão de participar ou não participar não acarretará qualquer prejuízo profissional, institucional ou pessoal;
--   seu nome não será divulgado nos relatórios, publicações ou apresentações, salvo manifestação expressa em sentido contrário;
+-   seu nome não será divulgado nos relatórios, publicações ou apresentações;
 -   os resultados serão apresentados, preferencialmente, de forma agregada, com uso de códigos ou pseudônimos;
 -   o pesquisador interromperá a entrevista ou atividade, se você desejar, sempre que houver incômodo ou desconforto.
 
@@ -88,7 +88,7 @@ Você pode não receber benefício direto e imediato pela participação. No ent
 
 As informações fornecidas por você serão tratadas com confidencialidade. Seu nome e quaisquer dados que permitam sua identificação serão protegidos. Os registros da pesquisa serão armazenados em arquivo físico e/ou digital seguro, sob responsabilidade do pesquisador responsável, pelo prazo de cinco anos após o término da pesquisa. Encerrado esse prazo, os arquivos digitais contendo dados identificáveis serão excluídos de forma segura e os documentos físicos, quando houver, serão descartados de modo a impedir identificação.
 
-Os dados poderão ser utilizados em dissertações, teses, artigos, relatórios, apresentações científicas e materiais acadêmicos, sempre com preservação da identidade dos participantes, salvo autorização expressa em contrário.
+Os dados poderão ser utilizados em dissertações, teses, artigos, relatórios, apresentações científicas e materiais acadêmicos, sempre com preservação da identidade dos participantes.
 
 Caso o dashboard utilize dados do serviço, esses dados serão tratados preferencialmente de forma agregada e anonimizada, sem finalidade de avaliação individual de trabalhadores, usuários ou famílias. Não serão divulgados nomes, CPF, CNS, endereço, telefone, prontuário, data de nascimento completa ou quaisquer identificadores diretos. Quando houver risco de identificação indireta por números muito pequenos ou combinação de informações, os dados serão agrupados, suprimidos ou apresentados em nível mais agregado.
 
@@ -120,14 +120,15 @@ Se você tiver dúvidas sobre a pesquisa, poderá entrar em contato com:
 
 Para dúvidas sobre seus direitos como participante de pesquisa, ou para registrar reclamações, você poderá contatar o Comitê de Ética em Pesquisa:
 
-**Comitê de Ética em Pesquisa (CEP/UFR):** \[preencher nome oficial\]\
-**Endereço:** \[preencher\]\
-**Telefone:** \[preencher\]\
-**E-mail:** \[preencher\]
+**Comitê de Ética em Pesquisa com Seres Humanos da Universidade Federal de Rondonópolis (CEP/UFR)**\
+**Endereço:** Avenida dos Estudantes, nº 5055, Bloco Administrativo da UFR, Cidade Universitária, Rondonópolis-MT, CEP 78736-900\
+**Telefone/WhatsApp:** (66) 3410-4153\
+**E-mail:** \[confirmar no site do CEP/UFR antes da submissão\]\
+**Horário de funcionamento informado pelo CEP/UFR:** segundas, terças, quartas e sextas-feiras, das 13h às 17h
 
 # 12. Declaração de consentimento
 
-Declaro que fui informado(a), de forma clara e acessível, sobre os objetivos, procedimentos, possíveis riscos e benefícios desta pesquisa. Tive oportunidade de fazer perguntas, recebi esclarecimentos satisfatórios e sei que posso desistir de participar a qualquer momento, sem qualquer prejuízo.
+Declaro que fui informado(a), de forma clara e acessível, sobre os objetivos, procedimentos, possíveis riscos e benefícios desta pesquisa. Tive oportunidade de fazer perguntas, recebi esclarecimentos satisfatórios, receberei uma via deste termo assinada pelo pesquisador responsável e sei que posso desistir de participar a qualquer momento, sem qualquer prejuízo.
 
 Ao assinar este termo, concordo voluntariamente em participar da pesquisa.
 

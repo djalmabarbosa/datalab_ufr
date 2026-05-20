@@ -1,0 +1,58 @@
+---
+title: "System Usability Scale (SUS)"
+subtitle: "Instrumento de mensuração de usabilidade da versão piloto do dashboard"
+author: "Djalma Barbosa"
+date: "2026-04-30"
+lang: pt-BR
+format:
+  docx:
+    toc: true
+    number-sections: true
+---
+
+# Objetivo
+
+A *System Usability Scale* (SUS) será utilizada para mensurar a percepção de usabilidade da versão piloto do dashboard. A escala será aplicada a gestores, coordenadores e profissionais adultos do CAPSij que participarem da etapa de avaliação do artefato.
+
+# Instruções ao participante
+
+Considere sua experiência ao utilizar a versão do dashboard apresentada durante a pesquisa. Para cada afirmativa, marque uma opção de 1 a 5:
+
+- **1:** discordo totalmente
+- **2:** discordo parcialmente
+- **3:** nem concordo nem discordo
+- **4:** concordo parcialmente
+- **5:** concordo totalmente
+
+Não há respostas certas ou erradas. O objetivo é avaliar o dashboard e identificar oportunidades de melhoria.
+
+# Escala
+
+| Item | Afirmativa | 1 | 2 | 3 | 4 | 5 |
+|---|---|:---:|:---:|:---:|:---:|:---:|
+| 1 | Eu acho que gostaria de usar este dashboard com frequência. |  |  |  |  |  |
+| 2 | Eu achei o dashboard desnecessariamente complexo. |  |  |  |  |  |
+| 3 | Eu achei o dashboard fácil de usar. |  |  |  |  |  |
+| 4 | Eu acho que precisaria de apoio técnico para conseguir usar este dashboard. |  |  |  |  |  |
+| 5 | Eu achei que as várias funções do dashboard estavam bem integradas. |  |  |  |  |  |
+| 6 | Eu achei que havia muita inconsistência no dashboard. |  |  |  |  |  |
+| 7 | Eu imagino que a maioria das pessoas aprenderia a usar este dashboard rapidamente. |  |  |  |  |  |
+| 8 | Eu achei o dashboard difícil de usar. |  |  |  |  |  |
+| 9 | Eu me senti confiante ao usar o dashboard. |  |  |  |  |  |
+| 10 | Eu precisei aprender muitas coisas antes de conseguir usar este dashboard. |  |  |  |  |  |
+
+# Campo opcional de comentário
+
+Se desejar, registre comentários sobre sua experiência de uso:
+
+______________________________________________________________________
+
+______________________________________________________________________
+
+______________________________________________________________________
+
+# Orientação de pontuação para análise
+
+Para análise, os itens ímpares terão pontuação ajustada subtraindo 1 da resposta. Os itens pares terão pontuação ajustada subtraindo a resposta de 5. A soma dos valores ajustados será multiplicada por 2,5, resultando em escore de 0 a 100.
+
+O escore será interpretado de forma descritiva e complementar aos dados qualitativos de entrevistas, observação e testes de usabilidade. Não será usado para avaliar individualmente participantes.

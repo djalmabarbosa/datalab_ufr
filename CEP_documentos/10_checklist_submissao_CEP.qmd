@@ -1,0 +1,66 @@
+---
+title: "Checklist de Submissão ao CEP/UFR"
+subtitle: "Projeto de dashboards para apoio à gestão em saúde mental no CAPSij"
+author: "Djalma Barbosa"
+date: "2026-04-30"
+lang: pt-BR
+format:
+  docx:
+    toc: false
+    number-sections: true
+---
+
+# Identificação do protocolo
+
+**Título da pesquisa:** Desenvolvimento Participativo de Dashboards para Apoio à Gestão em Saúde Mental: uma pesquisa de *Action Design Research* em um CAPSij
+
+**Pesquisador responsável:** Djalma Barbosa
+
+**Instituição proponente:** Universidade Federal de Rondonópolis (UFR)
+
+**Instituição coparticipante:** CAPSij de Rondonópolis-MT / Secretaria Municipal de Saúde de Rondonópolis-MT
+
+**Natureza do estudo:** pesquisa aplicada, qualitativa, participativa, com apoio de dados quantitativos descritivos, envolvendo gestores, coordenadores e profissionais adultos do CAPSij.
+
+# Documentos para anexar na Plataforma Brasil
+
+| Item | Documento | Situação | Observações |
+|---|---|---|---|
+| 1 | Folha de Rosto gerada pela Plataforma Brasil | A gerar | Deve estar preenchida, datada e assinada pelo pesquisador responsável e pela autoridade institucional competente. |
+| 2 | Projeto de pesquisa detalhado | Pronto | Usar a versão mais recente do arquivo `8_projeto_pesquisa_v10.qmd`, preferencialmente exportada para PDF editável. |
+| 3 | TCLE para gestores e profissionais adultos | Revisado | Usar `9_TCLE_projeto_pesquisa_v6.qmd` após preenchimento dos campos pendentes. |
+| 4 | Carta de anuência da instituição coparticipante | Modelo gerado | Deve ir em papel timbrado da Secretaria Municipal de Saúde/CAPSij, com assinatura e carimbo do responsável institucional. |
+| 5 | Declaração de infraestrutura | Modelo gerado | Pode ser documento próprio ou incorporado à carta de anuência, conforme orientação do CEP. |
+| 6 | Termo de compromisso e confidencialidade da equipe | Modelo gerado | Assinatura do pesquisador responsável e demais integrantes que acessarem dados. |
+| 7 | Cronograma e orçamento avulsos | Modelo gerado | Ajustar datas após estimar o prazo de análise do CEP. |
+| 8 | Instrumentos de coleta de dados | Modelo gerado | Inclui roteiro de entrevista, instrumento de maturidade informacional e capacidade analítica baseado no IS4H-MM/OPAS + módulo analítico curto, protocolo de oficinas, protocolo de usabilidade, SUS e diário de campo. |
+| 9 | Plano de gestão de dados e proteção de dados pessoais | Modelo gerado | Anexar como documento complementar por envolver dados administrativos/assistenciais sensíveis em contexto de saúde. |
+| 10 | Justificativa de dispensa de TALE | Modelo gerado | Apresentar porque crianças, adolescentes, familiares e usuários do CAPSij não serão participantes diretos. |
+| 11 | Currículo Lattes/equipe de pesquisa | A conferir | Anexar se o CEP/UFR exigir documento separado; em todo caso, cadastrar a equipe na Plataforma Brasil. |
+
+# Conferência ética antes do envio
+
+- Nenhuma entrevista, oficina, teste de usabilidade, observação participante, análise documental interna ou acesso a base identificável será iniciado antes da aprovação do CEP.
+- O convite aos profissionais será individual, sem constrangimento e sem interferência hierárquica indevida.
+- A participação será voluntária, com direito de recusa e retirada sem prejuízo profissional.
+- O dashboard e os relatórios não terão finalidade de avaliação individual de trabalhadores, usuários ou famílias.
+- Os dados assistenciais e administrativos serão tratados preferencialmente de forma agregada e anonimizada.
+- Em células pequenas, combinações raras ou informações potencialmente reidentificáveis, serão aplicadas supressão, agrupamento ou agregação.
+- Arquivos identificáveis serão guardados sob responsabilidade do pesquisador pelo prazo previsto no protocolo e depois descartados de forma segura.
+
+# Pendências de preenchimento
+
+1. Completar contatos do pesquisador responsável no TCLE e nos documentos institucionais.
+2. Confirmar o nome oficial do CEP/UFR e o e-mail atualmente usado pelo comitê no site institucional.
+3. Confirmar a autoridade municipal responsável por assinar a carta de anuência.
+4. Confirmar se a declaração de infraestrutura será assinada pela UFR, pela Secretaria Municipal de Saúde ou por ambas.
+5. Ajustar cronograma para iniciar a coleta apenas após aprovação ética.
+
+# Bases normativas e institucionais consultadas
+
+- Resolução CNS n. 466/2012.
+- Resolução CNS n. 510/2016.
+- Lei n. 14.874/2024.
+- Decreto n. 12.651/2025.
+- Página do CEP/UFR, especialmente as orientações sobre carta de anuência, infraestrutura e dados de contato.
+- Orientações públicas de CEPs universitários sobre documentos básicos de submissão na Plataforma Brasil.

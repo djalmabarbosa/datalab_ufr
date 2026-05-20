@@ -1,0 +1,126 @@
+---
+title: "Instrumento de Avaliação de Maturidade Informacional e Capacidade Analítica"
+subtitle: "Matriz IS4H-MM/OPAS + módulo analítico curto para o CAPSij"
+author: "Djalma Barbosa"
+date: "2026-04-30"
+lang: pt-BR
+format:
+  docx:
+    toc: true
+    number-sections: true
+---
+
+# Objetivo
+
+Este instrumento tem como objetivo avaliar, de forma diagnóstica e participativa, a maturidade do CAPSij para produzir, gerir, proteger, compartilhar, interpretar e utilizar informações em saúde, com ênfase na capacidade analítica necessária ao desenvolvimento e uso continuado de dashboards de gestão.
+
+A estratégia adotada combina duas camadas:
+
+1. **Matriz de maturidade em Sistemas de Informação para a Saúde**, inspirada no *Information Systems for Health Maturity Model* (IS4H-MM), da Organização Pan-Americana da Saúde/Organização Mundial da Saúde (OPAS/OMS).
+2. **Módulo analítico curto**, voltado especificamente ao uso local de dados, indicadores, dashboards, letramento analítico, governança e incorporação dos achados às rotinas de decisão.
+
+O instrumento não tem finalidade de auditoria, fiscalização ou avaliação individual de trabalhadores. Seu uso será voltado à produção de conhecimento científico sobre maturidade informacional e capacidade analítica em serviço territorial de saúde mental, além de orientar o desenvolvimento participativo do dashboard.
+
+# Base conceitual
+
+O IS4H-MM é utilizado como matriz principal por ser um modelo voltado a Sistemas de Informação para a Saúde, com níveis progressivos de maturidade e foco em capacidades institucionais para operar, interagir e se beneficiar de informações em saúde. No presente estudo, ele será aplicado como referência estruturante, com adaptação contextual ao CAPSij e ao objetivo específico de apoiar a gestão local.
+
+O módulo analítico curto complementa o IS4H-MM porque o projeto tem como produto central um dashboard. Esse módulo sintetiza dimensões recorrentes na literatura de maturidade em dados e analytics: qualidade e disponibilidade dos dados, governança, infraestrutura, letramento em dados, uso decisório e sustentabilidade do processo analítico.
+
+# Forma de aplicação
+
+O instrumento será preenchido pelo pesquisador com base em múltiplas fontes de evidência:
+
+- entrevistas semiestruturadas com gestores e profissionais;
+- oficinas de cocriação e validação;
+- análise documental de sistemas, relatórios, planilhas e fluxos de informação;
+- observação participante de reuniões, oficinas e situações de uso de dados;
+- registros de desenvolvimento e validação do dashboard.
+
+Quando pertinente, os resultados preliminares poderão ser discutidos coletivamente com a equipe do CAPSij, sem atribuição de notas individuais a participantes. A unidade de análise será o serviço, e não a pessoa.
+
+# Escala de maturidade
+
+| Nível | Classificação | Descrição operacional |
+|---:|---|---|
+| 1 | Inicial / ad hoc | Práticas informais, fragmentadas, dependentes de pessoas específicas e pouco documentadas. |
+| 2 | Básico / emergente | Existem rotinas mínimas, mas ainda pouco integradas, com baixa padronização e uso irregular dos dados. |
+| 3 | Definido / padronizado | Processos, responsabilidades e fontes de dados estão descritos e são utilizados com alguma regularidade. |
+| 4 | Gerenciado / mensurado | Há monitoramento sistemático, governança, controle de qualidade, segurança e uso recorrente dos dados na gestão. |
+| 5 | Otimizado / aprendizado contínuo | Dados e informações são integrados às rotinas decisórias, avaliados continuamente e usados para inovação, aprendizagem e melhoria do cuidado. |
+| NA | Não aplicável / sem evidência | A dimensão não se aplica ao contexto ou não há evidência suficiente para pontuação. |
+
+# Camada 1 - Matriz IS4H-MM adaptada
+
+| Domínio | Indicador avaliativo | Nível 1-5/NA | Evidências observadas | Lacunas e riscos |
+|---|---|:---:|---|---|
+| Gestão de dados e tecnologias da informação | Fontes de dados do CAPSij identificadas, descritas e minimamente organizadas. |  |  |  |
+| Gestão de dados e tecnologias da informação | Fluxos de coleta, registro, consolidação, validação e atualização são conhecidos pela equipe. |  |  |  |
+| Gestão de dados e tecnologias da informação | Há condições técnicas mínimas para extração, preparação e visualização de dados. |  |  |  |
+| Gestão de dados e tecnologias da informação | Existem cuidados com qualidade, completude, temporalidade e consistência dos dados. |  |  |  |
+| Gestão e governança | Há definição de responsabilidades sobre produção, validação, acesso e uso das informações. |  |  |  |
+| Gestão e governança | O uso de dados está articulado a necessidades reais de gestão, planejamento e monitoramento. |  |  |  |
+| Gestão e governança | Existem regras, ainda que informais, para sigilo, proteção de dados e prevenção de uso indevido. |  |  |  |
+| Gestão e governança | A gestão apoia a incorporação de informação qualificada às rotinas do serviço. |  |  |  |
+| Gestão do conhecimento e compartilhamento | Informações produzidas são discutidas em reuniões, relatórios ou espaços coletivos de decisão. |  |  |  |
+| Gestão do conhecimento e compartilhamento | A equipe compreende os principais indicadores e seus limites de interpretação. |  |  |  |
+| Gestão do conhecimento e compartilhamento | Há mecanismos para transformar dados em recomendações, ações ou aprendizagem institucional. |  |  |  |
+| Gestão do conhecimento e compartilhamento | O conhecimento produzido pode ser compartilhado com a rede, preservando sigilo e contexto. |  |  |  |
+| Inovação | O serviço demonstra abertura para testar novas formas de visualização e uso de dados. |  |  |  |
+| Inovação | Há capacidade de adaptar ferramentas simples, como dashboards, às necessidades locais. |  |  |  |
+| Inovação | A equipe identifica oportunidades de melhoria a partir de evidências. |  |  |  |
+| Inovação | O uso de dados pode sustentar melhoria contínua, articulação em rede e qualificação do cuidado. |  |  |  |
+
+# Camada 2 - Módulo analítico curto
+
+| Dimensão analítica | Questão avaliativa | Nível 1-5/NA | Evidências observadas | Implicações para o dashboard |
+|---|---|:---:|---|---|
+| Disponibilidade e qualidade dos dados | Os dados necessários aos indicadores prioritários existem, são acessíveis e têm qualidade suficiente para uso gerencial? |  |  |  |
+| Governança analítica e proteção de dados | Há clareza sobre quem acessa, valida, interpreta e divulga dados, com proteção de informações pessoais e sensíveis? |  |  |  |
+| Infraestrutura e reprodutibilidade | Há condições técnicas para atualizar, documentar e reproduzir as análises do dashboard com baixo custo? |  |  |  |
+| Letramento em dados | A equipe consegue interpretar indicadores, gráficos, filtros e limitações dos dados de forma crítica? |  |  |  |
+| Uso decisório e incorporação à rotina | Os dados são usados para planejamento, monitoramento, reuniões, pactuações ou revisão de processos de trabalho? |  |  |  |
+| Sustentabilidade | Há perspectiva realista de continuidade do uso do dashboard após a etapa inicial do projeto? |  |  |  |
+
+# Perguntas orientadoras para coleta de evidências
+
+1. Quais dados são produzidos rotineiramente pelo CAPSij?
+2. Quais fontes são mais confiáveis para responder às perguntas de gestão?
+3. Quais registros apresentam maior risco de incompletude, atraso, duplicidade ou inconsistência?
+4. Quem é responsável por registrar, conferir, consolidar, interpretar e usar os dados?
+5. Há regras explícitas ou implícitas sobre acesso, sigilo e uso das informações?
+6. Os indicadores atuais são discutidos em reuniões ou utilizados em decisões concretas?
+7. A equipe compreende os limites dos dados e das visualizações?
+8. Que capacidades precisam ser fortalecidas para o dashboard continuar sendo utilizado?
+
+# Cálculo e apresentação dos resultados
+
+Para cada domínio da matriz IS4H-MM adaptada, será calculada a média dos itens pontuados de 1 a 5, excluindo itens NA. O mesmo procedimento será usado para o módulo analítico curto. Os resultados poderão ser apresentados como:
+
+- escore médio por domínio;
+- escore geral de maturidade informacional;
+- escore específico de capacidade analítica;
+- gráfico radar ou matriz de calor;
+- síntese qualitativa das evidências, lacunas e recomendações.
+
+Como se trata de estudo de caso com unidade empírica única, os escores serão interpretados de modo descritivo e analítico, sem pretensão de generalização estatística. A contribuição publicável esperada é a caracterização situada da maturidade informacional e analítica de um serviço de saúde mental, articulada ao processo de desenvolvimento participativo do dashboard.
+
+# Síntese diagnóstica
+
+| Campo | Registro |
+|---|---|
+| Nível médio da matriz IS4H-MM adaptada |  |
+| Nível médio do módulo analítico curto |  |
+| Domínios mais fortes |  |
+| Domínios mais frágeis |  |
+| Principais riscos para o desenvolvimento do dashboard |  |
+| Capacidades prioritárias a fortalecer |  |
+| Recomendações para governança e continuidade |  |
+| Requisitos derivados para o dashboard |  |
+
+# Referências de apoio
+
+- Organização Pan-Americana da Saúde. *Information Systems for Health Maturity Model Assessment* (IS4H-MM).
+- Gomes, J.; Romão, M. *Evaluating Maturity Models in Healthcare Information Systems: A Comprehensive Review*. Healthcare, 2025.
+- Langer, B. *Understanding Data & Analytics Maturity: A Systematic Review of Maturity Model Composition*. Schmalenbach Journal of Business Research, 2025.
+- Król, K.; Zdonek, D. *Analytics Maturity Models: An Overview*. Information, 2020.

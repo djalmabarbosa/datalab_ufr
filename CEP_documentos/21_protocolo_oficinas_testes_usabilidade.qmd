@@ -1,0 +1,119 @@
+---
+title: "Protocolo de Oficinas e Testes de Usabilidade"
+subtitle: "Cocriação, validação e refinamento participativo do dashboard"
+author: "Djalma Barbosa"
+date: "2026-04-30"
+lang: pt-BR
+format:
+  docx:
+    toc: true
+    number-sections: true
+---
+
+# Objetivo geral
+
+Orientar a realização das oficinas participativas e dos testes de usabilidade previstos na pesquisa, garantindo padronização mínima dos procedimentos, respeito à voluntariedade dos participantes e registro sistemático das evidências de design.
+
+# Participantes
+
+Gestores, coordenadores e profissionais adultos do CAPSij que atuem em rotinas de gestão, registro, monitoramento ou uso de informações e que tenham aceitado participar da pesquisa mediante TCLE.
+
+# Cuidados éticos comuns
+
+- Realizar atividades apenas após aprovação do CEP/UFR.
+- Reforçar que a participação é voluntária e que o participante pode se retirar a qualquer momento.
+- Evitar exposição individual de trabalhadores, usuários ou famílias.
+- Não registrar nomes em materiais de síntese analítica.
+- Tratar divergências, críticas e dificuldades como dados de pesquisa, e não como falhas pessoais.
+- Não usar o dashboard como instrumento de fiscalização individual.
+
+# Protocolo de oficinas
+
+## Objetivos específicos
+
+1. Identificar perguntas de gestão e necessidades informacionais prioritárias.
+2. Mapear fontes de dados, limitações, riscos e possibilidades de uso.
+3. Priorizar indicadores, filtros e visualizações.
+4. Discutir protótipos e registrar sugestões de melhoria.
+5. Fortalecer letramento em dados e apropriação crítica do dashboard.
+
+## Duração estimada
+
+60 a 120 minutos por oficina.
+
+## Estrutura sugerida
+
+| Momento | Duração estimada | Atividade |
+|---|---:|---|
+| Abertura | 10 min | Apresentação do objetivo da oficina, reforço ético e organização da dinâmica. |
+| Aquecimento | 10 min | Levantamento rápido de perguntas de gestão consideradas prioritárias. |
+| Mapeamento | 20-30 min | Discussão sobre fontes de dados, fluxos, lacunas e riscos de interpretação. |
+| Cocriação | 30-40 min | Priorização de indicadores, filtros, gráficos e formas de navegação. |
+| Validação | 20-30 min | Discussão de protótipos, telas ou esquemas de dashboard. |
+| Fechamento | 10 min | Síntese de decisões, pendências e próximos passos. |
+
+## Produtos esperados
+
+- Lista priorizada de perguntas de gestão.
+- Lista de indicadores e fontes correspondentes.
+- Registro de requisitos funcionais e não funcionais.
+- Sugestões de visualização, linguagem e navegação.
+- Registro de riscos de sigilo, interpretação ou uso indevido.
+
+# Protocolo de testes de usabilidade
+
+## Objetivos específicos
+
+1. Avaliar se os participantes conseguem localizar informações no dashboard.
+2. Identificar dificuldades de navegação, filtros, termos, gráficos e organização visual.
+3. Avaliar utilidade percebida e potencial de incorporação à rotina.
+4. Coletar sugestões para refinamento do artefato.
+
+## Duração estimada
+
+30 a 60 minutos por participante ou pequeno grupo.
+
+## Procedimento
+
+1. Relembrar voluntariedade, confidencialidade e possibilidade de interrupção.
+2. Explicar que o objetivo é avaliar o protótipo, não o desempenho do participante.
+3. Apresentar brevemente a versão do dashboard.
+4. Solicitar a execução de tarefas típicas da rotina de gestão.
+5. Convidar o participante a verbalizar o que está pensando, procurando ou interpretando.
+6. Registrar dúvidas, erros, caminhos percorridos, sugestões e comentários espontâneos.
+7. Aplicar perguntas de feedback ao final.
+8. Quando aplicável, aplicar a System Usability Scale após a versão piloto.
+
+## Tarefas exemplares
+
+| Tarefa | Critério de observação |
+|---|---|
+| Localizar o número de atendimentos em um período específico. | O participante encontra o filtro temporal e interpreta o resultado? |
+| Comparar atendimentos entre dois meses ou trimestres. | A comparação é compreendida sem explicação adicional? |
+| Identificar a distribuição por tipo de procedimento ou categoria agregada. | O gráfico e a legenda são claros? |
+| Filtrar uma visualização por período, categoria ou módulo disponível. | O participante entende o efeito do filtro? |
+| Interpretar um gráfico e explicar uma possível decisão de gestão apoiada por ele. | A visualização gera informação acionável? |
+
+## Perguntas de feedback
+
+1. O que foi fácil de encontrar?
+2. O que foi confuso ou exigiu esforço?
+3. Algum termo, gráfico, cor, filtro ou legenda ficou pouco claro?
+4. Que informação importante faltou?
+5. Você usaria este dashboard em reuniões, planejamento ou acompanhamento de rotina? Por quê?
+6. Que mudança tornaria o dashboard mais útil para o CAPSij?
+
+# Registro da sessão
+
+| Campo | Registro |
+|---|---|
+| Código da sessão |  |
+| Data e horário |  |
+| Tipo de atividade | ( ) Oficina  ( ) Teste de usabilidade |
+| Versão do protótipo |  |
+| Participantes, sem nomes pessoais |  |
+| Tarefas realizadas |  |
+| Dificuldades observadas |  |
+| Sugestões dos participantes |  |
+| Decisões de design derivadas |  |
+| Pendências para próxima versão |  |

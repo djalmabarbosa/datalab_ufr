@@ -1,0 +1,212 @@
+---
+title: "Instrumentos de Coleta de Dados"
+subtitle: "Entrevistas, maturidade informacional e analítica, oficinas, usabilidade, SUS e diário de campo"
+author: "Djalma Barbosa"
+date: "2026-04-30"
+lang: pt-BR
+format:
+  docx:
+    toc: true
+    number-sections: true
+---
+
+# Orientações gerais
+
+Estes instrumentos serão utilizados somente após aprovação do protocolo pelo CEP/UFR e após consentimento dos participantes, quando aplicável. Os instrumentos poderão ser ajustados em linguagem e ordem das perguntas conforme o contexto da entrevista, oficina ou teste, sem alterar objetivos, riscos ou escopo aprovado.
+
+Os participantes serão gestores, coordenadores e profissionais adultos do CAPSij envolvidos em rotinas de gestão, registro, monitoramento ou uso de informações. Crianças, adolescentes, familiares e usuários atendidos pelo CAPSij não serão participantes diretos.
+
+# Roteiro de entrevista semiestruturada
+
+## Abertura
+
+1. Reapresentar a pesquisa, confirmar leitura e assinatura do TCLE.
+2. Reforçar voluntariedade, direito de não responder perguntas e possibilidade de interromper a participação.
+3. Solicitar autorização para gravação de áudio, quando aplicável.
+
+## Bloco 1 - Contexto profissional
+
+1. Qual é sua função atual no CAPSij?
+2. Há quanto tempo você atua no serviço ou em atividades relacionadas à saúde mental?
+3. Quais atividades de gestão, registro, monitoramento ou uso de informações fazem parte da sua rotina?
+
+## Bloco 2 - Decisões e necessidades informacionais
+
+4. Quais decisões ou acompanhamentos do serviço dependem de dados ou informações?
+5. Quais perguntas de gestão você considera mais importantes para o CAPSij hoje?
+6. Que informações você gostaria de conseguir visualizar rapidamente para planejar ou monitorar o serviço?
+7. Quais indicadores você considera prioritários? Por quê?
+
+## Bloco 3 - Fontes de dados e dificuldades atuais
+
+8. Quais sistemas, planilhas, relatórios ou documentos são usados atualmente?
+9. O que funciona bem no modo atual de acessar e analisar informações?
+10. Quais são as principais dificuldades: atraso, incompletude, erro, retrabalho, falta de padronização, acesso ou interpretação?
+11. Existem dados importantes que hoje não são registrados ou são difíceis de recuperar?
+
+## Bloco 4 - Expectativas sobre o dashboard
+
+12. Como um dashboard poderia apoiar a rotina de gestão do CAPSij?
+13. Que tipos de gráficos, filtros ou comparações seriam mais úteis?
+14. O que faria você confiar nas informações apresentadas?
+15. O que poderia dificultar a adoção do dashboard pela equipe?
+
+## Bloco 5 - Governança, sigilo e sustentabilidade
+
+16. Quem deveria atualizar, consultar ou validar os dados do dashboard?
+17. Que cuidados de sigilo e privacidade você considera essenciais?
+18. Que capacitações seriam necessárias para uso continuado da ferramenta?
+
+## Encerramento
+
+19. Há algo importante que não foi perguntado?
+20. Você indicaria outro profissional do serviço que deveria ser ouvido, respeitando a voluntariedade?
+
+# Instrumento de maturidade informacional e capacidade analítica
+
+O instrumento de maturidade será organizado em duas camadas. A primeira utiliza o *Information Systems for Health Maturity Model* (IS4H-MM), da OPAS/OMS, como matriz conceitual para avaliar capacidades de sistemas de informação em saúde. A segunda é um módulo analítico curto, voltado especificamente à capacidade local de usar dados, indicadores e dashboards na gestão do CAPSij.
+
+O instrumento não terá finalidade de auditoria, fiscalização ou avaliação individual de trabalhadores. A unidade de análise será o serviço.
+
+## Escala de maturidade
+
+| Nível | Classificação | Descrição operacional |
+|---:|---|---|
+| 1 | Inicial / ad hoc | Práticas informais, fragmentadas, dependentes de pessoas específicas e pouco documentadas. |
+| 2 | Básico / emergente | Existem rotinas mínimas, mas ainda pouco integradas, com baixa padronização e uso irregular dos dados. |
+| 3 | Definido / padronizado | Processos, responsabilidades e fontes de dados estão descritos e são utilizados com alguma regularidade. |
+| 4 | Gerenciado / mensurado | Há monitoramento sistemático, governança, controle de qualidade, segurança e uso recorrente dos dados na gestão. |
+| 5 | Otimizado / aprendizado contínuo | Dados e informações são integrados às rotinas decisórias, avaliados continuamente e usados para inovação, aprendizagem e melhoria do cuidado. |
+| NA | Não aplicável / sem evidência | A dimensão não se aplica ao contexto ou não há evidência suficiente para pontuação. |
+
+## Camada 1 - Matriz IS4H-MM adaptada
+
+| Domínio | Indicador avaliativo | Nível 1-5/NA | Evidências observadas | Lacunas e riscos |
+|---|---|:---:|---|---|
+| Gestão de dados e tecnologias da informação | Fontes de dados do CAPSij identificadas, descritas e minimamente organizadas. |  |  |  |
+| Gestão de dados e tecnologias da informação | Fluxos de coleta, registro, consolidação, validação e atualização são conhecidos pela equipe. |  |  |  |
+| Gestão de dados e tecnologias da informação | Há condições técnicas mínimas para extração, preparação e visualização de dados. |  |  |  |
+| Gestão de dados e tecnologias da informação | Existem cuidados com qualidade, completude, temporalidade e consistência dos dados. |  |  |  |
+| Gestão e governança | Há definição de responsabilidades sobre produção, validação, acesso e uso das informações. |  |  |  |
+| Gestão e governança | O uso de dados está articulado a necessidades reais de gestão, planejamento e monitoramento. |  |  |  |
+| Gestão e governança | Existem regras, ainda que informais, para sigilo, proteção de dados e prevenção de uso indevido. |  |  |  |
+| Gestão do conhecimento e compartilhamento | Informações produzidas são discutidas em reuniões, relatórios ou espaços coletivos de decisão. |  |  |  |
+| Gestão do conhecimento e compartilhamento | A equipe compreende os principais indicadores e seus limites de interpretação. |  |  |  |
+| Gestão do conhecimento e compartilhamento | Há mecanismos para transformar dados em recomendações, ações ou aprendizagem institucional. |  |  |  |
+| Inovação | O serviço demonstra abertura para testar novas formas de visualização e uso de dados. |  |  |  |
+| Inovação | A equipe identifica oportunidades de melhoria a partir de evidências. |  |  |  |
+
+## Camada 2 - Módulo analítico curto
+
+| Dimensão analítica | Questão avaliativa | Nível 1-5/NA | Evidências observadas | Implicações para o dashboard |
+|---|---|:---:|---|---|
+| Disponibilidade e qualidade dos dados | Os dados necessários aos indicadores prioritários existem, são acessíveis e têm qualidade suficiente para uso gerencial? |  |  |  |
+| Governança analítica e proteção de dados | Há clareza sobre quem acessa, valida, interpreta e divulga dados, com proteção de informações pessoais e sensíveis? |  |  |  |
+| Infraestrutura e reprodutibilidade | Há condições técnicas para atualizar, documentar e reproduzir as análises do dashboard com baixo custo? |  |  |  |
+| Letramento em dados | A equipe consegue interpretar indicadores, gráficos, filtros e limitações dos dados de forma crítica? |  |  |  |
+| Uso decisório e incorporação à rotina | Os dados são usados para planejamento, monitoramento, reuniões, pactuações ou revisão de processos de trabalho? |  |  |  |
+| Sustentabilidade | Há perspectiva realista de continuidade do uso do dashboard após a etapa inicial do projeto? |  |  |  |
+
+# Protocolo de oficinas de cocriação
+
+## Objetivo
+
+Identificar, priorizar e refinar necessidades informacionais, indicadores, fluxos de dados e requisitos do dashboard em conjunto com a equipe do CAPSij.
+
+## Participantes
+
+Gestores, coordenadores e profissionais adultos do CAPSij que tenham aceitado participar da pesquisa mediante TCLE.
+
+## Duração estimada
+
+60 a 120 minutos por encontro.
+
+## Estrutura sugerida
+
+1. Abertura, objetivos da oficina e reforço do caráter voluntário.
+2. Apresentação de problemas informacionais previamente identificados.
+3. Priorização de perguntas de gestão e indicadores.
+4. Discussão de fontes de dados disponíveis, limitações e riscos.
+5. Esboço de telas, filtros, gráficos e formas de visualização.
+6. Registro de decisões, divergências e próximos passos.
+
+## Registro
+
+O pesquisador poderá registrar anotações de campo, fotografias de materiais produzidos na oficina sem identificação pessoal e, se autorizado, áudio de discussão. Falas serão tratadas de forma confidencial.
+
+# Protocolo de teste de usabilidade
+
+## Objetivo
+
+Avaliar a navegação, compreensão, utilidade percebida e dificuldades de uso das versões do dashboard.
+
+## Procedimento
+
+1. Relembrar voluntariedade, confidencialidade e possibilidade de interrupção.
+2. Apresentar brevemente a versão do dashboard a ser testada.
+3. Solicitar que o participante realize tarefas típicas, verbalizando o que compreende e o que procura.
+4. Registrar dificuldades, caminhos percorridos, comentários espontâneos e sugestões.
+5. Aplicar perguntas de feedback ao final.
+
+## Tarefas exemplares
+
+1. Localizar o número de atendimentos em um período específico.
+2. Comparar atendimentos entre dois meses ou trimestres.
+3. Identificar a distribuição de atendimentos por tipo de procedimento ou perfil agregado.
+4. Filtrar uma visualização por período, unidade de acompanhamento ou categoria agregada disponível.
+5. Interpretar um gráfico e explicar que decisão de gestão ele poderia apoiar.
+
+## Perguntas de feedback
+
+1. O que foi fácil de encontrar?
+2. O que foi confuso ou exigiu esforço?
+3. Algum termo, gráfico ou filtro ficou pouco claro?
+4. Que informação faltou?
+5. Você usaria este dashboard em reuniões ou planejamento? Por quê?
+
+# System Usability Scale - SUS
+
+Ao final da versão piloto, poderá ser aplicada a escala SUS, com respostas de 1 a 5, em que 1 significa "discordo totalmente" e 5 significa "concordo totalmente".
+
+| Item | Afirmativa | 1 | 2 | 3 | 4 | 5 |
+|---|---|:---:|:---:|:---:|:---:|:---:|
+| 1 | Eu acho que gostaria de usar este dashboard com frequência. |  |  |  |  |  |
+| 2 | Eu achei o dashboard desnecessariamente complexo. |  |  |  |  |  |
+| 3 | Eu achei o dashboard fácil de usar. |  |  |  |  |  |
+| 4 | Eu acho que precisaria de apoio técnico para conseguir usar este dashboard. |  |  |  |  |  |
+| 5 | Eu achei que as várias funções do dashboard estavam bem integradas. |  |  |  |  |  |
+| 6 | Eu achei que havia muita inconsistência no dashboard. |  |  |  |  |  |
+| 7 | Eu imagino que a maioria das pessoas aprenderia a usar este dashboard rapidamente. |  |  |  |  |  |
+| 8 | Eu achei o dashboard difícil de usar. |  |  |  |  |  |
+| 9 | Eu me senti confiante ao usar o dashboard. |  |  |  |  |  |
+| 10 | Eu precisei aprender muitas coisas antes de conseguir usar este dashboard. |  |  |  |  |  |
+
+# Roteiro de diário de campo e observação participante
+
+| Campo | Registro |
+|---|---|
+| Data e horário |  |
+| Local/contexto |  |
+| Tipo de atividade observada |  |
+| Participantes presentes, sem nomes pessoais |  |
+| Objetivo da atividade |  |
+| Situações de uso ou discussão de dados |  |
+| Dificuldades observadas |  |
+| Sugestões ou demandas emergentes |  |
+| Decisões de design relacionadas |  |
+| Riscos éticos percebidos e medidas adotadas |  |
+| Reflexões do pesquisador |  |
+
+# Ficha de registro de decisão de design
+
+| Campo | Registro |
+|---|---|
+| Versão do protótipo |  |
+| Problema ou demanda que motivou a decisão |  |
+| Evidência empírica relacionada |  |
+| Referência teórica ou princípio de design relacionado |  |
+| Alternativas consideradas |  |
+| Decisão tomada |  |
+| Ajuste implementado |  |
+| Resultado esperado |  |
+| Pendências |  |

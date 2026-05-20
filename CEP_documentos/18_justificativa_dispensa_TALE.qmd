@@ -1,0 +1,36 @@
+---
+title: "Justificativa para Não Apresentação de TALE"
+author: "Djalma Barbosa"
+date: "2026-04-30"
+lang: pt-BR
+format:
+  docx:
+    toc: false
+    number-sections: false
+---
+
+Ao Comitê de Ética em Pesquisa com Seres Humanos da Universidade Federal de Rondonópolis (CEP/UFR)
+
+Rondonópolis-MT, ____ de __________________ de 2026.
+
+Assunto: Justificativa para não apresentação de Termo de Assentimento Livre e Esclarecido (TALE)
+
+Prezadas(os) integrantes do CEP/UFR,
+
+Na pesquisa intitulada **"Desenvolvimento Participativo de Dashboards para Apoio à Gestão em Saúde Mental: uma pesquisa de Action Design Research em um CAPSij"**, sob responsabilidade de **Djalma Barbosa**, não se prevê a participação direta de crianças, adolescentes, familiares ou usuários atendidos pelo CAPSij.
+
+Os participantes diretos serão exclusivamente gestores, coordenadores e profissionais adultos do serviço, selecionados em função de sua atuação em rotinas de gestão, registro, monitoramento ou uso de informações. Esses participantes serão convidados de forma voluntária e, caso aceitem, assinarão Termo de Consentimento Livre e Esclarecido (TCLE).
+
+Embora o estudo seja desenvolvido em um serviço voltado ao atendimento infantojuvenil, o objeto da pesquisa é o processo de desenvolvimento participativo de um dashboard para apoio à gestão, e não a experiência clínica, familiar ou assistencial de crianças e adolescentes. Assim, não serão realizadas entrevistas, grupos, observações dirigidas, testes, aplicação de questionários ou qualquer procedimento de pesquisa com usuários menores de 18 anos.
+
+Eventuais dados assistenciais ou administrativos do CAPSij que venham a subsidiar o dashboard serão tratados preferencialmente de forma agregada e anonimizada, sem divulgação de nomes, CPF, CNS, endereço, telefone, prontuário, data de nascimento completa ou quaisquer identificadores diretos. Quando houver risco de identificação indireta por números muito pequenos ou combinação de variáveis, serão aplicadas estratégias de agrupamento, supressão ou agregação.
+
+Dessa forma, entende-se que não há necessidade de apresentação de TALE nesta versão do protocolo. Caso, no decorrer do estudo, surja necessidade metodológica de incluir crianças, adolescentes, familiares ou usuários como participantes diretos, essa alteração somente será realizada mediante emenda previamente aprovada pelo CEP/UFR, com apresentação dos instrumentos de consentimento e assentimento cabíveis.
+
+Atenciosamente,
+
+**Djalma Barbosa**  
+Pesquisador responsável  
+Universidade Federal de Rondonópolis (UFR)
+
+Assinatura: _______________________________________________
