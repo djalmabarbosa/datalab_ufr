@@ -1,0 +1,19 @@
+---
+title: "Metodologia de análise de dados"
+lang: pt-BR
+format: html
+---
+
+# Metodologia de análise de dados
+
+A análise dos dados será realizada de forma integrada, combinando procedimentos qualitativos e quantitativos descritivos, de acordo com a natureza aplicada e participativa da pesquisa. Os dados qualitativos serão provenientes de entrevistas semiestruturadas, oficinas, testes de usabilidade, observação participante, registros em diário de campo, documentos de projeto e comentários dos participantes durante os ciclos de desenvolvimento do *dashboard*.
+
+As entrevistas e registros textuais serão organizados, transcritos quando necessário e submetidos à análise temática reflexiva, conforme Braun e Clarke. A análise envolverá as etapas de familiarização com o material, codificação inicial, construção de temas, revisão, definição e nomeação dos temas, e elaboração da interpretação analítica. Esse processo buscará identificar necessidades informacionais, dificuldades no uso de dados, percepções sobre utilidade e usabilidade do *dashboard*, barreiras e facilitadores de adoção, além dos princípios de design emergentes da experiência.
+
+Os dados quantitativos terão função complementar e serão analisados por meio de estatística descritiva simples. Poderão incluir escores de instrumentos padronizados, como a *System Usability Scale* (SUS), resultados de avaliação de maturidade informacional e capacidade analítica, frequência de uso do *dashboard*, módulos mais consultados, registros agregados de acesso e indicadores de processo. Serão calculadas medidas como frequências absolutas e relativas, médias, medianas e medidas de dispersão, quando aplicáveis.
+
+A análise buscará triangulação entre diferentes fontes de dados, como entrevistas, observações, oficinas, documentos, testes de usabilidade, registros de uso e instrumentos estruturados. Essa triangulação permitirá comparar percepções dos participantes, evidências observacionais e registros quantitativos, aumentando a consistência interpretativa dos achados.
+
+O ambiente R poderá ser utilizado para organização, tratamento e análise dos dados, incluindo construção de tabelas, gráficos, sistematização de códigos, análise descritiva e documentação reprodutível do processo analítico. O uso de ferramentas computacionais terá função de apoio à rastreabilidade e transparência da análise, sem substituir a interpretação reflexiva do pesquisador.
+
+Os resultados serão apresentados de forma agregada e sem identificação individual dos participantes. Falas ou excertos poderão ser utilizados apenas quando devidamente anonimizados e quando não permitirem identificação direta ou indireta dos participantes, do serviço ou de usuários atendidos.

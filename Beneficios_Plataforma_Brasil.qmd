@@ -1,0 +1,15 @@
+---
+title: "Benefícios"
+lang: pt-BR
+format: html
+---
+
+# Benefícios
+
+A pesquisa poderá trazer benefícios diretos e indiretos ao CAPSij participante, à equipe profissional, à gestão municipal e ao campo da saúde mental no SUS. Como benefício direto, espera-se desenvolver um *dashboard* interativo voltado às necessidades reais do serviço, capaz de apoiar o monitoramento de indicadores, a organização das informações assistenciais e administrativas, o planejamento local e a tomada de decisão baseada em evidências.
+
+A participação da equipe no processo de construção do artefato também poderá favorecer o letramento em dados, a reflexão sobre os registros produzidos no cotidiano do serviço e o fortalecimento da cultura de uso da informação na gestão. As oficinas, testes de usabilidade e momentos de discussão poderão contribuir para identificar necessidades informacionais, qualificar indicadores e aprimorar fluxos de trabalho relacionados ao uso de dados.
+
+Como benefícios indiretos, a pesquisa poderá gerar conhecimento científico e técnico sobre o desenvolvimento participativo de *dashboards* em serviços públicos de saúde mental, especialmente em CAPSij, área ainda pouco explorada na literatura. Os resultados poderão subsidiar futuros projetos em outros serviços da Rede de Atenção Psicossocial e contribuir para a formulação de princípios de design, recomendações metodológicas, relatórios técnicos e publicações científicas.
+
+A pesquisa também poderá fortalecer a integração entre universidade e serviço público de saúde, contribuindo para a formação de estudantes, para a produção de conhecimento aplicado às necessidades do território e para o aprimoramento da gestão em saúde mental infantojuvenil. Não há garantia de benefício individual imediato aos participantes, mas espera-se que o processo produza ganhos institucionais e coletivos relacionados à melhoria da informação para gestão.

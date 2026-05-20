@@ -1,0 +1,11 @@
+---
+title: "Desfechos secundários"
+lang: pt-BR
+format: html
+---
+
+# Desfechos secundários
+
+Como desfechos secundários, serão considerados: a identificação das necessidades informacionais prioritárias da equipe do CAPSij; o mapeamento das fontes de dados disponíveis e de suas limitações; a avaliação da maturidade informacional e da capacidade analítica do serviço; a qualificação de indicadores úteis à gestão local; a produção de registros sistemáticos sobre o processo participativo de desenvolvimento do *dashboard*; e a formulação de princípios de design transferíveis para outros serviços de saúde mental do SUS.
+
+Também serão considerados desfechos secundários a elaboração de relatórios técnicos, a produção de materiais formativos ou orientações de uso do *dashboard*, a capacitação introdutória da equipe em temas relacionados ao uso de dados e a geração de produtos científicos, técnicos e tecnológicos decorrentes da pesquisa. Esses desfechos permitirão avaliar contribuições complementares do estudo para a gestão do serviço, para o fortalecimento da cultura de uso da informação e para a produção de conhecimento aplicado em saúde mental infantojuvenil.
