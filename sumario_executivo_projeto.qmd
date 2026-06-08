@@ -56,13 +56,13 @@ reference-section-title: "Referências principais"
 \colorbox{ufrlight}{%
 \begin{minipage}{0.91\textwidth}
 \vspace{0.45em}
-\textbf{\color{ufrblue}Finalidade do documento.} Este resumo executivo apresenta, em linguagem sintética, o projeto de pesquisa e as frentes de participação previstas para mestrandos(as) que por ventura venham a integrar a equipe.
+\textbf{\color{ufrblue}Finalidade do documento.} Este resumo executivo apresenta, em linguagem sintética, o projeto de pesquisa e as frentes de participação previstas para novos integrantes da equipe executora do projeto.
 \vspace{0.45em}
 \end{minipage}}
 \end{center}
 ```
 
-# Sumário executivo
+# Visão geral
 
 O projeto **"Desenvolvimento Participativo de Dashboards para Apoio à Gestão em Saúde Mental: uma pesquisa de Action Design Research em um CAPSij"** tem como objetivo desenvolver, implementar e avaliar *dashboards* interativos para apoiar a gestão do Centro de Atenção Psicossocial Infantojuvenil (CAPSij) de Rondonópolis-MT.
 
@@ -114,7 +114,7 @@ Para os participantes, a pesquisa oferece oportunidades de formação metodológ
 - Produção científica sobre ADR, design participativo, maturidade informacional e gestão baseada em dados.
 - Contribuição prática para a gestão em saúde mental infantojuvenil no território.
 
-# Participação de mestrandos(as)
+# Participação de novos integrantes
 
 Os(as) alunos(as) poderão atuar especialmente em:
 
