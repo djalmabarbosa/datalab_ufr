@@ -1,0 +1,66 @@
+---
+title: "Termo de Compromisso para Uso de Dados (TCUD)"
+subtitle: "Resolução CNS nº 738/2024"
+author: "Djalma Barbosa"
+date: "2026-06-07"
+lang: pt-BR
+format:
+  docx:
+    toc: false
+    number-sections: false
+---
+
+**Projeto:** Desenvolvimento Participativo de Dashboards para Apoio à Gestão em Saúde Mental: uma pesquisa de Action Design Research em um CAPSij  
+**CAAE:** 98308126.4.0000.0126  
+**Pesquisador responsável:** Djalma Barbosa  
+**Instituição proponente:** Universidade Federal de Rondonópolis (UFR)  
+**Instituição coparticipante/unidade de origem dos dados:** Secretaria Municipal de Saúde de Rondonópolis-MT / CAPSij de Rondonópolis-MT
+
+Pelo presente Termo de Compromisso para Uso de Dados (TCUD), o pesquisador responsável e os integrantes da equipe de pesquisa abaixo assinados comprometem-se a utilizar os dados assistenciais, administrativos, institucionais e de pesquisa exclusivamente nos limites do protocolo aprovado pelo CEP/UFR e em conformidade com a Resolução CNS nº 738/2024, a Resolução CNS nº 510/2016, a Resolução CNS nº 466/2012, a Lei Geral de Proteção de Dados Pessoais (Lei nº 13.709/2018) e demais normas aplicáveis.
+
+# Compromissos assumidos
+
+Os signatários comprometem-se a:
+
+1. Utilizar os dados exclusivamente para os objetivos da pesquisa aprovada pelo CEP/UFR.
+
+2. Acessar apenas os dados estritamente necessários à execução do projeto, observando os princípios de finalidade, adequação, necessidade, minimização, segurança, prevenção, responsabilização e confidencialidade.
+
+3. Preservar o sigilo e a confidencialidade de informações de usuários, familiares, trabalhadores, gestores, serviços e instituições.
+
+4. Não divulgar nomes, CPF, CNS, endereço, telefone, número de prontuário, data de nascimento completa ou quaisquer identificadores diretos de usuários, familiares ou trabalhadores.
+
+5. Não tentar reidentificar pessoas a partir de bases anonimizadas, pseudonimizadas, agregadas ou parcialmente tratadas.
+
+6. Não compartilhar bases brutas, identificáveis ou potencialmente identificáveis com terceiros não autorizados.
+
+7. Armazenar arquivos em ambiente seguro, com acesso restrito, protegido por senha e sob responsabilidade do pesquisador responsável.
+
+8. Separar, suprimir ou anonimizar identificadores diretos assim que deixarem de ser indispensáveis para preparação, limpeza, vinculação ou validação de registros.
+
+9. Apresentar resultados apenas em forma agregada, anonimizada ou com proteção suficiente contra identificação direta ou indireta.
+
+10. Suprimir, agrupar ou apresentar em nível mais amplo células com números muito pequenos, categorias raras ou combinações de variáveis que possam gerar risco de reidentificação.
+
+11. Não utilizar os dados para avaliação individual, fiscalização punitiva, tomada de decisão clínica individual, classificação individual de usuários, controle individual de produtividade ou qualquer finalidade incompatível com o protocolo aprovado.
+
+12. Comunicar imediatamente ao pesquisador responsável qualquer perda, acesso indevido, exposição acidental, suspeita de reidentificação, violação de sigilo ou uso não autorizado dos dados.
+
+13. Observar o prazo de guarda previsto no protocolo e providenciar descarte seguro dos dados identificáveis ao final do prazo, salvo exigência normativa ou determinação do CEP/UFR em sentido diverso.
+
+14. Reconhecer que o descumprimento deste termo poderá implicar responsabilidade ética, administrativa, civil ou penal, conforme a legislação aplicável.
+
+# Equipe autorizada
+
+| Nome completo | Função no projeto | Instituição/vínculo | Documento ou matrícula | Assinatura |
+|---|---|---|---|---|
+| Djalma Barbosa | Pesquisador responsável | Universidade Federal de Rondonópolis | [preencher] |  |
+| Bernardo Vergara | Discente integrante da equipe | Universidade Federal de Rondonópolis | [preencher] |  |
+| [nome] | [função] | [instituição] | [preencher] |  |
+
+Rondonópolis-MT, ____ de __________________ de 2026.
+
+________________________________________  
+**Djalma Barbosa**  
+Pesquisador responsável  
+Universidade Federal de Rondonópolis (UFR)

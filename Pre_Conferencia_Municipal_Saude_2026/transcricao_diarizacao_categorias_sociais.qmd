@@ -1,0 +1,759 @@
+---
+title: "Transcrição e diarização de falantes em Conferência Municipal de Saúde"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+execute:
+  echo: true
+  warning: false
+  message: false
+jupyter: python3
+---
+
+## Introdução
+
+Este documento executa um fluxo de trabalho em Python para apoiar a análise do áudio de uma Conferência Municipal de Saúde.
+
+O procedimento realiza:
+
+- transcrição automática do áudio;
+- diarização de falantes;
+- associação dos falantes a categorias sociais declaradas no início da conferência;
+- rotulagem anônima das falas subsequentes;
+- exportação dos resultados intermediários e finais em `.csv` e `.xlsx`.
+
+O objetivo não é identificar nomes de participantes. A classificação usa apenas categorias sociais declaradas ou inferidas a partir de profissão, vínculo ou instituição mencionados na apresentação inicial.
+
+## Instalação dos pacotes
+
+Execute manualmente, se necessário, os comandos abaixo em um terminal do Positron. Eles estão comentados para evitar instalação automática durante a renderização.
+
+```{python}
+#| label: instalacao-pacotes
+# Instalação sugerida:
+#
+# pip install pandas numpy openpyxl tqdm
+# pip install torch torchaudio
+# pip install faster-whisper
+# pip install pyannote.audio
+#
+# Observações:
+# - O pyannote.audio pode exigir um token do Hugging Face e aceite dos termos
+#   dos modelos no site do Hugging Face.
+# - Em computadores sem GPU, use modelos menores do Whisper/faster-whisper,
+#   como "small" ou "medium", e compute_type="int8".
+# - Se usar GPU CUDA, considere device="cuda" e compute_type="float16".
+```
+
+Opcionalmente, você pode usar o chunk abaixo para verificar pacotes ausentes e instalar apenas dependências básicas. Por segurança, ele vem desligado. Troque `INSTALAR_DEPENDENCIAS_BASICAS = False` para `True` se quiser executar a instalação no mesmo ambiente Python usado pelo Positron.
+
+```{python}
+#| label: verificar-instalar-dependencias
+import importlib.util
+import subprocess
+import sys
+
+INSTALAR_DEPENDENCIAS_BASICAS = False
+
+PACOTES_BASICOS = {
+    "pandas": "pandas",
+    "openpyxl": "openpyxl",
+    "tqdm": "tqdm",
+}
+
+PACOTES_AUDIO = {
+    "faster_whisper": "faster-whisper",
+    "pyannote.audio": "pyannote.audio",
+}
+
+def pacote_disponivel(nome_importacao):
+    """Verifica se um pacote pode ser importado no kernel Python atual."""
+    return importlib.util.find_spec(nome_importacao) is not None
+
+faltantes_basicos = [
+    nome_pip
+    for nome_importacao, nome_pip in PACOTES_BASICOS.items()
+    if not pacote_disponivel(nome_importacao)
+]
+
+print("Python em uso:", sys.executable)
+print("Pacotes básicos ausentes:", faltantes_basicos or "nenhum")
+
+if faltantes_basicos and INSTALAR_DEPENDENCIAS_BASICAS:
+    subprocess.check_call([
+        sys.executable,
+        "-m",
+        "pip",
+        "install",
+        *faltantes_basicos,
+    ])
+    print("Instalação concluída. Reinicie o kernel se algum import ainda falhar.")
+elif faltantes_basicos:
+    print("Para instalar manualmente, rode no terminal:")
+    print(f'"{sys.executable}" -m pip install ' + " ".join(faltantes_basicos))
+```
+
+## Importação das bibliotecas
+
+```{python}
+#| label: importacao-bibliotecas
+import os
+import re
+import unicodedata
+from collections import defaultdict
+from pathlib import Path
+
+import pandas as pd
+from tqdm.auto import tqdm
+```
+
+## Configurações iniciais
+
+Ajuste os parâmetros abaixo conforme o ambiente e a qualidade desejada.
+
+```{python}
+#| label: configuracoes-iniciais
+# Caminhos relativos à raiz do projeto aberta no Positron.
+# Se o Positron estiver aberto em:
+# C:\Users\franc\OneDrive\Documentos\datalab_ufr
+# então o áudio está diretamente na pasta abaixo.
+PROJECT_DIR = Path.cwd()
+DATA_DIR = PROJECT_DIR / "Pre_Conferencia_Municipal_Saude_2026"
+AUDIO_PATH = DATA_DIR / "WhatsApp Audio 2026-05-15 at 21.02.52.mp4"
+OUTPUT_DIR = DATA_DIR / "resultados"
+
+# Configurações gerais.
+IDIOMA = "pt"
+TEMPO_INICIAL_APRESENTACOES_MIN = 20
+TEMPO_INICIAL_APRESENTACOES_SEG = TEMPO_INICIAL_APRESENTACOES_MIN * 60
+
+# Token Hugging Face para pyannote.audio.
+# Você pode preencher diretamente ou definir a variável de ambiente HF_TOKEN.
+HF_TOKEN = os.getenv("HF_TOKEN", "INSIRA_SEU_TOKEN_AQUI")
+
+# Modelo de transcrição.
+# Opções comuns do faster-whisper: "tiny", "base", "small", "medium", "large-v3".
+WHISPER_MODEL = "medium"
+WHISPER_DEVICE = "cpu"       # use "cuda" se tiver GPU compatível
+WHISPER_COMPUTE_TYPE = "int8" # use "float16" com GPU CUDA
+
+# Modelo de diarização do pyannote.audio.
+PYANNOTE_MODEL = "pyannote/speaker-diarization-3.1"
+
+# Limiares usados no controle de qualidade.
+LOW_OVERLAP_THRESHOLD = 0.40
+SHORT_SEGMENT_SECONDS = 1.00
+
+OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+
+print(f"Arquivo de áudio: {AUDIO_PATH}")
+print(f"Pasta do projeto: {PROJECT_DIR}")
+print(f"Pasta dos dados: {DATA_DIR}")
+print(f"Pasta de saída: {OUTPUT_DIR}")
+print(f"Áudio existe? {AUDIO_PATH.exists()}")
+```
+
+## Funções auxiliares
+
+As funções abaixo padronizam limpeza de texto, exportação de tabelas e normalização de strings para busca por expressões regulares.
+
+```{python}
+#| label: funcoes-auxiliares
+def clean_text(text):
+    """Remove espaços repetidos e padroniza texto vazio."""
+    if pd.isna(text):
+        return ""
+    return re.sub(r"\s+", " ", str(text)).strip()
+
+
+def normalize_text(text):
+    """Normaliza texto para buscas: minúsculas, sem acentos e com espaços simples."""
+    text = clean_text(text).lower()
+    text = unicodedata.normalize("NFKD", text)
+    text = "".join(char for char in text if not unicodedata.combining(char))
+    text = re.sub(r"\s+", " ", text).strip()
+    return text
+
+
+def save_table(df, stem, output_dir=OUTPUT_DIR):
+    """Salva um DataFrame em CSV UTF-8 e Excel."""
+    output_dir.mkdir(parents=True, exist_ok=True)
+    csv_path = output_dir / f"{stem}.csv"
+    xlsx_path = output_dir / f"{stem}.xlsx"
+    df.to_csv(csv_path, index=False, encoding="utf-8-sig")
+    df.to_excel(xlsx_path, index=False, engine="openpyxl")
+    print(f"Salvo: {csv_path}")
+    print(f"Salvo: {xlsx_path}")
+    return csv_path, xlsx_path
+
+
+def seconds_to_hms(seconds):
+    """Converte segundos para HH:MM:SS, útil em inspeções manuais."""
+    seconds = max(0, float(seconds or 0))
+    h = int(seconds // 3600)
+    m = int((seconds % 3600) // 60)
+    s = int(seconds % 60)
+    return f"{h:02d}:{m:02d}:{s:02d}"
+```
+
+## Transcrição do áudio
+
+Esta etapa usa `faster-whisper` para transcrever o áudio em português. O resultado bruto contém um segmento por trecho temporal reconhecido.
+
+```{python}
+#| label: transcricao-audio
+from faster_whisper import WhisperModel
+
+
+def transcribe_audio(audio_path):
+    """Transcreve o áudio com faster-whisper e retorna uma tabela de segmentos."""
+    if not audio_path.exists():
+        raise FileNotFoundError(f"Arquivo de áudio não encontrado: {audio_path}")
+
+    model = WhisperModel(
+        WHISPER_MODEL,
+        device=WHISPER_DEVICE,
+        compute_type=WHISPER_COMPUTE_TYPE,
+    )
+
+    segments_iter, info = model.transcribe(
+        str(audio_path),
+        language=IDIOMA,
+        task="transcribe",
+        beam_size=5,
+        vad_filter=True,
+        vad_parameters={
+            "min_silence_duration_ms": 700,
+            "speech_pad_ms": 250,
+        },
+        condition_on_previous_text=False,
+    )
+
+    rows = []
+    for i, segment in enumerate(tqdm(segments_iter, desc="Transcrevendo"), start=1):
+        rows.append(
+            {
+                "segment_id": i,
+                "start": float(segment.start),
+                "end": float(segment.end),
+                "start_hms": seconds_to_hms(segment.start),
+                "end_hms": seconds_to_hms(segment.end),
+                "text": clean_text(segment.text),
+            }
+        )
+
+    df = pd.DataFrame(rows)
+    print(f"Idioma detectado pelo modelo: {getattr(info, 'language', None)}")
+    print(f"Número de segmentos transcritos: {len(df)}")
+    return df
+
+
+transcricao_bruta = transcribe_audio(AUDIO_PATH)
+save_table(transcricao_bruta, "transcricao_bruta")
+transcricao_bruta.head()
+```
+
+## Diarização de falantes
+
+Esta etapa usa `pyannote.audio` para estimar quem fala em cada intervalo do áudio. Os rótulos gerados automaticamente, como `SPEAKER_00`, não identificam pessoas; eles apenas agrupam trechos de voz semelhantes.
+
+```{python}
+#| label: diarizacao-falantes
+from pyannote.audio import Pipeline
+
+
+def diarize_audio(audio_path):
+    """Executa diarização com pyannote.audio e retorna intervalos por speaker_id."""
+    if not audio_path.exists():
+        raise FileNotFoundError(f"Arquivo de áudio não encontrado: {audio_path}")
+
+    token = None if HF_TOKEN in ["", "INSIRA_SEU_TOKEN_AQUI", None] else HF_TOKEN
+    pipeline = Pipeline.from_pretrained(PYANNOTE_MODEL, use_auth_token=token)
+    diarization = pipeline(str(audio_path))
+
+    rows = []
+    for turn, _, speaker in diarization.itertracks(yield_label=True):
+        rows.append(
+            {
+                "speaker_id": speaker,
+                "start": float(turn.start),
+                "end": float(turn.end),
+                "start_hms": seconds_to_hms(turn.start),
+                "end_hms": seconds_to_hms(turn.end),
+            }
+        )
+
+    df = pd.DataFrame(rows).sort_values(["start", "end", "speaker_id"]).reset_index(drop=True)
+    print(f"Número de segmentos diarizados: {len(df)}")
+    print(f"Número de falantes diarizados: {df['speaker_id'].nunique() if len(df) else 0}")
+    return df
+
+
+diarizacao = diarize_audio(AUDIO_PATH)
+save_table(diarizacao, "diarizacao")
+diarizacao.head()
+```
+
+## Alinhamento entre transcrição e diarização
+
+Para cada segmento transcrito, o código abaixo atribui o `speaker_id` com maior sobreposição temporal.
+
+```{python}
+#| label: alinhamento-transcricao-diarizacao
+def interval_overlap(start_a, end_a, start_b, end_b):
+    """Calcula a sobreposição em segundos entre dois intervalos."""
+    return max(0.0, min(end_a, end_b) - max(start_a, start_b))
+
+
+def assign_speakers_to_transcript(transcript_df, diarization_df):
+    """Atribui a cada segmento transcrito o speaker_id com maior sobreposição."""
+    assigned_rows = []
+
+    diarization_df = diarization_df.copy()
+    transcript_df = transcript_df.copy()
+
+    for _, row in tqdm(transcript_df.iterrows(), total=len(transcript_df), desc="Alinhando"):
+        segment_start = float(row["start"])
+        segment_end = float(row["end"])
+        segment_duration = max(segment_end - segment_start, 1e-9)
+
+        candidates = diarization_df[
+            (diarization_df["end"] > segment_start) &
+            (diarization_df["start"] < segment_end)
+        ].copy()
+
+        if candidates.empty:
+            speaker_id = "SPEAKER_NAO_IDENTIFICADO"
+            best_overlap = 0.0
+            overlap_score = 0.0
+            n_speakers_overlapping = 0
+        else:
+            candidates["overlap_seconds"] = candidates.apply(
+                lambda x: interval_overlap(segment_start, segment_end, x["start"], x["end"]),
+                axis=1,
+            )
+            by_speaker = (
+                candidates.groupby("speaker_id", as_index=False)["overlap_seconds"]
+                .sum()
+                .sort_values("overlap_seconds", ascending=False)
+            )
+            speaker_id = by_speaker.iloc[0]["speaker_id"]
+            best_overlap = float(by_speaker.iloc[0]["overlap_seconds"])
+            overlap_score = best_overlap / segment_duration
+            n_speakers_overlapping = int((by_speaker["overlap_seconds"] > 0).sum())
+
+        assigned = row.to_dict()
+        assigned.update(
+            {
+                "speaker_id": speaker_id,
+                "overlap_seconds": best_overlap,
+                "overlap_score": overlap_score,
+                "n_speakers_overlapping": n_speakers_overlapping,
+            }
+        )
+        assigned_rows.append(assigned)
+
+    cols = [
+        "segment_id", "start", "end", "start_hms", "end_hms",
+        "speaker_id", "overlap_score", "overlap_seconds",
+        "n_speakers_overlapping", "text",
+    ]
+    return pd.DataFrame(assigned_rows)[cols]
+
+
+transcricao_com_speaker = assign_speakers_to_transcript(transcricao_bruta, diarizacao)
+save_table(transcricao_com_speaker, "transcricao_com_speaker")
+transcricao_com_speaker.head()
+```
+
+## Identificação automática das categorias sociais no trecho inicial
+
+Nesta etapa, o documento examina apenas o trecho inicial da conferência, definido por `TEMPO_INICIAL_APRESENTACOES_MIN`, para localizar falas de apresentação e categorias sociais declaradas.
+
+```{python}
+#| label: categorias-trecho-inicial
+# Padrões organizados por categoria.
+# A ordem importa: categorias mais específicas aparecem antes de categorias gerais.
+CATEGORY_PATTERNS = [
+    {
+        "categoria": "trabalhadora da saúde",
+        "confianca": "alta",
+        "patterns": [
+            r"\bsou trabalhadora(?: da saude)?\b",
+            r"\bsou enfermeira\b",
+            r"\bsou medica\b",
+            r"\bsou agente comunitaria\b",
+        ],
+    },
+    {
+        "categoria": "trabalhador da saúde",
+        "confianca": "alta",
+        "patterns": [
+            r"\bsou trabalhador(?: da saude)?\b",
+            r"\btrabalho na saude\b",
+            r"\bsou enfermeiro\b",
+            r"\bsou medico\b",
+            r"\bsou agente comunitario\b",
+            r"\bsou acs\b",
+        ],
+    },
+    {
+        "categoria": "usuária",
+        "confianca": "alta",
+        "patterns": [r"\bsou usuaria\b"],
+    },
+    {
+        "categoria": "usuário",
+        "confianca": "alta",
+        "patterns": [r"\bsou usuario\b"],
+    },
+    {
+        "categoria": "gestora",
+        "confianca": "alta",
+        "patterns": [r"\bsou gestora\b"],
+    },
+    {
+        "categoria": "gestor",
+        "confianca": "alta",
+        "patterns": [r"\bsou gestor\b", r"\bsou da gestao\b"],
+    },
+    {
+        "categoria": "conselheira de saúde",
+        "confianca": "alta",
+        "patterns": [
+            r"\bsou conselheira\b",
+        ],
+    },
+    {
+        "categoria": "conselheiro de saúde",
+        "confianca": "alta",
+        "patterns": [
+            r"\bsou conselheiro\b",
+            r"\bsou do conselho\b",
+            r"\brepresento o conselho\b",
+        ],
+    },
+    {
+        "categoria": "prestador",
+        "confianca": "alta",
+        "patterns": [
+            r"\bsou prestador\b",
+            r"\brepresento o prestador\b",
+            r"\brepresento prestador\b",
+        ],
+    },
+    {
+        "categoria": "representante institucional",
+        "confianca": "média",
+        "patterns": [
+            r"\brepresento a secretaria\b",
+            r"\bsou da secretaria municipal de saude\b",
+            r"\brepresento a secretaria municipal de saude\b",
+            r"\bsou do caps\b",
+            r"\bsou da ubs\b",
+            r"\bsou da unidade de saude\b",
+            r"\brepresento a escola\b",
+            r"\brepresento a universidade\b",
+            r"\brepresento a instituicao\b",
+        ],
+    },
+]
+
+
+def detect_category(text):
+    """Classifica a categoria social declarada em uma fala, sem extrair nomes próprios."""
+    normalized = normalize_text(text)
+
+    for item in CATEGORY_PATTERNS:
+        for pattern in item["patterns"]:
+            match = re.search(pattern, normalized, flags=re.IGNORECASE)
+            if match:
+                return {
+                    "categoria_social": item["categoria"],
+                    "evidencia_categoria": match.group(0),
+                    "confianca_categoria": item["confianca"],
+                }
+
+    # Heurísticas de menor confiança para indícios institucionais ou profissionais.
+    if re.search(r"\b(caps|ubs|unidade de saude|secretaria|universidade|escola|instituicao)\b", normalized):
+        return {
+            "categoria_social": "representante institucional",
+            "evidencia_categoria": "menção a instituição ou serviço",
+            "confianca_categoria": "média",
+        }
+
+    if re.search(r"\b(enfermagem|enfermeir[ao]|medic[ao]|acs|agente comunitari[ao]|saude)\b", normalized):
+        return {
+            "categoria_social": "trabalhador da saúde",
+            "evidencia_categoria": "menção a profissão ou vínculo na saúde",
+            "confianca_categoria": "média",
+        }
+
+    if re.search(r"\b(sou|represento|venho|falo pela|falo em nome)\b", normalized):
+        return {
+            "categoria_social": "outro",
+            "evidencia_categoria": "fala de apresentação sem categoria padronizada",
+            "confianca_categoria": "baixa",
+        }
+
+    return {
+        "categoria_social": "não identificado",
+        "evidencia_categoria": "",
+        "confianca_categoria": "não identificado",
+    }
+
+
+trecho_inicial = transcricao_com_speaker[
+    transcricao_com_speaker["start"] <= TEMPO_INICIAL_APRESENTACOES_SEG
+].copy()
+
+categorias_detectadas = trecho_inicial.copy()
+detected = categorias_detectadas["text"].apply(detect_category).apply(pd.Series)
+categorias_detectadas = pd.concat([categorias_detectadas, detected], axis=1)
+
+save_table(categorias_detectadas, "categorias_detectadas_trecho_inicial")
+categorias_detectadas[
+    categorias_detectadas["categoria_social"].ne("não identificado")
+][
+    ["segment_id", "start_hms", "end_hms", "speaker_id", "categoria_social", "confianca_categoria", "evidencia_categoria", "text"]
+].head(20)
+```
+
+## Associação entre speaker_id e categoria social
+
+Para cada `speaker_id` encontrado no trecho inicial, o código seleciona a categoria social mais provável declarada na apresentação e constrói um rótulo anônimo.
+
+```{python}
+#| label: mapa-falantes
+CONFIDENCE_RANK = {
+    "alta": 3,
+    "média": 2,
+    "baixa": 1,
+    "não identificado": 0,
+}
+
+
+def choose_category_for_speaker(group):
+    """Escolhe a categoria mais plausível para um speaker_id com base no trecho inicial."""
+    valid = group[group["categoria_social"].ne("não identificado")].copy()
+
+    if valid.empty:
+        return pd.Series(
+            {
+                "categoria_social": "não identificado",
+                "evidencia_categoria": "",
+                "confianca_categoria": "não identificado",
+            }
+        )
+
+    valid["confidence_rank"] = valid["confianca_categoria"].map(CONFIDENCE_RANK).fillna(0)
+    summary = (
+        valid.groupby("categoria_social", as_index=False)
+        .agg(
+            confidence_rank=("confidence_rank", "max"),
+            n_mentions=("categoria_social", "size"),
+            first_segment=("segment_id", "min"),
+        )
+        .sort_values(["confidence_rank", "n_mentions", "first_segment"], ascending=[False, False, True])
+    )
+
+    chosen_category = summary.iloc[0]["categoria_social"]
+    chosen_rows = valid[valid["categoria_social"].eq(chosen_category)].sort_values(
+        ["confidence_rank", "segment_id"],
+        ascending=[False, True],
+    )
+    best = chosen_rows.iloc[0]
+
+    return pd.Series(
+        {
+            "categoria_social": chosen_category,
+            "evidencia_categoria": best["evidencia_categoria"],
+            "confianca_categoria": best["confianca_categoria"],
+        }
+    )
+
+
+def make_anonymous_labels(map_df):
+    """Cria rótulos anônimos sequenciais por categoria, sem usar nomes próprios."""
+    counters = defaultdict(int)
+    labels = []
+    for category in map_df["categoria_social"]:
+        category = category if clean_text(category) else "não identificado"
+        counters[category] += 1
+        labels.append(f"{category} {counters[category]}")
+    return labels
+
+
+all_speakers = pd.DataFrame(
+    {"speaker_id": sorted(transcricao_com_speaker["speaker_id"].dropna().unique())}
+)
+
+speaker_categories = (
+    categorias_detectadas
+    .groupby("speaker_id", as_index=True)
+    .apply(choose_category_for_speaker)
+    .reset_index()
+)
+
+mapa_falantes = all_speakers.merge(speaker_categories, on="speaker_id", how="left")
+mapa_falantes["categoria_social"] = mapa_falantes["categoria_social"].fillna("não identificado")
+mapa_falantes["evidencia_categoria"] = mapa_falantes["evidencia_categoria"].fillna("")
+mapa_falantes["confianca_categoria"] = mapa_falantes["confianca_categoria"].fillna("não identificado")
+mapa_falantes = mapa_falantes.sort_values(["categoria_social", "speaker_id"]).reset_index(drop=True)
+mapa_falantes["rotulo_anonimo"] = make_anonymous_labels(mapa_falantes)
+
+mapa_falantes = mapa_falantes[
+    ["speaker_id", "categoria_social", "rotulo_anonimo", "evidencia_categoria", "confianca_categoria"]
+]
+
+save_table(mapa_falantes, "mapa_falantes")
+mapa_falantes
+```
+
+## Rotulagem das falas subsequentes
+
+O mapa de falantes é aplicado à transcrição completa para gerar a tabela final rotulada.
+
+```{python}
+#| label: transcricao-rotulada
+transcricao_rotulada = transcricao_com_speaker.merge(
+    mapa_falantes,
+    on="speaker_id",
+    how="left",
+)
+
+transcricao_rotulada["categoria_social"] = transcricao_rotulada["categoria_social"].fillna("não identificado")
+transcricao_rotulada["rotulo_anonimo"] = transcricao_rotulada["rotulo_anonimo"].fillna("não identificado 1")
+transcricao_rotulada["confianca_categoria"] = transcricao_rotulada["confianca_categoria"].fillna("não identificado")
+transcricao_rotulada["evidencia_categoria"] = transcricao_rotulada["evidencia_categoria"].fillna("")
+
+transcricao_rotulada = transcricao_rotulada[
+    [
+        "segment_id", "start", "end", "start_hms", "end_hms",
+        "speaker_id", "rotulo_anonimo", "categoria_social",
+        "confianca_categoria", "overlap_score", "text",
+    ]
+]
+
+save_table(transcricao_rotulada, "transcricao_rotulada")
+transcricao_rotulada.head()
+```
+
+## Casos incertos
+
+Esta etapa gera uma tabela de revisão manual com segmentos que podem exigir atenção.
+
+```{python}
+#| label: casos-incertos
+def build_uncertain_cases(df):
+    """Marca segmentos que merecem revisão manual."""
+    rows = []
+
+    for _, row in df.iterrows():
+        reasons = []
+        duration = float(row["end"] - row["start"])
+
+        if row["speaker_id"] == "SPEAKER_NAO_IDENTIFICADO":
+            reasons.append("speaker_id sem categoria social")
+        if float(row["overlap_score"]) < LOW_OVERLAP_THRESHOLD:
+            reasons.append("overlap_score baixo")
+        if row["categoria_social"] == "não identificado":
+            reasons.append("categoria não identificada")
+        if duration < SHORT_SEGMENT_SECONDS:
+            reasons.append("segmento muito curto")
+        if int(row.get("n_speakers_overlapping", 0)) > 1:
+            reasons.append("possível fala sobreposta")
+
+        if reasons:
+            item = row.to_dict()
+            item["duracao_seg"] = duration
+            item["motivos_revisao"] = "; ".join(reasons)
+            rows.append(item)
+
+    if not rows:
+        return pd.DataFrame(
+            columns=[
+                "segment_id", "start", "end", "start_hms", "end_hms",
+                "speaker_id", "rotulo_anonimo", "categoria_social",
+                "confianca_categoria", "overlap_score", "duracao_seg",
+                "motivos_revisao", "text",
+            ]
+        )
+
+    uncertain_df = pd.DataFrame(rows)
+    keep_cols = [
+        "segment_id", "start", "end", "start_hms", "end_hms",
+        "speaker_id", "rotulo_anonimo", "categoria_social",
+        "confianca_categoria", "overlap_score", "duracao_seg",
+        "motivos_revisao", "text",
+    ]
+    return uncertain_df[keep_cols].sort_values(["start", "segment_id"]).reset_index(drop=True)
+
+
+casos_incertos = build_uncertain_cases(
+    transcricao_com_speaker.merge(
+        mapa_falantes,
+        on="speaker_id",
+        how="left",
+    ).fillna(
+        {
+            "categoria_social": "não identificado",
+            "rotulo_anonimo": "não identificado 1",
+            "confianca_categoria": "não identificado",
+            "evidencia_categoria": "",
+        }
+    )
+)
+
+save_table(casos_incertos, "casos_incertos")
+casos_incertos.head(20)
+```
+
+## Resumo final
+
+```{python}
+#| label: resumo-final
+resumo_geral = pd.DataFrame(
+    [
+        {"indicador": "número de segmentos transcritos", "valor": len(transcricao_bruta)},
+        {"indicador": "número de segmentos diarizados", "valor": len(diarizacao)},
+        {"indicador": "número de falantes diarizados", "valor": diarizacao["speaker_id"].nunique()},
+        {"indicador": "número de falantes no mapa", "valor": mapa_falantes["speaker_id"].nunique()},
+        {"indicador": "número de casos incertos", "valor": len(casos_incertos)},
+    ]
+)
+
+falantes_por_categoria = (
+    mapa_falantes
+    .groupby("categoria_social", as_index=False)
+    .agg(n_falantes=("speaker_id", "nunique"))
+    .sort_values("n_falantes", ascending=False)
+)
+
+segmentos_por_categoria = (
+    transcricao_rotulada
+    .groupby("categoria_social", as_index=False)
+    .agg(n_segmentos=("segment_id", "nunique"))
+    .sort_values("n_segmentos", ascending=False)
+)
+
+save_table(resumo_geral, "resumo_geral")
+save_table(falantes_por_categoria, "resumo_falantes_por_categoria")
+save_table(segmentos_por_categoria, "resumo_segmentos_por_categoria")
+
+display(resumo_geral)
+display(falantes_por_categoria)
+display(segmentos_por_categoria)
+```
+
+## Observações metodológicas
+
+A diarização automática pode cometer erros, especialmente quando há ruído, microfones distantes, falas simultâneas, vozes parecidas ou mudanças bruscas de ambiente.
+
+A associação entre voz e categoria social depende da qualidade do áudio e da clareza da apresentação inicial. Quando uma pessoa não declara explicitamente sua categoria, o código pode fazer apenas uma inferência prática a partir de profissão, vínculo ou instituição mencionados.
+
+A classificação gerada deve ser entendida como apoio à organização da transcrição, e não como identificação definitiva dos participantes. Os rótulos finais são anônimos e não usam nomes próprios.
+
+Os casos incertos exportados em `casos_incertos.csv` e `casos_incertos.xlsx` devem ser revisados manualmente quando forem importantes para a análise.

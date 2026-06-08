@@ -1,0 +1,126 @@
+---
+title: "Sumário Executivo do Projeto"
+subtitle: "Desenvolvimento Participativo de Dashboards para Apoio à Gestão em Saúde Mental"
+author: "Equipe: Bernardo Vergara\\textsuperscript{1} e Djalma Barbosa\\textsuperscript{2}"
+date: "2026-06-07"
+lang: pt-BR
+format:
+  pdf:
+    documentclass: article
+    papersize: a4
+    geometry:
+      - top=2.4cm
+      - bottom=2.4cm
+      - left=2.8cm
+      - right=2.4cm
+    fontsize: 11pt
+    linestretch: 1.15
+    mainfont: Arial
+    pdf-engine: xelatex
+    colorlinks: true
+    linkcolor: ufrblue
+    citecolor: ufrblue
+    urlcolor: ufrblue
+    toc: false
+    include-in-header:
+      text: |
+        \usepackage{xcolor}
+        \usepackage{microtype}
+        \usepackage{fancyhdr}
+        \usepackage{titlesec}
+        \usepackage{enumitem}
+        \definecolor{ufrblue}{HTML}{1F4E79}
+        \definecolor{ufrgray}{HTML}{4B5563}
+        \definecolor{ufrlight}{HTML}{EEF4F8}
+        \setlength{\parindent}{0pt}
+        \setlength{\parskip}{0.55em}
+        \setlist[itemize]{leftmargin=1.2em,itemsep=0.18em,topsep=0.2em}
+        \setlist[enumerate]{leftmargin=1.35em,itemsep=0.2em,topsep=0.2em}
+        \pagestyle{fancy}
+        \fancyhf{}
+        \fancyhead[L]{\small\color{ufrgray}Resumo executivo}
+        \fancyhead[R]{\small\color{ufrgray}CAPSij Rondonópolis-MT}
+        \fancyfoot[C]{\small\color{ufrgray}\thepage}
+        \renewcommand{\headrulewidth}{0.3pt}
+        \titleformat{\section}{\Large\bfseries\color{ufrblue}}{}{0em}{}
+        \titleformat{\subsection}{\large\bfseries\color{ufrblue}}{}{0em}{}
+        \titlespacing*{\section}{0pt}{1.1em}{0.35em}
+        \titlespacing*{\subsection}{0pt}{0.8em}{0.25em}
+        \AtBeginDocument{\footnotetext[1]{Estudante de Graduação do Curso de Psicologia -- UFR}\footnotetext[2]{Coordenador do Projeto -- UFR}}
+bibliography: CEP_resposta_pendencia_8477643/referencias_dashboards_extensao.bib
+reference-section-title: "Referências principais"
+---
+
+```{=latex}
+\begin{center}
+\colorbox{ufrlight}{%
+\begin{minipage}{0.91\textwidth}
+\vspace{0.45em}
+\textbf{\color{ufrblue}Finalidade do documento.} Este resumo executivo apresenta, em linguagem sintética, o projeto de pesquisa e as frentes de participação previstas para mestrandos(as) que por ventura venham a integrar a equipe.
+\vspace{0.45em}
+\end{minipage}}
+\end{center}
+```
+
+# Sumário executivo
+
+O projeto **"Desenvolvimento Participativo de Dashboards para Apoio à Gestão em Saúde Mental: uma pesquisa de Action Design Research em um CAPSij"** tem como objetivo desenvolver, implementar e avaliar *dashboards* interativos para apoiar a gestão do Centro de Atenção Psicossocial Infantojuvenil (CAPSij) de Rondonópolis-MT.
+
+A pesquisa responde a um problema prático: serviços de saúde produzem muitos dados assistenciais e administrativos, mas nem sempre conseguem transformá-los em informação acionável para planejamento, monitoramento e tomada de decisão. No CAPSij, esse desafio envolve registros em sistemas como e-SUS Atenção Especializada, RAAS, G-MUS e planilhas internas, além de limitações relacionadas à qualidade dos dados, à rotina de registro, ao acesso às informações e ao letramento em dados da equipe.
+
+A solução proposta é um *dashboard* construído de forma participativa com gestores e profissionais do serviço. A ferramenta deverá apoiar a visualização de indicadores, o acompanhamento de fluxos de cuidado, a identificação de padrões e a qualificação das decisões no cotidiano da gestão em saúde mental infantojuvenil.
+
+O projeto será desenvolvido entre **01/08/2026 e 31/07/2027**, condicionado à aprovação ética pelo CEP/UFR antes de qualquer coleta formal de dados. Espera-se produzir uma ferramenta funcional e documentada, mas também conhecimento científico sobre desenvolvimento participativo, condições de adoção, maturidade informacional e princípios de design transferíveis para outros serviços de saúde mental do SUS.
+
+# Relevância
+
+A saúde mental infantojuvenil é uma prioridade persistente da saúde coletiva. Revisões sistemáticas e meta-análises recentes indicam carga expressiva de transtornos mentais e sintomas depressivos em crianças e adolescentes, tanto em cenários internacionais quanto no debate brasileiro recente [@Sacco2024; @Lu2024; @Tatsiopoulou2025]. No Brasil, estudos com adolescentes também apontam sofrimento psíquico relevante e desigualdades sociais associadas [@Antunes2022], enquanto revisões sobre o período da COVID-19 reforçam a intensificação de vulnerabilidades psicossociais [@Oliveira2020].
+
+Nesse contexto, o CAPSij ocupa posição estratégica na Rede de Atenção Psicossocial. Melhorar a capacidade de uso dos dados do serviço pode contribuir para planejamento, monitoramento, gestão do cuidado e prestação de contas. A literatura sobre informação em saúde e gestão municipal também mostra que barreiras de uso da informação ainda limitam a tomada de decisão no SUS [@quites2016].
+
+# Abordagem metodológica
+
+A metodologia adotada será a **Action Design Research** (ADR), abordagem que articula intervenção prática, construção de artefatos tecnológicos e produção de conhecimento científico [@Sein2011]. O *dashboard* será tratado como artefato de pesquisa: será formulado, testado, ajustado e avaliado em ciclos sucessivos de interação com o serviço.
+
+Na ADR, o conhecimento é produzido durante o próprio processo de intervenção. Em vez de separar rigidamente diagnóstico, desenvolvimento e avaliação, a abordagem trabalha com ciclos de aprendizagem nos quais as necessidades do serviço orientam o desenho do artefato, o uso do artefato revela novas questões organizacionais e as evidências coletadas retroalimentam tanto a solução técnica quanto a reflexão científica. Por isso, a pesquisa não se limitará a verificar se o *dashboard* "funciona"; ela buscará compreender como ele passa a fazer sentido para a equipe, quais condições favorecem ou dificultam sua adoção e que aprendizados podem ser formalizados para outros serviços de saúde mental.
+
+Essa opção é adequada porque o problema não é apenas técnico. A utilidade do *dashboard* dependerá da qualidade dos dados, da aderência às perguntas reais de gestão, da clareza visual da interface, da capacidade de uso pela equipe, da integração às rotinas do CAPSij e das condições de sustentabilidade institucional.
+
+Revisões de escopo sobre *dashboards* em saúde reforçam que ferramentas desse tipo exigem definição clara de usuários e objetivos, seleção criteriosa de indicadores, atenção à qualidade dos dados, design adequado da interface, governança e estratégias de adoção [@Rabiei2024; @Vornhagen2026]. Estudos de desenvolvimento participativo também indicam que o envolvimento dos usuários ao longo do processo aumenta a pertinência e a chance de uso da ferramenta [@Baan2023; @Vornhagen2025].
+
+# Etapas de execução
+
+1. **Diagnóstico participativo:** levantamento das necessidades informacionais do CAPSij, com entrevistas, observação, análise documental, mapeamento de fontes de dados e avaliação da maturidade informacional e da capacidade analítica do serviço.
+
+2. **Mapeamento e qualificação dos dados:** análise da disponibilidade, estrutura, qualidade e limitações dos dados existentes nos sistemas e registros utilizados pelo serviço, com definição dos indicadores prioritários e tecnicamente viáveis.
+
+3. **Desenvolvimento iterativo do dashboard:** construção de protótipos em R, realização de oficinas, testes de usabilidade, ciclos de *feedback* e refinamento da ferramenta junto à equipe do CAPSij.
+
+4. **Avaliação e sistematização:** análise da utilidade percebida, usabilidade, frequência de uso, integração às rotinas, barreiras e facilitadores da adoção, além da formulação de princípios de design aplicáveis a contextos similares.
+
+# Papel formativo
+
+O projeto também funcionará como processo de formação em letramento em dados. As oficinas e capacitações abordarão leitura crítica de indicadores, interpretação de visualizações, identificação de inconsistências e uso do *dashboard* em rotinas de gestão. Essa perspectiva dialoga com a literatura sobre design participativo, engajamento em visualizações de dados e letramento em saúde [@Chau2024; @Neuhauser2017].
+
+Para os participantes, a pesquisa oferece oportunidades de formação metodológica, analítica e aplicada. A participação poderá envolver revisão de literatura, apoio às entrevistas e oficinas, organização dos registros qualitativos, análise de usabilidade, documentação dos ciclos de desenvolvimento, sistematização dos achados e apoio à redação de produtos científicos e técnicos.
+
+# Contribuições esperadas
+
+- *Dashboard* funcional, reprodutível e documentado para apoio à gestão do CAPSij.
+- Diagnóstico das necessidades informacionais, da maturidade informacional e da capacidade analítica do serviço.
+- Documentação técnica do processo de desenvolvimento, atualização e uso da ferramenta.
+- Análise dos fatores que favorecem ou dificultam a adoção de *dashboards* em serviços de saúde mental.
+- Princípios de design transferíveis para outros serviços de saúde mental do SUS.
+- Produção científica sobre ADR, design participativo, maturidade informacional e gestão baseada em dados.
+- Contribuição prática para a gestão em saúde mental infantojuvenil no território.
+
+# Participação de mestrandos(as)
+
+Os(as) alunos(as) poderão atuar especialmente em:
+
+- revisão teórica sobre *dashboards* em saúde, ADR, design participativo, letramento em dados, saúde mental infantojuvenil e gestão baseada em evidências;
+- apoio à preparação e acompanhamento de entrevistas, oficinas e testes de usabilidade, conforme protocolo aprovado pelo CEP;
+- organização e análise de entrevistas, diários de campo, registros de oficina e relatórios reflexivos;
+- sistematização dos requisitos do *dashboard* a partir das demandas dos usuários;
+- análise de barreiras, facilitadores e condições de sustentabilidade do uso da ferramenta;
+- elaboração de relatórios técnicos, devolutivas ao serviço e manuscritos científicos.

@@ -2,8 +2,8 @@
 title: "Desenvolvimento Participativo de *Dashboards* para Apoio à Gestão em Saúde Mental: uma pesquisa de Action Design Research em um CAPSij"
 author:
   - "Coordenador: Djalma Barbosa"
-  - "Equipe de Pesquisa: Bernardo Vergara"
-date: "2026-04-27"
+  - "Discente de graduação da UFR integrante da equipe: Bernardo Vergara"
+date: "2026-06-07"
 lang: pt-BR
 format:
   pdf:
@@ -83,7 +83,7 @@ format:
                 \large
                 \textbf{Coordenador:} Djalma Barbosa\par
                 \vspace{0.35cm}
-                \textbf{Equipe de Pesquisa:} Bernardo Vergara\par
+                \textbf{Discente de graduação da UFR integrante da equipe:} Bernardo Vergara\par
               \end{minipage}
               \vfill
               {\large Rondonópolis-MT\par}
@@ -111,7 +111,7 @@ link-citations: true
 
 # Resumo {.unnumbered}
 
-Este projeto de pesquisa propõe desenvolver, implementar e avaliar *dashboards* interativos para apoio à gestão do Centro de Atenção Psicossocial Infantojuvenil (CAPSij) do município de Rondonópolis-MT. O problema investigado decorre da dificuldade que gestores vêm enfrentando para transformar dados assistenciais e administrativos em informação acionável para planejamento, monitoramento e tomada de decisão em serviços de saúde mental. A fundamentação teórica articula três eixos: *Action Design Research* (ADR), *dashboards* em saúde e gestão baseada em evidências no SUS, com ênfase em design participativo, adoção tecnológica e letramento em dados. O objetivo geral é produzir um artefato tecnológico funcional e, simultaneamente, conhecimento científico sobre o processo de desenvolvimento participativo e os princípios de design transferíveis para contextos similares. Metodologicamente, o estudo adota natureza aplicada, abordagem qualitativa com apoio de dados quantitativos e organização em quatro etapas sobrepostas ao longo de doze meses, de 01/06/2026 a 01/06/2027, envolvendo diagnóstico participativo, mapeamento e qualificação dos dados, prototipagem iterativa em R, implementação piloto e avaliação sistemática de utilidade, usabilidade e adoção. O acompanhamento do projeto ocorrerá por metas semestrais, reuniões periódicas, indicadores de processo e resultado, relatório parcial, relatório final e avaliação conjunta com a equipe parceira. Espera-se entregar um *dashboard* reprodutível, uma produção técnica documentada, publicações científicas, formação de estudantes da graduação da UFR e contribuição concreta para o fortalecimento da gestão em saúde mental no território. O projeto alinha-se aos objetivos do edital de fluxo contínuo de pesquisa da UFR, ao desenvolvimento regional e aos ODS 3 e 17.
+Este projeto de pesquisa propõe desenvolver, implementar e avaliar *dashboards* interativos para apoio à gestão do Centro de Atenção Psicossocial Infantojuvenil (CAPSij) do município de Rondonópolis-MT. O problema investigado decorre da dificuldade que gestores vêm enfrentando para transformar dados assistenciais e administrativos em informação acionável para planejamento, monitoramento e tomada de decisão em serviços de saúde mental. A fundamentação teórica articula três eixos: *Action Design Research* (ADR), *dashboards* em saúde e gestão baseada em evidências no SUS, com ênfase em design participativo, adoção tecnológica e letramento em dados. O objetivo geral é produzir um artefato tecnológico funcional e, simultaneamente, conhecimento científico sobre o processo de desenvolvimento participativo e os princípios de design transferíveis para contextos similares. Metodologicamente, o estudo adota natureza aplicada, abordagem qualitativa com apoio de dados quantitativos e organização em quatro etapas sobrepostas ao longo de doze meses, de 01/07/2026 a 30/06/2027, envolvendo diagnóstico participativo, mapeamento e qualificação dos dados, prototipagem iterativa em R, implementação piloto e avaliação sistemática de utilidade, usabilidade e adoção. Para fins de cadastro no SUAP, as atividades estão consolidadas em uma única meta anual, conforme orientação do Edital de Fluxo Contínuo nº 001/PROPGP/UFR/2026 para projetos de até 12 meses. O acompanhamento do projeto ocorrerá por reuniões periódicas, indicadores de processo e resultado, relatório parcial quando exigido, relatório final e avaliação conjunta com a equipe parceira. Espera-se entregar um *dashboard* reprodutível, uma produção técnica documentada, publicações científicas, formação de estudante de graduação da UFR e contribuição concreta para o fortalecimento da gestão em saúde mental no território. O projeto alinha-se aos objetivos do edital de fluxo contínuo de pesquisa da UFR, ao desenvolvimento regional e aos ODS 3 e 17.
 
 Palavras-chave: dashboards em saúde; saúde mental infantojuvenil; Action Design Research.
 
@@ -221,7 +221,9 @@ Desenvolver, implementar e avaliar *dashboards* interativos para apoio à gestã
 
 # Objetivos Específicos e Cronograma de Metas
 
-## Meta 1 — Diagnóstico, Prototipagem e Implementação Piloto (meses 1–6)
+## Meta 1 — Desenvolvimento participativo, implementação piloto, avaliação e formalização do conhecimento (meses 1–12)
+
+Em conformidade com o Edital de Fluxo Contínuo nº 001/PROPGP/UFR/2026, por se tratar de projeto com duração de 12 meses, o cadastro no SUAP deverá apresentar uma única meta correspondente ao período integral de execução. As atividades abaixo detalham os objetivos específicos e os produtos previstos dentro dessa meta anual.
 
 **Objetivo 1.1:** Realizar diagnóstico participativo das necessidades informacionais dos gestores e equipes do CAPSij, identificando problemas, perguntas prioritárias, fontes de dados disponíveis e condições organizacionais de uso, e avaliar a maturidade informacional e a capacidade analítica do serviço por meio do instrumento IS4H-MM/OPAS e de módulo analítico curto.
 
@@ -233,42 +235,38 @@ Desenvolver, implementar e avaliar *dashboards* interativos para apoio à gestã
 
 **Objetivo 1.5:** Desenvolver protótipos iterativos do *dashboard* em R, com ciclos de apresentação, *feedback* e refinamento junto aos usuários, em conformidade com os princípios de design identificados na literatura.
 
-**Objetivo 1.6:** Implementar uma versão piloto do *dashboard* no contexto real do serviço, acompanhando os primeiros ciclos de uso e coletando dados sobre dificuldades, ajustes necessários e percepção de utilidade.
+**Objetivo 1.6:** Implementar uma versão piloto do *dashboard* no contexto real do serviço, acompanhando os ciclos de uso e coletando dados sobre dificuldades, ajustes necessários e percepção de utilidade.
 
-**Atividades previstas:** - Pactuação formal com o CAPSij e aprovação pelo Comitê de Ética em Pesquisa - Entrevistas semiestruturadas com gestores e profissionais (n estimado: 4 a 5) - Análise documental dos sistemas de informação e relatórios internos - Aplicação do instrumento IS4H-MM/OPAS e módulo analítico curto para avaliação de maturidade informacional e capacidade analítica - Oficinas de cocriação de indicadores (2 a 3 encontros) - Oficinas de capacitação da equipe técnica do CAPSij em R, organização de dados e criação de *dashboards* (mínimo 2 encontros introdutórios) - Ciclos de prototipagem em R (mínimo 3 iterações antes da versão piloto) - Sessões de validação com usuários (think-aloud, análise de usabilidade) - Implementação e acompanhamento inicial do *dashboard* piloto - Elaboração de relatório parcial ao final do 6.º mês.
+**Objetivo 1.7:** Avaliar sistematicamente o uso do *dashboard* no CAPSij, coletando dados qualitativos e quantitativos sobre utilidade percebida, usabilidade, frequência de uso e integração às rotinas de gestão.
 
-## Meta 2 — Avaliação, Reflexão e Formalização do Conhecimento (meses 7–12)
+**Objetivo 1.8:** Realizar ajustes e refinamentos no *dashboard* com base nos dados de avaliação, consolidando uma versão estável orientada pela aprendizagem acumulada nos ciclos anteriores.
 
-**Objetivo 2.1:** Avaliar sistematicamente o uso do *dashboard* no CAPSij ao longo dos meses 7–10, coletando dados qualitativos e quantitativos sobre utilidade percebida, usabilidade, frequência de uso e integração às rotinas de gestão.
+**Objetivo 1.9:** Analisar os dados qualitativos produzidos ao longo do projeto (entrevistas, observações, registros de sessões, relatórios reflexivos) para identificar os fatores que favoreceram ou dificultaram a adoção do *dashboard*.
 
-**Objetivo 2.2:** Realizar ajustes e refinamentos no *dashboard* com base nos dados de avaliação, consolidando uma versão estável orientada pela aprendizagem acumulada nos ciclos anteriores.
+**Objetivo 1.10:** Formalizar os princípios de design emergentes dos ciclos ADR, avaliando sua consistência com a literatura existente e sua potencial transferibilidade para outros serviços de saúde mental do SUS.
 
-**Objetivo 2.3:** Analisar os dados qualitativos produzidos ao longo do projeto (entrevistas, observações, registros de sessões, relatórios reflexivos) para identificar os fatores que favoreceram ou dificultaram a adoção do *dashboard*.
+**Objetivo 1.11:** Disseminar os resultados da pesquisa em produções científicas e técnicas, incluindo a elaboração de dois manuscritos científicos — um sobre o processo ADR e os princípios de design do *dashboard*, e outro sobre a maturidade informacional e a capacidade analítica do CAPSij avaliadas pelo IS4H-MM/OPAS e pelo módulo analítico curto, com submissão a periódico especializado em informação em saúde quando a maturidade dos resultados permitir —, apresentação em evento da área e elaboração de documentação técnica do modelo de *dashboard*.
 
-**Objetivo 2.4:** Formalizar os princípios de design emergentes dos ciclos ADR, avaliando sua consistência com a literatura existente e sua potencial transferibilidade para outros serviços de saúde mental do SUS.
+**Atividades previstas na meta anual:** pactuação formal com o CAPSij e aprovação pelo Comitê de Ética em Pesquisa; entrevistas semiestruturadas com gestores e profissionais (n estimado: 4 a 5); análise documental dos sistemas de informação e relatórios internos; aplicação do instrumento IS4H-MM/OPAS e módulo analítico curto para avaliação de maturidade informacional e capacidade analítica; oficinas de cocriação de indicadores (2 a 3 encontros); oficinas de capacitação da equipe técnica do CAPSij em R, organização de dados e criação de *dashboards* (mínimo 2 encontros introdutórios); ciclos de prototipagem em R (mínimo 3 iterações antes da versão piloto); sessões de validação com usuários (*think-aloud*, análise de usabilidade); implementação e acompanhamento do *dashboard* piloto; coleta sistemática de dados de uso do *dashboard* (*logs*, registros de acesso, diário de campo); entrevistas de avaliação com usuários ao final do período piloto; análise temática dos dados qualitativos com apoio do ambiente R; *workshops* de reflexão com a equipe do CAPSij; redação dos princípios de design consolidados; elaboração de artigo científico sobre o processo ADR e os princípios de design do *dashboard*; elaboração de artigo científico sobre maturidade informacional e capacidade analítica do CAPSij, com submissão a periódico especializado em informação em saúde (*RECIIS* ou *Epidemiologia e Serviços de Saúde*) quando a maturidade dos resultados permitir; elaboração de relatório parcial, quando exigido pelo CEP ou pela PROPGP, relatório final de pesquisa e documentação técnica do *dashboard* para uso institucional e eventual adaptação controlada em serviços similares.
 
-**Objetivo 2.5:** Disseminar os resultados da pesquisa em produções científicas e técnicas, incluindo a elaboração de dois manuscritos científicos — um sobre o processo ADR e os princípios de design do *dashboard*, e outro sobre a maturidade informacional e a capacidade analítica do CAPSij avaliadas pelo IS4H-MM/OPAS e pelo módulo analítico curto, com submissão a periódico especializado em informação em saúde quando a maturidade dos resultados permitir —, apresentação em evento da área e elaboração de documentação técnica do modelo de *dashboard*.
-
-**Atividades previstas:** - Coleta sistemática de dados de uso do *dashboard* (*logs*, registros de acesso, diário de campo) - Entrevistas de avaliação com usuários ao final do período piloto - Análise temática dos dados qualitativos com apoio do ambiente R - *Workshops* de reflexão com a equipe do CAPSij (análise coletiva dos resultados) - Redação dos princípios de design consolidados - Elaboração de artigo científico sobre o processo ADR e os princípios de design do *dashboard* - Elaboração de artigo científico sobre maturidade informacional e capacidade analítica do CAPSij (IS4H-MM/OPAS e módulo analítico curto), com submissão a periódico especializado em informação em saúde (*RECIIS* ou *Epidemiologia e Serviços de Saúde*) quando a maturidade dos resultados permitir - Elaboração de relatório parcial, quando exigido pelo CEP ou pelo edital, e de relatório final de pesquisa - Elaboração de documentação técnica do *dashboard* para uso institucional e eventual adaptação controlada em serviços similares.
-
-As metas 1 e 2 correspondem aos marcos administrativos de acompanhamento do edital ao longo dos doze meses de execução. As etapas da *Action Design Research* descritas no cronograma a seguir correspondem ao desenho metodológico da pesquisa e podem se sobrepor no tempo; portanto, não devem ser lidas como equivalentes diretas às metas semestrais, mas como processos analíticos articulados aos produtos de acompanhamento.
+As etapas da *Action Design Research* descritas no cronograma a seguir correspondem ao desenho metodológico da pesquisa e podem se sobrepor no tempo. Elas não devem ser lidas como metas administrativas independentes no SUAP, mas como processos analíticos articulados aos objetivos e produtos da meta anual.
 
 ## Cronograma de execução
 
-O cronograma de execução está organizado em quatro etapas correspondentes ao desenho metodológico da *Action Design Research* (ADR), com início em 01/06/2026 e término em 01/06/2027.
+O cronograma de execução está organizado em quatro etapas correspondentes ao desenho metodológico da *Action Design Research* (ADR), com início em 01/07/2026 e término em 30/06/2027.
 
 | Identificação da etapa                    |   Início   |  Término   |
 |-------------------------------------------|:----------:|:----------:|
-| Formulação do Problema                    | 01/06/2026 | 30/06/2026 |
-| Construção, Intervenção e Avaliação - CIA | 01/07/2026 | 28/02/2027 |
-| Reflexão e Aprendizagem                   | 01/12/2026 | 30/04/2027 |
-| Formalização da Aprendizagem              | 01/04/2027 | 01/06/2027 |
+| Formulação do Problema                    | 01/07/2026 | 31/07/2026 |
+| Construção, Intervenção e Avaliação - CIA | 01/08/2026 | 31/03/2027 |
+| Reflexão e Aprendizagem                   | 01/01/2027 | 31/05/2027 |
+| Formalização da Aprendizagem              | 01/05/2027 | 30/06/2027 |
 
 ### Cronograma mensal das etapas
 
-O cronograma mensal indica os meses em que cada etapa estará ativa. A marcação em junho de 2027 corresponde ao encerramento formal em 01/06/2027.
+O cronograma mensal indica os meses em que cada etapa estará ativa, de julho de 2026 a junho de 2027.
 
-![Cronograma mensal de execução das etapas](cronograma_execucao_v12.png){#fig-cronograma-execucao width="100%"}
+![Cronograma mensal de execução das etapas](cronograma_execucao_v13.png){#fig-cronograma-execucao width="100%"}
 
 # Metodologia
 
@@ -284,7 +282,7 @@ Nenhuma etapa de coleta formal de dados de pesquisa será iniciada antes da apro
 
 ## Etapas e procedimentos metodológicos
 
-### Etapa 1 — Formulação do Problema (01/06/2026 a 30/06/2026)
+### Etapa 1 — Formulação do Problema (01/07/2026 a 31/07/2026)
 
 A formulação do problema articula o problema prático — a gestão informacional deficiente no CAPSij — com o problema científico, a lacuna de conhecimento sobre princípios de design e condições de adoção de *dashboards* em saúde mental no SUS. Tal como em Vornhagen et al. [-@Vornhagen2025], esta etapa assume caráter interpretativo e busca compreender como os atores do campo percebem seus dados, suas necessidades analíticas e as limitações das soluções disponíveis. Antes da submissão formal ao CEP e do início da coleta de dados propriamente dita, já foram realizadas conversas informais com alguns gestores do serviço para avaliar a existência de demanda, a pertinência institucional do projeto e sua viabilidade prática. Essas interações tiveram caráter exclusivamente preliminar, sem registro formal e sem identificação dos interlocutores como participantes de pesquisa, em consonância com a noção de etapas preliminares prevista na Resolução CNS nº 510/2016.
 
@@ -301,7 +299,7 @@ O convite formal aos participantes será realizado em duas etapas. Primeiro, hav
 
 As entrevistas semiestruturadas terão duração estimada de 30 a 60 minutos, serão realizadas em local reservado no serviço ou em outro ambiente acordado com o participante e, mediante autorização, serão gravadas em áudio para posterior transcrição. O roteiro contemplará perguntas sobre necessidades informacionais, dificuldades de uso de dados, indicadores considerados prioritários, rotinas decisórias e expectativas em relação ao *dashboard*. A análise documental buscará identificar fontes de dados disponíveis, qualidade dos registros, periodicidade de atualização e limitações técnicas ou organizacionais do sistema informacional existente. O produto desta etapa será um documento de diagnóstico participativo contendo síntese analítica da demanda, mapa de fontes de dados, perfil de maturidade informacional (IS4H-MM/OPAS) e escores de capacidade analítica (módulo analítico curto), requisitos do artefato e prioridades para os ciclos subsequentes.
 
-### Etapa 2 — Construção, Intervenção e Avaliação — CIA (01/07/2026 a 28/02/2027)
+### Etapa 2 — Construção, Intervenção e Avaliação — CIA (01/08/2026 a 31/03/2027)
 
 Esta etapa é o núcleo metodológico da ADR e se organiza em ciclos iterativos de desenvolvimento. Cada ciclo compreende: (i) construção ou refinamento de uma versão do artefato; (ii) intervenção — apresentação e uso no contexto real; e (iii) avaliação — coleta de dados sobre experiência de uso, pertinência e usabilidade. Em coerência com Vornhagen et al. [-@Vornhagen2025], a lógica não será linear nem de validação única ao final, mas de refinamento sucessivo orientado pelas respostas dos usuários e pelas contingências do contexto.
 
@@ -326,13 +324,13 @@ Nos testes de usabilidade, os participantes serão convidados a verbalizar o que
 
 **Plano de contingência para acesso aos dados:** O Objetivo 1.2 prevê o mapeamento prévio da qualidade e disponibilidade dos dados nos sistemas e registros do CAPSij. Caso esse diagnóstico identifique insuficiência estrutural nos dados do e-SUS Atenção Especializada, RAAS, G-MUS ou planilhas internas para sustentar os indicadores prioritários definidos participativamente, serão adotadas, em ordem de preferência: (a) complementação com planilhas de controle interno já utilizadas pelo serviço; (b) coleta manual e prospectiva de um subconjunto mínimo de indicadores por meio de instrumento padronizado acordado com a equipe; ou (c) redução negociada do escopo funcional do *dashboard* para os módulos com dados disponíveis e de qualidade suficiente para uso gerencial. Em qualquer caso, o ajuste de escopo será documentado no diário de campo, comunicado ao CEP se implicar alteração relevante no protocolo e discutido analiticamente como achado sobre as condições de implementação de ferramentas analíticas em serviços de saúde mental do SUS.
 
-### Etapa 3 — Reflexão e Aprendizagem (01/12/2026 a 30/04/2027)
+### Etapa 3 — Reflexão e Aprendizagem (01/01/2027 a 31/05/2027)
 
-A reflexão sistemática sobre os ciclos de CIA será realizada pelo pesquisador em diálogo com os participantes, buscando identificar padrões, contradições e aprendizagens que emergem da prática. Serão realizados *workshops* de reflexão com a equipe do CAPSij, análise temática dos dados qualitativos acumulados e revisão sistemática dos registros do diário de campo. Como previsto na ADR e explicitado na Fundamentação Teórica, a sobreposição temporal com a Etapa 2, entre dezembro de 2026 e fevereiro de 2027, é intencional: a reflexão não aguarda o encerramento dos ciclos de desenvolvimento, mas os alimenta continuamente, orientando ajustes de design e antecipando a formalização do conhecimento. Tal como em Vornhagen et al. [-@Vornhagen2025], essa etapa não será separada rigidamente da construção do artefato, mas funcionará como dispositivo contínuo de aprendizagem sobre requisitos, barreiras de adoção, utilidade percebida e qualidade das decisões de design.
+A reflexão sistemática sobre os ciclos de CIA será realizada pelo pesquisador em diálogo com os participantes, buscando identificar padrões, contradições e aprendizagens que emergem da prática. Serão realizados *workshops* de reflexão com a equipe do CAPSij, análise temática dos dados qualitativos acumulados e revisão sistemática dos registros do diário de campo. Como previsto na ADR e explicitado na Fundamentação Teórica, a sobreposição temporal com a Etapa 2, entre janeiro e março de 2027, é intencional: a reflexão não aguarda o encerramento dos ciclos de desenvolvimento, mas os alimenta continuamente, orientando ajustes de design e antecipando a formalização do conhecimento. Tal como em Vornhagen et al. [-@Vornhagen2025], essa etapa não será separada rigidamente da construção do artefato, mas funcionará como dispositivo contínuo de aprendizagem sobre requisitos, barreiras de adoção, utilidade percebida e qualidade das decisões de design.
 
 A análise qualitativa seguirá o método de análise temática reflexiva de Braun e Clarke [-@Braun2006], com apoio do ambiente **R** para organização do corpus, gestão das transcrições, construção de tabelas de codificação, recuperação de excertos e sistematização dos temas. Serão percorridas as etapas de familiarização com o corpus, codificação inicial, construção de temas, revisão dos temas, definição e nomeação dos temas e redação analítica. O uso do R terá função de suporte analítico e de rastreabilidade do processo, não de automação da interpretação, uma vez que a atribuição de sentido, a consolidação dos códigos e a definição dos temas dependerão da leitura reflexiva do pesquisador em diálogo com o referencial teórico e com o contexto empírico. Os dados quantitativos de uso do *dashboard* (*logs* de acesso, frequência de consulta por módulo, tempo de sessão e escores de usabilidade) serão analisados de forma descritiva e complementarão a análise qualitativa. A triangulação entre entrevistas, observação, documentos de projeto, *logs* e instrumentos padronizados buscará aumentar a consistência interpretativa dos achados.
 
-### Etapa 4 — Formalização da Aprendizagem (01/04/2027 a 01/06/2027)
+### Etapa 4 — Formalização da Aprendizagem (01/05/2027 a 30/06/2027)
 
 Na etapa final, os achados serão sistematizados na forma de princípios de design para *dashboards* em saúde mental no SUS. Esses princípios serão formulados como proposições testáveis e conectados à literatura existente, seguindo a estrutura proposta por Gregor e Hevner [-@Gregor2013] para a apresentação de contribuições em *design science*. Em consonância com Vornhagen et al. [-@Vornhagen2025], o objetivo não será apenas descrever um caso local, mas explicitar aprendizagens transferíveis sobre conteúdo, interface, participação, capacitação e condições organizacionais de uso. O produto final desta etapa inclui manuscrito científico, relatório técnico e documentação técnica do *dashboard* para uso institucional e eventual adaptação controlada.
 
@@ -366,18 +364,18 @@ A pesquisa não conta, no momento da submissão, com financiamento externo espec
 
 Conforme o orçamento financeiro previsto para a submissão, as despesas serão de custeio operacional de baixo valor, assumidas pelo pesquisador responsável ou por recursos institucionais disponíveis, quando houver.
 
-| Identificação do orçamento | Tipo | Valor em Reais (R\$) |
-|------------------------------|-------------------|-----------------------:|
-| Gastos com gasolina | Custeio | 500,00 |
+| Identificação do orçamento | Tipo    | Valor em Reais (R\$) |
+|----------------------------|---------|---------------------:|
+| Gastos com gasolina        | Custeio |               500,00 |
 | Impressões de TCLE, instrumentos e materiais de apoio | Custeio | 150,00 |
 | Ressarcimento eventual de despesa direta comprovada de participante | Custeio | 200,00 |
-| **Total** |  | **850,00** |
+| **Total**                  |         |           **850,00** |
 
 Não haverá cobrança de qualquer valor dos participantes ou da instituição coparticipante. Caso sejam obtidos recursos adicionais ou financiamento específico durante a execução, essa informação será comunicada ao CEP quando implicar alteração relevante nas condições de realização da pesquisa.
 
 # Acompanhamento e Avaliação do Projeto Durante a Execução
 
-O acompanhamento do projeto será realizado de forma contínua, com procedimentos estruturados para cada etapa do ciclo ADR e alinhados às duas metas semestrais previstas para os doze meses de execução.
+O acompanhamento do projeto será realizado de forma contínua, com procedimentos estruturados para cada etapa do ciclo ADR e alinhados à meta anual prevista para os doze meses de execução.
 
 **Indicadores de processo** serão monitorados mensalmente:
 
@@ -395,7 +393,7 @@ O acompanhamento do projeto será realizado de forma contínua, com procedimento
 -   Evidências de incorporação do *dashboard* a reuniões e rotinas de gestão;
 -   Qualidade das contribuições científicas e técnicas produzidas, observando aderência aos produtos previstos.
 
-As reuniões de equipe serão quinzenais nos primeiros seis meses e mensais nos meses subsequentes. O coordenador e o estudante bolsista (ou voluntário) produzirão relatórios reflexivos trimestrais, documentando aprendizagens, dificuldades e ajustes no planejamento. Ao final do mês 6 será elaborado o relatório parcial e, ao final do mês 12, o relatório final, conforme previsto na Instrução Normativa PROPGP/UFR Nº 13/2025. Independentemente desses produtos internos e institucionais, serão encaminhados ao CEP/UFR os relatórios parciais, relatório final e demais comunicações exigidas pela Plataforma Brasil e pelo Sistema CEP/Conep, observando a periodicidade definida pelo CEP, inclusive a possibilidade de relatórios parciais semestrais quando solicitados.
+As reuniões de equipe serão quinzenais nos primeiros seis meses e mensais nos meses subsequentes. O coordenador e o estudante bolsista (ou voluntário) produzirão relatórios reflexivos trimestrais, documentando aprendizagens, dificuldades e ajustes no planejamento. Ao final do sexto mês será elaborado relatório parcial quando exigido pelo CEP, pela PROPGP ou por norma institucional aplicável; ao final do décimo segundo mês, será elaborado o relatório final, conforme previsto na Instrução Normativa PROPGP/UFR Nº 13/2025. Independentemente desses produtos internos e institucionais, serão encaminhados ao CEP/UFR os relatórios parciais, relatório final e demais comunicações exigidas pela Plataforma Brasil e pelo Sistema CEP/Conep, observando a periodicidade definida pelo CEP, inclusive a possibilidade de relatórios parciais semestrais quando solicitados.
 
 O acompanhamento contará também com a participação da gestão do CAPSij, que será convidada a avaliar periodicamente a pertinência do processo e dos produtos desenvolvidos. Caso se identifiquem atrasos, baixa adesão da equipe, problemas de qualidade dos dados ou limitações técnicas do protótipo, serão acionadas medidas corretivas como replanejamento das atividades da meta, revisão do escopo funcional, reforço das oficinas de letramento em dados e priorização de indicadores mais robustos. Essa avaliação compartilhada é fundamental para garantir que o projeto permaneça ancorado nas necessidades reais do serviço e compatível com os resultados esperados.
 
@@ -536,7 +534,7 @@ Quando pertinente, os resultados preliminares poderão ser discutidos coletivame
 ### Escala de maturidade
 
 | Nível | Classificação | Descrição operacional |
-|--------------------------:|-----------------------|-----------------------|
+|----------------------------:|----------------------|----------------------|
 | 1 | Inicial / ad hoc | Práticas informais, fragmentadas, dependentes de pessoas específicas e pouco documentadas. |
 | 2 | Básico / emergente | Existem rotinas mínimas, mas ainda pouco integradas, com baixa padronização e uso irregular dos dados. |
 | 3 | Definido / padronizado | Processos, responsabilidades e fontes de dados estão descritos e são utilizados com alguma regularidade. |
@@ -547,7 +545,7 @@ Quando pertinente, os resultados preliminares poderão ser discutidos coletivame
 ### Camada 1 - Matriz IS4H-MM adaptada
 
 | Domínio | Indicador avaliativo | Nível 1-5/NA | Evidências observadas | Lacunas e riscos |
-|---------------|---------------|:-------------:|---------------|---------------|
+|--------------|--------------|:---------------:|--------------|--------------|
 | Gestão de dados e tecnologias da informação | Fontes de dados do CAPSij identificadas, descritas e minimamente organizadas. |  |  |  |
 | Gestão de dados e tecnologias da informação | Fluxos de coleta, registro, consolidação, validação e atualização são conhecidos pela equipe. |  |  |  |
 | Gestão de dados e tecnologias da informação | Há condições técnicas mínimas para extração, preparação e visualização de dados. |  |  |  |
@@ -568,7 +566,7 @@ Quando pertinente, os resultados preliminares poderão ser discutidos coletivame
 ### Camada 2 - Módulo analítico curto
 
 | Dimensão analítica | Questão avaliativa | Nível 1-5/NA | Evidências observadas | Implicações para o dashboard |
-|---------------|---------------|:-------------:|---------------|---------------|
+|--------------|--------------|:---------------:|--------------|--------------|
 | Disponibilidade e qualidade dos dados | Os dados necessários aos indicadores prioritários existem, são acessíveis e têm qualidade suficiente para uso gerencial? |  |  |  |
 | Governança analítica e proteção de dados | Há clareza sobre quem acessa, valida, interpreta e divulga dados, com proteção de informações pessoais e sensíveis? |  |  |  |
 | Infraestrutura e reprodutibilidade | Há condições técnicas para atualizar, documentar e reproduzir as análises do dashboard com baixo custo? |  |  |  |
@@ -657,7 +655,7 @@ Gestores, coordenadores e profissionais adultos do CAPSij que atuem em rotinas d
 #### Estrutura sugerida
 
 | Momento | Duração estimada | Atividade |
-|-----------------------|--------------------------:|-----------------------|
+|----------------------|----------------------------:|----------------------|
 | Abertura | 10 min | Apresentação do objetivo da oficina, reforço ético e organização da dinâmica. |
 | Aquecimento | 10 min | Levantamento rápido de perguntas de gestão consideradas prioritárias. |
 | Mapeamento | 20-30 min | Discussão sobre fontes de dados, fluxos, lacunas e riscos de interpretação. |

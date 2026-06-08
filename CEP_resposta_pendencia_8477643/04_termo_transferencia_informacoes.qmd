@@ -1,0 +1,95 @@
+---
+title: "Termo de Transferência de Informações"
+subtitle: "Resolução CNS nº 738/2024"
+author: "Secretaria Municipal de Saúde de Rondonópolis-MT e Universidade Federal de Rondonópolis"
+date: "2026-06-07"
+lang: pt-BR
+format:
+  docx:
+    toc: false
+    number-sections: false
+---
+
+**Projeto:** Desenvolvimento Participativo de Dashboards para Apoio à Gestão em Saúde Mental: uma pesquisa de Action Design Research em um CAPSij  
+**CAAE:** 98308126.4.0000.0126  
+**Pesquisador responsável:** Djalma Barbosa  
+**Instituição proponente:** Universidade Federal de Rondonópolis (UFR)  
+**Controladora dos dados de origem:** Secretaria Municipal de Saúde de Rondonópolis-MT  
+**Unidade de origem/guarda operacional:** CAPSij de Rondonópolis-MT
+
+Pelo presente Termo de Transferência de Informações, a **Secretaria Municipal de Saúde de Rondonópolis-MT**, na qualidade de Controladora dos bancos de dados assistenciais e administrativos já constituídos no âmbito do CAPSij, e o pesquisador responsável **Djalma Barbosa**, vinculado à Universidade Federal de Rondonópolis (UFR), formalizam as condições para transferência, recebimento, guarda e uso dos dados necessários à execução do projeto acima identificado, em conformidade com a Resolução CNS nº 738/2024 e com o protocolo aprovado pelo CEP/UFR.
+
+# Partes
+
+**Transmitente/Controladora dos dados:** Secretaria Municipal de Saúde de Rondonópolis-MT, CNPJ nº **[CNPJ]**, com sede em **[endereço]**, representada por **[nome completo]**, **[cargo]**, CPF nº **[CPF]**.
+
+**Unidade de origem/guarda operacional:** CAPSij de Rondonópolis-MT, representado por **[nome completo]**, **[cargo]**, CPF nº **[CPF]**, quando aplicável.
+
+**Recebedor/Pesquisador responsável:** Djalma Barbosa, vinculado à Universidade Federal de Rondonópolis (UFR), responsável pela condução ética e científica do projeto aprovado pelo CEP/UFR.
+
+# Objeto da transferência
+
+Poderão ser transferidos ou disponibilizados ao pesquisador responsável, nos limites estritamente necessários à pesquisa, dados assistenciais e administrativos já existentes no âmbito do CAPSij, incluindo relatórios, planilhas internas, registros administrativos, indicadores de atendimento, informações de produção assistencial e demais dados necessários ao mapeamento de fluxos, qualificação de indicadores e desenvolvimento do dashboard.
+
+A transferência deverá ocorrer, sempre que tecnicamente possível, em formato agregado, anonimizado ou sem identificadores diretos. A transferência de dados identificáveis somente ocorrerá quando indispensável para preparação, limpeza, vinculação ou validação de registros, mediante autorização da Controladora e acesso restrito à equipe formalmente autorizada.
+
+# Finalidade
+
+Os dados serão utilizados exclusivamente para:
+
+1. mapear fontes, fluxos, qualidade e disponibilidade dos dados do CAPSij;
+2. apoiar a definição participativa de indicadores e requisitos do dashboard;
+3. desenvolver, testar e validar protótipos de dashboard em nível agregado;
+4. avaliar a utilidade, usabilidade e incorporação do dashboard na rotina de gestão;
+5. produzir relatórios técnicos, publicações acadêmicas e produtos científicos sem divulgação identificável.
+
+# Condições de segurança e confidencialidade
+
+O pesquisador responsável compromete-se a:
+
+1. utilizar os dados exclusivamente para os objetivos aprovados pelo CEP/UFR;
+2. restringir o acesso aos dados a integrantes autorizados e signatários do TCUD;
+3. armazenar os dados em ambiente seguro, com acesso controlado;
+4. não compartilhar bases brutas, identificáveis ou potencialmente identificáveis com terceiros não autorizados;
+5. retirar, separar, anonimizar ou suprimir identificadores diretos assim que deixarem de ser indispensáveis;
+6. divulgar resultados apenas em forma agregada, anonimizada ou sem risco razoável de reidentificação;
+7. adotar supressão ou agrupamento de células pequenas, categorias raras ou combinações de variáveis que possam permitir identificação indireta;
+8. comunicar à Controladora e ao CEP/UFR qualquer incidente, acesso indevido, perda, exposição acidental ou suspeita de violação de sigilo.
+
+# Vedações
+
+É vedado utilizar os dados transferidos para:
+
+1. avaliação individual de trabalhadores, usuários ou familiares;
+2. fiscalização punitiva;
+3. tomada de decisão clínica individual;
+4. divulgação de bases identificáveis;
+5. tentativa de reidentificação de pessoas;
+6. finalidade diversa daquela aprovada pelo CEP/UFR.
+
+# Vigência e guarda
+
+Este termo terá vigência durante a execução da pesquisa e pelo período de guarda previsto no protocolo aprovado pelo CEP/UFR. Ao final do prazo de retenção, os dados identificáveis eventualmente mantidos deverão ser descartados de forma segura, salvo exigência normativa, determinação institucional ou orientação do CEP/UFR em sentido diverso.
+
+# Condição ética
+
+A transferência ou acesso aos dados somente poderá ocorrer após emissão de parecer favorável pelo CEP/UFR e nos limites autorizados pela Controladora dos dados.
+
+Rondonópolis-MT, ____ de __________________ de 2026.
+
+________________________________________  
+**[Nome da autoridade institucional]**  
+**[Cargo]**  
+Secretaria Municipal de Saúde de Rondonópolis-MT  
+Controladora dos dados
+
+________________________________________  
+**[Nome da coordenação do CAPSij, se aplicável]**  
+**[Cargo]**  
+CAPSij de Rondonópolis-MT  
+Unidade de origem/guarda operacional dos registros
+
+________________________________________  
+**Djalma Barbosa**  
+Pesquisador responsável  
+Universidade Federal de Rondonópolis (UFR)

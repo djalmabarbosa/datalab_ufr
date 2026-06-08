@@ -1,0 +1,50 @@
+---
+title: "Declaração de Anonimização de Dados"
+subtitle: "Resolução CNS nº 738/2024"
+author: "Secretaria Municipal de Saúde de Rondonópolis-MT / CAPSij"
+date: "2026-06-07"
+lang: pt-BR
+format:
+  docx:
+    toc: false
+    number-sections: false
+---
+
+**Projeto:** Desenvolvimento Participativo de Dashboards para Apoio à Gestão em Saúde Mental: uma pesquisa de Action Design Research em um CAPSij  
+**CAAE:** 98308126.4.0000.0126  
+**Pesquisador responsável:** Djalma Barbosa  
+**Instituição proponente:** Universidade Federal de Rondonópolis (UFR)
+
+Eu, **[nome completo da autoridade institucional]**, **[cargo]**, CPF nº **[CPF]**, matrícula/registro funcional nº **[matrícula, se houver]**, representando a **Secretaria Municipal de Saúde de Rondonópolis-MT**, CNPJ nº **[CNPJ]**, na qualidade de **Controladora dos bancos de dados assistenciais e administrativos já constituídos no âmbito do CAPSij de Rondonópolis-MT**, declaro, para fins de atendimento à Resolução CNS nº 738/2024 e ao Parecer Consubstanciado CEP nº 8.477.643, que:
+
+1. A Secretaria Municipal de Saúde de Rondonópolis-MT é o órgão responsável pela gestão institucional do CAPSij e pelas decisões relativas à disponibilização dos dados locais necessários à pesquisa, atuando como Controladora dos dados assistenciais e administrativos já constituídos no serviço.
+
+2. O CAPSij atua como unidade de origem, guarda operacional e validação contextual dos registros assistenciais e administrativos relacionados ao serviço.
+
+3. Os dados a serem disponibilizados à equipe de pesquisa serão, sempre que tecnicamente possível, previamente agregados, anonimizados ou desprovidos de identificadores diretos antes de qualquer transferência ou acesso pela equipe de pesquisa.
+
+4. A anonimização, agregação ou retirada de identificadores diretos observará, no mínimo, a supressão de nome, CPF, Cartão Nacional de Saúde (CNS), endereço, telefone, número de prontuário, data de nascimento completa e outros identificadores diretos de usuários, familiares ou trabalhadores.
+
+5. Quando houver risco de identificação indireta por combinação de variáveis, células com números muito pequenos, categorias raras ou recortes temporais/territoriais muito específicos, serão adotadas estratégias de supressão, agrupamento de categorias, agregação temporal ou territorial e ocultação de células pequenas.
+
+6. Caso seja indispensável o acesso transitório a dados com identificadores para preparação, limpeza, vinculação ou validação de registros, tal acesso deverá ser previamente autorizado pela Controladora, limitado ao mínimo necessário, restrito ao pesquisador responsável e a integrantes formalmente autorizados, e condicionado à assinatura do Termo de Compromisso para Uso de Dados (TCUD).
+
+7. A versão analítica a ser utilizada no dashboard, em relatórios, publicações, apresentações, repositórios ou produtos técnicos não conterá identificadores diretos e deverá ser apresentada em nível agregado, anonimizado ou com proteção suficiente contra reidentificação razoável.
+
+8. A disponibilização dos dados terá finalidade exclusiva de execução do projeto aprovado pelo CEP/UFR, sendo vedado o uso para avaliação individual, fiscalização punitiva, tomada de decisão clínica individual, exposição de usuários, familiares ou trabalhadores, ou qualquer finalidade incompatível com o protocolo aprovado.
+
+9. A presente declaração não autoriza início de coleta formal de dados antes da emissão de parecer favorável pelo CEP/UFR.
+
+Rondonópolis-MT, ____ de __________________ de 2026.
+
+________________________________________  
+**[Nome da autoridade institucional]**  
+**[Cargo]**  
+Secretaria Municipal de Saúde de Rondonópolis-MT  
+Controladora dos dados
+
+________________________________________  
+**[Nome da coordenação do CAPSij, se aplicável]**  
+**[Cargo]**  
+CAPSij de Rondonópolis-MT  
+Unidade de origem/guarda operacional dos registros

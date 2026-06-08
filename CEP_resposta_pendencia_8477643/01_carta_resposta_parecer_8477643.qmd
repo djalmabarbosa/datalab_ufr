@@ -1,0 +1,72 @@
+---
+title: "Carta-resposta ao Parecer Consubstanciado CEP nº 8.477.643"
+author: "Djalma Barbosa"
+date: "2026-06-07"
+lang: pt-BR
+format:
+  docx:
+    toc: false
+    number-sections: false
+---
+
+Ao Comitê de Ética em Pesquisa com Seres Humanos da Universidade Federal de Rondonópolis (CEP/UFR)
+
+**Assunto:** Resposta às pendências do Parecer Consubstanciado CEP nº 8.477.643
+
+**CAAE:** 98308126.4.0000.0126  
+**Título da pesquisa:** Desenvolvimento Participativo de Dashboards para Apoio à Gestão em Saúde Mental: uma pesquisa de Action Design Research em um CAPSij  
+**Pesquisador responsável:** Djalma Barbosa  
+**Instituição proponente:** Universidade Federal de Rondonópolis (UFR)
+
+Prezadas(os) membros do CEP/UFR,
+
+Encaminho, por meio desta carta, a resposta à pendência apontada no Parecer Consubstanciado CEP nº 8.477.643, emitido em 01 de junho de 2026, referente ao protocolo de pesquisa acima identificado.
+
+# Pendência 1 - Risco de acesso a dados sigilosos pela equipe de pesquisa
+
+**Manifestação do CEP:** considerando a possibilidade de que a equipe de pesquisa tenha acesso a dados sigilosos do prontuário dos pacientes atendidos pelo CAPSij, o CEP solicitou que fosse observada a Resolução CNS nº 738, de 01 de fevereiro de 2024, com os devidos ajustes necessários e envio, pela Plataforma Brasil, dos seguintes documentos complementares: Declaração de Anonimização de Dados, Termo de Compromisso para Uso de Dados (TCUD) e Termo de Transferência de Informações.
+
+**Resposta do pesquisador:** a pendência foi atendida. O protocolo foi revisado para explicitar que, para fins da Resolução CNS nº 738/2024, a **Secretaria Municipal de Saúde de Rondonópolis-MT** é considerada a Controladora dos bancos de dados assistenciais e administrativos já constituídos no âmbito do CAPSij, por ser o órgão responsável pela gestão institucional do serviço e pelas decisões relativas à disponibilização desses dados. O CAPSij é descrito como unidade de origem, guarda operacional e validação contextual dos registros.
+
+Também foi esclarecido que os dados assistenciais ou administrativos eventualmente utilizados no dashboard serão disponibilizados à equipe de pesquisa, sempre que tecnicamente possível, já em forma agregada, anonimizada ou sem identificadores diretos pelo Controlador dos dados. Caso seja indispensável acesso transitório a base com identificadores para preparação, limpeza, vinculação ou validação de registros, tal acesso será restrito ao pesquisador responsável e a integrantes formalmente autorizados, signatários do TCUD, com minimização dos campos acessados, uso exclusivo para os objetivos aprovados pelo CEP/UFR e separação, supressão ou anonimização dos identificadores assim que deixarem de ser necessários.
+
+Foram elaborados e anexados os documentos complementares solicitados:
+
+1. **Declaração de Anonimização de Dados**, a ser assinada pela autoridade institucional competente da Secretaria Municipal de Saúde de Rondonópolis-MT, na qualidade de Controladora dos dados;
+2. **Termo de Compromisso para Uso de Dados (TCUD)**, a ser assinado pelo pesquisador responsável e pelos integrantes da equipe autorizados a acessar dados;
+3. **Termo de Transferência de Informações**, formalizando a transferência/recebimento dos dados estritamente necessários, com responsabilidade pela guarda, uso, confidencialidade, privacidade e finalidade exclusiva da pesquisa aprovada.
+
+Além desses documentos, foram revisados o Projeto Detalhado, o TCLE, o Plano de Gestão de Dados e Proteção de Dados Pessoais e o Cronograma/Orçamento, com destaque para os seguintes ajustes:
+
+- inclusão de referência expressa à Resolução CNS nº 738/2024;
+- identificação da Secretaria Municipal de Saúde de Rondonópolis-MT como Controladora dos bancos assistenciais e administrativos já constituídos no âmbito do CAPSij;
+- explicitação das responsabilidades do CAPSij como unidade de origem e guarda operacional dos registros;
+- previsão de uso de dados agregados, anonimizados ou sem identificadores diretos sempre que tecnicamente possível;
+- previsão de acesso transitório a dados identificáveis apenas quando indispensável, mediante autorização institucional, minimização, controle de acesso e assinatura do TCUD;
+- reforço de que não haverá divulgação de nomes, CPF, CNS, endereço, telefone, prontuário, data de nascimento completa ou quaisquer identificadores diretos;
+- previsão de supressão, agrupamento ou agregação quando houver risco de reidentificação por células pequenas ou combinação de variáveis;
+- esclarecimento de que o dashboard não terá finalidade de avaliação individual de trabalhadores, usuários ou famílias.
+
+# Recomendação sobre cronograma
+
+O CEP recomendou adequar o cronograma para assegurar que a coleta de dados aconteça somente após aprovação do CEP/UFR. Em atendimento à recomendação, o cronograma do projeto foi ajustado para início em **01 de agosto de 2026** e término em **31 de julho de 2027**, deixando expresso que nenhuma coleta formal de dados será iniciada antes da emissão de parecer favorável pelo CEP/UFR.
+
+# Documentos anexados
+
+Encaminham-se, nesta resposta, os seguintes documentos revisados ou complementares:
+
+1. Carta-resposta ao Parecer Consubstanciado CEP nº 8.477.643;
+2. Declaração de Anonimização de Dados;
+3. Termo de Compromisso para Uso de Dados (TCUD);
+4. Termo de Transferência de Informações;
+5. Projeto Detalhado revisado;
+6. TCLE revisado;
+7. Cronograma e Orçamento revisados;
+8. Plano de Gestão de Dados e Proteção de Dados Pessoais revisado.
+
+Rondonópolis-MT, 07 de junho de 2026.
+
+________________________________________  
+**Djalma Barbosa**  
+Pesquisador responsável  
+Universidade Federal de Rondonópolis (UFR)

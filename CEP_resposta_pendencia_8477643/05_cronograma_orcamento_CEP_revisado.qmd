@@ -1,0 +1,54 @@
+---
+title: "Cronograma e Orçamento Revisados para Resposta ao Parecer CEP nº 8.477.643"
+subtitle: "Projeto de dashboards para apoio à gestão em saúde mental no CAPSij"
+author: "Djalma Barbosa"
+date: "2026-06-07"
+lang: pt-BR
+format:
+  docx:
+    toc: false
+    number-sections: true
+---
+
+# Orientação de uso
+
+O cronograma abaixo foi revisado em resposta ao Parecer Consubstanciado CEP nº 8.477.643. A execução está prevista para iniciar em **01/08/2026**, condicionada à emissão de parecer favorável pelo CEP/UFR. Nenhuma atividade formal de coleta de dados deverá iniciar antes da aprovação ética.
+
+# Cronograma
+
+| Atividade | Ago/26 | Set/26 | Out/26 | Nov/26 | Dez/26 | Jan/27 | Fev/27 | Mar/27 | Abr/27 | Mai/27 | Jun/27 | Jul/27 |
+|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| Ajustes pós-parecer, pactuação institucional e organização logística | X |  |  |  |  |  |  |  |  |  |  |  |
+| Convite, esclarecimento e obtenção de TCLE dos participantes | X | X |  |  |  |  |  |  |  |  |  |  |
+| Entrevistas semiestruturadas com gestores e profissionais | X | X | X |  |  |  |  |  |  |  |  |  |
+| Mapeamento documental e fluxo de dados | X | X | X | X |  |  |  |  |  |  |  |  |
+| Aplicação do instrumento de maturidade informacional e capacidade analítica |  | X | X |  |  |  |  |  |  |  |  |  |
+| Oficinas de cocriação de indicadores e requisitos |  | X | X | X |  |  |  |  |  |  |  |  |
+| Oficinas de letramento em dados e capacitação introdutória em R |  |  | X | X | X | X |  |  |  |  |  |  |
+| Prototipagem iterativa do dashboard |  | X | X | X | X | X | X | X | X |  |  |  |
+| Testes de usabilidade e entrevistas de feedback |  |  |  | X | X | X | X | X | X |  |  |  |
+| Implementação piloto e acompanhamento de uso |  |  |  |  |  | X | X | X | X |  |  |  |
+| Análise qualitativa e quantitativa descritiva |  |  |  |  | X | X | X | X | X | X | X |  |
+| Workshops de reflexão e validação interpretativa |  |  |  |  |  |  | X | X | X | X | X |  |
+| Formalização de princípios de design e relatório técnico |  |  |  |  |  |  |  |  |  | X | X | X |
+| Relatórios parciais ao CEP, se solicitados |  |  |  |  |  | X |  |  | X |  |  |  |
+| Relatório final ao CEP e encerramento |  |  |  |  |  |  |  |  |  |  |  | X |
+
+# Orçamento
+
+A pesquisa não conta, no momento da submissão, com financiamento externo específico. Será executada com infraestrutura já disponível na Universidade Federal de Rondonópolis, no CAPSij e com recursos próprios ou institucionais ordinários. Não haverá pagamento aos participantes nem cobrança de qualquer valor da instituição coparticipante.
+
+| Item | Quantidade estimada | Valor unitário estimado | Valor total estimado | Fonte prevista |
+|---|---:|---:|---:|---|
+| Impressão de TCLE, instrumentos e materiais de oficina | 300 páginas | R$ 0,30 | R$ 90,00 | Recursos próprios/institucionais |
+| Pastas, canetas, etiquetas e materiais simples de oficina | 1 lote | R$ 120,00 | R$ 120,00 | Recursos próprios/institucionais |
+| Deslocamentos locais para atividades presenciais | 20 deslocamentos | R$ 20,00 | R$ 400,00 | Recursos próprios/institucionais |
+| Armazenamento digital seguro/backup | 1 unidade ou serviço | R$ 150,00 | R$ 150,00 | Recursos próprios/institucionais |
+| Equipamentos de informática | Já disponíveis | R$ 0,00 | R$ 0,00 | UFR/pesquisador |
+| Softwares R, RStudio, Shiny, ggplot2, plotly, DT e similares | Código aberto | R$ 0,00 | R$ 0,00 | Software livre |
+| Ressarcimento de despesa direta eventual de participante | Sob demanda | Variável | R$ 200,00 | Recursos próprios/institucionais |
+| **Total estimado** |  |  | **R$ 960,00** |  |
+
+# Observações sobre custos, ressarcimento e indenização
+
+Os participantes não terão custos para participar da pesquisa e não receberão pagamento. Caso alguma despesa direta e comprovada decorra exclusivamente da participação em atividade da pesquisa fora da rotina habitual de trabalho, será garantido ressarcimento nos termos da regulamentação ética aplicável. Em caso de dano decorrente da pesquisa, será assegurado o direito à assistência e a busca de indenização, nos termos da legislação brasileira.
