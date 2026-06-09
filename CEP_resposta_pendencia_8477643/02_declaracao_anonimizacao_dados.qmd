@@ -13,35 +13,44 @@ format:
 **Projeto:** Desenvolvimento Participativo de Dashboards para Apoio à Gestão em Saúde Mental: uma pesquisa de Action Design Research em um CAPSij  
 **CAAE:** 98308126.4.0000.0126  
 **Pesquisador responsável:** Djalma Barbosa  
-**Instituição proponente:** Universidade Federal de Rondonópolis (UFR)
+**Instituição proponente:** Universidade Federal de Rondonópolis (UFR)  
+**Instituição anuente/controladora dos dados de origem:** Prefeitura Municipal de Rondonópolis / Secretaria Municipal de Saúde / Educação Permanente em Saúde  
+**Endereço institucional constante na Carta de Anuência:** Rua Rio Branco, nº 2916, Bairro Jardim Santa Marta, CEP 78.700-310, Rondonópolis-MT; telefone (66) 3410-0208; e-mail educacaopermanentemsrondon@gmail.com
 
-Eu, **[nome completo da autoridade institucional]**, **[cargo]**, CPF nº **[CPF]**, matrícula/registro funcional nº **[matrícula, se houver]**, representando a **Secretaria Municipal de Saúde de Rondonópolis-MT**, CNPJ nº **[CNPJ]**, na qualidade de **Controladora dos bancos de dados assistenciais e administrativos já constituídos no âmbito do CAPSij de Rondonópolis-MT**, declaro, para fins de atendimento à Resolução CNS nº 738/2024 e ao Parecer Consubstanciado CEP nº 8.477.643, que:
+Eu, **Me. Edinaldo Santos de Souza**, **Coordenador da Educação Permanente em Saúde**, matrícula nº **12572**, CPF nº **[preencher, se exigido]**, representando a **Secretaria Municipal de Saúde de Rondonópolis-MT / Educação Permanente em Saúde**, na qualidade de setor anuente vinculado à instituição Controladora dos bancos de dados assistenciais e administrativos já constituídos no âmbito do CAPSij de Rondonópolis-MT, declaro, para fins de atendimento à Resolução CNS nº 738/2024, à Lei Geral de Proteção de Dados Pessoais (Lei nº 13.709/2018), ao Decreto Municipal nº 10.789/2022, à Política de Privacidade da Prefeitura de Rondonópolis e ao Parecer Consubstanciado CEP nº 8.477.643, que:
 
-1. A Secretaria Municipal de Saúde de Rondonópolis-MT é o órgão responsável pela gestão institucional do CAPSij e pelas decisões relativas à disponibilização dos dados locais necessários à pesquisa, atuando como Controladora dos dados assistenciais e administrativos já constituídos no serviço.
+1. A Secretaria Municipal de Saúde de Rondonópolis-MT, no âmbito da Prefeitura Municipal de Rondonópolis, é o órgão responsável pela gestão institucional do CAPSij e pelas decisões relativas à disponibilização dos dados locais necessários à pesquisa, atuando como Controladora dos dados assistenciais e administrativos já constituídos no serviço.
 
-2. O CAPSij atua como unidade de origem, guarda operacional e validação contextual dos registros assistenciais e administrativos relacionados ao serviço.
+2. A Educação Permanente em Saúde da Secretaria Municipal de Saúde registrou ciência e anuência institucional para a realização do projeto de pesquisa **Desenvolvimento Participativo de Dashboards para Apoio à Gestão em Saúde Mental: uma pesquisa de Action Design Research em um CAPSij**, a ser conduzido pelo Prof. Djalma Barbosa, da Universidade Federal de Rondonópolis, com participação de estudante(s) e demais membros da equipe de pesquisa cadastrados no protocolo.
 
-3. Os dados a serem disponibilizados à equipe de pesquisa serão, sempre que tecnicamente possível, previamente agregados, anonimizados ou desprovidos de identificadores diretos antes de qualquer transferência ou acesso pela equipe de pesquisa.
+3. O CAPSij atua como unidade de origem, guarda operacional e validação contextual dos registros assistenciais e administrativos relacionados ao serviço.
 
-4. A anonimização, agregação ou retirada de identificadores diretos observará, no mínimo, a supressão de nome, CPF, Cartão Nacional de Saúde (CNS), endereço, telefone, número de prontuário, data de nascimento completa e outros identificadores diretos de usuários, familiares ou trabalhadores.
+4. Os dados a serem disponibilizados à equipe de pesquisa serão, sempre que tecnicamente possível, previamente agregados, anonimizados ou desprovidos de identificadores diretos antes de qualquer transferência ou acesso pela equipe de pesquisa.
 
-5. Quando houver risco de identificação indireta por combinação de variáveis, células com números muito pequenos, categorias raras ou recortes temporais/territoriais muito específicos, serão adotadas estratégias de supressão, agrupamento de categorias, agregação temporal ou territorial e ocultação de células pequenas.
+5. A anonimização, agregação ou retirada de identificadores diretos observará, no mínimo, a supressão de nome, CPF, Cartão Nacional de Saúde (CNS), endereço, telefone, número de prontuário, data de nascimento completa e outros identificadores diretos de usuários, familiares ou trabalhadores.
 
-6. Caso seja indispensável o acesso transitório a dados com identificadores para preparação, limpeza, vinculação ou validação de registros, tal acesso deverá ser previamente autorizado pela Controladora, limitado ao mínimo necessário, restrito ao pesquisador responsável e a integrantes formalmente autorizados, e condicionado à assinatura do Termo de Compromisso para Uso de Dados (TCUD).
+6. Quando houver risco de identificação indireta por combinação de variáveis, células com números muito pequenos, categorias raras ou recortes temporais/territoriais muito específicos, serão adotadas estratégias de supressão, agrupamento de categorias, agregação temporal ou territorial e ocultação de células pequenas.
 
-7. A versão analítica a ser utilizada no dashboard, em relatórios, publicações, apresentações, repositórios ou produtos técnicos não conterá identificadores diretos e deverá ser apresentada em nível agregado, anonimizado ou com proteção suficiente contra reidentificação razoável.
+7. Caso seja indispensável o acesso transitório a dados com identificadores para preparação, limpeza, vinculação ou validação de registros, tal acesso deverá ser previamente autorizado pela Controladora, limitado ao mínimo necessário, restrito ao pesquisador responsável e a integrantes formalmente autorizados, e condicionado à assinatura do Termo de Compromisso para Uso de Dados (TCUD).
 
-8. A disponibilização dos dados terá finalidade exclusiva de execução do projeto aprovado pelo CEP/UFR, sendo vedado o uso para avaliação individual, fiscalização punitiva, tomada de decisão clínica individual, exposição de usuários, familiares ou trabalhadores, ou qualquer finalidade incompatível com o protocolo aprovado.
+8. A versão analítica a ser utilizada no dashboard, em relatórios, publicações, apresentações, repositórios ou produtos técnicos não conterá identificadores diretos e deverá ser apresentada em nível agregado, anonimizado ou com proteção suficiente contra reidentificação razoável.
 
-9. A presente declaração não autoriza início de coleta formal de dados antes da emissão de parecer favorável pelo CEP/UFR.
+9. A disponibilização dos dados terá finalidade exclusiva de execução do projeto aprovado pelo CEP/UFR, sendo vedado o uso para avaliação individual, fiscalização punitiva, tomada de decisão clínica individual, exposição de usuários, familiares ou trabalhadores, ou qualquer finalidade incompatível com o protocolo aprovado.
+
+10. O projeto não implicará qualquer tipo de ônus financeiro para a Secretaria Municipal de Saúde de Rondonópolis-MT.
+
+11. Ao final do trabalho, a equipe pesquisadora deverá apresentar os resultados obtidos à Secretaria Municipal de Saúde de Rondonópolis-MT, em formato compatível com a finalidade institucional e sem divulgação de dados identificáveis.
+
+12. A presente declaração não autoriza início de coleta formal de dados, transferência de bases ou acesso a dados antes da emissão de parecer favorável pelo CEP/UFR.
 
 Rondonópolis-MT, ____ de __________________ de 2026.
 
 ________________________________________  
-**[Nome da autoridade institucional]**  
-**[Cargo]**  
-Secretaria Municipal de Saúde de Rondonópolis-MT  
-Controladora dos dados
+**Me. Edinaldo Santos de Souza**  
+**Coordenador da Educação Permanente em Saúde**  
+Matrícula nº 12572  
+Secretaria Municipal de Saúde de Rondonópolis-MT / Educação Permanente em Saúde  
+Instituição anuente vinculada à Controladora dos dados
 
 ________________________________________  
 **[Nome da coordenação do CAPSij, se aplicável]**  

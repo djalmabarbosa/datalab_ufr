@@ -52,11 +52,13 @@ Os signatários comprometem-se a:
 
 # Equipe autorizada
 
+Para fins deste TCUD, fica registrado que o acesso aos dados assistenciais, administrativos, institucionais ou de pesquisa eventualmente necessários à execução do projeto ficará restrito aos seguintes membros da equipe: **Djalma Barbosa**, pesquisador responsável; **Bernardo Vergara**, discente integrante da equipe; e **Mestranda 1**, integrante da equipe de pesquisa. Qualquer inclusão posterior de novo membro com acesso aos dados deverá ser formalizada por TCUD complementar ou nova versão deste termo, antes do acesso.
+
 | Nome completo | Função no projeto | Instituição/vínculo | Documento ou matrícula | Assinatura |
 |---|---|---|---|---|
 | Djalma Barbosa | Pesquisador responsável | Universidade Federal de Rondonópolis | [preencher] |  |
 | Bernardo Vergara | Discente integrante da equipe | Universidade Federal de Rondonópolis | [preencher] |  |
-| [nome] | [função] | [instituição] | [preencher] |  |
+| Mestranda 1 | Integrante da equipe de pesquisa | Universidade Federal de Rondonópolis | [preencher] |  |
 
 Rondonópolis-MT, ____ de __________________ de 2026.
 

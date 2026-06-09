@@ -47,6 +47,23 @@ Além desses documentos, foram revisados o Projeto Detalhado, o TCLE, o Plano de
 - previsão de supressão, agrupamento ou agregação quando houver risco de reidentificação por células pequenas ou combinação de variáveis;
 - esclarecimento de que o dashboard não terá finalidade de avaliação individual de trabalhadores, usuários ou famílias.
 
+No **Projeto Detalhado revisado - versão brochura `8_projeto_pesquisa_v14_pos_parecer`**, as modificações correspondentes foram destacadas em **vermelho** e podem ser localizadas nas seguintes páginas da brochura:
+
+- **página 3:** ajuste do período de execução no Resumo, passando para 01/08/2026 a 31/07/2027;
+- **página 15:** revisão do cronograma de execução, incluindo novas datas das etapas, novo cronograma mensal e explicitação de que nenhuma coleta formal de dados será iniciada antes da emissão de parecer favorável pelo CEP/UFR;
+- **páginas 22 a 24:** revisão das Considerações éticas, com inclusão expressa da Resolução CNS nº 738/2024, identificação da Secretaria Municipal de Saúde de Rondonópolis-MT como Controladora dos dados, definição do CAPSij como unidade de origem/guarda operacional, previsão de TCUD para eventual acesso transitório a dados identificáveis, regras de minimização, anonimização, supressão/agregação e vedação de divulgação de identificadores diretos ou uso do dashboard para avaliação individual.
+
+# Atualização da equipe de pesquisa
+
+Informa-se, ainda, que foram incluídos novos membros na equipe do projeto, a saber:
+
+1. **Profa. Franciane Rocha de Faria**, CPF nº **080.209.386-80**;
+2. **Profa. Adriana Santi**;
+3. **Mestranda Maria Eduarda Anjos de Oliveira**, CPF nº **062.280.471-59**;
+4. **Mestranda Letícia Alves da Silva**, CPF nº **039.677.411-33**.
+
+Os integrantes da equipe que vierem a acessar dados assistenciais, administrativos, institucionais ou de pesquisa estarão sujeitos aos mesmos compromissos de sigilo, confidencialidade, minimização, uso exclusivo para os objetivos aprovados pelo CEP/UFR e assinatura do TCUD, quando aplicável.
+
 # Recomendação sobre cronograma
 
 O CEP recomendou adequar o cronograma para assegurar que a coleta de dados aconteça somente após aprovação do CEP/UFR. Em atendimento à recomendação, o cronograma do projeto foi ajustado para início em **01 de agosto de 2026** e término em **31 de julho de 2027**, deixando expresso que nenhuma coleta formal de dados será iniciada antes da emissão de parecer favorável pelo CEP/UFR.

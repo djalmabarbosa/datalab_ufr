@@ -14,24 +14,27 @@ format:
 **CAAE:** 98308126.4.0000.0126  
 **Pesquisador responsável:** Djalma Barbosa  
 **Instituição proponente:** Universidade Federal de Rondonópolis (UFR)  
-**Controladora dos dados de origem:** Secretaria Municipal de Saúde de Rondonópolis-MT  
-**Unidade de origem/guarda operacional:** CAPSij de Rondonópolis-MT
+**Instituição anuente/controladora dos dados de origem:** Prefeitura Municipal de Rondonópolis / Secretaria Municipal de Saúde / Educação Permanente em Saúde  
+**Unidade de origem/guarda operacional:** CAPSij de Rondonópolis-MT  
+**Endereço institucional constante na Carta de Anuência:** Rua Rio Branco, nº 2916, Bairro Jardim Santa Marta, CEP 78.700-310, Rondonópolis-MT; telefone (66) 3410-0208; e-mail educacaopermanentemsrondon@gmail.com
 
-Pelo presente Termo de Transferência de Informações, a **Secretaria Municipal de Saúde de Rondonópolis-MT**, na qualidade de Controladora dos bancos de dados assistenciais e administrativos já constituídos no âmbito do CAPSij, e o pesquisador responsável **Djalma Barbosa**, vinculado à Universidade Federal de Rondonópolis (UFR), formalizam as condições para transferência, recebimento, guarda e uso dos dados necessários à execução do projeto acima identificado, em conformidade com a Resolução CNS nº 738/2024 e com o protocolo aprovado pelo CEP/UFR.
+Pelo presente Termo de Transferência de Informações, a **Secretaria Municipal de Saúde de Rondonópolis-MT / Educação Permanente em Saúde**, na qualidade de instituição anuente vinculada à Controladora dos bancos de dados assistenciais e administrativos já constituídos no âmbito do CAPSij, e o pesquisador responsável **Djalma Barbosa**, vinculado à Universidade Federal de Rondonópolis (UFR), formalizam as condições para transferência, recebimento, guarda e uso dos dados necessários à execução do projeto acima identificado, em conformidade com a Resolução CNS nº 738/2024, a Lei Geral de Proteção de Dados Pessoais (Lei nº 13.709/2018), o Decreto Municipal nº 10.789/2022, a Política de Privacidade da Prefeitura de Rondonópolis e o protocolo aprovado pelo CEP/UFR.
 
 # Partes
 
-**Transmitente/Controladora dos dados:** Secretaria Municipal de Saúde de Rondonópolis-MT, CNPJ nº **[CNPJ]**, com sede em **[endereço]**, representada por **[nome completo]**, **[cargo]**, CPF nº **[CPF]**.
+**Transmitente/instituição anuente vinculada à Controladora dos dados:** Prefeitura Municipal de Rondonópolis / Secretaria Municipal de Saúde / Educação Permanente em Saúde, situada na Rua Rio Branco, nº 2916, Bairro Jardim Santa Marta, CEP 78.700-310, Rondonópolis-MT, telefone (66) 3410-0208, e-mail educacaopermanentemsrondon@gmail.com, representada por **Me. Edinaldo Santos de Souza**, **Coordenador da Educação Permanente em Saúde**, matrícula nº **12572**, CPF nº **[preencher, se exigido]**.
 
 **Unidade de origem/guarda operacional:** CAPSij de Rondonópolis-MT, representado por **[nome completo]**, **[cargo]**, CPF nº **[CPF]**, quando aplicável.
 
-**Recebedor/Pesquisador responsável:** Djalma Barbosa, vinculado à Universidade Federal de Rondonópolis (UFR), responsável pela condução ética e científica do projeto aprovado pelo CEP/UFR.
+**Recebedor/Pesquisador responsável:** Djalma Barbosa, vinculado à Universidade Federal de Rondonópolis (UFR), responsável pela condução ética e científica do projeto aprovado pelo CEP/UFR, sem geração de ônus financeiro para a Secretaria Municipal de Saúde de Rondonópolis-MT.
 
 # Objeto da transferência
 
 Poderão ser transferidos ou disponibilizados ao pesquisador responsável, nos limites estritamente necessários à pesquisa, dados assistenciais e administrativos já existentes no âmbito do CAPSij, incluindo relatórios, planilhas internas, registros administrativos, indicadores de atendimento, informações de produção assistencial e demais dados necessários ao mapeamento de fluxos, qualificação de indicadores e desenvolvimento do dashboard.
 
 A transferência deverá ocorrer, sempre que tecnicamente possível, em formato agregado, anonimizado ou sem identificadores diretos. A transferência de dados identificáveis somente ocorrerá quando indispensável para preparação, limpeza, vinculação ou validação de registros, mediante autorização da Controladora e acesso restrito à equipe formalmente autorizada.
+
+Este termo não autoriza qualquer transferência ou acesso a dados antes da emissão de parecer favorável pelo CEP/UFR. Após a aprovação ética, a transferência ocorrerá apenas nos limites autorizados pela Controladora dos dados e pelo protocolo aprovado.
 
 # Finalidade
 
@@ -41,7 +44,8 @@ Os dados serão utilizados exclusivamente para:
 2. apoiar a definição participativa de indicadores e requisitos do dashboard;
 3. desenvolver, testar e validar protótipos de dashboard em nível agregado;
 4. avaliar a utilidade, usabilidade e incorporação do dashboard na rotina de gestão;
-5. produzir relatórios técnicos, publicações acadêmicas e produtos científicos sem divulgação identificável.
+5. produzir relatórios técnicos, publicações acadêmicas e produtos científicos sem divulgação identificável;
+6. apresentar à Secretaria Municipal de Saúde de Rondonópolis-MT os resultados obtidos ao final do trabalho, em formato compatível com a finalidade institucional e sem exposição de dados identificáveis.
 
 # Condições de segurança e confidencialidade
 
@@ -49,12 +53,13 @@ O pesquisador responsável compromete-se a:
 
 1. utilizar os dados exclusivamente para os objetivos aprovados pelo CEP/UFR;
 2. restringir o acesso aos dados a integrantes autorizados e signatários do TCUD;
-3. armazenar os dados em ambiente seguro, com acesso controlado;
-4. não compartilhar bases brutas, identificáveis ou potencialmente identificáveis com terceiros não autorizados;
-5. retirar, separar, anonimizar ou suprimir identificadores diretos assim que deixarem de ser indispensáveis;
-6. divulgar resultados apenas em forma agregada, anonimizada ou sem risco razoável de reidentificação;
-7. adotar supressão ou agrupamento de células pequenas, categorias raras ou combinações de variáveis que possam permitir identificação indireta;
-8. comunicar à Controladora e ao CEP/UFR qualquer incidente, acesso indevido, perda, exposição acidental ou suspeita de violação de sigilo.
+3. assegurar que qualquer atividade de coleta, produção, transmissão, distribuição, processamento, arquivamento, armazenamento, eliminação, avaliação, controle, modificação, comunicação, transferência, difusão ou extração de dados pessoais esteja em conformidade com a LGPD, com o Decreto Municipal nº 10.789/2022, com a Política de Privacidade da Prefeitura de Rondonópolis e com as medidas de privacidade e segurança previstas no protocolo;
+4. armazenar os dados em ambiente seguro, com acesso controlado;
+5. não compartilhar bases brutas, identificáveis ou potencialmente identificáveis com terceiros não autorizados;
+6. retirar, separar, anonimizar ou suprimir identificadores diretos assim que deixarem de ser indispensáveis;
+7. divulgar resultados apenas em forma agregada, anonimizada ou sem risco razoável de reidentificação;
+8. adotar supressão ou agrupamento de células pequenas, categorias raras ou combinações de variáveis que possam permitir identificação indireta;
+9. comunicar à Controladora, à Secretaria Municipal de Saúde/Educação Permanente em Saúde e ao CEP/UFR qualquer incidente, acesso indevido, perda, exposição acidental ou suspeita de violação de sigilo.
 
 # Vedações
 
@@ -75,13 +80,16 @@ Este termo terá vigência durante a execução da pesquisa e pelo período de g
 
 A transferência ou acesso aos dados somente poderá ocorrer após emissão de parecer favorável pelo CEP/UFR e nos limites autorizados pela Controladora dos dados.
 
+O presente termo observa a anuência institucional emitida pela Educação Permanente em Saúde da Secretaria Municipal de Saúde de Rondonópolis-MT em 13 de maio de 2026, na qual foi autorizado o projeto de pesquisa acima identificado e registrado que sua execução não implicará ônus para a Secretaria Municipal de Saúde.
+
 Rondonópolis-MT, ____ de __________________ de 2026.
 
 ________________________________________  
-**[Nome da autoridade institucional]**  
-**[Cargo]**  
-Secretaria Municipal de Saúde de Rondonópolis-MT  
-Controladora dos dados
+**Me. Edinaldo Santos de Souza**  
+**Coordenador da Educação Permanente em Saúde**  
+Matrícula nº 12572  
+Secretaria Municipal de Saúde de Rondonópolis-MT / Educação Permanente em Saúde  
+Instituição anuente vinculada à Controladora dos dados
 
 ________________________________________  
 **[Nome da coordenação do CAPSij, se aplicável]**  
