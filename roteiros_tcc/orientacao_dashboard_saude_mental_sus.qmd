@@ -1,0 +1,423 @@
+---
+title: "Orientações para TCC"
+subtitle: "Dashboard sobre violência contra a mulher com dados públicos do SUS"
+author: "Djalma Barbosa"
+date: "2026-06-01"
+lang: pt-BR
+format:
+  pdf:
+    documentclass: article
+    classoption:
+      - 12pt
+      - a4paper
+    geometry:
+      - top=2.5cm
+      - bottom=2.5cm
+      - left=3cm
+      - right=2cm
+    fontsize: 12pt
+    linestretch: 1.25
+    toc: true
+    toc-title: "Sumário"
+    toc-depth: 2
+    number-sections: true
+    pdf-engine: xelatex
+    colorlinks: true
+    linkcolor: black
+    urlcolor: blue
+    include-in-header:
+      text: |
+        \usepackage{microtype}
+        \usepackage{indentfirst}
+        \usepackage{xcolor}
+        \usepackage{fancyhdr}
+        \usepackage{titlesec}
+        \definecolor{ufrblue}{HTML}{203864}
+        \setlength{\parindent}{1.25cm}
+        \setlength{\parskip}{0pt}
+        \setlength{\headheight}{15pt}
+        \pagestyle{fancy}
+        \fancyhf{}
+        \fancyhead[L]{\small Dashboard sobre violência contra a mulher}
+        \fancyhead[R]{\small UFR}
+        \fancyfoot[C]{\small\thepage}
+        \renewcommand{\headrulewidth}{0.3pt}
+        \titleformat{\section}
+          {\normalfont\Large\bfseries\color{ufrblue}}
+          {\thesection}{0.8em}{}
+        \titleformat{\subsection}
+          {\normalfont\large\bfseries\color{ufrblue}}
+          {\thesubsection}{0.8em}{}
+editor: visual
+---
+
+\newpage
+
+# Conversa inicial
+
+Minha sugestão é que você desenvolva um TCC voltado à construção de um **dashboard sobre violência contra a mulher**, utilizando dados públicos disponíveis no SUS. A ideia não é apenas fazer gráficos bonitos, mas construir uma ferramenta que ajude a enxergar melhor um problema social grave, com base em dados oficiais, revisão de literatura e escolhas metodológicas bem justificadas.
+
+Esse trabalho conversa com o projeto maior de desenvolvimento de dashboards para apoio à gestão em saúde, mas terá um recorte próprio. Em vez de trabalhar com dados internos de um serviço específico, você poderá usar bases públicas, especialmente dados relacionados a notificações de violência, mortalidade, internações e características territoriais.
+
+O mais importante é entender que o dashboard será o produto final de uma pesquisa. Antes dele, precisamos passar por etapas fundamentais: leitura, fichamento, delimitação do tema, construção do problema, definição dos objetivos, escolha das bases de dados, tratamento das informações e só então a construção das visualizações.
+
+# Tema geral
+
+O tema geral pode ser definido assim:
+
+> Violência contra a mulher e uso de dados públicos do SUS para construção de dashboard de apoio à análise territorial.
+
+Esse tema permite relacionar saúde pública, direitos humanos, vigilância em saúde, gestão baseada em evidências e visualização de dados. Também permite um trabalho viável para graduação, desde que o recorte seja bem delimitado.
+
+Alguns recortes possíveis:
+
+- violência contra mulheres em Rondonópolis-MT;
+- violência contra mulheres em Mato Grosso;
+- comparação entre Rondonópolis, Mato Grosso e Brasil;
+- notificações de violência interpessoal e autoprovocada contra mulheres;
+- mortalidade feminina por agressões;
+- perfil das notificações segundo idade, raça/cor, escolaridade, local de ocorrência e tipo de violência;
+- evolução temporal das notificações antes, durante e depois da pandemia de COVID-19.
+
+Para um TCC, eu recomendo começar com um recorte simples:
+
+> Construção de um dashboard sobre notificações de violência contra a mulher em Mato Grosso, com destaque para Rondonópolis.
+
+Esse recorte é amplo o suficiente para gerar análise, mas não tão grande a ponto de tornar o trabalho inviável.
+
+# Por que esse tema importa
+
+A violência contra a mulher é um problema de saúde pública, de direitos humanos e de desigualdade social. Ela aparece nos serviços de saúde de várias formas: atendimentos por agressão, notificações de violência interpessoal, consequências físicas e psicológicas, internações, mortes e demandas por cuidado continuado.
+
+O SUS possui sistemas de informação que registram parte desse fenômeno. Esses dados não mostram toda a realidade, porque há subnotificação, barreiras de acesso, medo, vergonha, dependência econômica, falhas de registro e diferenças entre municípios. Mesmo assim, eles ajudam a observar tendências, desigualdades territoriais e perfis de maior vulnerabilidade.
+
+O dashboard pode contribuir justamente nesse ponto: organizar dados dispersos em uma linguagem visual mais acessível, permitindo que estudantes, gestores, profissionais e pesquisadores compreendam melhor o problema.
+
+# Primeiro passo: revisão de literatura
+
+Antes de mexer nos dados, você precisa entender o tema. A revisão de literatura deve responder a três perguntas:
+
+1. O que a literatura diz sobre violência contra a mulher como problema de saúde pública?
+
+2. Como os sistemas de informação do SUS registram esse tipo de violência?
+
+3. Como dashboards e visualização de dados podem apoiar análise, comunicação e gestão em saúde?
+
+Você deve buscar artigos, documentos oficiais e materiais técnicos. Sugiro organizar a revisão em três blocos:
+
+## Bloco 1 - Violência contra a mulher
+
+Aqui entram textos sobre:
+
+- conceito de violência contra a mulher;
+- violência física, psicológica, sexual, patrimonial e moral;
+- violência doméstica e familiar;
+- feminicídio;
+- ciclo da violência;
+- desigualdades de gênero, raça/cor, idade e território;
+- consequências para a saúde física e mental;
+- papel dos serviços de saúde na identificação, acolhimento e notificação.
+
+## Bloco 2 - Sistemas de informação em saúde
+
+Aqui entram textos e manuais sobre:
+
+- SINAN;
+- ficha de notificação de violência interpessoal e autoprovocada;
+- SIM, quando o foco incluir mortalidade;
+- SIH/SUS, quando o foco incluir internações;
+- qualidade dos dados;
+- subnotificação;
+- completude das variáveis;
+- uso de dados secundários em saúde pública.
+
+## Bloco 3 - Dashboards e visualização de dados
+
+Aqui entram textos sobre:
+
+- o que é um dashboard;
+- uso de dashboards em saúde;
+- indicadores;
+- visualização de séries temporais;
+- mapas e análise territorial;
+- comunicação de dados sensíveis;
+- limites de interpretação de dados administrativos.
+
+# Fichamento
+
+Cada texto lido deve gerar um fichamento curto. Não quero fichamentos enormes, copiados do artigo. Quero fichamentos úteis para escrever depois.
+
+Sugiro este modelo:
+
+| Campo | O que registrar |
+|---|---|
+| Referência | Autor, ano, título e fonte |
+| Objetivo do texto | O que o artigo ou documento tentou responder |
+| Método | Revisão, estudo quantitativo, análise documental, estudo epidemiológico etc. |
+| Principais achados | Três a cinco ideias centrais |
+| Conceitos importantes | Termos que você poderá usar no TCC |
+| Relação com o seu trabalho | Como esse texto ajuda a pensar o dashboard |
+| Citação útil | Um trecho curto ou uma ideia que pode ser citada depois |
+
+O fichamento vai evitar que você leia muitos textos e depois não consiga usar nada na escrita. Ele também ajuda a construir a justificativa, o referencial teórico e a discussão dos resultados.
+
+# Construção do problema de pesquisa
+
+Depois das primeiras leituras, precisamos transformar o tema em problema de pesquisa. O problema não pode ser apenas "violência contra a mulher existe". Isso é amplo demais. Precisamos formular uma pergunta mais investigável.
+
+Algumas perguntas possíveis:
+
+- Como os dados públicos do SUS podem ser organizados em um dashboard para apoiar a análise da violência contra a mulher em Mato Grosso?
+- Quais padrões temporais e territoriais aparecem nas notificações de violência contra mulheres em Rondonópolis e Mato Grosso?
+- Quais são os limites e possibilidades do uso do SINAN para construção de um dashboard sobre violência contra a mulher?
+- Como apresentar indicadores de violência contra a mulher de forma acessível, ética e útil para a gestão em saúde?
+
+Uma boa pergunta para TCC seria:
+
+> Como construir um dashboard, a partir de dados públicos do SUS, para descrever notificações de violência contra a mulher em Mato Grosso, com destaque para Rondonópolis?
+
+Essa pergunta é boa porque deixa claro o produto, a fonte dos dados, o tema e o território.
+
+# Objetivos
+
+## Objetivo geral
+
+Desenvolver um dashboard com dados públicos do SUS para descrever notificações de violência contra a mulher em Mato Grosso, com destaque para Rondonópolis.
+
+## Objetivos específicos
+
+1. Realizar revisão de literatura sobre violência contra a mulher, sistemas de informação em saúde e dashboards em saúde pública.
+
+2. Identificar bases públicas do SUS relacionadas à violência contra a mulher.
+
+3. Selecionar indicadores relevantes para análise temporal, territorial e sociodemográfica.
+
+4. Construir uma base de dados tratada e documentada.
+
+5. Desenvolver um dashboard interativo com gráficos, tabelas e filtros.
+
+6. Discutir os limites dos dados públicos para análise da violência contra a mulher.
+
+# Bases de dados possíveis
+
+A principal base para esse trabalho tende a ser o **SINAN**, especialmente as notificações de violência interpessoal e autoprovocada. Dependendo do recorte, outras bases podem complementar a análise.
+
+| Base | Possível uso |
+|---|---|
+| SINAN | Notificações de violência interpessoal e autoprovocada contra mulheres |
+| SIM | Mortalidade por agressões e possíveis análises sobre feminicídio ou mortes violentas, com cautela |
+| SIH/SUS | Internações decorrentes de agressões ou causas externas |
+| CNES | Rede de serviços de saúde disponíveis no território |
+| IBGE/DATASUS | População para cálculo de taxas |
+
+Para começar, eu sugiro trabalhar com SINAN e população. Se houver tempo, podemos incluir SIM ou CNES como módulos complementares.
+
+# Indicadores iniciais
+
+O dashboard pode começar com poucos indicadores bem definidos:
+
+- número de notificações de violência contra mulheres por ano;
+- taxa de notificações por 100 mil mulheres;
+- notificações por município de residência;
+- notificações por faixa etária;
+- notificações por raça/cor;
+- notificações por escolaridade;
+- notificações por tipo de violência;
+- notificações por local de ocorrência;
+- notificações segundo vínculo com o provável autor da agressão;
+- evolução temporal das notificações.
+
+É importante lembrar: aumento das notificações não significa necessariamente aumento da violência. Pode significar também melhora na identificação, ampliação da rede de atendimento, mudança no registro ou maior sensibilização dos serviços. Esse cuidado precisa aparecer no TCC e no próprio dashboard.
+
+# Estrutura sugerida do dashboard
+
+O dashboard pode ter uma estrutura simples:
+
+## Página 1 - Visão geral
+
+Mostrar os principais números:
+
+- total de notificações no período;
+- taxa por 100 mil mulheres;
+- município com maior número absoluto;
+- município com maior taxa, se o dado for estável;
+- período analisado;
+- nota sobre subnotificação.
+
+## Página 2 - Série histórica
+
+Mostrar a evolução das notificações ao longo dos anos. Aqui podemos usar gráfico de linha, barras por ano e comparação entre Rondonópolis, Mato Grosso e Brasil, se os dados permitirem.
+
+## Página 3 - Perfil das mulheres notificadas
+
+Mostrar distribuição por:
+
+- idade;
+- raça/cor;
+- escolaridade;
+- município;
+- zona de residência, se disponível.
+
+## Página 4 - Características da violência
+
+Mostrar:
+
+- tipo de violência;
+- local de ocorrência;
+- repetição da violência;
+- vínculo com o provável agressor;
+- encaminhamentos, se a variável estiver disponível e com boa completude.
+
+## Página 5 - Mapa
+
+Mostrar a distribuição territorial por município. O mapa deve ser usado com cuidado. Em municípios pequenos, taxas podem oscilar muito. Quando houver poucos casos, talvez seja melhor agrupar anos ou regiões.
+
+## Página 6 - Metodologia
+
+Esta página é indispensável. Deve mostrar:
+
+- fonte dos dados;
+- período analisado;
+- data de acesso;
+- filtros utilizados;
+- critérios de inclusão;
+- variáveis selecionadas;
+- limitações;
+- cuidados éticos.
+
+# Metodologia do TCC
+
+O TCC pode ser descrito como uma pesquisa aplicada, descritiva, com uso de dados secundários públicos e desenvolvimento de produto técnico em formato de dashboard.
+
+As etapas metodológicas seriam:
+
+1. Revisão de literatura sobre violência contra a mulher, vigilância em saúde e dashboards.
+
+2. Levantamento das bases públicas disponíveis no SUS.
+
+3. Definição do recorte territorial e temporal.
+
+4. Seleção das variáveis e indicadores.
+
+5. Extração dos dados.
+
+6. Tratamento, limpeza e padronização da base.
+
+7. Análise descritiva dos indicadores.
+
+8. Construção do dashboard.
+
+9. Revisão do dashboard quanto à clareza, consistência e utilidade.
+
+10. Discussão dos resultados e das limitações.
+
+# Cuidados éticos
+
+Mesmo trabalhando com dados públicos, precisamos tratar o tema com cuidado. Violência contra a mulher é um assunto sensível. O dashboard não deve expor pessoas, ridicularizar territórios ou criar rankings irresponsáveis.
+
+Alguns cuidados:
+
+- trabalhar com dados agregados;
+- evitar identificação individual;
+- não divulgar combinações muito específicas quando houver poucos casos;
+- evitar linguagem sensacionalista;
+- explicar a subnotificação;
+- não interpretar notificações como medida direta da ocorrência real;
+- evitar ranking simplista de municípios;
+- usar taxas, não apenas números absolutos;
+- apresentar limitações de forma clara.
+
+O painel precisa informar sem espetacularizar. Esse é um critério importante de qualidade.
+
+# Ferramentas recomendadas
+
+Podemos desenvolver o trabalho em R, porque isso facilita reprodutibilidade e dialoga com a linha do projeto maior.
+
+Pacotes possíveis:
+
+- `tidyverse` para tratamento dos dados;
+- `readr` ou `readxl` para leitura de arquivos;
+- `ggplot2` para gráficos;
+- `plotly` para gráficos interativos;
+- `sf` e `geobr` para mapas;
+- `shiny`, `flexdashboard` ou `quarto` para o dashboard;
+- `DT` ou `reactable` para tabelas.
+
+Não precisamos decidir a ferramenta final no primeiro dia. Primeiro vem a pergunta, o recorte e os dados. A tecnologia vem depois.
+
+# Cronograma sugerido
+
+| Etapa | Atividade | Produto |
+|---|---|---|
+| 1 | Escolha do recorte e leitura inicial | Tema delimitado |
+| 2 | Revisão de literatura | Fichamentos |
+| 3 | Construção do problema | Problema, pergunta e objetivos |
+| 4 | Levantamento das bases | Fontes e variáveis mapeadas |
+| 5 | Extração e tratamento dos dados | Base organizada |
+| 6 | Análise descritiva | Tabelas e gráficos iniciais |
+| 7 | Construção do dashboard | Protótipo funcional |
+| 8 | Revisão e ajustes | Versão final do dashboard |
+| 9 | Escrita do TCC | Texto completo |
+| 10 | Apresentação | Slides e demonstração |
+
+Um cronograma de seis meses poderia ser:
+
+| Mês | Foco |
+|---|---|
+| 1 | Definir tema, pergunta e iniciar revisão |
+| 2 | Fazer fichamentos e fechar objetivos |
+| 3 | Levantar bases, variáveis e indicadores |
+| 4 | Tratar dados e gerar análises iniciais |
+| 5 | Construir e revisar o dashboard |
+| 6 | Finalizar texto, apresentação e produto |
+
+# Estrutura do texto do TCC
+
+Uma estrutura possível:
+
+1. **Introdução:** apresentar o tema, justificar a relevância, formular o problema e os objetivos.
+
+2. **Referencial teórico:** discutir violência contra a mulher, sistemas de informação em saúde e dashboards.
+
+3. **Metodologia:** explicar tipo de estudo, bases utilizadas, recorte, variáveis, indicadores, tratamento dos dados e construção do dashboard.
+
+4. **Resultados:** apresentar o dashboard e os principais achados descritivos.
+
+5. **Discussão:** interpretar os achados à luz da literatura e discutir limitações dos dados.
+
+6. **Considerações finais:** retomar objetivos, contribuições, limites e possibilidades futuras.
+
+# Primeiras tarefas
+
+Para começarmos bem, eu pediria estas primeiras entregas:
+
+1. Uma lista com dez referências sobre violência contra a mulher e saúde pública.
+
+2. Uma lista com cinco referências sobre SINAN, vigilância em saúde ou uso de dados secundários.
+
+3. Uma lista com três referências sobre dashboards ou visualização de dados em saúde.
+
+4. Cinco fichamentos prontos.
+
+5. Uma proposta inicial de pergunta de pesquisa.
+
+6. Uma proposta de recorte territorial e temporal.
+
+Depois disso, passamos para os dados.
+
+# Fechamento
+
+O objetivo não é fazer um painel cheio de informações, mas um dashboard claro, responsável e bem fundamentado. Um bom TCC precisa mostrar domínio do tema, cuidado metodológico e capacidade de transformar dados em informação compreensível.
+
+Se o trabalho for bem conduzido, ele pode gerar três produtos importantes: o texto do TCC, um dashboard funcional e uma base metodológica para outros estudos do grupo sobre dados públicos, violência e saúde.
+
+# Fontes iniciais para consulta
+
+Brasil. Ministério da Saúde. DATASUS. Informações de Saúde (TABNET). Disponível em: <https://datasus.saude.gov.br/informacoes-de-saude-tabnet/>. Acesso em: 01 jun. 2026.
+
+Brasil. Ministério da Saúde. DATASUS. Portal do Departamento de Informática do SUS. Disponível em: <https://datasus.saude.gov.br/>. Acesso em: 01 jun. 2026.
+
+Brasil. Ministério da Saúde. OpenDataSUS. Disponível em: <https://opendatasus.saude.gov.br/>. Acesso em: 01 jun. 2026.
+
+Brasil. Ministério da Saúde. Sistema de Informação de Agravos de Notificação (SINAN). Disponível em: <https://portalsinan.saude.gov.br/>. Acesso em: 01 jun. 2026.
+

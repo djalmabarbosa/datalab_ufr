@@ -1,0 +1,580 @@
+---
+title: "Roteiro para Elaboração do Trabalho de Curso"
+subtitle: "Artigo científico e dashboard sobre violência contra a mulher em Rondonópolis-MT"
+author: "Orientação acadêmica - Ana Paula Armani"
+date: "2026-06-03"
+lang: pt-BR
+format:
+  pdf:
+    documentclass: article
+    classoption:
+      - 12pt
+      - a4paper
+    geometry:
+      - top=2.5cm
+      - bottom=2.5cm
+      - left=3cm
+      - right=2cm
+    fontsize: 12pt
+    linestretch: 1.25
+    toc: true
+    toc-title: "Sumário"
+    toc-depth: 2
+    number-sections: true
+    pdf-engine: xelatex
+    colorlinks: true
+    linkcolor: black
+    urlcolor: blue
+    include-in-header:
+      text: |
+        \usepackage{microtype}
+        \usepackage{indentfirst}
+        \usepackage[table]{xcolor}
+        \usepackage{fancyhdr}
+        \usepackage{booktabs}
+        \usepackage{longtable}
+        \usepackage{array}
+        \usepackage{pdflscape}
+        \usepackage{tikz}
+        \usetikzlibrary{arrows.meta, positioning, shapes.geometric}
+        \usepackage{titlesec}
+        \definecolor{ufrblue}{HTML}{203864}
+        \setlength{\parindent}{1.25cm}
+        \setlength{\parskip}{0pt}
+        \setlength{\headheight}{15pt}
+        \pagestyle{fancy}
+        \fancyhf{}
+        \fancyhead[L]{\small TCC: dashboard e artigo científico}
+        \fancyhead[R]{\small Rondonópolis-MT}
+        \fancyfoot[C]{\small\thepage}
+        \renewcommand{\headrulewidth}{0.3pt}
+        \titleformat{\section}
+          {\normalfont\Large\bfseries\color{ufrblue}}
+          {\thesection}{0.8em}{}
+        \titleformat{\subsection}
+          {\normalfont\large\bfseries\color{ufrblue}}
+          {\thesubsection}{0.8em}{}
+editor: visual
+---
+
+\newpage
+
+# Apresentação
+
+Este roteiro orienta a elaboração de um Trabalho de Conclusão de Curso (TCC) em formato de artigo científico, tendo como produto aplicado a construção de um **dashboard para acompanhamento dos dados de violência contra a mulher no município de Rondonópolis-MT**.
+
+A proposta combina duas frentes de trabalho que devem avançar em paralelo:
+
+-   a construção do dashboard em **R**, com coleta, tratamento, análise e visualização de dados;
+-   a redação do artigo científico em **Quarto**, em um documento `.qmd` capaz de renderizar um arquivo `.pdf`.
+
+O dashboard não deve ser tratado apenas como uma peça técnica. Ele é o objeto empírico e aplicado da pesquisa. O artigo deve explicar por que esse produto é necessário, quais dados foram usados, como foram tratados, quais decisões de visualização foram tomadas, quais limites existem nos dados e como a ferramenta pode apoiar a leitura territorial da violência contra a mulher.
+
+# Tema e delimitação
+
+## Tema geral
+
+Violência contra a mulher e uso de dados públicos para construção de dashboard de acompanhamento municipal em Rondonópolis-MT.
+
+## Recorte recomendado
+
+Acredito que um recorte viável seja:
+
+> Construção de um dashboard com dados públicos sobre notificações, ocorrências ou indicadores relacionados à violência contra a mulher em Rondonópolis-MT, com comparação temporal e, quando possível, territorial com Mato Grosso e Brasil.
+
+Esse recorte permite articular Economia, políticas públicas, saúde pública, segurança pública, desigualdade de gênero e visualização de dados.
+
+## Problema de pesquisa sugerido
+
+Como um dashboard construído com dados públicos pode contribuir para organizar, visualizar e comunicar informações sobre a violência contra a mulher em Rondonópolis-MT?
+
+## Perguntas auxiliares
+
+-   Quais bases públicas permitem acompanhar a violência contra a mulher em escala municipal?
+-   Quais variáveis são mais relevantes para descrever o perfil das notificações ou ocorrências?
+-   Quais indicadores permitem acompanhar tendência temporal, perfil das vítimas e características da violência?
+-   Quais limites de qualidade, cobertura, subnotificação e comparabilidade devem ser considerados?
+-   Como apresentar os dados de forma clara, ética e útil para gestores, pesquisadores e sociedade?
+
+# Objetivos
+
+## Objetivo geral
+
+Desenvolver e analisar um dashboard baseado em dados públicos para acompanhamento da violência contra a mulher em Rondonópolis-MT.
+
+## Objetivos específicos
+
+-   Levantar publicações sobre violência contra a mulher, dashboards, visualização de dados e construção de painéis em saúde pública.
+-   Identificar bases de dados públicas adequadas ao recorte municipal.
+-   Construir uma base de dados organizada, documentada e reprodutível.
+-   Definir indicadores para acompanhamento temporal e territorial.
+-   Desenvolver um protótipo funcional de dashboard.
+-   Avaliar limites dos dados e escolhas de visualização.
+-   Redigir artigo científico em Quarto, com arquivo `.qmd` capaz de renderizar uma versão final em PDF.
+
+# Produto final esperado
+
+Ao final do trabalho, você deverá entregar:
+
+-   artigo científico com aproximadamente 12 a 18 páginas, elaborado em Quarto (`.qmd`) e renderizável em PDF;
+-   dashboard funcional construído em R, preferencialmente com `shiny`, `bslib`, `plotly`, `leaflet`, `DT`, `ggplot2` e/ou Quarto Dashboard;
+-   base tratada e dicionário de variáveis;
+-   scripts em R que permitam reproduzir coleta, tratamento, indicadores e visualizações;
+-   breve documento de limitações, especialmente sobre subnotificação, incompletude e interpretação ética dos dados;
+-   repositório privado no GitHub com o projeto completo e entregas semanais organizadas.
+
+# Acompanhamento e entregas
+
+O acompanhamento do TCC será feito por meio de um **repositório privado no GitHub**, criado pela aluna e compartilhado com o orientador. O repositório será o espaço oficial para acompanhar a evolução do trabalho, revisar entregas, verificar scripts, conferir versões do artigo e registrar o histórico de desenvolvimento.
+
+O repositório deve conter, no mínimo, a seguinte estrutura:
+
+-   `README.md`, com título do projeto, objetivo, instruções de execução e descrição das pastas;
+-   `data_raw/`, com dados brutos, quando o tamanho e a licença permitirem;
+-   `data_clean/`, com bases tratadas;
+-   `R/`, com scripts de importação, limpeza, indicadores e gráficos;
+-   `dashboard/`, com `app.R` ou `dashboard.qmd`;
+-   `artigo/`, com o arquivo Quarto do artigo (`artigo.qmd`) e arquivos auxiliares;
+-   `docs/`, com fichamentos, matriz de evidências, dicionário de dados e notas metodológicas;
+-   `output/`, com versões exportadas, figuras e PDFs.
+
+As entregas semanais devem ocorrer **às quartas-feiras, até as 23h**, por meio de atualização no GitHub. A orientação semanal está reservada para **quintas-feiras, das 17h às 17h30**, para discussão da entrega, definição dos ajustes e pactuação da próxima meta. Dúvidas pontuais ao longo da semana podem ser sanadas por WhatsApp.
+
+Neste semestre, a aluna está matriculada em **TCC 1**. A nota de TCC 1 será atribuída com base nas entregas das **três primeiras semanas** deste roteiro, considerando pontualidade, organização do repositório, clareza do recorte, avanço da revisão inicial e viabilidade técnica do projeto. Após essas três semanas, o trabalho continuará durante o período de férias e seguirá no semestre seguinte, quando ocorrerá a defesa.
+
+Como regra de trabalho, cada entrega semanal deve ter:
+
+-   atualização dos arquivos correspondentes no repositório;
+-   mensagem de commit clara, indicando o que foi entregue;
+-   breve nota no `README.md` ou em arquivo de acompanhamento informando o estágio da semana;
+-   indicação objetiva de dúvidas, pendências ou bloqueios.
+
+# Bases de dados iniciais
+
+A seleção final das bases dependerá da disponibilidade, do nível de abertura e da escala municipal. As fontes abaixo devem ser verificadas no início do projeto.
+
+| Fonte | Possível uso no dashboard | Observações |
+|------------------------|------------------------|------------------------|
+| SINAN/DATASUS | Notificações de violência interpessoal e autoprovocada | Base importante para análise em saúde pública. Exige atenção a mudanças de cobertura, duplicidades, campos ignorados e subnotificação. |
+| SIM/DATASUS | Óbitos por agressões, causas externas e feminicídios quando operacionalmente identificáveis | Útil para contextualização, mas exige cautela na identificação direta de feminicídio. |
+| IBGE | População, faixa etária, raça/cor, indicadores socioeconômicos e territoriais | Necessário para taxas por população e contextualização econômica. |
+| Secretaria de Segurança Pública de Mato Grosso | Boletins, ocorrências, feminicídio, violência doméstica ou indicadores de segurança, se disponíveis | Conferir granularidade municipal, periodicidade e formato de publicação. |
+| Ligue 180 / Ministério das Mulheres | Denúncias e atendimentos, quando houver dados por território | Pode complementar a discussão, mas nem sempre tem recorte municipal. |
+| Mapa Nacional da Violência de Gênero | Plataforma integrada de dados públicos oficiais | Serve como referência metodológica e comparativa para o desenho do dashboard. |
+| Atlas da Violência / IPEA-FBSP | Indicadores nacionais e painéis de referência | Bom material para contextualização e comparação com produtos existentes. |
+
+::: callout-warning
+## Cuidado metodológico
+
+Dados administrativos não medem diretamente toda a violência existente. Eles medem registros, notificações, atendimentos ou ocorrências. Em violência contra a mulher, a subnotificação é parte central do problema e deve aparecer explicitamente no artigo.
+:::
+
+# Estratégia de revisão de literatura
+
+## Eixos da revisão
+
+A revisão deve ser organizada em dois eixos centrais. A ideia é evitar uma revisão dispersa: o texto deve sustentar diretamente o problema social estudado e o produto técnico que será desenvolvido.
+
+1.  **Violência contra a mulher como problema social, econômico e de saúde pública.**
+2.  **Dashboards, visualização de dados e comunicação de informação em saúde pública.**
+
+## Palavras-chave recomendadas
+
+Use combinações em português e inglês. A busca de artigos acadêmicos deve ser feita **somente no Google Acadêmico e na SciELO**. Outras plataformas podem ser usadas apenas para acessar documentos institucionais ou bases de dados, não para ampliar a revisão acadêmica.
+
+| Eixo | Palavras-chave em português | Palavras-chave em inglês |
+|------------------------|------------------------|------------------------|
+| Violência contra a mulher | violência contra a mulher; violência doméstica; feminicídio; violência de gênero; violência por parceiro íntimo; notificação compulsória; SINAN | violence against women; domestic violence; femicide; gender-based violence; intimate partner violence; notification data |
+| Dashboards em saúde | dashboard; painel de controle; painel de indicadores; visualização de dados; vigilância em saúde; tomada de decisão em saúde | dashboard; data dashboard; data visualization; public health dashboard; surveillance dashboard; decision support |
+| Economia e políticas públicas | desigualdade de gênero; economia da violência; custos da violência; políticas públicas para mulheres; desenvolvimento local | gender inequality; economics of violence; cost of violence; public policies for women; local development |
+| Território | Rondonópolis; Mato Grosso; municípios; análise territorial; violência de gênero | municipality; local analysis; territorial analysis; gender-based violence |
+
+## Estratégia prática de busca
+
+O aluno deve começar com buscas amplas e depois estreitar:
+
+-   `"violência contra a mulher" AND SINAN AND Brasil`
+-   `"violência por parceiro íntimo" AND notificações AND Brasil`
+-   `"dashboard" AND "saúde pública"`
+-   `"painel de indicadores" AND "saúde pública"`
+-   `"visualização de dados" AND "saúde pública"`
+-   `"public health dashboard" AND "design principles"`
+-   `"healthcare dashboard" AND "scoping review"`
+-   `"dashboard" AND "R" AND "shiny" AND saúde`
+-   `"violência contra a mulher" AND "Mato Grosso"`
+-   `"feminicídio" AND "dados públicos" AND Brasil`
+
+Cada busca deve gerar uma lista inicial de 20 a 30 textos. Depois,você deve selecionar de 12 a 18 leituras centrais: 6 a 8 sobre violência contra a mulher e 6 a 10 sobre dashboards, visualização de dados e desenho de painéis em saúde pública. Você deve registrar se cada artigo foi encontrado no Google Acadêmico ou na SciELO.
+
+# Técnica de fichamento recomendada
+
+Para um aluno de graduação em Economia, a técnica mais indicada é o **fichamento analítico-estruturado com matriz de evidências**.
+
+Essa técnica é melhor do que um resumo corrido porque obriga você a identificar problema, dados, unidade de análise, variáveis, método, resultados e limitações. Isso aproxima a leitura da lógica de um artigo empírico em Economia e facilita a transição da revisão de literatura para a metodologia do próprio trabalho.
+
+## Modelo de ficha individual
+
+Cada texto lido deve gerar uma ficha de uma a duas páginas contendo:
+
+| Campo | O que registrar |
+|------------------------------------|------------------------------------|
+| Referência completa | Autor, ano, título, periódico, DOI ou link. |
+| Tema central | Qual problema o texto investiga? |
+| Pergunta de pesquisa | Qual pergunta o artigo tenta responder? |
+| Base de dados | Quais dados foram usados? São públicos? Qual período? Qual unidade territorial? |
+| Variáveis principais | Quais variáveis descrevem vítima, agressor, local, tempo, tipo de violência ou política pública? |
+| Método | Revisão, estudo descritivo, regressão, análise espacial, estudo de caso, design science, inspeção de dashboard etc. |
+| Resultado principal | O que o texto encontrou de mais importante? |
+| Limitações | O que o próprio texto reconhece como limite? Há subnotificação? Problemas de cobertura? |
+| Utilidade para o TCC | Como esse texto ajuda no dashboard ou no artigo? |
+| Citação aproveitável | Uma frase ou ideia que poderá ser usada, sempre com página quando houver PDF. |
+| Ideia para indicador | Algum indicador, gráfico, taxa ou recorte que pode ser adaptado para Rondonópolis? |
+
+## Matriz de evidências
+
+Além das fichas individuais, você deve manter uma matriz de evidências. A matriz não é apenas uma planilha de resumo: ela deve funcionar como ponte entre leitura, decisão metodológica, indicador do dashboard e trecho do artigo.
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[
+  node distance=1.15cm,
+  box/.style={
+    rectangle,
+    rounded corners,
+    draw=ufrblue,
+    fill=blue!4,
+    text width=10.8cm,
+    align=left,
+    inner sep=7pt
+  },
+  arrow/.style={-{Latex[length=2.5mm]}, thick, draw=ufrblue}
+]
+\node[box] (a) {\textbf{1. Artigo lido}\\Tema, pergunta de pesquisa, contexto e contribuição principal.};
+\node[box, below=of a] (b) {\textbf{2. Evidência extraída}\\Base usada, variáveis, método, indicadores, resultados e limitações.};
+\node[box, below=of b] (c) {\textbf{3. Decisão para o TCC}\\O que será aproveitado: conceito, variável, indicador, gráfico, cuidado metodológico ou argumento.};
+\node[box, below=of c] (d) {\textbf{4. Uso no produto e no texto}\\Aplicação no dashboard em R e localização provável no artigo Quarto: introdução, revisão, metodologia, resultados ou discussão.};
+\draw[arrow] (a) -- (b);
+\draw[arrow] (b) -- (c);
+\draw[arrow] (c) -- (d);
+\end{tikzpicture}
+\caption{Fluxo de conversão da leitura acadêmica em decisões para o dashboard e para o artigo.}
+\end{figure}
+
+Use a matriz abaixo para organizar os fichamentos. Ela pode ser feita em planilha, mas deve ser atualizada sempre que uma leitura alterar alguma escolha do projeto.
+
+| Bloco | Pergunta que a matriz deve responder | Campos recomendados |
+|------------------------|------------------------|------------------------|
+| Identificação | Que texto é este? | Autor/ano; título curto; periódico; base de busca: Google Acadêmico ou SciELO; link/DOI. |
+| Problema | Qual problema o artigo ajuda a entender? | Tema; pergunta de pesquisa; população/território; relação com violência contra a mulher ou dashboard. |
+| Dados e método | Como o artigo produziu evidência? | Base usada; período; unidade de análise; variáveis principais; método; software quando informado. |
+| Indicadores e visualização | O que pode inspirar o dashboard? | Indicadores; gráficos; filtros; dimensões de desagregação; boas escolhas visuais; escolhas a evitar. |
+| Resultados | Que achado pode dialogar com Rondonópolis? | Resultado central; padrão temporal; perfil encontrado; comparação territorial; interpretação econômica ou social. |
+| Limitações | Que cuidado precisa aparecer no TCC? | Subnotificação; campos ignorados; viés de registro; escala territorial; causalidade indevida; privacidade. |
+| Uso no trabalho | Onde esse artigo entra? | Introdução; revisão; metodologia; resultado; discussão; nota metodológica do dashboard; escolha de indicador. |
+
+Ao final da revisão, a matriz deve permitir responder: quais estudos sustentam a análise da violência, quais sustentam o desenho do dashboard em R, quais indicadores serão usados e quais limitações precisam ser comunicadas ao leitor.
+
+## Regra das três cores
+
+Durante a leitura, use três marcações:
+
+-   **Azul:** conceitos e definições.
+-   **Verde:** dados, métodos, variáveis e indicadores.
+-   **Vermelho:** limitações, problemas, críticas e cuidados éticos.
+
+Ao final de cada texto, escreva um parágrafo de cinco a oito linhas respondendo: "O que este texto muda na forma como eu vou construir meu dashboard ou escrever meu artigo?"
+
+# Leituras iniciais indicadas
+
+As leituras abaixo devem ser localizadas pelo aluno no **Google Acadêmico** ou na **SciELO**. Os links e DOIs servem para conferência e acesso, mas a rotina de busca acadêmica do TCC deve permanecer restrita a essas duas fontes.
+
+## Artigos sobre elaboração de dashboards
+
+1.  RABIEI, Reza; BASTANI, Peivand; AHMADI, Hossein; DEHGHAN, Shirin; ALMASI, Sohrab. **Developing public health surveillance dashboards: a scoping review on the design principles**. *BMC Public Health*, v. 24, 392, 2024. DOI: <https://doi.org/10.1186/s12889-024-17841-2>.\
+    Uso no TCC: leitura central para definir público-alvo, conteúdo, interface, tipos de análise, infraestrutura e princípios de desenho para dashboards de vigilância em saúde.
+
+2.  HELMINSKI, Danielle et al. **Development, Implementation, and Evaluation Methods for Dashboards in Health Care: Scoping Review**. *JMIR Medical Informatics*, v. 12, e59828, 2024. DOI: <https://doi.org/10.2196/59828>.\
+    Uso no TCC: ajuda a organizar o ciclo de desenvolvimento, implementação e avaliação do dashboard, com atenção ao envolvimento de usuários, testes e adoção.
+
+3.  VORNHAGEN, Heike et al. **Design Practices for Data Dashboards in Health Care: Scoping Review**. *Journal of Medical Internet Research*, v. 28, e77361, 2026. DOI: <https://doi.org/10.2196/77361>.\
+    Uso no TCC: oferece uma síntese recente sobre práticas de desenho de dashboards em saúde, incluindo abordagem, conteúdo, comportamento de uso e adoção.
+
+4.  RABIEI, Reza; ALMASI, Sohrab. **Requirements and challenges of hospital dashboards: a systematic literature review**. *BMC Medical Informatics and Decision Making*, v. 22, 287, 2022. DOI: <https://doi.org/10.1186/s12911-022-02037-8>.\
+    Uso no TCC: contribui para levantar requisitos funcionais e não funcionais, como usabilidade, atualização, segurança, integração e clareza visual.
+
+5.  CONCANNON, D.; HERBST, K.; MANLEY, E. **Developing a data dashboard framework for population health surveillance: widening access to clinical trial findings**. *JMIR Formative Research*, v. 3, n. 2, e11342, 2019. DOI: <https://doi.org/10.2196/11342>.\
+    Uso no TCC: serve como referência para pensar o dashboard como ferramenta de vigilância populacional e comunicação de informação para públicos não técnicos.
+
+6.  BOHNERT, Michele Krieger; PAVÃO, Caterina Marta Groposo; SILVA, Fabiano Couto Corrêa da. **Visualização de Dados de Saúde Pública: um estudo de caso sobre a Covid-19**. *InCID: Revista de Ciência da Informação e Documentação*, 2023. Disponível em: <https://revistas.usp.br/incid/article/view/195269>.\
+    Uso no TCC: contribui para discutir visualização de dados em saúde pública e comunicação de informação complexa para públicos não especializados.
+
+7.  **Visualização de dados de Vigilância das arboviroses urbanas transmitidas pelo Aedes aegypti**. *Journal of Information Systems and Technology Management*, 2023. Disponível em: <https://jistem.tecsi.org/jistem/article/view/3245>.\
+    Uso no TCC: exemplo brasileiro de dashboard aplicado à vigilância em saúde, útil para pensar estrutura, sistematização e visualização de indicadores.
+
+## Artigos sobre violência contra a mulher
+
+8.  **Fontes de informação sobre a violência contra a mulher no Brasil**. *Serviço Social & Sociedade*. DOI: <https://doi.org/10.1590/0101-6628.376>.\
+    Uso no TCC: leitura para mapear fontes digitais, critérios de qualidade da informação e lacunas de dados sobre violência contra a mulher.
+
+9.  **Análise das notificações de violência por parceiro íntimo contra mulheres, Brasil, 2011-2017**. *Revista Brasileira de Epidemiologia*. DOI: <https://doi.org/10.1590/1980-549720200007.supl.1>.\
+    Uso no TCC: exemplo de uso do SINAN para analisar violência por parceiro íntimo, variáveis relevantes e cuidados com notificação compulsória.
+
+10. MARINHO NETO, Kreon Barbosa; GIRIANELLI, Vania Reis. **Evolução da notificação de violência contra mulher no município de São Paulo, 2008-2015**. *Cadernos Saúde Coletiva*, v. 28, n. 4, p. 488-499, 2020. Disponível em: <https://www.scielo.br/j/cadsc/a/mpxkNGdrCXMJrgsc9nTjvSq/>.\
+    Uso no TCC: bom modelo para análise temporal municipal e discussão de perfil das notificações.
+
+# Metodologia sugerida
+
+O trabalho pode ser classificado como pesquisa aplicada, descritiva e exploratória, com desenvolvimento de produto analítico em R para visualização de dados sobre violência contra a mulher.
+
+## Desenho metodológico
+
+O método pode ser organizado em cinco etapas:
+
+1.  Revisão de literatura e definição dos indicadores.
+2.  Identificação e avaliação das bases necessárias ao recorte municipal.
+3.  Coleta, limpeza e tratamento dos dados com scripts em R.
+4.  Construção e refinamento do dashboard em R.
+5.  Redação do artigo em Quarto e renderização em PDF.
+
+## Indicadores iniciais
+
+Os indicadores devem ser definidos conforme a base disponível. Sugestões:
+
+-   número anual de notificações ou ocorrências em Rondonópolis;
+-   taxa por 10 mil ou 100 mil mulheres, se houver denominador populacional adequado;
+-   distribuição por faixa etária;
+-   distribuição por raça/cor;
+-   distribuição por escolaridade;
+-   local de ocorrência;
+-   tipo de violência;
+-   vínculo com o agressor;
+-   recorrência da violência;
+-   comparação Rondonópolis, Mato Grosso e Brasil;
+-   série temporal antes, durante e depois da pandemia, se o período permitir;
+-   percentual de campos ignorados ou em branco, como indicador de qualidade da informação.
+
+::: callout-tip
+## Meta analítica mínima
+
+O dashboard deve responder a três perguntas simples: quanto a violência registrada mudou ao longo do tempo, quem aparece com maior frequência nos registros e quais características da ocorrência são mais recorrentes.
+:::
+
+# Construção do dashboard
+
+## Passos técnicos
+
+| Etapa | Entrega | Critério de conclusão |
+|------------------------|------------------------|------------------------|
+| Definição do usuário | Descrever público-alvo: gestor, pesquisador, conselho municipal, sociedade civil ou estudante | Texto de 1 página com necessidades de informação |
+| Mapeamento das bases | Lista de fontes, links, periodicidade, formato e variáveis | Planilha de fontes validada |
+| Estrutura do projeto R | Pastas `data_raw`, `data_clean`, `R`, `dashboard`, `artigo` e `output` | Projeto organizado e reprodutível |
+| Coleta dos dados | Arquivos baixados ou rotina de extração em R | Dados brutos guardados sem alteração |
+| Tratamento | Base limpa, padronizada e documentada | Script em R executável do início ao fim |
+| Dicionário de dados | Lista de variáveis, categorias e transformações | Documento curto e claro, salvo junto ao artigo |
+| Indicadores | Lista de métricas do dashboard | Cada indicador com fórmula e fonte |
+| Protótipo visual | Esboço das páginas e componentes | Layout aprovado antes de implementar |
+| Implementação | Dashboard funcional em R | Filtros, gráficos e tabelas funcionando |
+| Teste de leitura | Verificação com orientador ou pequeno grupo | Ajustes registrados |
+| Versão final | Dashboard publicado ou exportado | Link, arquivo ou relatório final |
+
+## Pacotes de R recomendados
+
+O aluno deve escolher um conjunto simples de pacotes e evitar misturar ferramentas sem necessidade. Uma pilha suficiente para o projeto é:
+
+-   `tidyverse` para importação, limpeza, transformação e gráficos exploratórios;
+-   `readxl`, `haven`, `janitor` e `lubridate` conforme o formato das bases;
+-   `sidrar` ou `geobr`, se forem usados dados populacionais e territoriais;
+-   `ggplot2` para gráficos estáticos e exploração inicial;
+-   `plotly` para gráficos interativos;
+-   `leaflet` para mapas, caso a escala territorial permita uso responsável;
+-   `DT` ou `reactable` para tabelas interativas;
+-   `shiny` e `bslib` para o dashboard interativo;
+-   `quarto` para o artigo em `.qmd` e, se desejado, para documentar o dashboard.
+
+## Estrutura mínima dos scripts
+
+| Script | Função |
+|------------------------------------|------------------------------------|
+| `00_config.R` | Carregar pacotes, caminhos e parâmetros gerais. |
+| `01_importar_dados.R` | Importar bases brutas sem alterar os arquivos originais. |
+| `02_limpar_dados.R` | Padronizar nomes, tipos de variáveis, anos, categorias e códigos. |
+| `03_indicadores.R` | Calcular totais, taxas, percentuais e medidas de qualidade dos dados. |
+| `04_graficos_exploratorios.R` | Produzir gráficos que ajudem a escrever os resultados do artigo. |
+| `app.R` ou `dashboard.qmd` | Implementar o dashboard em R. |
+| `artigo.qmd` | Redigir o artigo e renderizar o PDF. |
+
+## Páginas sugeridas do dashboard
+
+1.  **Visão geral:** totais, taxas, série temporal e comparação territorial.
+2.  **Perfil das vítimas:** faixa etária, raça/cor, escolaridade e município de residência.
+3.  **Características da violência:** tipo de violência, local de ocorrência, repetição e vínculo com agressor.
+4.  **Qualidade dos dados:** campos ignorados, incompletude, anos disponíveis e observações metodológicas.
+5.  **Notas metodológicas:** fontes, filtros, definições e limites interpretativos.
+
+## Regras de visualização
+
+-   Use títulos descritivos, não apenas nomes de variáveis.
+-   Evite gráficos 3D, excesso de cores e elementos decorativos.
+-   Use a mesma cor para a mesma categoria ao longo de todo o painel.
+-   Não exponha qualquer dado que permita identificação individual.
+-   Prefira taxas quando comparar territórios com populações diferentes.
+-   Mostre valores absolutos e taxas quando ambos forem relevantes.
+-   Inclua notas sobre subnotificação e incompletude.
+-   Use filtros simples: ano, território, tipo de violência, faixa etária e raça/cor.
+
+# Estrutura recomendada do artigo
+
+## Título provisório
+
+Dashboard em R para acompanhamento da violência contra a mulher em Rondonópolis-MT
+
+## Estrutura
+
+1.  **Resumo:** problema, objetivo, dados, método, produto e resultado principal.
+2.  **Introdução:** contexto da violência contra a mulher, justificativa do recorte municipal, contribuição do dashboard em R e problema de pesquisa.
+3.  **Revisão de literatura:** violência contra a mulher, subnotificação, dashboards em saúde pública e visualização de informação.
+4.  **Metodologia:** tipo de pesquisa, bases utilizadas, período, variáveis, tratamento dos dados em R, construção dos indicadores e desenvolvimento do dashboard.
+5.  **Resultados:** apresentação da base, indicadores encontrados, principais telas do dashboard e interpretação dos padrões.
+6.  **Discussão:** comparação com a literatura, limites dos dados, utilidade para políticas públicas e cuidados éticos.
+7.  **Considerações finais:** síntese dos achados, contribuição do dashboard, limitações e agenda futura.
+8.  **Referências:** textos efetivamente citados no artigo.
+9.  **Apêndice, se necessário:** dicionário de variáveis, fórmulas de indicadores, estrutura dos scripts em R e telas adicionais.
+
+# Cronograma de metas
+
+O cronograma abaixo organiza o trabalho a partir de agora, considerando três momentos: **TCC 1 no semestre atual**, **continuidade nas férias** e **TCC 2 no próximo semestre**. A defesa deve ocorrer na **15ª semana de aula do próximo semestre**, conforme o calendário acadêmico da UFR vigente. A Resolução CONSEPE/UFR nº 132/2025 aprova o Calendário Acadêmico da Universidade Federal de Rondonópolis para o ano letivo de 2026; por isso, a tabela usa a referência de semanas letivas e deve ser ajustada com as datas exatas do curso quando o calendário detalhado do semestre seguinte estiver confirmado.
+
+\begin{landscape}
+\scriptsize
+\rowcolors{2}{gray!10}{white}
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{0.9cm}>{\raggedright\arraybackslash}p{3.0cm}>{\raggedright\arraybackslash}p{4.7cm}>{\raggedright\arraybackslash}p{4.7cm}>{\raggedright\arraybackslash}p{9.2cm}@{}}
+\rowcolor{gray!25}
+\textbf{Sem.} & \textbf{Momento UFR} & \textbf{Dashboard} & \textbf{Artigo} & \textbf{Entrega da semana} \\
+\toprule
+1 & TCC 1: entrega avaliativa 1 & Criar repositório privado no GitHub e projeto em R & Delimitar tema, problema e objetivo geral & Criar repositório privado \texttt{tcc-dashboard-violencia-mulher-rondonopolis}; adicionar \texttt{README.md} com título, objetivo, orientador, aluna, ferramenta R e rotina de entregas; criar pastas \texttt{R/}, \texttt{data\_raw/}, \texttt{data\_clean/}, \texttt{dashboard/}, \texttt{artigo/}, \texttt{docs/} e \texttt{output/}; adicionar \texttt{docs/01\_recorte\_tcc.qmd} com tema, problema, objetivo geral, objetivos específicos e justificativa inicial. \\
+2 & TCC 1: entrega avaliativa 2 & Mapear bases, links, formatos e variáveis & Levantar referências no Google Acadêmico e na SciELO & Adicionar \texttt{docs/02\_fontes\_dados.qmd} com tabela de fontes, links, periodicidade, escala territorial, variáveis e observações de acesso; adicionar \texttt{docs/03\_busca\_bibliografica.qmd} com strings usadas no Google Acadêmico e na SciELO, critérios de inclusão/exclusão e lista inicial de pelo menos 20 referências. \\
+3 & TCC 1: entrega avaliativa 3 & Testar acesso às bases e registrar viabilidade técnica & Selecionar textos centrais e iniciar fichamentos & Adicionar \texttt{R/00\_config.R} com pacotes e caminhos do projeto; adicionar \texttt{docs/04\_viabilidade\_tecnica.qmd} informando quais bases serão usadas, quais foram descartadas e por quê; adicionar \texttt{docs/05\_leituras\_selecionadas.qmd} com 12 a 18 textos centrais. A nota de TCC 1 será definida com base nas entregas das semanas 1 a 3. \\
+4 & Férias: continuidade & Criar \texttt{01\_importar\_dados.R} e baixar dados brutos & Fazer fichamentos 1 a 4 & Adicionar \texttt{R/01\_importar\_dados.R}; salvar dados brutos em \texttt{data\_raw/}; adicionar \texttt{docs/fichamentos/fichamento\_01.qmd} a \texttt{fichamento\_04.qmd}, cada um com referência, pergunta, base, método, achados, limitações e uso no TCC. \\
+5 & Férias: continuidade & Criar dicionário preliminar de variáveis & Fazer fichamentos 5 a 8 & Adicionar \texttt{docs/06\_dicionario\_variaveis.qmd} com nome da variável, descrição, tipo, categorias, fonte e transformação prevista; adicionar \texttt{docs/07\_matriz\_evidencias.qmd} com a matriz inicial; adicionar fichamentos 5 a 8 em \texttt{docs/fichamentos/}. \\
+6 & Férias: continuidade & Criar \texttt{02\_limpar\_dados.R} & Escrever introdução v1 no \texttt{artigo.qmd} & Adicionar \texttt{R/02\_limpar\_dados.R}; gerar \texttt{data\_clean/base\_violencia\_mulher\_v1.rds}; criar \texttt{artigo/artigo.qmd} com YAML para PDF, título provisório, resumo preliminar e introdução v1. \\
+7 & Férias: continuidade & Definir indicadores e fórmulas & Escrever problema, objetivos e justificativa & Adicionar \texttt{R/03\_indicadores.R}; adicionar \texttt{docs/08\_indicadores.qmd} com nome do indicador, fórmula, unidade, fonte, filtro e interpretação; atualizar \texttt{artigo/artigo.qmd} com problema, objetivos e justificativa. \\
+8 & Férias: continuidade & Gerar gráficos exploratórios em R & Escrever revisão de literatura v1 & Adicionar \texttt{R/04\_graficos\_exploratorios.R}; salvar pelo menos 6 figuras em \texttt{output/figuras/}; adicionar \texttt{docs/09\_analise\_exploratoria.qmd} comentando cada figura; inserir revisão de literatura v1 em \texttt{artigo/artigo.qmd}. \\
+9 & Próximo semestre: semana 1 & Elaborar protótipo das páginas do dashboard & Revisar fichamentos e matriz de evidências & Adicionar \texttt{docs/10\_prototipo\_dashboard.qmd} com desenho das páginas, filtros, cartões, gráficos, tabelas e notas metodológicas; atualizar \texttt{docs/07\_matriz\_evidencias.qmd} indicando como cada leitura será usada no artigo ou no dashboard. \\
+10 & Próximo semestre: semana 2 & Implementar visão geral no \texttt{app.R} ou \texttt{dashboard.qmd} & Escrever metodologia v1 & Adicionar \texttt{dashboard/app.R} ou \texttt{dashboard/dashboard.qmd} com página \texttt{Visão geral}; incluir cartões de total, taxa, série temporal e comparação territorial; atualizar \texttt{artigo/artigo.qmd} com metodologia v1. \\
+11 & Próximo semestre: semana 3 & Implementar página de perfil das vítimas & Ajustar revisão com base nos dados & Atualizar \texttt{dashboard/app.R} ou \texttt{dashboard/dashboard.qmd} com página \texttt{Perfil das vítimas}; incluir gráficos de faixa etária, raça/cor e escolaridade; atualizar revisão no \texttt{artigo/artigo.qmd} com pelo menos 10 referências efetivamente citadas. \\
+12 & Próximo semestre: semana 4 & Implementar página de características da violência & Escrever resultados preliminares & Atualizar dashboard com página \texttt{Características da violência}; incluir tipo de violência, local de ocorrência, recorrência e vínculo com agressor; adicionar seção de resultados preliminares em \texttt{artigo/artigo.qmd}. \\
+13 & Próximo semestre: semana 5 & Implementar página de qualidade dos dados & Escrever discussão preliminar & Atualizar dashboard com página \texttt{Qualidade dos dados}; incluir percentuais de campos ignorados/brancos e notas de subnotificação; adicionar discussão preliminar em \texttt{artigo/artigo.qmd}. \\
+14 & Próximo semestre: semana 6 & Revisar filtros, cores, títulos e notas & Integrar introdução, revisão e metodologia & Adicionar \texttt{docs/11\_checklist\_dashboard.qmd} com verificação de filtros, cores, títulos, fontes e notas; renderizar \texttt{artigo/artigo.qmd} para \texttt{output/artigo\_parcial.pdf}. \\
+15 & Próximo semestre: semana 7 & Testar leitura com orientador ou colega & Ajustar resultados e figuras & Adicionar \texttt{docs/12\_feedback\_teste\_leitura.qmd} com observações recebidas, problemas encontrados e plano de correção; atualizar figuras e resultados no \texttt{artigo/artigo.qmd}. \\
+16 & Próximo semestre: semana 8 & Corrigir problemas do dashboard & Reescrever discussão e conclusão & Atualizar dashboard com correções do teste; adicionar \texttt{docs/13\_mudancas\_dashboard.qmd} com lista de ajustes; incluir conclusão v1 em \texttt{artigo/artigo.qmd}. \\
+17 & Próximo semestre: semana 9 & Exportar imagens, link ou versão local do dashboard & Formatar referências e citações & Salvar capturas ou imagens finais do dashboard em \texttt{output/figuras\_dashboard/}; renderizar \texttt{artigo/artigo\_v3.pdf}; adicionar \texttt{docs/14\_referencias\_conferidas.qmd} com checagem de referências citadas. \\
+18 & Próximo semestre: semana 10 & Revisar consistência dos indicadores & Revisar texto completo & Adicionar \texttt{docs/15\_auditoria\_indicadores.qmd} conferindo fórmulas, filtros e fontes; renderizar \texttt{output/artigo\_final\_v1.pdf}; garantir que \texttt{artigo/artigo.qmd} compile sem erro. \\
+19 & Próximo semestre: semana 11 & Preparar versão de apresentação do dashboard & Preparar slides ou pôster & Adicionar \texttt{apresentacao/slides.qmd} com estrutura da defesa; incluir prints do dashboard, problema, método, resultados, limitações e contribuição; renderizar \texttt{output/slides\_v1.html} ou PDF. \\
+20 & Próximo semestre: semana 12 & Fazer teste final do dashboard & Ajustar artigo após revisão do orientador & Adicionar \texttt{docs/16\_teste\_final\_dashboard.qmd} com checklist de execução; atualizar \texttt{output/artigo\_pre\_banca.pdf} e registrar pendências finais no GitHub. \\
+21 & Próximo semestre: semana 13 & Congelar versão do dashboard para defesa & Revisar normalização, figuras e referências & Criar release ou tag \texttt{v1.0-banca} no GitHub; adicionar \texttt{docs/17\_versao\_banca.qmd} com links para artigo, dashboard, dados tratados e scripts; entregar \texttt{output/artigo\_banca.pdf}. \\
+22 & Próximo semestre: semana 14 & Ensaiar demonstração do dashboard & Ensaiar apresentação oral & Atualizar \texttt{apresentacao/slides.qmd}; adicionar \texttt{docs/18\_roteiro\_defesa.qmd} com fala de 10 a 15 minutos e ordem de demonstração do dashboard; salvar slides finais em \texttt{output/}. \\
+23 & Próximo semestre: semana 15 & Apresentar dashboard na defesa & Defender o artigo científico & Manter no GitHub a versão usada na defesa: \texttt{output/artigo\_defesa.pdf}, slides finais, dashboard congelado e instruções de execução no \texttt{README.md}. \\
+24 & Pós-defesa & Registrar ajustes solicitados pela banca & Preparar versão final corrigida & Adicionar \texttt{docs/19\_ajustes\_banca.qmd} com solicitações da banca e respostas; renderizar \texttt{output/artigo\_final\_corrigido.pdf}; criar tag \texttt{v1.1-final}. \\
+\bottomrule
+\end{longtable}
+\rowcolors{2}{}{}
+\normalsize
+\end{landscape}
+
+# Metas por fase
+
+## Fase 1: Delimitação e leitura
+
+Meta: você deve conseguir explicar em cinco minutos o problema, o recorte territorial, as bases possíveis e a relevância do dashboard.
+
+Entregas:
+
+-   problema de pesquisa;
+-   objetivo geral e objetivos específicos;
+-   lista de palavras-chave;
+-   12 a 18 referências selecionadas;
+-   8 fichamentos completos.
+
+## Fase 2: Dados e indicadores
+
+Meta: você deve transformar dados públicos brutos em uma base minimamente confiável para análise.
+
+Entregas:
+
+-   planilha de fontes;
+-   base bruta;
+-   base tratada;
+-   dicionário de variáveis;
+-   lista de indicadores com fórmula, unidade de medida e fonte.
+
+## Fase 3: Protótipo e dashboard
+
+Meta: você deve construir um painel que permita leitura rápida e interpretação responsável dos dados.
+
+Entregas:
+
+-   desenho das páginas;
+-   dashboard funcional;
+-   filtros principais;
+-   notas metodológicas;
+-   página de qualidade dos dados.
+
+## Fase 4: Artigo
+
+Meta: você deve converter o desenvolvimento técnico em argumento científico.
+
+Entregas:
+
+-   introdução;
+-   revisão de literatura;
+-   metodologia;
+-   resultados;
+-   discussão;
+-   considerações finais;
+-   referências formatadas.
+
+# Critérios de qualidade
+
+## Para o dashboard
+
+-   Os dados têm fonte, período e método de tratamento identificados.
+-   Os indicadores têm fórmula explícita.
+-   O painel permite comparar anos e, se possível, territórios.
+-   O layout é limpo e compreensível.
+-   O dashboard inclui notas de interpretação.
+-   Não há exposição de dados pessoais ou sensíveis.
+-   Há uma página ou seção sobre limitações.
+
+## Para o artigo
+
+-   O problema de pesquisa está claro.
+-   A revisão conversa diretamente com o dashboard.
+-   A metodologia permite reprodução.
+-   Os resultados são interpretados, não apenas descritos.
+-   As limitações são discutidas com honestidade.
+-   As figuras e tabelas têm título, fonte e comentário analítico.
+-   A conclusão retoma objetivo, contribuição e limites.
+
+# Questões éticas e LGPD
+
+Mesmo usando dados públicos, o tema exige cuidado. O artigo e o dashboard devem evitar qualquer informação que permita identificar vítimas, familiares, endereços, unidades de atendimento específicas ou casos singulares.
+
+Recomendações:
+
+-   trabalhar apenas com dados agregados;
+-   evitar mapas em escala muito pequena quando houver poucos casos;
+-   suprimir ou agrupar categorias com frequências muito baixas;
+-   não usar linguagem culpabilizante;
+-   deixar claro que aumento de registros pode significar aumento da violência, melhora da notificação ou ambos;
+-   tratar raça/cor, idade, escolaridade e território como dimensões analíticas sensíveis;
+-   explicitar que dados administrativos possuem subnotificação e campos incompletos.
+
+|     |
+|-----|
+|     |
+
+# Síntese
+
+O trabalho não é apenas "fazer um dashboard". O objetivo é construir uma ferramenta de leitura pública de um problema social grave e, ao mesmo tempo, demonstrar cientificamente como essa ferramenta foi pensada, construída e limitada pelos dados disponíveis.
+
+O melhor caminho é avançar em ciclos curtos: ler, fichar, testar dados, construir um gráfico, escrever um trecho do artigo, revisar o indicador e voltar ao texto. Quando o dashboard e o artigo caminham juntos, o produto técnico fica mais fundamentado e o artigo fica mais concreto.
