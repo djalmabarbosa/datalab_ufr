@@ -8,6 +8,8 @@
 
 # User-specific files
 .Ruserdata
+/.claude/
+/.vscode/
 
 # Example code in package build process
 *-Ex.R
@@ -47,3 +49,13 @@ po/*~
 
 # RStudio Connect folder
 rsconnect/
+
+/.quarto/
+/_render_tmp/
+/_render_check/
+
+# Local archive for generated or obsolete files kept out of version control
+/arquivo_nao_versionado/
+
+# Office temporary lock files
+~$*
